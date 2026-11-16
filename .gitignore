@@ -1,0 +1,29 @@
+# Data: scraped pages and downloads stay on your computer (see data/README.md)
+data/*
+!data/README.md
+
+# Data files anywhere else (e.g. saved from a notebook) are never committed either
+*.csv
+*.html
+*.xls
+*.xlsx
+*.ipynb
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+*.egg-info/
+
+# Environments and secrets
+.venv/
+venv/
+.env
+
+# Editors and OS
+.vscode/
+.idea/
+.spyproject/
+.DS_Store
+Thumbs.db
