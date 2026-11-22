@@ -1,6 +1,8 @@
 # Data: scraped pages and downloads stay on your computer (see data/README.md)
 data/*
 !data/README.md
+!data/processed/
+data/processed/*
 
 # Data files anywhere else (e.g. saved from a notebook) are never committed either
 *.csv
@@ -8,6 +10,10 @@ data/*
 *.xls
 *.xlsx
 *.ipynb
+
+# ...except the text-free tables in data/processed/. They go on GitHub so the analysis
+# can be re-run without scraping; tests/test_shared_data.py checks they hold no text.
+!data/processed/*.csv
 
 # Python
 __pycache__/

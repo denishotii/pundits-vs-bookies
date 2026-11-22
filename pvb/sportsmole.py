@@ -98,6 +98,8 @@ def download_previews(session: PoliteSession, urls: pd.DataFrame, limit: int | N
         if write_header:
             manifest.writerow(MANIFEST_HEADER)
         for url, article_id in zip(todo["url"].astype(str), todo["article_id"].astype(int)):
+            if raw_path(article_id).exists():  # another scraper saved it in the meantime
+                continue
             status = _download_one(session, url, article_id)
             manifest.writerow([article_id, url, status, _now()])
             fh.flush()  # the log survives even if the run is killed
@@ -118,7 +120,11 @@ def _download_one(session: PoliteSession, url: str, article_id: int) -> str:
     if ARTICLE_MARKER not in resp.content:
         log.warning("not a preview page (blocked or moved?): %s", url)
         return "no article body"
-    raw_path(article_id).write_bytes(resp.content)  # exactly the bytes we received
+    # Write to a temporary file, then rename: a stopped run never leaves half a page behind
+    path = raw_path(article_id)
+    partial = path.with_suffix(".part")
+    partial.write_bytes(resp.content)  # exactly the bytes we received
+    partial.replace(path)
     return "saved"
 
 

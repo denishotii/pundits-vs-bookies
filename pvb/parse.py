@@ -22,6 +22,13 @@ from .sportsmole import classify
 log = logging.getLogger(__name__)
 
 PREVIEWS_CSV = config.INTERIM / "previews.csv"
+PICKS_CSV = config.PROCESSED / "picks.csv"
+
+# The part of previews.csv that may go on GitHub: facts and numbers, no Sports Mole text
+SHAREABLE_COLUMNS = [
+    "article_id", "url", "sport", "published", "author", "side_a", "side_b",
+    "pick_home_goals", "pick_away_goals", "pick_result", "pick_winner", "pick_sets", "word_count",
+]
 
 # h2 heading -> the column its paragraphs go into
 SECTIONS = {"match preview": "text_preview", "team news": "text_team_news", "head to head": "text_head_to_head"}
@@ -108,7 +115,7 @@ def parse_pick(verdict: str | None, sport: str | None) -> dict:
 
 
 def parse_all() -> pd.DataFrame:
-    """Parse every saved page in data/raw/sportsmole/ and write previews.csv."""
+    """Parse every saved page in data/raw/sportsmole/ and write previews.csv and picks.csv."""
     rows, failed = [], 0
     for path in sorted(config.SPORTSMOLE_RAW.glob("*.html")):
         try:
@@ -123,7 +130,22 @@ def parse_all() -> pd.DataFrame:
     config.INTERIM.mkdir(parents=True, exist_ok=True)
     df.to_csv(PREVIEWS_CSV, index=False)
     log.info("parsed %d previews (%d failed) -> %s", len(df), failed, PREVIEWS_CSV)
+    if not df.empty:
+        write_picks(df)
     return df
+
+
+def write_picks(previews: pd.DataFrame) -> pd.DataFrame:
+    """Save the text-free part of previews.csv to data/processed/picks.csv.
+
+    This table goes on GitHub so the analysis can be re-run without scraping.
+    It must never hold article text; tests/test_shared_data.py checks that.
+    """
+    picks = previews[SHAREABLE_COLUMNS].astype({"pick_home_goals": "Int64", "pick_away_goals": "Int64"})
+    config.PROCESSED.mkdir(parents=True, exist_ok=True)
+    picks.to_csv(PICKS_CSV, index=False)
+    log.info("text-free picks -> %s", PICKS_CSV)
+    return picks
 
 
 def _sections(body: Tag) -> tuple[dict[str, str], str | None]:

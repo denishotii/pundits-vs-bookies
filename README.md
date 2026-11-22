@@ -21,7 +21,7 @@ The full plan, with scope, strategy and timeline, is in [docs/plan.md](docs/plan
 | --- | --- | --- | --- |
 | 1. Find previews in the sitemaps | `python -m pvb urls` | `data/interim/preview_urls.csv` | Working |
 | 2. Download the pages | `python -m pvb scrape` | `data/raw/sportsmole/*.html` | Working |
-| 3. Parse pick, sections, date | `python -m pvb parse` | `data/interim/previews.csv` | Working |
+| 3. Parse pick, sections, date | `python -m pvb parse` | `data/interim/previews.csv`, `data/processed/picks.csv` | Working |
 | 4. Download odds | `python -m pvb odds football` (or `tennis`) | `data/raw/odds/` | Working |
 | 5. Text features | `python -m pvb features` | `data/processed/features.csv` | Started |
 | 6. Match previews to games | `python -m pvb match` | `data/processed/matched.csv` | To do |
@@ -33,7 +33,7 @@ The full plan, with scope, strategy and timeline, is in [docs/plan.md](docs/plan
 Open Anaconda Prompt (Windows) or Terminal (Mac) and get the code:
 
 ```bash
-git clone https://github.com/<owner>/pundits-vs-bookies.git
+git clone https://github.com/denishotii/pundits-vs-bookies.git
 cd pundits-vs-bookies
 ```
 
@@ -67,6 +67,20 @@ Run every command from the project folder.
 
 **The full scrape:** only the scraper runs it. Sports Mole previews every competition, not just our six leagues, so 2021 to 2026 is about 45,000 pages. At one page every 2 seconds that is about 25 hours. You can stop and restart it at any time; pages already saved are skipped. Start with `--years 2025-2026` so the others can begin. Everyone else copies `data/` from the shared drive.
 
+## Re-running without scraping
+
+The full scrape takes about 25 hours, so the tables the analysis needs are already on GitHub, in `data/processed/`:
+
+| File | One row per | What's in it |
+| --- | --- | --- |
+| `picks.csv` | preview (44,948) | Date, sport, teams or players, author, the "We say" pick, word count |
+| `features.csv` | preview | Numbers measured from the text, such as uncertainty words per 1,000 words |
+| `matched.csv` | game | Preview, odds and result side by side (once matching is done) |
+
+Matching and analysis (steps 6 and 7) run on these tables plus the odds, which `python -m pvb odds` downloads in about a minute.
+
+The article text itself is not on GitHub (see the scraping rules). To re-run the text steps, ask us for `previews_full_text.zip` (66 MB), which we share privately with the team and the examiner. Unzip it into `data/interim/`, then run `python -m pvb features`.
+
 ## Project structure
 
 ```
@@ -83,17 +97,17 @@ pundits-vs-bookies/
 │   ├── polymarket.py     part 2: Polymarket tennis prices
 │   └── analysis.py       the three tests (to do)
 ├── tests/                tests, no internet needed
-├── data/                 not on GitHub, see data/README.md
+├── data/                 only data/processed/ is on GitHub, see data/README.md
 ├── docs/plan.md          the project plan
 └── notebooks/            exploration, as .py files with # %% cells
 ```
 
 ## Scraping rules
 
-- One request every 2 seconds per site, and nothing that robots.txt disallows.
+- Each scraper waits 2 seconds between pages, and at most two run at once (about one request per second in total). Nothing that robots.txt disallows.
 - The scraper names itself in its User-Agent, using `PVB_CONTACT`.
 - Each page is downloaded once and saved. Parsing always runs on the saved copy.
-- Scraped text never goes on GitHub. Sports Mole's terms forbid republishing its content, so we publish only numbers and results.
+- Scraped text never goes on GitHub. Sports Mole's terms forbid republishing its content, so we publish only numbers and results: the tables in `data/processed/`, which a test checks for text. The full text is shared privately, with the team and the examiner only.
 
 ## Team
 
@@ -109,7 +123,7 @@ pundits-vs-bookies/
 
 - Pull before you start. Work on a branch named after your part, such as `matching/football`, and open a pull request.
 - Run `python -m pytest` before you push. GitHub runs the tests on every push too.
-- Keep all data files inside `data/`; git ignores that folder. To use a shared copy instead, set `PVB_DATA` to its path.
+- Keep all data files inside `data/`. Git ignores that folder, apart from the text-free tables in `data/processed/`. To use a shared copy instead, set `PVB_DATA` to its path.
 - New to git? GitHub Desktop does all of this with buttons. Don't use GitHub's "Upload files" button: it ignores `.gitignore` and could publish scraped text.
 
 Deadlines: submission on 13 December 2026, presentation on 18 December 2026.
