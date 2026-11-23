@@ -1,0 +1,4 @@
+games,n,pick_move_pp,excess_pp,ci_low,ci_high,p_value,pick_gained,pick_lost
+All games,12301,0.130915,0.0931,0.023594,0.162606,0.008657,0.559792,0.439883
+Preview before the early odds,9779,0.1044,0.089586,0.013061,0.166111,0.021761,0.556908,0.442683
+Preview after the early odds,2522,0.233727,0.098595,-0.064002,0.261192,0.234636,0.570975,0.429025

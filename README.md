@@ -25,7 +25,7 @@ The full plan, with scope, strategy and timeline, is in [docs/plan.md](docs/plan
 | 4. Download odds | `python -m pvb odds football` (or `tennis`) | `data/raw/odds/` | Working |
 | 5. Text features | `python -m pvb features` | `data/processed/features.csv` | Started |
 | 6. Match previews to games | `python -m pvb match` | `data/processed/matched_football.csv`, `matched_tennis.csv` | Working |
-| 7. Analysis | `python -m pvb analyse` | Tables and charts | To do |
+| 7. Analysis: the three tests | `python -m pvb analyse` | `results/` (tables and charts) | Working; better text features to add |
 | Part 2: Polymarket prices | `pvb/polymarket.py` | | Downloads work, analysis to do |
 
 ## Getting started
@@ -79,7 +79,9 @@ The full scrape takes about 25 hours, so the tables the analysis needs are alrea
 
 The matched tables already hold the odds, so the analysis (step 7) needs nothing else. To redo the matching (step 6), first download the odds with `python -m pvb odds football` and `python -m pvb odds tennis` (about a minute), then run `python -m pvb match`. The study ends on 14 November 2026 (`STUDY_END` in `pvb/config.py`), the last day in the tennis files we downloaded, so the matching gives the same tables even after tennis-data adds newer matches.
 
-After a new `parse`, run `features` and `match` again. A test fails if the tables in `data/processed/` don't agree with each other.
+After a new `parse`, run `features`, `match` and `analyse` again. A test fails if the tables in `data/processed/` don't agree with each other, or if `results/` doesn't match a fresh run.
+
+The results are in `results/`, on GitHub too. [results/README.md](results/README.md) explains how to read each table.
 
 The article text itself is not on GitHub (see the scraping rules). To re-run the text steps, ask us for `previews_full_text.zip` (66 MB), which we share privately with the team and the examiner. Unzip it into `data/interim/`, then run `python -m pvb features`.
 
@@ -97,8 +99,9 @@ pundits-vs-bookies/
 │   ├── features.py       text features (started)
 │   ├── matching.py       previews -> games and odds
 │   ├── polymarket.py     part 2: Polymarket tennis prices
-│   └── analysis.py       the three tests (to do)
+│   └── analysis.py       the three tests -> results/
 ├── tests/                tests, no internet needed
+├── results/              tables and charts from `python -m pvb analyse`
 ├── data/                 only data/processed/ is on GitHub, see data/README.md
 ├── docs/plan.md          the project plan
 └── notebooks/            exploration, as .py files with # %% cells

@@ -14,6 +14,8 @@ data/processed/*
 # ...except the text-free tables in data/processed/. They go on GitHub so the analysis
 # can be re-run without scraping; tests/test_shared_data.py checks they hold no text.
 !data/processed/*.csv
+# ...and the result tables, which hold only numbers
+!results/*.csv
 
 # Teammates' working notes (e.g. the Kalshi PDFs), shared outside the repo
 docs/docs_from_team/

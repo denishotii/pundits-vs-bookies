@@ -59,8 +59,9 @@ def naive_bayes_probabilities(previews: pd.DataFrame) -> pd.DataFrame:
     """TODO (text analysis): P(home win / draw / away win) learned from the words.
 
     Plan: bag of words (sklearn CountVectorizer) + MultinomialNB, trained on
-    2021/22-2024/25 and applied to 2025/26 and 2026/27 only, so the test
-    seasons are never seen during training.
+    the training seasons in config.SPLITS (2021/22-2024/25) only, so the test
+    seasons are never seen during training. Then add the new columns to
+    TEXT_FEATURES in analysis.py; the same goes for tone_by_side.
     """
     raise NotImplementedError("naive_bayes_probabilities: see docs/plan.md, text analysis role")
 

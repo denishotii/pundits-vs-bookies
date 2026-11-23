@@ -49,6 +49,13 @@ TENNIS_YEARS = (2024, 2025, 2026)
 # file ends on 14 Nov, so a fixed end keeps re-runs identical when tennis-data adds new matches.
 STUDY_END = "2026-11-14"
 
+# Which seasons each step may learn from (docs/plan.md, strategy 1). Models are fitted on
+# "train" only, tested once on "test", and the same model is checked once more on "check".
+SPLITS = {
+    "football": {"train": ("2122", "2223", "2324", "2425"), "test": ("2526",), "check": ("2627",)},
+    "tennis": {"train": ("2024", "2025"), "test": ("2026",)},
+}
+
 # Polite scraping -------------------------------------------------------------
 
 REQUEST_DELAY = float(os.getenv("PVB_DELAY", "2.0"))  # seconds between requests to one site

@@ -6,6 +6,7 @@
     python -m pvb odds football               # 4. download odds files
     python -m pvb features                    # 5. text features -> data/processed/features.csv
     python -m pvb match                       # 6. previews -> games and odds -> data/processed/matched_*.csv
+    python -m pvb analyse                     # 7. the tests -> tables and charts in results/
 """
 
 import argparse
@@ -114,8 +115,17 @@ def cmd_match(args) -> None:
             print(f"{sport}: {len(results[sport])} previews matched to a game -> {path}")
 
 
-def cmd_todo(args) -> None:
-    sys.exit(f"`{args.command}` is not built yet. See docs/plan.md for the plan.")
+def cmd_analyse(args) -> None:
+    from .analysis import RESULTS, run
+
+    try:
+        tables = run()
+    except FileNotFoundError as exc:  # no matched tables yet
+        sys.exit(str(exc))
+    with pd.option_context("display.width", 200, "display.max_columns", 20, "display.max_rows", 200):
+        for name, table in tables.items():
+            print(f"\n{name}\n{table.round(3).to_string(index=False)}")
+    print(f"\nTables and charts -> {RESULTS}")
 
 
 def main(argv=None) -> None:
@@ -154,8 +164,8 @@ def main(argv=None) -> None:
     p.add_argument("--sport", choices=config.SPORTS, help="only this sport (default: both)")
     p.set_defaults(func=cmd_match)
 
-    p = sub.add_parser("analyse", parents=[common], help="run the tests (to do)")
-    p.set_defaults(func=cmd_todo)
+    p = sub.add_parser("analyse", parents=[common], help="run the tests -> tables and charts in results/")
+    p.set_defaults(func=cmd_analyse)
 
     args = parser.parse_args(argv)
     logging.basicConfig(level=logging.DEBUG if args.verbose else logging.INFO,

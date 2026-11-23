@@ -36,18 +36,18 @@ Sports Mole previews every competition, not just our six leagues: about 45,000 f
 ## Strategy
 
 1. **Past data is the main test.** Football: train on 2021/22 to 2024/25, test once on 2025/26. Then run the same frozen model once on 2026/27 so far (676 games up to 14 November), a second check on games only weeks old. Tennis: train on 2024 and 2025, test once on 2026.
-2. **Did the odds react?** Previews come out about 2 days before kick-off (median 50 hours). We compare football-data's early odds with the closing odds, the last odds before kick-off. The early odds are taken on the Friday afternoon (weekend games) or Tuesday afternoon (midweek games), which for most previews is after the preview came out. So the test asks whether the odds keep moving towards the pick after that snapshot, and we report Sunday and Monday games, where the snapshot usually comes first, separately. Football only: tennis-data has closing odds only.
+2. **Did the odds react?** Previews come out about 2 days before kick-off (median 50 hours). We compare football-data's early odds with the closing odds, the last odds before kick-off. The early odds are taken on the Friday afternoon (weekend games) or Tuesday afternoon (midweek games), which for most previews is after the preview came out. So the test asks whether the odds keep moving towards the pick after that snapshot. We also report the games where the preview came out after the snapshot (about 2 in 10) separately, because there the move includes the reaction to the preview itself. Football only: tennis-data has closing odds only.
 3. **Upcoming games are a live check** on the weekends of 21 November, 28 November and 5 December (about 180 matches). This is for the demo, not the evidence.
 
-## Pilot results
+## First results (all matched games)
 
-| | Football (36 previews) | Tennis (60 previews) |
+| | Football (12,302 games) | Tennis (853 matches) |
 | --- | --- | --- |
-| Pick agrees with the bookmaker favourite | 53% | 90% |
-| Pick is right | 36% | 82% |
-| Backing the favourite is right | 50% | 82% |
+| Pick agrees with the bookmaker favourite | 62% | 87% |
+| Pick is right | 46% | 72% |
+| Backing the favourite is right | 53% | 73% |
 
-In the pilot, football pundits predicted a draw in 42% of previews, while the market never made a draw the favourite.
+Football pundits pick a draw in 31% of previews, but only 25% of games end in one, and the market almost never makes a draw the favourite. The three tests are in [results/](../results/README.md), made by `python -m pvb analyse`.
 
 ## Roles
 
