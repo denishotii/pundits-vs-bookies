@@ -43,7 +43,7 @@ LEAGUES = {
 }
 
 # Seasons written the football-data way: "2122" = 2021/22
-FOOTBALL_SEASONS = ("2122", "2223", "2324", "2425", "2526")
+FOOTBALL_SEASONS = ("2122", "2223", "2324", "2425", "2526", "2627")  # 2026/27 up to STUDY_END
 TENNIS_YEARS = (2024, 2025, 2026)
 # The last match day we study. Our odds files were downloaded on 16 Nov 2026 and the 2026 ATP
 # file ends on 14 Nov, so a fixed end keeps re-runs identical when tennis-data adds new matches.

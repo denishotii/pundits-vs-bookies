@@ -59,8 +59,8 @@ def naive_bayes_probabilities(previews: pd.DataFrame) -> pd.DataFrame:
     """TODO (text analysis): P(home win / draw / away win) learned from the words.
 
     Plan: bag of words (sklearn CountVectorizer) + MultinomialNB, trained on
-    2021/22-2024/25 and applied to 2025/26 only, so the test season is never
-    seen during training.
+    2021/22-2024/25 and applied to 2025/26 and 2026/27 only, so the test
+    seasons are never seen during training.
     """
     raise NotImplementedError("naive_bayes_probabilities: see docs/plan.md, text analysis role")
 
