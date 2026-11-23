@@ -35,15 +35,23 @@ SECTIONS = {"match preview": "text_preview", "team news": "text_team_news", "hea
 TEXT_COLUMNS = ["text_intro", "text_preview", "text_team_news", "text_head_to_head", "text_verdict", "text_other"]
 PICK_COLUMNS = ["pick_home_goals", "pick_away_goals", "pick_result", "pick_winner", "pick_sets"]
 
-# "We say: Brighton & Hove Albion 2-2 Leeds United"
-FOOTBALL_PICK = re.compile(r"^We say:\s*(?P<home>.+?)\s+(?P<hg>\d+)\s*-\s*(?P<ag>\d+)\s+(?P<away>.+)$", re.I)
-# "We say: Medvedev to win in three sets" (the sets part is sometimes missing)
-TENNIS_PICK = re.compile(
-    r"^We say:\s*(?P<winner>.+?)\s+to win\b(?:\s+in\s+(?P<sets>straight|two|three|four|five)\s+sets)?", re.I
+# "We say: Brighton & Hove Albion 2-2 Leeds United" (also with a typo that glues the score to a name)
+FOOTBALL_PICK = re.compile(
+    r"^We say:\s*(?P<home>.+?)\s*(?<!\d)(?P<hg>\d+)\s*-\s*(?P<ag>\d+)(?!\d)\s*(?P<away>.+)$", re.I
 )
-# "Preview: Arsenal vs Chelsea - prediction, ..." or, in tennis,
-# "Preview: ASB Classic: Elina Svitolina vs. Sonay Kartal - prediction, ..."
-TITLE = re.compile(r"^Preview:\s*(?:[^:]+:\s+)?(?P<a>.+?)\s+vs\.?\s+(?P<b>.+?)\s+-\s+", re.I)
+# "We say: Medvedev to win in three sets", "We say: Medvedev to win" or "We say: Medvedev in three sets"
+SETS = r"(?:straight|two|three|four|five)"
+TENNIS_PICK = re.compile(
+    rf"^We say:\s*(?P<winner>.+?)\s+(?:to win\b|(?=in\s+{SETS}\s+sets))(?:\s*in\s+(?P<sets>{SETS})\s+sets)?", re.I
+)
+# "Preview: Arsenal vs Chelsea - prediction, ..." and the variants Sports Mole also uses:
+# a tournament prefix ("Preview: ASB Classic: Svitolina vs. Kartal - ..."), no space before the dash
+# ("Fritz vs. Zverev- prediction"), an en dash or a colon, no dash at all ("... vs. Collins"),
+# a doubled "Preview:" and a stray "vs" ("Iga Swiatek vs - prediction")
+TITLE = re.compile(
+    r"^(?:Preview:\s*)+(?:[^:]+:\s+)?(?P<a>.+?)\s+vs\.?\s+(?P<b>.+?)(?:\s+vs\.?)?(?:\s*[-–:]\s|\s+prediction\b|\s*$)",
+    re.I,
+)
 SLUG = re.compile(r"/preview/(?P<a>.+?)-vs-(?P<b>.+?)-prediction")
 # The byline and a promo link are not part of the preview text
 NOISE = re.compile(r"^(By [^|]+\|.*|For data analysis of the most likely results.*)$", re.I)
@@ -90,6 +98,7 @@ def parse_pick(verdict: str | None, sport: str | None) -> dict:
     pick: dict[str, object] = {column: None for column in PICK_COLUMNS}
     if not verdict:
         return pick
+    verdict = verdict.splitlines()[0].strip()  # drop a second line such as "(after extra time)"
 
     if sport == "football":
         match = FOOTBALL_PICK.match(verdict)

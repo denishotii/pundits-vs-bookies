@@ -24,7 +24,7 @@ The full plan, with scope, strategy and timeline, is in [docs/plan.md](docs/plan
 | 3. Parse pick, sections, date | `python -m pvb parse` | `data/interim/previews.csv`, `data/processed/picks.csv` | Working |
 | 4. Download odds | `python -m pvb odds football` (or `tennis`) | `data/raw/odds/` | Working |
 | 5. Text features | `python -m pvb features` | `data/processed/features.csv` | Started |
-| 6. Match previews to games | `python -m pvb match` | `data/processed/matched.csv` | To do |
+| 6. Match previews to games | `python -m pvb match` | `data/processed/matched_football.csv`, `matched_tennis.csv` | Working |
 | 7. Analysis | `python -m pvb analyse` | Tables and charts | To do |
 | Part 2: Polymarket prices | `pvb/polymarket.py` | | Downloads work, analysis to do |
 
@@ -61,7 +61,7 @@ python -m pvb parse
 python -m pvb odds football --seasons 2526
 ```
 
-Run every command from the project folder.
+Run every command from the project folder. The sample `parse` overwrites `data/processed/picks.csv` with a 20-row table: undo it with `git restore data/processed/` and don't commit it.
 
 **Spyder:** start it from the activated environment (`conda activate pvb`, then `spyder`). Add the project folder under Tools > PYTHONPATH manager. Then you can write, for example, `from pvb.parse import parse_all`.
 
@@ -75,9 +75,11 @@ The full scrape takes about 25 hours, so the tables the analysis needs are alrea
 | --- | --- | --- |
 | `picks.csv` | preview (44,948) | Date, sport, teams or players, author, the "We say" pick, word count |
 | `features.csv` | preview | Numbers measured from the text, such as uncertainty words per 1,000 words |
-| `matched.csv` | game | Preview, odds and result side by side (once matching is done) |
+| `matched_football.csv`, `matched_tennis.csv` | game | The pick, the odds and the result side by side |
 
-Matching and analysis (steps 6 and 7) run on these tables plus the odds, which `python -m pvb odds` downloads in about a minute.
+The matched tables already hold the odds, so the analysis (step 7) needs nothing else. To redo the matching (step 6), first download the odds with `python -m pvb odds football` and `python -m pvb odds tennis` (about a minute), then run `python -m pvb match`. The study ends on 14 November 2026 (`STUDY_END` in `pvb/config.py`), the last day in the tennis files we downloaded, so the matching gives the same tables even after tennis-data adds newer matches.
+
+After a new `parse`, run `features` and `match` again. A test fails if the tables in `data/processed/` don't agree with each other.
 
 The article text itself is not on GitHub (see the scraping rules). To re-run the text steps, ask us for `previews_full_text.zip` (66 MB), which we share privately with the team and the examiner. Unzip it into `data/interim/`, then run `python -m pvb features`.
 
@@ -93,7 +95,7 @@ pundits-vs-bookies/
 │   ├── parse.py          raw HTML -> one row per preview
 │   ├── odds.py           football-data and tennis-data downloads
 │   ├── features.py       text features (started)
-│   ├── matching.py       previews -> games (to do)
+│   ├── matching.py       previews -> games and odds
 │   ├── polymarket.py     part 2: Polymarket tennis prices
 │   └── analysis.py       the three tests (to do)
 ├── tests/                tests, no internet needed
@@ -107,14 +109,14 @@ pundits-vs-bookies/
 - Each scraper waits 2 seconds between pages, and at most two run at once (about one request per second in total). Nothing that robots.txt disallows.
 - The scraper names itself in its User-Agent, using `PVB_CONTACT`.
 - Each page is downloaded once and saved. Parsing always runs on the saved copy.
-- Scraped text never goes on GitHub. Sports Mole's terms forbid republishing its content, so we publish only numbers and results: the tables in `data/processed/`, which a test checks for text. The full text is shared privately, with the team and the examiner only.
+- Scraped text never goes on GitHub. Sports Mole's terms forbid republishing its content, so we publish no article text, only facts and numbers taken from it: the tables in `data/processed/`, which a test checks for text. The full text is shared privately, with the team and the examiner only.
 
 ## Team
 
 | Role | Owns | Hands over | Person |
 | --- | --- | --- | --- |
 | Scraper | `sportsmole.py`, `parse.py` | `previews.csv` | |
-| Odds and matching | `odds.py`, `matching.py` | `matched.csv` | |
+| Odds and matching | `odds.py`, `matching.py` | `matched_*.csv` | |
 | Text analysis | `features.py` | `features.csv` | |
 | Part 2 (Polymarket) | `polymarket.py` | Part 2 results | |
 | Analysis and writing | `analysis.py`, proposal, slides | Proposal and slides | |
@@ -123,7 +125,7 @@ pundits-vs-bookies/
 
 - Pull before you start. Work on a branch named after your part, such as `matching/football`, and open a pull request.
 - Run `python -m pytest` before you push. GitHub runs the tests on every push too.
-- Keep all data files inside `data/`. Git ignores that folder, apart from the text-free tables in `data/processed/`. To use a shared copy instead, set `PVB_DATA` to its path.
+- Keep all data files inside `data/`. Git ignores that folder, apart from the text-free tables in `data/processed/`. To use a shared copy of `raw/` and `interim/`, set `PVB_DATA` to its path; `data/processed/` always stays in the repo.
 - New to git? GitHub Desktop does all of this with buttons. Don't use GitHub's "Upload files" button: it ignores `.gitignore` and could publish scraped text.
 
 Deadlines: submission on 13 December 2026, presentation on 18 December 2026.

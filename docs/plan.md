@@ -6,8 +6,8 @@ If it does, a bettor could use the text to beat the bookies. If it doesn't, the 
 
 ## Scope
 
-- **Football (core):** Premier League, Championship, Bundesliga, La Liga, Serie A, Ligue 1, seasons 2021/22 to 2025/26. About 2,000 matches per season have a preview (86% in 2025/26).
-- **Tennis (second test):** ATP and WTA previews, 2024 to 2026, about 880 of them.
+- **Football (core):** Premier League, Championship, Bundesliga, La Liga, Serie A, Ligue 1, seasons 2021/22 to 2025/26. About 2,300 league games per season; 99% of them have a matched preview (2,271 of 2,304 in 2025/26).
+- **Tennis (second test):** ATP and WTA previews, 2024 to 2026: 907 previews, 854 matched to a match with odds.
 - **Part 2 (Polymarket, from the TennisEdge draft):** when a tennis favourite loses the first set, does the price on Polymarket, a prediction market, fall further than it should?
 - **Out:** live-score sites (they block scrapers or forbid it), real betting, apps, Reddit or X, cup and international football.
 
@@ -20,7 +20,7 @@ If it does, a bettor could use the text to beat the bookies. If it doesn't, the 
 | tennis-data.co.uk | Results, set scores, closing odds | Excel download |
 | Polymarket API | Tennis prices before and during play, set 1 markets | Public API |
 
-Sports Mole previews every competition, not just our six leagues: about 45,000 football and tennis previews from 2021 to 2026. Matching keeps about 10,000 of them.
+Sports Mole previews every competition, not just our six leagues: about 45,000 football and tennis previews from 2021 to 2026. Matching keeps 12,481 of them (11,627 football, 854 tennis).
 
 ## Text analysis
 
@@ -35,8 +35,8 @@ Sports Mole previews every competition, not just our six leagues: about 45,000 f
 
 ## Strategy
 
-1. **Past data is the main test.** Train on 2021/22 to 2024/25, test once on 2025/26.
-2. **Did the odds react?** Previews come out about 2 days before kick-off (median 48 hours in the pilot). We compare earlier odds with closing odds, the last odds before kick-off.
+1. **Past data is the main test.** Football: train on 2021/22 to 2024/25, test once on 2025/26. Tennis: train on 2024 and 2025, test once on 2026.
+2. **Did the odds react?** Previews come out about 2 days before kick-off (median 50 hours). We compare football-data's early odds with the closing odds, the last odds before kick-off. The early odds are taken on the Friday afternoon (weekend games) or Tuesday afternoon (midweek games), which for most previews is after the preview came out. So the test asks whether the odds keep moving towards the pick after that snapshot, and we report Sunday and Monday games, where the snapshot usually comes first, separately. Football only: tennis-data has closing odds only.
 3. **Upcoming games are a live check** on the weekends of 21 November, 28 November and 5 December (about 180 matches). This is for the demo, not the evidence.
 
 ## Pilot results
@@ -47,7 +47,7 @@ Sports Mole previews every competition, not just our six leagues: about 45,000 f
 | Pick is right | 36% | 82% |
 | Backing the favourite is right | 50% | 82% |
 
-Football pundits predict a draw in 42% of previews, while the market never makes a draw the favourite.
+In the pilot, football pundits predicted a draw in 42% of previews, while the market never made a draw the favourite.
 
 ## Roles
 

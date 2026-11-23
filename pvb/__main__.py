@@ -2,9 +2,10 @@
 
     python -m pvb urls --years 2021-2026      # 1. find preview URLs in the sitemaps
     python -m pvb scrape --limit 20           # 2. download raw HTML (resumable)
-    python -m pvb parse                       # 3. raw HTML -> data/interim/previews.csv
+    python -m pvb parse                       # 3. raw HTML -> data/interim/previews.csv, data/processed/picks.csv
     python -m pvb odds football               # 4. download odds files
     python -m pvb features                    # 5. text features -> data/processed/features.csv
+    python -m pvb match                       # 6. previews -> games and odds -> data/processed/matched_*.csv
 """
 
 import argparse
@@ -67,13 +68,13 @@ def cmd_scrape(args) -> None:
 
 
 def cmd_parse(args) -> None:
-    from .parse import PREVIEWS_CSV, parse_all
+    from .parse import PICKS_CSV, PREVIEWS_CSV, parse_all
 
     df = parse_all()
     if df.empty:
         sys.exit(f"No saved pages in {config.SPORTSMOLE_RAW}. Run `python -m pvb scrape` first.")
     has_pick = df["pick_result"].notna() | df["pick_winner"].notna()
-    print(f"{len(df)} previews parsed, {has_pick.sum()} with a readable pick -> {PREVIEWS_CSV}")
+    print(f"{len(df)} previews parsed, {has_pick.sum()} with a readable pick -> {PREVIEWS_CSV} and {PICKS_CSV}")
 
 
 def cmd_odds(args) -> None:
@@ -95,6 +96,22 @@ def cmd_features(args) -> None:
 
     df = build()
     print(f"{len(df)} rows -> {FEATURES_CSV}")
+
+
+def cmd_match(args) -> None:
+    from .matching import FOOTBALL_CSV, TENNIS_CSV, build
+    from .parse import PICKS_CSV
+
+    if not PICKS_CSV.exists():
+        sys.exit(f"No {PICKS_CSV.name} yet. Run `python -m pvb parse` first.")
+    sports = [args.sport] if args.sport else list(config.SPORTS)
+    try:
+        results = build(sports)
+    except FileNotFoundError as exc:  # odds not downloaded yet
+        sys.exit(str(exc))
+    for sport, path in [("football", FOOTBALL_CSV), ("tennis", TENNIS_CSV)]:
+        if sport in results:
+            print(f"{sport}: {len(results[sport])} previews matched to a game -> {path}")
 
 
 def cmd_todo(args) -> None:
@@ -120,7 +137,7 @@ def main(argv=None) -> None:
     p.add_argument("--limit", type=int, help="stop after this many pages (good for testing)")
     p.set_defaults(func=cmd_scrape)
 
-    p = sub.add_parser("parse", parents=[common], help="saved pages -> data/interim/previews.csv")
+    p = sub.add_parser("parse", parents=[common], help="saved pages -> data/interim/previews.csv and data/processed/picks.csv")
     p.set_defaults(func=cmd_parse)
 
     p = sub.add_parser("odds", parents=[common], help="download football-data or tennis-data files")
@@ -133,8 +150,12 @@ def main(argv=None) -> None:
     p = sub.add_parser("features", parents=[common], help="previews -> data/processed/features.csv")
     p.set_defaults(func=cmd_features)
 
-    for name, text in [("match", "match previews to odds (to do)"), ("analyse", "run the tests (to do)")]:
-        sub.add_parser(name, parents=[common], help=text).set_defaults(func=cmd_todo)
+    p = sub.add_parser("match", parents=[common], help="match previews to games and odds -> data/processed/")
+    p.add_argument("--sport", choices=config.SPORTS, help="only this sport (default: both)")
+    p.set_defaults(func=cmd_match)
+
+    p = sub.add_parser("analyse", parents=[common], help="run the tests (to do)")
+    p.set_defaults(func=cmd_todo)
 
     args = parser.parse_args(argv)
     logging.basicConfig(level=logging.DEBUG if args.verbose else logging.INFO,

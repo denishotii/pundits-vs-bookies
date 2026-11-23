@@ -12,8 +12,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 DATA = Path(os.getenv("PVB_DATA", ROOT / "data"))  # e.g. point it at a shared drive
 RAW = DATA / "raw"              # exactly what we downloaded, never edited
-INTERIM = DATA / "interim"      # parsed tables (one row per preview, per match, ...)
-PROCESSED = DATA / "processed"  # final tables used in the analysis
+INTERIM = DATA / "interim"      # parsed tables with article text (preview_urls.csv, previews.csv)
+# The tables used in the analysis. They are on GitHub, so they always stay in the repo, even with PVB_DATA set.
+PROCESSED = ROOT / "data" / "processed"
 
 SPORTSMOLE_RAW = RAW / "sportsmole"
 ODDS_RAW = RAW / "odds"
@@ -44,6 +45,9 @@ LEAGUES = {
 # Seasons written the football-data way: "2122" = 2021/22
 FOOTBALL_SEASONS = ("2122", "2223", "2324", "2425", "2526")
 TENNIS_YEARS = (2024, 2025, 2026)
+# The last match day we study. Our odds files were downloaded on 16 Nov 2026 and the 2026 ATP
+# file ends on 14 Nov, so a fixed end keeps re-runs identical when tennis-data adds new matches.
+STUDY_END = "2026-11-14"
 
 # Polite scraping -------------------------------------------------------------
 

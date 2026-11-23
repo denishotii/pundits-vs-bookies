@@ -3519,7 +3519,7 @@ article_id,sport,pick_result,pick_home_goals,pick_away_goals,pick_winner,pick_se
 458131,football,A,0.0,3.0,,,4,1.9120458891013383
 458142,football,H,2.0,0.0,,,5,2.73224043715847
 458148,football,D,1.0,1.0,,,0,2.0876826722338206
-458151,football,,,,,,0,3.7831021437578816
+458151,football,H,2.0,1.0,,,0,3.7831021437578816
 458153,football,A,1.0,2.0,,,0,3.56718192627824
 458160,football,D,1.0,1.0,,,1,2.808988764044944
 458164,football,D,1.0,1.0,,,4,6.180469715698393
@@ -6109,7 +6109,7 @@ article_id,sport,pick_result,pick_home_goals,pick_away_goals,pick_winner,pick_se
 470369,football,D,1.0,1.0,,,2,6.884681583476764
 470374,football,A,1.0,2.0,,,2,0.0
 470384,football,H,2.0,1.0,,,4,3.1201248049921997
-470387,football,,,,,,4,4.335260115606936
+470387,football,A,1.0,2.0,,,4,4.335260115606936
 470388,football,H,2.0,1.0,,,4,1.3157894736842106
 470392,football,A,0.0,1.0,,,3,1.287001287001287
 470393,football,A,1.0,2.0,,,2,0.0
@@ -6119,7 +6119,7 @@ article_id,sport,pick_result,pick_home_goals,pick_away_goals,pick_winner,pick_se
 470398,football,D,1.0,1.0,,,1,4.415011037527594
 470400,football,H,2.0,1.0,,,2,6.2208398133748055
 470402,football,H,2.0,0.0,,,2,0.0
-470403,football,,,,,,3,1.4705882352941178
+470403,football,H,2.0,1.0,,,3,1.4705882352941178
 470404,football,H,2.0,1.0,,,2,3.4482758620689653
 470406,football,D,1.0,1.0,,,2,7.947019867549669
 470408,football,H,3.0,1.0,,,3,3.5545023696682465
@@ -6511,7 +6511,7 @@ article_id,sport,pick_result,pick_home_goals,pick_away_goals,pick_winner,pick_se
 471815,football,H,2.0,0.0,,,5,6.451612903225806
 471824,football,H,3.0,1.0,,,3,1.4124293785310735
 471825,football,A,1.0,2.0,,,3,3.3557046979865772
-471827,football,,,,,,1,6.7658998646820026
+471827,football,A,2.0,3.0,,,1,6.7658998646820026
 471832,football,H,2.0,1.0,,,2,4.926108374384237
 471833,football,D,1.0,1.0,,,3,2.840909090909091
 471836,football,H,2.0,0.0,,,3,3.3112582781456954
@@ -9881,7 +9881,7 @@ article_id,sport,pick_result,pick_home_goals,pick_away_goals,pick_winner,pick_se
 485742,football,D,1.0,1.0,,,3,6.87757909215956
 485745,football,H,2.0,0.0,,,0,5.689900426742532
 485747,football,H,2.0,1.0,,,2,4.581901489117984
-485748,football,,,,,,2,3.9011703511053315
+485748,football,A,2.0,3.0,,,2,3.9011703511053315
 485762,football,H,2.0,0.0,,,2,5.084745762711864
 485767,football,A,0.0,1.0,,,1,3.468208092485549
 485769,football,A,1.0,2.0,,,2,4.491017964071856
@@ -11426,7 +11426,7 @@ article_id,sport,pick_result,pick_home_goals,pick_away_goals,pick_winner,pick_se
 492258,football,A,1.0,2.0,,,2,2.4301336573511545
 492260,football,H,3.0,1.0,,,3,1.364256480218281
 492261,football,D,2.0,2.0,,,1,2.244668911335578
-492264,tennis,,,,,,0,0.0
+492264,tennis,,,,Hubert Hurkacz,three,0,0.0
 492273,football,D,2.0,2.0,,,3,1.7006802721088434
 492287,football,A,1.0,2.0,,,6,5.167958656330749
 492288,football,D,1.0,1.0,,,5,5.357142857142857
@@ -11566,7 +11566,7 @@ article_id,sport,pick_result,pick_home_goals,pick_away_goals,pick_winner,pick_se
 492695,football,A,1.0,2.0,,,0,2.183406113537118
 492696,football,A,0.0,2.0,,,2,2.824858757062147
 492697,football,A,0.0,1.0,,,1,6.0606060606060606
-492700,tennis,,,,,,0,0.0
+492700,tennis,,,,Stefano Tsitsipas,three,0,0.0
 492704,football,A,1.0,2.0,,,0,1.4104372355430184
 492706,football,A,1.0,2.0,,,1,4.366812227074236
 492707,football,A,1.0,2.0,,,2,3.3112582781456954
@@ -11889,7 +11889,7 @@ article_id,sport,pick_result,pick_home_goals,pick_away_goals,pick_winner,pick_se
 493813,football,H,2.0,0.0,,,2,1.2224938875305624
 493824,football,H,2.0,1.0,,,2,1.4492753623188406
 493827,football,A,1.0,2.0,,,3,6.385696040868455
-493830,tennis,,,,,,0,2.4600246002460024
+493830,tennis,,,,Kyrgios,four,0,2.4600246002460024
 493832,football,H,2.0,0.0,,,2,4.932182490752158
 493837,football,H,3.0,0.0,,,0,5.008347245409015
 493855,football,H,1.0,0.0,,,1,0.0
@@ -11932,7 +11932,7 @@ article_id,sport,pick_result,pick_home_goals,pick_away_goals,pick_winner,pick_se
 494008,football,H,2.0,1.0,,,2,0.0
 494009,football,H,2.0,0.0,,,2,3.2467532467532467
 494023,football,A,1.0,2.0,,,1,8.928571428571429
-494024,tennis,,,,,,0,3.5211267605633805
+494024,tennis,,,,Ruud,five,0,3.5211267605633805
 494027,football,H,1.0,0.0,,,5,1.6835016835016836
 494051,football,H,2.0,1.0,,,2,10.819165378670789
 494053,football,D,1.0,1.0,,,6,6.0606060606060606
@@ -12027,12 +12027,12 @@ article_id,sport,pick_result,pick_home_goals,pick_away_goals,pick_winner,pick_se
 494277,football,D,1.0,1.0,,,3,2.849002849002849
 494278,football,D,1.0,1.0,,,4,0.0
 494280,football,H,3.0,1.0,,,0,2.1052631578947367
-494282,tennis,,,,,,0,0.0
+494282,tennis,,,,Iga Swiatek,three,0,0.0
 494284,football,D,2.0,2.0,,,6,0.0
 494285,football,H,2.0,1.0,,,5,1.5552099533437014
 494289,football,A,1.0,3.0,,,5,3.3840947546531304
 494306,football,D,1.0,1.0,,,3,3.048780487804878
-494307,tennis,,,,,,0,0.0
+494307,tennis,,,,Alcaraz,four,0,0.0
 494310,football,A,1.0,2.0,,,3,2.4154589371980677
 494339,football,H,2.0,1.0,,,6,1.5625
 494340,football,D,1.0,1.0,,,3,1.953125
@@ -13256,7 +13256,7 @@ article_id,sport,pick_result,pick_home_goals,pick_away_goals,pick_winner,pick_se
 498626,football,A,1.0,2.0,,,4,0.0
 498629,football,D,1.0,1.0,,,1,0.0
 498630,football,H,3.0,1.0,,,1,4.744958481613286
-498631,football,,,,,,3,1.8726591760299625
+498631,football,H,1.0,0.0,,,3,1.8726591760299625
 498634,football,A,1.0,2.0,,,1,3.3783783783783785
 498635,football,H,1.0,0.0,,,2,4.878048780487805
 498639,football,H,2.0,1.0,,,3,2.793296089385475
@@ -18187,7 +18187,7 @@ article_id,sport,pick_result,pick_home_goals,pick_away_goals,pick_winner,pick_se
 517723,football,A,0.0,2.0,,,3,3.1645569620253164
 517725,football,H,4.0,0.0,,,0,1.6339869281045751
 517728,football,D,1.0,1.0,,,0,4.665629860031104
-517729,tennis,,,,,,0,2.232142857142857
+517729,tennis,,,,Tsitsipas,five,0,2.232142857142857
 517738,football,A,0.0,2.0,,,0,4.511278195488722
 517742,football,H,2.0,1.0,,,2,0.0
 517744,football,H,3.0,2.0,,,1,2.0222446916076846
@@ -26575,7 +26575,7 @@ article_id,sport,pick_result,pick_home_goals,pick_away_goals,pick_winner,pick_se
 548490,football,H,2.0,1.0,,,0,1.3531799729364005
 548491,football,D,1.0,1.0,,,2,2.9761904761904763
 548492,football,H,3.0,1.0,,,4,2.100840336134454
-548494,football,,,,,,0,0.0
+548494,football,D,2.0,2.0,,,0,0.0
 548495,football,A,1.0,2.0,,,3,0.0
 548497,football,H,2.0,0.0,,,2,0.0
 548498,football,H,1.0,0.0,,,1,0.0
@@ -30891,7 +30891,7 @@ article_id,sport,pick_result,pick_home_goals,pick_away_goals,pick_winner,pick_se
 561637,tennis,,,,Raducanu,two,0,2.9542097488921715
 561663,football,H,2.0,1.0,,,0,0.0
 561671,football,A,1.0,2.0,,,8,1.3831258644536653
-561673,football,,,,,,0,0.0
+561673,football,A,1.0,2.0,,,0,0.0
 561677,football,D,2.0,2.0,,,0,1.721170395869191
 561678,football,A,0.0,2.0,,,0,3.527336860670194
 561689,football,A,0.0,1.0,,,3,1.4164305949008498
@@ -32642,7 +32642,7 @@ article_id,sport,pick_result,pick_home_goals,pick_away_goals,pick_winner,pick_se
 567584,football,D,1.0,1.0,,,4,3.367003367003367
 567586,football,,,,,,1,4.132231404958677
 567589,football,D,1.0,1.0,,,3,1.4492753623188406
-567595,football,,,,,,7,2.560819462227913
+567595,football,H,2.0,1.0,,,7,2.560819462227913
 567598,football,H,2.0,1.0,,,2,2.73224043715847
 567600,football,A,0.0,1.0,,,2,1.5923566878980893
 567627,football,D,2.0,2.0,,,4,0.0
@@ -32659,8 +32659,8 @@ article_id,sport,pick_result,pick_home_goals,pick_away_goals,pick_winner,pick_se
 567656,football,D,2.0,2.0,,,2,2.320185614849188
 567658,football,H,2.0,0.0,,,1,3.257328990228013
 567659,football,H,1.0,0.0,,,0,5.172413793103448
-567660,football,,,,,,3,2.6109660574412534
-567661,football,,,,,,3,1.3297872340425532
+567660,football,H,2.0,0.0,,,3,2.6109660574412534
+567661,football,H,2.0,0.0,,,3,1.3297872340425532
 567675,football,H,3.0,1.0,,,2,2.0202020202020203
 567677,tennis,,,,Swiatek,three,0,2.728512960436562
 567678,tennis,,,,Medvedev,three,0,2.886002886002886
@@ -36335,7 +36335,7 @@ article_id,sport,pick_result,pick_home_goals,pick_away_goals,pick_winner,pick_se
 581004,football,H,3.0,1.0,,,1,3.316749585406302
 581007,football,D,1.0,1.0,,,2,5.319148936170213
 581008,football,H,2.0,0.0,,,0,0.0
-581010,football,,,,,,0,0.0
+581010,football,H,1.0,0.0,,,0,0.0
 581011,football,A,0.0,2.0,,,3,3.1695721077654517
 581012,football,A,1.0,2.0,,,1,5.665722379603399
 581013,football,H,1.0,0.0,,,0,1.5723270440251573
@@ -38025,7 +38025,7 @@ article_id,sport,pick_result,pick_home_goals,pick_away_goals,pick_winner,pick_se
 586280,football,D,1.0,1.0,,,9,1.4513788098693758
 586281,football,A,1.0,2.0,,,5,2.4096385542168677
 586282,football,H,2.0,1.0,,,3,1.858736059479554
-586283,football,,,,,,5,3.067484662576687
+586283,football,H,2.0,1.0,,,5,3.067484662576687
 586286,football,A,1.0,2.0,,,3,0.0
 586288,football,H,3.0,1.0,,,2,0.0
 586289,football,H,2.0,1.0,,,1,4.545454545454546

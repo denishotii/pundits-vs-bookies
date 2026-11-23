@@ -5,7 +5,7 @@ import argparse
 import pandas as pd
 import pytest
 
-from pvb import config, sportsmole
+from pvb import config, odds, sportsmole
 from pvb.__main__ import season_code, year_range
 from pvb.features import count_terms
 from pvb.matching import normalise_name
@@ -92,3 +92,24 @@ def test_season_code():
     assert season_code("2526") == "2526"
     with pytest.raises(argparse.ArgumentTypeError):
         season_code("2025")
+
+
+def test_load_football_reads_uk_kickoffs_as_utc(tmp_path, monkeypatch):
+    monkeypatch.setattr(odds, "FOOTBALL_DIR", tmp_path)
+    (tmp_path / "2425_E0.csv").write_text(
+        "\ufeffDiv,Date,Time,HomeTeam,AwayTeam\n"
+        "E0,10/08/2024,17:30,Arsenal,Chelsea\n"   # British Summer Time: UTC+1
+        "E0,05/01/2025,15:00,Fulham,Brentford\n"  # winter: UTC
+        ",,,,\n",                                 # football-data ends some files with empty rows
+        encoding="utf-8",
+    )
+    games = odds.load_football()
+    assert games["kickoff"].tolist() == [pd.Timestamp("2024-08-10 16:30", tz="UTC"), pd.Timestamp("2025-01-05 15:00", tz="UTC")]
+    assert games["date"].tolist() == [pd.Timestamp("2024-08-10"), pd.Timestamp("2025-01-05")]
+    assert games[["season", "league"]].drop_duplicates().values.tolist() == [["2425", "E0"]]
+
+
+def test_load_football_without_files_says_what_to_run(tmp_path, monkeypatch):
+    monkeypatch.setattr(odds, "FOOTBALL_DIR", tmp_path)
+    with pytest.raises(FileNotFoundError, match="pvb odds football"):
+        odds.load_football()

@@ -49,7 +49,7 @@ def download_football(session: PoliteSession, seasons=config.FOOTBALL_SEASONS, l
 
 
 def load_football() -> pd.DataFrame:
-    """All saved football files in one table, with `league`, `season` and a parsed `date`."""
+    """All saved football files in one table, with `league`, `season`, `date` and `kickoff` (UTC)."""
     frames = []
     for path in sorted(FOOTBALL_DIR.glob("[0-9]*_*.csv")):
         season, league = path.stem.split("_", 1)
@@ -59,10 +59,11 @@ def load_football() -> pd.DataFrame:
         frames.append(df)
     if not frames:
         raise FileNotFoundError(f"no football odds in {FOOTBALL_DIR}; run `python -m pvb odds football` first")
-    df = pd.concat(frames, ignore_index=True)
-    # older files write years as "21", newer ones as "2021"
-    df["date"] = pd.to_datetime(df["Date"], dayfirst=True, format="mixed")
-    return df
+    df = pd.concat(frames, ignore_index=True).copy()  # copy() joins the pieces concat leaves behind
+    # older files write years as "21", newer ones as "2021"; kick-off times are UK time
+    date = pd.to_datetime(df["Date"], dayfirst=True, format="mixed")
+    kickoff = pd.to_datetime(df["Date"] + " " + df["Time"], dayfirst=True, format="mixed")
+    return df.assign(date=date, kickoff=kickoff.dt.tz_localize("Europe/London").dt.tz_convert("UTC"))
 
 
 # Tennis ------------------------------------------------------------------------

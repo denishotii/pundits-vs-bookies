@@ -4,7 +4,7 @@ We don't keep real Sports Mole pages in the repo (their terms forbid
 republishing), so these fixtures are invented text in the same structure.
 """
 
-from pvb.parse import parse_pick, parse_preview
+from pvb.parse import SHAREABLE_COLUMNS, TEXT_COLUMNS, parse_pick, parse_preview
 
 FOOTBALL_URL = "https://www.sportsmole.co.uk/football/brighton-and-hove-albion/preview/brighton-vs-leeds-prediction-team-news-lineups_604333.html"
 FOOTBALL_PAGE = """
@@ -81,4 +81,46 @@ def test_pick_variants():
     assert parse_pick("We say: Arsenal 0 - 3 Chelsea", "football")["pick_result"] == "A"
     assert parse_pick("We say: Sinner to win in straight sets", "tennis")["pick_sets"] == "straight"
     assert parse_pick("We say: Sinner to win", "tennis")["pick_winner"] == "Sinner"
+    assert parse_pick("We say: Hurkacz in three sets", "tennis")["pick_winner"] == "Hurkacz"  # no "to win"
+    assert parse_pick("We say: Hubert Hurkacz in three sets", "tennis")["pick_winner"] == "Hubert Hurkacz"
     assert parse_pick(None, "football")["pick_result"] is None
+
+
+def test_second_verdict_line_is_ignored():
+    pick = parse_pick("We say: Arsenal Women 2-3 Chelsea Women\n(After Extra Time)", "football")
+    assert (pick["pick_home_goals"], pick["pick_away_goals"], pick["pick_result"]) == (2, 3, "A")
+
+
+def test_score_glued_to_a_name_still_gives_a_pick():
+    assert parse_pick("We say: Borussia Dortmund 2-1Villarreal", "football")["pick_result"] == "H"
+    assert parse_pick("We say: Mainz 05 0-2 Schalke 04", "football")["pick_result"] == "A"  # digits in names
+
+
+def test_shared_columns_hold_no_article_text():
+    assert not set(SHAREABLE_COLUMNS) & {"title", "pick_text", *TEXT_COLUMNS}
+
+
+def test_placeholder_verdict_gives_no_pick():
+    assert parse_pick("We say: Gillingham X-Y Plymouth Argyle", "football")["pick_result"] is None
+
+
+def test_title_variants():
+    cases = {
+        "Preview: Taylor Fritz vs. Alexander Zverev- prediction, form": ("Taylor Fritz", "Alexander Zverev"),
+        "Preview: Australian Open 2022 women's final: Ashleigh Barty vs. Danielle Collins": ("Ashleigh Barty", "Danielle Collins"),
+        "Preview: Felix Auger-Aliassime vs. Jannik Sinner - prediction": ("Felix Auger-Aliassime", "Jannik Sinner"),
+        "Preview: Paris Saint-Germain vs Lyon - prediction, team news": ("Paris Saint-Germain", "Lyon"),
+        # a hyphen inside the second name must not end it
+        "Preview: Lyon vs Paris Saint-Germain - prediction, team news": ("Lyon", "Paris Saint-Germain"),
+        "Preview: Jannik Sinner vs. Felix Auger-Aliassime - prediction": ("Jannik Sinner", "Felix Auger-Aliassime"),
+        # other shapes found in the real titles
+        "Preview: St Gallen vs FC Basel \u2013 prediction, team news, lineups": ("St Gallen", "FC Basel"),
+        "Preview: Marketa Vondrousova vs. Emma Raducanu: Prediction, form": ("Marketa Vondrousova", "Emma Raducanu"),
+        "Preview: Jannik Sinner vs. Miomir Kecmanovic prediction, head-to-head": ("Jannik Sinner", "Miomir Kecmanovic"),
+        "Preview: Belinda Bencic vs. Iga Swiatek vs - prediction, form": ("Belinda Bencic", "Iga Swiatek"),
+        "Preview: Preview:Getxo vs Alaves - prediction, team news": ("Getxo", "Alaves"),
+    }
+    for title, sides in cases.items():
+        page = FOOTBALL_PAGE.replace("Preview: Brighton &amp; Hove Albion vs Leeds United - prediction, team news, lineups", title)
+        r = parse_preview(page, FOOTBALL_URL)
+        assert (r["side_a"], r["side_b"]) == sides, title

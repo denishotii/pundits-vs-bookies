@@ -15,6 +15,9 @@ data/processed/*
 # can be re-run without scraping; tests/test_shared_data.py checks they hold no text.
 !data/processed/*.csv
 
+# Teammates' working notes (e.g. the Kalshi PDFs), shared outside the repo
+docs/docs_from_team/
+
 # Python
 __pycache__/
 *.py[cod]

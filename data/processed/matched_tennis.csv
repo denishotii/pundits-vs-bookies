@@ -1,0 +1,855 @@
+article_id,published,side_a,side_b,player_a,player_b,pick_winner,pick_side,pick_sets,date,tour,tournament,surface,round,best_of,status,a_won,sets_a,sets_b,rank_a,rank_b,closing_odds_a,closing_odds_b,best_closing_odds_a,best_closing_odds_b
+533708,2024-01-13 10:59:00+00:00,Novak Djokovic,Dino Prizmic,Djokovic N.,Prizmic D.,Djokovic,a,three,2024-01-14,ATP,Australian Open,Hard,1st Round,5,Completed,True,3.0,1.0,1.0,187.0,1.01,21.89,1.03,34.0
+533780,2024-01-14 15:21:00+00:00,Andy Murray,Tomas Martin Etcheverry,Murray A.,Etcheverry T.,Etcheverry,b,five,2024-01-15,ATP,Australian Open,Hard,1st Round,5,Completed,False,0.0,3.0,44.0,32.0,1.62,2.3,1.68,2.42
+533853,2024-01-15 10:15:00+00:00,Emma Raducanu,Shelby Rogers,Raducanu E.,Rogers S.,Raducanu,a,three,2024-01-16,WTA,Australian Open,Hard,1st Round,3,Completed,True,2.0,0.0,296.0,161.0,1.32,3.4,1.38,3.66
+533945,2024-01-16 11:10:00+00:00,Novak Djokovic,Alexei Popyrin,Djokovic N.,Popyrin A.,Djokovic,a,three,2024-01-17,ATP,Australian Open,Hard,2nd Round,5,Completed,True,3.0,1.0,1.0,43.0,1.02,14.37,1.05,19.56
+534013,2024-01-17 09:14:00+00:00,Emma Raducanu,Yafan Wang,Raducanu E.,Wang Y.,Raducanu,a,three,2024-01-18,WTA,Australian Open,Hard,2nd Round,3,Completed,False,1.0,2.0,296.0,94.0,1.25,3.92,1.31,4.2
+534105,2024-01-18 09:11:00+00:00,Novak Djokovic,Tomas Martin Etcheverry,Djokovic N.,Etcheverry T.,Djokovic,a,four,2024-01-19,ATP,Australian Open,Hard,3rd Round,5,Completed,True,3.0,0.0,1.0,32.0,1.05,10.36,1.09,13.85
+534264,2024-01-19 09:18:00+00:00,Cameron Norrie,Casper Ruud,Norrie C.,Ruud C.,Ruud,b,four,2024-01-20,ATP,Australian Open,Hard,3rd Round,5,Completed,True,3.0,1.0,22.0,11.0,3.03,1.39,3.2,1.43
+534436,2024-01-20 18:18:00+00:00,Novak Djokovic,Adrian Mannarino,Djokovic N.,Mannarino A.,Djokovic,a,four,2024-01-21,ATP,Australian Open,Hard,4th Round,5,Completed,True,3.0,0.0,1.0,19.0,1.02,14.16,1.05,19.0
+534463,2024-01-21 10:48:00+00:00,Alexander Zverev,Cameron Norrie,Zverev A.,Norrie C.,Zverev,a,four,2024-01-22,ATP,Australian Open,Hard,4th Round,5,Completed,True,3.0,2.0,6.0,22.0,1.24,4.03,1.31,4.46
+534544,2024-01-22 09:17:00+00:00,Novak Djokovic,Taylor Fritz,Djokovic N.,Fritz T.,Djokovic,a,four,2024-01-23,ATP,Australian Open,Hard,Quarterfinals,5,Completed,True,3.0,1.0,1.0,12.0,1.1,7.3,1.11,8.55
+534683,2024-01-23 17:47:00+00:00,Coco Gauff,Aryna Sabalenka,Gauff C.,Sabalenka A.,Sabalenka,b,three,2024-01-25,WTA,Australian Open,Hard,Semifinals,3,Completed,False,0.0,2.0,4.0,2.0,2.72,1.46,2.87,1.55
+534737,2024-01-24 13:27:00+00:00,Dayana Yastremska,Qinwen Zheng,Yastremska D.,Zheng Q.,Zheng,b,three,2024-01-25,WTA,Australian Open,Hard,Semifinals,3,Completed,False,0.0,2.0,93.0,15.0,2.73,1.46,3.0,1.53
+534675,2024-01-23 16:34:00+00:00,Novak Djokovic,Jannik Sinner,Djokovic N.,Sinner J.,Djokovic,a,five,2024-01-26,ATP,Australian Open,Hard,Semifinals,5,Completed,False,1.0,3.0,1.0,4.0,1.5,2.6,1.54,2.75
+534754,2024-01-24 17:00:00+00:00,Daniil Medvedev,Alexander Zverev,Medvedev D.,Zverev A.,Zverev,b,five,2024-01-26,ATP,Australian Open,Hard,Semifinals,5,Completed,True,3.0,2.0,3.0,6.0,1.71,2.16,1.79,2.25
+534819,2024-01-25 13:29:00+00:00,Qinwen Zheng,Aryna Sabalenka,Zheng Q.,Sabalenka A.,Sabalenka,b,two,2024-01-27,WTA,Australian Open,Hard,The Final,3,Completed,False,0.0,2.0,15.0,2.0,5.37,1.16,6.0,1.19
+535009,2024-01-26 17:37:00+00:00,Jannik Sinner,Daniil Medvedev,Sinner J.,Medvedev D.,Sinner,a,five,2024-01-28,ATP,Australian Open,Hard,The Final,5,Completed,True,3.0,2.0,4.0,3.0,1.35,3.29,1.4,3.75
+539032,2024-03-15 10:11:00+00:00,Iga Swiatek,Marta Kostyuk,Swiatek I.,Kostyuk M.,Swiatek,a,three,2024-03-15,WTA,BNP Paribas Open,Hard,Semifinals,3,Completed,True,2.0,0.0,1.0,32.0,1.11,6.83,1.13,9.17
+539000,2024-03-15 08:53:00+00:00,Jannik Sinner,Carlos Alcaraz,Sinner J.,Alcaraz C.,Alcaraz,b,three,2024-03-16,ATP,BNP Paribas Open,Hard,Semifinals,3,Completed,False,1.0,2.0,3.0,2.0,1.76,2.06,1.8,2.13
+539033,2024-03-15 10:39:00+00:00,Coco Gauff,Maria Sakkari,Gauff C.,Sakkari M.,Gauff,a,three,2024-03-16,WTA,BNP Paribas Open,Hard,Semifinals,3,Completed,False,1.0,2.0,3.0,9.0,1.34,3.32,1.37,3.64
+539001,2024-03-15 09:33:00+00:00,Tommy Paul,Daniil Medvedev,Paul T.,Medvedev D.,Medvedev,b,two,2024-03-17,ATP,BNP Paribas Open,Hard,Semifinals,3,Completed,False,1.0,2.0,17.0,4.0,3.23,1.35,3.61,1.4
+539120,2024-03-16 09:06:00+00:00,Iga Swiatek,Maria Sakkari,Swiatek I.,Sakkari M.,Swiatek,a,two,2024-03-17,WTA,BNP Paribas Open,Hard,The Final,3,Completed,True,2.0,0.0,1.0,9.0,1.18,5.07,1.21,5.8
+539173,2024-03-17 09:23:00+00:00,Daniil Medvedev,Carlos Alcaraz,Medvedev D.,Alcaraz C.,Alcaraz,b,three,2024-03-17,ATP,BNP Paribas Open,Hard,The Final,3,Completed,False,0.0,2.0,4.0,2.0,3.14,1.36,3.31,1.4
+539224,2024-03-18 10:34:00+00:00,Simona Halep,Paula Badosa,Halep S.,Badosa P.,Halep,a,three,2024-03-19,WTA,Miami Open,Hard,1st Round,3,Completed,False,1.0,2.0,,80.0,1.74,2.08,1.83,2.23
+539737,2024-03-25 18:26:00+00:00,Christopher O'Connell,Jannik Sinner,O Connell C.,Sinner J.,Sinner,b,three,2024-03-26,ATP,Miami Open,Hard,4th Round,3,Completed,False,0.0,2.0,66.0,3.0,10.42,1.05,13.39,1.06
+539760,2024-03-26 09:08:00+00:00,Carlos Alcaraz,Lorenzo Musetti,Alcaraz C.,Musetti L.,Alcaraz,a,three,2024-03-26,ATP,Miami Open,Hard,4th Round,3,Completed,True,2.0,0.0,2.0,24.0,1.06,9.27,1.07,11.88
+539761,2024-03-26 09:42:00+00:00,Maria Sakkari,Elena Rybakina,Sakkari M.,Rybakina E.,Sakkari,a,three,2024-03-27,WTA,Miami Open,Hard,Quarterfinals,3,Completed,False,1.0,2.0,9.0,4.0,3.05,1.38,3.4,1.4
+539838,2024-03-27 18:19:00+00:00,Carlos Alcaraz,Grigor Dimitrov,Alcaraz C.,Dimitrov G.,Alcaraz,a,two,2024-03-28,ATP,Miami Open,Hard,Quarterfinals,3,Completed,False,0.0,2.0,2.0,12.0,1.17,4.92,1.2,5.5
+539913,2024-03-28 20:29:00+00:00,Daniil Medvedev,Jannik Sinner,Medvedev D.,Sinner J.,Medvedev,a,three,2024-03-29,ATP,Miami Open,Hard,Semifinals,3,Completed,False,0.0,2.0,4.0,3.0,2.55,1.5,2.65,1.56
+540020,2024-03-29 10:33:00+00:00,Grigor Dimitrov,Alexander Zverev,Dimitrov G.,Zverev A.,Zverev,b,three,2024-03-29,ATP,Miami Open,Hard,Semifinals,3,Completed,True,2.0,1.0,12.0,5.0,2.26,1.63,2.36,1.7
+540087,2024-03-30 07:49:00+00:00,Grigor Dimitrov,Jannik Sinner,Dimitrov G.,Sinner J.,Sinner,b,two,2024-03-31,ATP,Miami Open,Hard,The Final,3,Completed,False,0.0,2.0,12.0,3.0,4.11,1.23,4.5,1.25
+540873,2024-04-08 11:58:00+00:00,Hubert Hurkacz,Jack Draper,Hurkacz H.,Draper J.,Hurkacz,a,three,2024-04-09,ATP,Monte Carlo Masters,Clay,1st Round,3,Completed,True,2.0,1.0,8.0,39.0,1.64,2.25,1.67,2.46
+541014,2024-04-10 12:43:00+00:00,Novak Djokovic,Lorenzo Musetti,Djokovic N.,Musetti L.,Djokovic,a,two,2024-04-11,ATP,Monte Carlo Masters,Clay,3rd Round,3,Completed,True,2.0,0.0,1.0,24.0,1.2,4.51,1.22,4.88
+541250,2024-04-12 18:56:00+00:00,Novak Djokovic,Casper Ruud,Djokovic N.,Ruud C.,Djokovic,a,two,2024-04-13,ATP,Monte Carlo Masters,Clay,Semifinals,3,Completed,False,1.0,2.0,1.0,10.0,1.41,2.9,1.44,3.19
+541307,2024-04-13 19:12:00+00:00,Casper Ruud,Stefanos Tsitsipas,Ruud C.,Tsitsipas S.,Tsitsipas,b,three,2024-04-14,ATP,Monte Carlo Masters,Clay,The Final,3,Completed,False,0.0,2.0,10.0,12.0,2.16,1.69,2.25,1.78
+542030,2024-04-23 20:26:00+00:00,Emma Raducanu,Maria Lourdes Carle,Raducanu E.,Carle M.,Raducanu,a,two,2024-04-24,WTA,Mutua Madrid Open,Clay,1st Round,3,Completed,False,0.0,2.0,221.0,82.0,1.26,3.79,1.31,4.3
+541956,2024-04-22 14:51:00+00:00,Darwin Blanch,Rafael Nadal,Blanch D.,Nadal R.,Nadal,b,two,2024-04-25,ATP,Mutua Madrid Open,Clay,1st Round,3,Completed,False,0.0,2.0,622.0,512.0,11.76,1.03,15.34,1.09
+542055,2024-04-24 07:46:00+00:00,Coco Gauff,Arantxa Rus,Gauff C.,Rus A.,Gauff,a,two,2024-04-25,WTA,Mutua Madrid Open,Clay,2nd Round,3,Completed,True,2.0,0.0,3.0,47.0,1.12,6.04,1.18,7.3
+542345,2024-04-27 07:10:00+00:00,Thiago Seyboth Wild,Carlos Alcaraz,Seyboth Wild T.,Alcaraz C.,Alcaraz,b,two,2024-04-28,ATP,Mutua Madrid Open,Clay,3rd Round,3,Completed,False,0.0,2.0,63.0,3.0,7.6,1.09,9.04,1.11
+542417,2024-04-28 13:19:00+00:00,Rafael Nadal,Pedro Cachin,Nadal R.,Cachin P.,Nadal,a,two,2024-04-29,ATP,Mutua Madrid Open,Clay,3rd Round,3,Completed,True,2.0,1.0,512.0,91.0,1.15,5.31,1.21,6.24
+542469,2024-04-29 07:24:00+00:00,Jan-Lennard Struff,Carlos Alcaraz,Struff J.L.,Alcaraz C.,Alcaraz,b,three,2024-04-30,ATP,Mutua Madrid Open,Clay,4th Round,3,Completed,False,1.0,2.0,24.0,3.0,4.87,1.18,5.59,1.21
+542534,2024-04-30 07:36:00+00:00,Mirra Andreeva,Aryna Sabalenka,Andreeva M.,Sabalenka A.,Sabalenka,b,three,2024-05-01,WTA,Mutua Madrid Open,Clay,Quarterfinals,3,Completed,False,0.0,2.0,43.0,2.0,2.69,1.46,2.85,1.51
+542619,2024-05-01 07:56:00+00:00,Iga Swiatek,Madison Keys,Swiatek I.,Keys M.,Swiatek,a,three,2024-05-02,WTA,Mutua Madrid Open,Clay,Semifinals,3,Completed,True,2.0,0.0,1.0,20.0,1.08,7.68,1.1,8.91
+542685,2024-05-02 07:45:00+00:00,Taylor Fritz,Andrey Rublev,Fritz T.,Rublev A.,Rublev,b,three,2024-05-03,ATP,Mutua Madrid Open,Clay,Semifinals,3,Completed,False,0.0,2.0,22.0,8.0,2.26,1.63,2.6,1.7
+542773,2024-05-03 07:31:00+00:00,Iga Swiatek,Aryna Sabalenka,Swiatek I.,Sabalenka A.,Swiatek,a,three,2024-05-04,WTA,Mutua Madrid Open,Clay,The Final,3,Completed,True,2.0,1.0,1.0,2.0,1.28,3.67,1.34,3.99
+542918,2024-05-04 12:54:00+00:00,Felix Auger-Aliassime,Andrey Rublev,Auger-Aliassime F.,Rublev A.,Rublev,b,three,2024-05-05,ATP,Mutua Madrid Open,Clay,The Final,3,Completed,False,1.0,2.0,35.0,8.0,3.32,1.33,3.53,1.36
+543141,2024-05-08 13:16:00+00:00,Jack Draper,Borna Coric,Draper J.,Coric B.,Draper,a,three,2024-05-09,ATP,Internazionali BNL d'Italia,Clay,1st Round,3,Completed,True,2.0,0.0,40.0,55.0,1.66,2.21,1.81,2.38
+543566,2024-05-13 18:41:00+00:00,Coco Gauff,Qinwen Zheng,Gauff C.,Zheng Q.,Gauff,a,three,2024-05-14,WTA,Internazionali BNL d'Italia,Clay,Quarterfinals,3,Completed,True,2.0,0.0,3.0,7.0,1.69,2.17,1.78,2.3
+543601,2024-05-14 09:45:00+00:00,JeÄ¼ena Ostapenko,Aryna Sabalenka,Ostapenko J.,Sabalenka A.,Sabalenka,b,two,2024-05-15,WTA,Internazionali BNL d'Italia,Clay,Quarterfinals,3,Completed,False,0.0,2.0,10.0,2.0,3.62,1.29,4.15,1.32
+543661,2024-05-15 07:53:00+00:00,Iga Swiatek,Coco Gauff,Swiatek I.,Gauff C.,Swiatek,a,three,2024-05-16,WTA,Internazionali BNL d'Italia,Clay,Semifinals,3,Completed,True,2.0,0.0,1.0,3.0,1.14,5.57,1.16,6.35
+543727,2024-05-16 07:08:00+00:00,Alejandro Tabilo,Alexander Zverev,Tabilo A.,Zverev A.,Zverev,b,two,2024-05-17,ATP,Internazionali BNL d'Italia,Clay,Semifinals,3,Completed,False,1.0,2.0,32.0,5.0,3.94,1.27,4.33,1.89
+543855,2024-05-17 14:00:00+00:00,Iga Swiatek,Aryna Sabalenka,Swiatek I.,Sabalenka A.,Swiatek,a,two,2024-05-18,WTA,Internazionali BNL d'Italia,Clay,The Final,3,Completed,True,2.0,0.0,1.0,2.0,1.3,3.57,1.34,3.88
+543959,2024-05-18 07:21:00+00:00,Alexander Zverev,Nicolas Jarry,Zverev A.,Jarry N.,Zverev,a,three,2024-05-19,ATP,Internazionali BNL d'Italia,Clay,The Final,3,Completed,True,2.0,0.0,5.0,24.0,1.33,3.32,1.36,3.5
+544553,2024-05-26 07:02:00+00:00,Alexander Zverev,Rafael Nadal,Zverev A.,Nadal R.,Zverev,a,three,2024-05-27,ATP,French Open,Clay,1st Round,5,Completed,True,3.0,0.0,4.0,275.0,1.31,3.49,1.34,3.81
+544802,2024-05-30 19:31:00+00:00,Sebastian Korda,Carlos Alcaraz,Korda S.,Alcaraz C.,Alcaraz,b,four,2024-05-31,ATP,French Open,Clay,3rd Round,5,Completed,False,0.0,3.0,28.0,3.0,7.11,1.1,8.29,1.13
+544976,2024-06-02 06:46:00+00:00,Novak Djokovic,Francisco Cerundolo,Djokovic N.,Cerundolo F.,Djokovic,a,four,2024-06-03,ATP,French Open,Clay,4th Round,5,Completed,True,3.0,2.0,1.0,27.0,1.16,5.27,1.19,5.75
+544978,2024-06-02 07:16:00+00:00,Alexander Zverev,Holger Rune,Zverev A.,Rune H.,Zverev,a,five,2024-06-03,ATP,French Open,Clay,4th Round,5,Completed,True,3.0,2.0,4.0,13.0,1.35,3.21,1.42,3.4
+545037,2024-06-03 06:48:00+00:00,Iga Swiatek,Marketa Vondrousova,Swiatek I.,Vondrousova M.,Swiatek,a,two,2024-06-04,WTA,French Open,Clay,Quarterfinals,3,Completed,True,2.0,0.0,1.0,6.0,1.07,9.05,1.08,10.56
+545038,2024-06-03 07:35:00+00:00,Coco Gauff,Ons Jabeur,Gauff C.,Jabeur O.,Gauff,a,three,2024-06-04,WTA,French Open,Clay,Quarterfinals,3,Completed,True,2.0,1.0,3.0,9.0,1.24,4.11,1.28,4.76
+545202,2024-06-04 22:28:00+00:00,Alexander Zverev,Alex de Minaur,Zverev A.,De Minaur A.,Zverev,a,four,2024-06-05,ATP,French Open,Clay,Quarterfinals,5,Completed,True,3.0,0.0,4.0,11.0,1.37,3.11,1.46,3.4
+545203,2024-06-04 22:39:00+00:00,Mirra Andreeva,Aryna Sabalenka,Andreeva M.,Sabalenka A.,Sabalenka,b,two,2024-06-05,WTA,French Open,Clay,Quarterfinals,3,Completed,True,2.0,1.0,38.0,2.0,4.74,1.19,5,1.22
+545215,2024-06-05 06:58:00+00:00,Iga Swiatek,Coco Gauff,Swiatek I.,Gauff C.,Swiatek,a,two,2024-06-06,WTA,French Open,Clay,Semifinals,3,Completed,True,2.0,0.0,1.0,3.0,1.14,5.82,1.17,6.36
+545266,2024-06-05 19:19:00+00:00,Jasmine Paolini,Mirra Andreeva,Paolini J.,Andreeva M.,Andreeva,b,three,2024-06-06,WTA,French Open,Clay,Semifinals,3,Completed,True,2.0,0.0,15.0,38.0,1.98,1.84,2.14,1.9
+545281,2024-06-06 06:56:00+00:00,Carlos Alcaraz,Jannik Sinner,Alcaraz C.,Sinner J.,Sinner,b,five,2024-06-07,ATP,French Open,Clay,Semifinals,5,Completed,True,3.0,2.0,3.0,2.0,1.67,2.22,1.73,2.3
+545282,2024-06-06 07:22:00+00:00,Casper Ruud,Alexander Zverev,Ruud C.,Zverev A.,Ruud,a,four,2024-06-07,ATP,French Open,Clay,Semifinals,5,Completed,False,1.0,3.0,7.0,4.0,2.03,1.79,2.13,1.82
+545356,2024-06-07 07:31:00+00:00,Iga Swiatek,Jasmine Paolini,Swiatek I.,Paolini J.,Swiatek,a,two,2024-06-08,WTA,French Open,Clay,The Final,3,Completed,True,2.0,0.0,1.0,15.0,1.06,9.5,1.09,11.0
+545457,2024-06-08 08:59:00+00:00,Alexander Zverev,Carlos Alcaraz,Zverev A.,Alcaraz C.,Alcaraz,b,four,2024-06-09,ATP,French Open,Clay,The Final,5,Completed,False,2.0,3.0,4.0,3.0,3.26,1.35,3.4,1.39
+545731,2024-06-12 10:59:00+00:00,Emma Raducanu,Daria Snigur,Raducanu E.,Snigur D.,Raducanu,a,three,2024-06-13,WTA,Nottingham Open,Grass,2nd Round,3,Completed,True,2.0,0.0,209.0,127.0,1.32,3.32,1.37,3.5
+546024,2024-06-15 18:57:00+00:00,Jack Draper,Matteo Berrettini,Draper J.,Berrettini M.,Berrettini,b,three,2024-06-16,ATP,Stuttgart Open,Grass,The Final,3,Completed,True,2.0,1.0,40.0,95.0,2.18,1.67,2.3,1.73
+546099,2024-06-17 08:41:00+00:00,Andy Murray,Alexei Popyrin,Murray A.,Popyrin A.,Popyrin,b,three,2024-06-18,ATP,Queen's Club Championships,Grass,1st Round,3,Completed,True,2.0,1.0,129.0,48.0,1.96,1.82,2.14,1.89
+546204,2024-06-18 20:30:00+00:00,Jordan Thompson,Andy Murray,Thompson J.,Murray A.,Thompson,a,two,2024-06-19,ATP,Queen's Club Championships,Grass,2nd Round,3,Retired,True,0.0,0.0,43.0,129.0,1.62,2.29,1.68,2.49
+546275,2024-06-19 18:08:00+00:00,Carlos Alcaraz,Jack Draper,Alcaraz C.,Draper J.,Alcaraz,a,three,2024-06-20,ATP,Queen's Club Championships,Grass,2nd Round,3,Completed,False,0.0,2.0,2.0,31.0,1.32,3.3,1.37,3.61
+546365,2024-06-20 19:53:00+00:00,Jack Draper,Tommy Paul,Draper J.,Paul T.,Draper,a,two,2024-06-21,ATP,Queen's Club Championships,Grass,Quarterfinals,3,Completed,False,1.0,2.0,31.0,13.0,1.52,2.52,1.59,2.74
+546463,2024-06-21 21:46:00+00:00,Tommy Paul,Sebastian Korda,Paul T.,Korda S.,Paul,a,three,2024-06-22,ATP,Queen's Club Championships,Grass,Semifinals,3,Completed,True,2.0,0.0,13.0,23.0,1.78,2.01,1.93,2.11
+546537,2024-06-22 21:59:00+00:00,Tommy Paul,Lorenzo Musetti,Paul T.,Musetti L.,Paul,a,three,2024-06-23,ATP,Queen's Club Championships,Grass,The Final,3,Completed,True,2.0,0.0,13.0,30.0,1.36,3.09,1.39,3.29
+546900,2024-06-27 15:58:00+00:00,Max Purcell,Billy Harris,Purcell M.,Harris B.,Harris,b,three,2024-06-28,ATP,Eastbourne International,Grass,Semifinals,3,Completed,True,2.0,1.0,94.0,139.0,1.66,2.18,1.78,2.3
+547048,2024-06-29 15:56:00+00:00,Carlos Alcaraz,Mark Lajal,Alcaraz C.,Lajal M.,Alcaraz,a,three,2024-07-01,ATP,Wimbledon,Grass,1st Round,5,Completed,True,3.0,0.0,3.0,269.0,1.01,21.99,1.02,43.46
+547060,2024-06-29 19:57:00+00:00,Jannik Sinner,Yannick Hanfmann,Sinner J.,Hanfmann Y.,Sinner,a,three,2024-07-01,ATP,Wimbledon,Grass,1st Round,5,Completed,True,3.0,1.0,1.0,110.0,1.01,21.84,1.02,43.93
+547065,2024-06-30 13:28:00+00:00,Iga Swiatek,Sofia Kenin,Swiatek I.,Kenin S.,Swiatek,a,three,2024-07-02,WTA,Wimbledon,Grass,1st Round,3,Completed,True,2.0,0.0,1.0,49.0,1.06,9.63,1.07,11.68
+547111,2024-06-30 17:16:00+00:00,Vit Kopriva,Novak Djokovic,Kopriva V.,Djokovic N.,Djokovic,b,three,2024-07-02,ATP,Wimbledon,Grass,1st Round,5,Completed,False,0.0,3.0,123.0,2.0,14.74,1.02,22.53,1.04
+547126,2024-06-30 22:35:00+00:00,Jack Draper,Elias Ymer,Draper J.,Ymer E.,Draper,a,four,2024-07-02,ATP,Wimbledon,Grass,1st Round,5,Completed,True,3.0,2.0,28.0,205.0,1.03,12.12,1.05,17.24
+547130,2024-07-01 01:15:00+00:00,Jessica Bouzas Maneiro,Marketa Vondrousova,Bouzas Maneiro J.,Vondrousova M.,Vondrousova,b,two,2024-07-02,WTA,Wimbledon,Grass,1st Round,3,Completed,True,2.0,0.0,83.0,6.0,5.79,1.14,6.49,1.16
+547210,2024-07-01 18:52:00+00:00,Roberto Carballes Baena,Alexander Zverev,Carballes Baena R.,Zverev A.,Zverev,b,three,2024-07-02,ATP,Wimbledon,Grass,1st Round,5,Completed,False,0.0,3.0,64.0,4.0,17.1,1.02,29.0,1.04
+547211,2024-07-01 19:07:00+00:00,Carlos Alcaraz,Aleksandar Vukic,Alcaraz C.,Vukic A.,Alcaraz,a,three,2024-07-03,ATP,Wimbledon,Grass,2nd Round,5,Completed,True,3.0,0.0,3.0,69.0,1.02,15.73,1.03,25.81
+547278,2024-07-02 16:59:00+00:00,Anca Todoni,Coco Gauff,Todoni A.,Gauff C.,Gauff,b,three,2024-07-03,WTA,Wimbledon,Grass,2nd Round,3,Completed,False,0.0,2.0,142.0,2.0,12.21,1.04,22.53,1.05
+547294,2024-07-02 21:04:00+00:00,Emma Raducanu,Elise Mertens,Raducanu E.,Mertens E.,Raducanu,a,three,2024-07-03,WTA,Wimbledon,Grass,2nd Round,3,Completed,True,2.0,0.0,135.0,33.0,1.5,2.62,1.6,2.78
+547302,2024-07-02 23:50:00+00:00,Jannik Sinner,Matteo Berrettini,Sinner J.,Berrettini M.,Sinner,a,four,2024-07-03,ATP,Wimbledon,Grass,2nd Round,5,Completed,True,3.0,1.0,1.0,59.0,1.18,5.02,1.2,5.63
+547303,2024-07-03 03:05:00+00:00,Stanislas Wawrinka,Gael Monfils,Wawrinka S.,Monfils G.,Monfils,b,four,2024-07-04,ATP,Wimbledon,Grass,2nd Round,5,Completed,False,0.0,3.0,95.0,33.0,3.11,1.36,3.22,1.4
+547338,2024-07-03 11:26:00+00:00,Jacob Fearnley,Novak Djokovic,Fearnley J.,Djokovic N.,Djokovic,b,three,2024-07-04,ATP,Wimbledon,Grass,2nd Round,5,Completed,False,1.0,3.0,277.0,2.0,16.83,1.02,31.64,1.03
+547371,2024-07-03 18:52:00+00:00,Jack Draper,Cameron Norrie,Draper J.,Norrie C.,Draper,a,four,2024-07-04,ATP,Wimbledon,Grass,2nd Round,5,Completed,False,0.0,3.0,28.0,42.0,1.31,3.47,1.36,3.65
+547376,2024-07-03 21:23:00+00:00,Katie Boulter,Harriet Dart,Boulter K.,Dart H.,Boulter,a,two,2024-07-04,WTA,Wimbledon,Grass,2nd Round,3,Completed,False,1.0,2.0,29.0,100.0,1.27,3.84,1.3,4.09
+547379,2024-07-04 00:10:00+00:00,Iga Swiatek,Petra Martic,Swiatek I.,Martic P.,Swiatek,a,two,2024-07-04,WTA,Wimbledon,Grass,2nd Round,3,Completed,True,2.0,0.0,1.0,85.0,1.02,15.49,1.04,27.34
+547426,2024-07-04 12:05:00+00:00,Sonay Kartal,Coco Gauff,Kartal S.,Gauff C.,Gauff,b,two,2024-07-05,WTA,Wimbledon,Grass,3rd Round,3,Completed,False,0.0,2.0,298.0,2.0,8.7,1.07,10.63,1.09
+547428,2024-07-04 12:19:00+00:00,Carlos Alcaraz,Frances Tiafoe,Alcaraz C.,Tiafoe F.,Alcaraz,a,four,2024-07-05,ATP,Wimbledon,Grass,3rd Round,5,Completed,True,3.0,2.0,3.0,29.0,1.05,10.3,1.07,14.26
+547437,2024-07-04 15:28:00+00:00,Emma Raducanu,Maria Sakkari,Raducanu E.,Sakkari M.,Raducanu,a,three,2024-07-05,WTA,Wimbledon,Grass,3rd Round,3,Completed,True,2.0,0.0,135.0,9.0,1.67,2.22,1.73,2.28
+547457,2024-07-04 20:11:00+00:00,Jannik Sinner,Miomir Kecmanovic,Sinner J.,Kecmanovic M.,Sinner,a,four,2024-07-05,ATP,Wimbledon,Grass,3rd Round,5,Completed,True,3.0,0.0,1.0,52.0,1.02,14.37,1.04,21.6
+547549,2024-07-05 21:15:00+00:00,Harriet Dart,Wang Xinyu,Dart H.,Wang Xin.,Xinyu,b,three,2024-07-06,WTA,Wimbledon,Grass,3rd Round,3,Completed,False,1.0,2.0,100.0,42.0,2.84,1.43,3.07,1.46
+547563,2024-07-05 21:40:00+00:00,Cameron Norrie,Alexander Zverev,Norrie C.,Zverev A.,Zverev,b,four,2024-07-06,ATP,Wimbledon,Grass,3rd Round,5,Completed,False,0.0,3.0,42.0,4.0,6.19,1.13,6.75,1.14
+547571,2024-07-05 21:57:00+00:00,Alexei Popyrin,Novak Djokovic,Popyrin A.,Djokovic N.,Djokovic,b,four,2024-07-06,ATP,Wimbledon,Grass,3rd Round,5,Completed,False,1.0,3.0,47.0,2.0,6.19,1.13,7.14,1.17
+547583,2024-07-06 00:22:00+00:00,Iga Swiatek,Yulia Putintseva,Swiatek I.,Putintseva Y.,Swiatek,a,three,2024-07-06,WTA,Wimbledon,Grass,3rd Round,3,Completed,False,1.0,2.0,1.0,35.0,1.1,7.16,1.14,8.58
+547629,2024-07-06 20:34:00+00:00,Carlos Alcaraz,Ugo Humbert,Alcaraz C.,Humbert U.,Alcaraz,a,four,2024-07-07,ATP,Wimbledon,Grass,4th Round,5,Completed,True,3.0,1.0,3.0,16.0,1.11,6.64,1.13,7.64
+547631,2024-07-06 20:55:00+00:00,Jannik Sinner,Ben Shelton,Sinner J.,Shelton B.,Sinner,a,four,2024-07-07,ATP,Wimbledon,Grass,4th Round,5,Completed,True,3.0,0.0,1.0,14.0,1.05,10.64,1.07,14.98
+547633,2024-07-06 21:06:00+00:00,Lulu Sun,Emma Raducanu,Sun L.,Raducanu E.,Raducanu,b,two,2024-07-07,WTA,Wimbledon,Grass,4th Round,3,Completed,True,2.0,1.0,123.0,135.0,4.97,1.18,5.86,1.22
+547635,2024-07-06 21:24:00+00:00,Emma Navarro,Coco Gauff,Navarro E.,Gauff C.,Gauff,b,three,2024-07-07,WTA,Wimbledon,Grass,4th Round,3,Completed,True,2.0,0.0,17.0,2.0,3.69,1.29,4,1.32
+547662,2024-07-07 12:47:00+00:00,Holger Rune,Novak Djokovic,Rune H.,Djokovic N.,Djokovic,b,four,2024-07-08,ATP,Wimbledon,Grass,4th Round,5,Completed,False,0.0,3.0,15.0,2.0,3.43,1.32,3.66,1.36
+547666,2024-07-07 13:18:00+00:00,Taylor Fritz,Alexander Zverev,Fritz T.,Zverev A.,Zverev,b,five,2024-07-08,ATP,Wimbledon,Grass,4th Round,5,Completed,True,3.0,2.0,12.0,4.0,2.33,1.6,2.55,1.68
+547667,2024-07-07 14:05:00+00:00,Arthur Fils,Alex de Minaur,Fils A.,De Minaur A.,De Minaur,b,five,2024-07-08,ATP,Wimbledon,Grass,4th Round,5,Completed,False,1.0,3.0,34.0,9.0,4.71,1.19,5.63,1.26
+547676,2024-07-07 16:25:00+00:00,Elena Rybakina,Anna Kalinskaya,Rybakina E.,Kalinskaya A.,Rybakina,a,three,2024-07-08,WTA,Wimbledon,Grass,4th Round,3,Retired,True,1.0,0.0,4.0,18.0,1.29,3.61,1.33,3.92
+547730,2024-07-08 15:43:00+00:00,Jannik Sinner,Daniil Medvedev,Sinner J.,Medvedev D.,Sinner,a,four,2024-07-09,ATP,Wimbledon,Grass,Quarterfinals,5,Completed,False,2.0,3.0,1.0,5.0,1.22,4.29,1.25,4.78
+547732,2024-07-08 16:03:00+00:00,Carlos Alcaraz,Tommy Paul,Alcaraz C.,Paul T.,Alcaraz,a,five,2024-07-09,ATP,Wimbledon,Grass,Quarterfinals,5,Completed,True,3.0,1.0,3.0,13.0,1.27,3.79,1.31,4.01
+547747,2024-07-08 19:31:00+00:00,Lulu Sun,Donna Vekic,Sun L.,Vekic D.,Sun,a,three,2024-07-09,WTA,Wimbledon,Grass,Quarterfinals,3,Completed,False,1.0,2.0,123.0,37.0,3.4,1.32,3.58,1.35
+547755,2024-07-08 21:09:00+00:00,Jasmine Paolini,Emma Navarro,Paolini J.,Navarro E.,Paolini,a,three,2024-07-09,WTA,Wimbledon,Grass,Quarterfinals,3,Completed,True,2.0,0.0,7.0,17.0,2.36,1.6,2.5,1.65
+547810,2024-07-09 19:34:00+00:00,Elena Rybakina,Elina Svitolina,Rybakina E.,Svitolina E.,Rybakina,a,three,2024-07-10,WTA,Wimbledon,Grass,Quarterfinals,3,Completed,True,2.0,0.0,4.0,21.0,1.29,3.7,1.33,4.26
+547812,2024-07-09 20:14:00+00:00,Jelena Ostapenko,Barbora Krejcikova,Ostapenko J.,Krejcikova B.,Ostapenko,a,three,2024-07-10,WTA,Wimbledon,Grass,Quarterfinals,3,Completed,False,0.0,2.0,14.0,32.0,1.43,2.83,1.46,3.01
+547814,2024-07-09 20:29:00+00:00,Lorenzo Musetti,Taylor Fritz,Musetti L.,Fritz T.,Fritz,b,four,2024-07-10,ATP,Wimbledon,Grass,Quarterfinals,5,Completed,True,3.0,2.0,25.0,12.0,4.36,1.22,4.7,1.25
+547861,2024-07-10 12:09:00+00:00,Donna Vekic,Jasmine Paolini,Vekic D.,Paolini J.,Paolini,b,three,2024-07-11,WTA,Wimbledon,Grass,Semifinals,3,Completed,False,1.0,2.0,37.0,7.0,2.37,1.59,2.51,1.67
+547878,2024-07-10 19:24:00+00:00,Barbora Krejcikova,Elena Rybakina,Krejcikova B.,Rybakina E.,Rybakina,b,three,2024-07-11,WTA,Wimbledon,Grass,Semifinals,3,Completed,True,2.0,1.0,32.0,4.0,4.95,1.18,5.66,1.23
+547932,2024-07-11 13:41:00+00:00,Daniil Medvedev,Carlos Alcaraz,Medvedev D.,Alcaraz C.,Alcaraz,b,five,2024-07-12,ATP,Wimbledon,Grass,Semifinals,5,Completed,False,1.0,3.0,5.0,3.0,3.62,1.29,3.9,1.31
+547943,2024-07-11 16:58:00+00:00,Lorenzo Musetti,Novak Djokovic,Musetti L.,Djokovic N.,Djokovic,b,four,2024-07-12,ATP,Wimbledon,Grass,Semifinals,5,Completed,False,0.0,3.0,25.0,2.0,6.3,1.12,6.75,1.15
+548000,2024-07-12 09:56:00+00:00,Barbora Krejcikova,Jasmine Paolini,Krejcikova B.,Paolini J.,Paolini,b,three,2024-07-13,WTA,Wimbledon,Grass,The Final,3,Completed,True,2.0,1.0,32.0,7.0,1.74,2.13,1.8,2.25
+548060,2024-07-13 09:38:00+00:00,Carlos Alcaraz,Novak Djokovic,Alcaraz C.,Djokovic N.,Djokovic,b,five,2024-07-14,ATP,Wimbledon,Grass,The Final,5,Completed,True,3.0,0.0,3.0,2.0,1.76,2.09,1.82,2.2
+548300,2024-07-16 16:16:00+00:00,Cameron Norrie,Rafael Nadal,Norrie C.,Nadal R.,Norrie,a,three,2024-07-18,ATP,Nordea Open,Clay,2nd Round,3,Completed,False,0.0,2.0,42.0,261.0,2.53,1.5,2.63,1.57
+548473,2024-07-18 19:00:00+00:00,Rafael Nadal,Mariano Navone,Nadal R.,Navone M.,Nadal,a,three,2024-07-19,ATP,Nordea Open,Clay,Quarterfinals,3,Completed,True,2.0,1.0,261.0,36.0,1.37,3.06,1.44,3.25
+548565,2024-07-19 20:04:00+00:00,Rafael Nadal,Duje Ajdukovic,Nadal R.,Ajdukovic D.,Nadal,a,two,2024-07-20,ATP,Nordea Open,Clay,Semifinals,3,Completed,True,2.0,1.0,261.0,130.0,1.31,3.43,1.34,3.98
+548634,2024-07-20 15:22:00+00:00,Nuno Borges,Rafael Nadal,Borges N.,Nadal R.,Borges,a,three,2024-07-21,ATP,Nordea Open,Clay,The Final,3,Completed,True,2.0,0.0,51.0,261.0,2.81,1.42,2.95,1.52
+550355,2024-08-15 05:12:00+00:00,Jack Draper,Stefanos Tsitsipas,Draper J.,Tsitsipas S.,Tsitsipas,b,three,2024-08-15,ATP,Western & Southern Financial Group Masters,Hard,2nd Round,3,Completed,True,2.0,1.0,28.0,11.0,2.36,1.59,2.51,1.7
+550603,2024-08-17 07:49:00+00:00,Jack Draper,Holger Rune,Draper J.,Rune H.,Draper,a,three,2024-08-18,ATP,Western & Southern Financial Group Masters,Hard,Quarterfinals,3,Completed,False,0.0,2.0,28.0,16.0,2.0,1.81,2.12,1.86
+551174,2024-08-24 20:01:00+00:00,Varvara Gracheva,Coco Gauff,Gracheva V.,Gauff C.,Gauff,b,two,2024-08-26,WTA,US Open,Hard,1st Round,3,Completed,False,0.0,2.0,66.0,3.0,11.17,1.05,14.89,1.05
+551230,2024-08-25 16:56:00+00:00,Ben Shelton,Dominic Thiem,Shelton B.,Thiem D.,Shelton,a,four,2024-08-26,ATP,US Open,Hard,1st Round,5,Completed,True,3.0,0.0,13.0,210.0,1.06,9.47,1.08,12.22
+551175,2024-08-24 22:02:00+00:00,Jelena Ostapenko,Naomi Osaka,Ostapenko J.,Osaka N.,Osaka,b,three,2024-08-27,WTA,US Open,Hard,1st Round,3,Completed,False,0.0,2.0,10.0,88.0,2.26,1.64,2.34,1.7
+551176,2024-08-24 20:43:00+00:00,Aleksandar Kovacevic,Frances Tiafoe,Kovacevic A.,Tiafoe F.,Tiafoe,b,four,2024-08-27,ATP,US Open,Hard,1st Round,5,Completed,False,1.0,3.0,76.0,20.0,5.6,1.15,6.33,1.18
+551177,2024-08-24 20:55:00+00:00,Radu Albot,Novak Djokovic,Albot R.,Djokovic N.,Djokovic,b,three,2024-08-27,ATP,US Open,Hard,1st Round,5,Completed,False,0.0,3.0,138.0,2.0,24.56,1.01,57.63,1.02
+551243,2024-08-25 19:18:00+00:00,Jannik Sinner,Mackenzie McDonald,Sinner J.,Mcdonald M.,Sinner,a,three,2024-08-27,ATP,US Open,Hard,1st Round,5,Completed,True,3.0,1.0,1.0,140.0,1.01,17.89,1.02,28.96
+551245,2024-08-25 20:17:00+00:00,Iga Swiatek,Kamilla Rakhimova,Swiatek I.,Rakhimova K.,Swiatek,a,two,2024-08-27,WTA,US Open,Hard,1st Round,3,Completed,True,2.0,0.0,1.0,104.0,1.02,16.9,1.02,34.48
+551272,2024-08-26 09:30:00+00:00,Danielle Collins,Caroline Dolehide,Collins D.,Dolehide C.,Collins,a,two,2024-08-27,WTA,US Open,Hard,1st Round,3,Completed,False,1.0,2.0,11.0,49.0,1.16,5.42,1.18,5.88
+551249,2024-08-25 21:08:00+00:00,Carlos Alcaraz,Li Tu,Alcaraz C.,Tu L.,Alcaraz,a,three,2024-08-28,ATP,US Open,Hard,1st Round,5,Completed,True,3.0,1.0,3.0,186.0,1.0,26.03,1.01,53.38
+551298,2024-08-26 17:49:00+00:00,Emma Raducanu,Sofia Kenin,Raducanu E.,Kenin S.,Raducanu,a,three,2024-08-28,WTA,US Open,Hard,1st Round,3,Completed,False,1.0,2.0,72.0,54.0,1.28,3.75,1.3,4.09
+551299,2024-08-26 17:58:00+00:00,Lorenzo Sonego,Tommy Paul,Sonego L.,Paul T.,Paul,b,four,2024-08-28,ATP,US Open,Hard,1st Round,5,Completed,False,1.0,3.0,48.0,14.0,4.26,1.23,4.65,1.26
+551301,2024-08-26 18:31:00+00:00,Jasmine Paolini,Bianca Andreescu,Paolini J.,Andreescu B.,Paolini,a,three,2024-08-28,WTA,US Open,Hard,1st Round,3,Completed,True,2.0,1.0,5.0,167.0,1.52,2.54,1.57,2.65
+551343,2024-08-27 09:41:00+00:00,Ben Shelton,Roberto Bautista Agut,Shelton B.,Bautista Agut R.,Shelton,a,four,2024-08-28,ATP,US Open,Hard,2nd Round,5,Completed,True,3.0,0.0,13.0,67.0,1.17,5.04,1.2,5.44
+551381,2024-08-27 17:53:00+00:00,Casper Ruud,Gael Monfils,Ruud C.,Monfils G.,Monfils,b,five,2024-08-28,ATP,US Open,Hard,2nd Round,5,Completed,True,3.0,1.0,8.0,45.0,1.51,2.56,1.56,2.68
+551338,2024-08-27 09:21:00+00:00,Tatjana Maria,Coco Gauff,Maria T.,Gauff C.,Gauff,b,two,2024-08-29,WTA,US Open,Hard,2nd Round,3,Completed,False,0.0,2.0,99.0,3.0,15.71,1.02,24.47,1.03
+551379,2024-08-27 17:12:00+00:00,Matteo Berrettini,Taylor Fritz,Berrettini M.,Fritz T.,Fritz,b,four,2024-08-29,ATP,US Open,Hard,2nd Round,5,Completed,False,0.0,3.0,44.0,12.0,2.47,1.54,2.57,1.57
+551440,2024-08-28 15:35:00+00:00,Jannik Sinner,Alex Michelsen,Sinner J.,Michelsen A.,Sinner,a,three,2024-08-29,ATP,US Open,Hard,2nd Round,5,Completed,True,3.0,0.0,1.0,49.0,1.04,12.25,1.05,15.93
+551458,2024-08-28 21:19:00+00:00,Sofia Kenin,Jessica Pegula,Kenin S.,Pegula J.,Pegula,b,three,2024-08-29,WTA,US Open,Hard,2nd Round,3,Completed,False,0.0,2.0,54.0,6.0,6.08,1.13,6.83,1.15
+551404,2024-08-28 06:12:00+00:00,Naomi Osaka,Karolina Muchova,Osaka N.,Muchova K.,Osaka,a,three,2024-08-30,WTA,US Open,Hard,2nd Round,3,Completed,False,0.0,2.0,88.0,52.0,1.72,2.13,1.77,2.22
+551435,2024-08-28 14:57:00+00:00,Carlos Alcaraz,Botic van de Zandschulp,Alcaraz C.,Van De Zandschulp B.,Alcaraz,a,three,2024-08-30,ATP,US Open,Hard,2nd Round,5,Completed,False,0.0,3.0,3.0,74.0,1.01,19.07,1.03,33.86
+551555,2024-08-29 16:23:00+00:00,Ben Shelton,Frances Tiafoe,Shelton B.,Tiafoe F.,Tiafoe,b,five,2024-08-30,ATP,US Open,Hard,3rd Round,5,Completed,False,2.0,3.0,13.0,20.0,1.61,2.31,1.66,2.45
+551561,2024-08-29 16:42:00+00:00,Elina Svitolina,Coco Gauff,Svitolina E.,Gauff C.,Svitolina,a,three,2024-08-30,WTA,US Open,Hard,3rd Round,3,Completed,False,1.0,2.0,28.0,3.0,2.87,1.43,3.09,1.45
+551575,2024-08-29 17:29:00+00:00,Andrey Rublev,Jiri Lehecka,Rublev A.,Lehecka J.,Rublev,a,four,2024-08-30,ATP,US Open,Hard,3rd Round,5,Completed,True,3.0,0.0,6.0,38.0,1.34,3.28,1.37,3.5
+551573,2024-08-29 17:08:00+00:00,Alexei Popyrin,Novak Djokovic,Popyrin A.,Djokovic N.,Djokovic,b,four,2024-08-31,ATP,US Open,Hard,3rd Round,5,Completed,True,3.0,1.0,28.0,2.0,5.97,1.14,6.46,1.16
+551771,2024-08-30 16:32:00+00:00,Botic van de Zandschulp,Jack Draper,Van De Zandschulp B.,Draper J.,Draper,b,four,2024-08-31,ATP,US Open,Hard,3rd Round,5,Completed,False,0.0,3.0,74.0,25.0,3.86,1.27,4.25,1.31
+551782,2024-08-30 16:57:00+00:00,Jessica Bouzas Maneiro,Jessica Pegula,Bouzas Maneiro J.,Pegula J.,Pegula,b,three,2024-08-31,WTA,US Open,Hard,3rd Round,3,Completed,False,0.0,2.0,74.0,6.0,6.58,1.11,7.27,1.13
+551792,2024-08-30 17:44:00+00:00,Yulia Putintseva,Jasmine Paolini,Putintseva Y.,Paolini J.,Paolini,b,three,2024-08-31,WTA,US Open,Hard,3rd Round,3,Completed,False,0.0,2.0,32.0,5.0,2.24,1.66,2.35,1.73
+551618,2024-08-30 04:53:00+00:00,Iga Swiatek,Anastasia Pavlyuchenkova,Swiatek I.,Pavlyuchenkova A.,Swiatek,a,three,2024-09-01,WTA,US Open,Hard,3rd Round,3,Completed,True,2.0,0.0,1.0,27.0,1.08,8.25,1.1,9.29
+551919,2024-08-31 14:00:00+00:00,Emma Navarro,Coco Gauff,Navarro E.,Gauff C.,Gauff,b,three,2024-09-01,WTA,US Open,Hard,4th Round,3,Completed,True,2.0,1.0,12.0,3.0,2.74,1.45,2.92,1.51
+551937,2024-08-31 16:11:00+00:00,Andrey Rublev,Grigor Dimitrov,Rublev A.,Dimitrov G.,Rublev,a,four,2024-09-01,ATP,US Open,Hard,4th Round,5,Completed,False,2.0,3.0,6.0,9.0,1.81,2.01,1.91,2.14
+551921,2024-08-31 14:14:00+00:00,Qinwen Zheng,Donna Vekic,Zheng Q.,Vekic D.,Vekic,b,three,2024-09-02,WTA,US Open,Hard,4th Round,3,Completed,True,2.0,1.0,7.0,24.0,1.45,2.77,1.5,3.0
+551941,2024-08-31 19:10:00+00:00,Frances Tiafoe,Alexei Popyrin,Tiafoe F.,Popyrin A.,Tiafoe,a,four,2024-09-02,ATP,US Open,Hard,4th Round,5,Completed,True,3.0,1.0,20.0,28.0,1.93,1.89,2.01,2.02
+551981,2024-09-01 16:44:00+00:00,Diana Shnaider,Jessica Pegula,Shnaider D.,Pegula J.,Pegula,b,three,2024-09-02,WTA,US Open,Hard,4th Round,3,Completed,False,0.0,2.0,18.0,6.0,2.69,1.48,2.85,1.53
+551989,2024-09-01 22:17:00+00:00,Nuno Borges,Daniil Medvedev,Borges N.,Medvedev D.,Medvedev,b,four,2024-09-02,ATP,US Open,Hard,4th Round,5,Completed,False,0.0,3.0,34.0,5.0,7.61,1.09,8.9,1.11
+551990,2024-09-01 22:38:00+00:00,Karolina Muchova,Jasmine Paolini,Muchova K.,Paolini J.,Muchova,a,three,2024-09-02,WTA,US Open,Hard,4th Round,3,Completed,True,2.0,0.0,52.0,5.0,1.6,2.35,1.72,2.55
+551977,2024-09-01 15:49:00+00:00,Jannik Sinner,Tommy Paul,Sinner J.,Paul T.,Sinner,a,four,2024-09-03,ATP,US Open,Hard,4th Round,5,Completed,True,3.0,0.0,1.0,14.0,1.14,5.82,1.17,6.61
+551994,2024-09-02 06:40:00+00:00,Taylor Fritz,Alexander Zverev,Fritz T.,Zverev A.,Fritz,a,five,2024-09-03,ATP,US Open,Hard,Quarterfinals,5,Completed,True,3.0,1.0,12.0,4.0,2.46,1.55,2.63,1.61
+552020,2024-09-02 14:57:00+00:00,Paula Badosa,Emma Navarro,Badosa P.,Navarro E.,Navarro,b,three,2024-09-03,WTA,US Open,Hard,Quarterfinals,3,Completed,False,0.0,2.0,29.0,12.0,1.78,2.05,1.83,2.11
+551996,2024-09-02 06:41:00+00:00,Grigor Dimitrov,Frances Tiafoe,Dimitrov G.,Tiafoe F.,Tiafoe,b,five,2024-09-04,ATP,US Open,Hard,Quarterfinals,5,Retired,False,1.0,2.0,9.0,20.0,1.62,2.31,1.66,2.44
+552018,2024-09-02 14:39:00+00:00,Qinwen Zheng,Aryna Sabalenka,Zheng Q.,Sabalenka A.,Sabalenka,b,three,2024-09-04,WTA,US Open,Hard,Quarterfinals,3,Completed,False,0.0,2.0,7.0,2.0,3.68,1.29,4.0,1.32
+552072,2024-09-03 12:49:00+00:00,Beatriz Haddad Maia,Karolina Muchova,Haddad Maia B.,Muchova K.,Muchova,b,two,2024-09-04,WTA,US Open,Hard,Quarterfinals,3,Completed,False,0.0,2.0,21.0,52.0,3.38,1.32,3.62,1.37
+552085,2024-09-03 17:57:00+00:00,Jack Draper,Alex de Minaur,Draper J.,De Minaur A.,De Minaur,b,five,2024-09-04,ATP,US Open,Hard,Quarterfinals,5,Completed,True,3.0,0.0,25.0,10.0,2.22,1.67,2.33,1.73
+552070,2024-09-03 12:36:00+00:00,Iga Swiatek,Jessica Pegula,Swiatek I.,Pegula J.,Swiatek,a,three,2024-09-05,WTA,US Open,Hard,Quarterfinals,3,Completed,False,0.0,2.0,1.0,6.0,1.3,3.6,1.34,3.8
+552090,2024-09-03 18:10:00+00:00,Jannik Sinner,Daniil Medvedev,Sinner J.,Medvedev D.,Sinner,a,five,2024-09-05,ATP,US Open,Hard,Quarterfinals,5,Completed,True,3.0,1.0,1.0,5.0,1.34,3.28,1.4,3.52
+552150,2024-09-04 14:33:00+00:00,Emma Navarro,Aryna Sabalenka,Navarro E.,Sabalenka A.,Sabalenka,b,three,2024-09-06,WTA,US Open,Hard,Semifinals,3,Completed,False,0.0,2.0,12.0,2.0,4.4,1.22,4.76,1.23
+552216,2024-09-05 08:01:00+00:00,Jessica Pegula,Karolina Muchova,Pegula J.,Muchova K.,Pegula,a,three,2024-09-06,WTA,US Open,Hard,Semifinals,3,Completed,True,2.0,1.0,6.0,52.0,1.63,2.31,1.66,2.44
+552283,2024-09-05 18:28:00+00:00,Jannik Sinner,Jack Draper,Sinner J.,Draper J.,Sinner,a,four,2024-09-06,ATP,US Open,Hard,Semifinals,5,Completed,True,3.0,0.0,1.0,25.0,1.16,5.41,1.18,6.2
+552153,2024-09-04 20:00:00+00:00,Taylor Fritz,Frances Tiafoe,Fritz T.,Tiafoe F.,Tiafoe,b,five,2024-09-07,ATP,US Open,Hard,Semifinals,5,Completed,True,3.0,2.0,12.0,20.0,1.34,3.29,1.37,3.6
+552308,2024-09-06 10:00:00+00:00,Jessica Pegula,Aryna Sabalenka,Pegula J.,Sabalenka A.,Sabalenka,b,three,2024-09-07,WTA,US Open,Hard,The Final,3,Completed,False,0.0,2.0,6.0,2.0,3.64,1.3,3.89,1.34
+552389,2024-09-07 15:44:00+00:00,Jannik Sinner,Taylor Fritz,Sinner J.,Fritz T.,Sinner,a,four,2024-09-08,ATP,US Open,Hard,The Final,5,Completed,True,3.0,0.0,1.0,12.0,1.24,4.19,1.28,4.5
+552942,2024-09-14 20:27:00+00:00,Sonay Kartal,Rebecca Sramkova,Kartal S.,Sramkova R.,Sramkova,b,three,2024-09-15,WTA,Jasmin Open,Hard,The Final,3,Completed,True,2.0,0.0,151.0,136.0,1.48,2.62,1.53,2.8
+553040,2024-09-16 08:13:00+00:00,Emma Raducanu,Peyton Stearns,Raducanu E.,Stearns P.,Stearns,b,three,2024-09-17,WTA,Korea Open,Hard,1st Round,3,Completed,True,2.0,0.0,70.0,48.0,1.51,2.52,1.57,2.63
+553138,2024-09-17 12:13:00+00:00,Emma Raducanu,Yue Yuan,Raducanu E.,Yuan Y.,Raducanu,a,three,2024-09-19,WTA,Korea Open,Hard,2nd Round,3,Completed,True,2.0,0.0,70.0,40.0,1.45,2.69,1.5,2.94
+553314,2024-09-19 15:07:00+00:00,Emma Raducanu,Daria Kasatkina,Raducanu E.,Kasatkina D.,Kasatkina,b,three,2024-09-21,WTA,Korea Open,Hard,Quarterfinals,3,Retired,False,0.0,1.0,70.0,13.0,1.82,1.98,1.93,2.1
+553765,2024-09-24 18:46:00+00:00,Jack Draper,Mattia Bellucci,Draper J.,Bellucci M.,Draper,a,two,2024-09-26,ATP,Japan Open Tennis Championships,Hard,1st Round,3,Completed,True,2.0,0.0,20.0,103.0,1.32,3.34,1.36,3.53
+553808,2024-09-25 10:57:00+00:00,Carlos Alcaraz,Giovanni Mpetshi Perricard,Alcaraz C.,Mpetshi G.,Alcaraz,a,two,2024-09-27,ATP,China Open,Hard,1st Round,3,Completed,True,2.0,0.0,3.0,51.0,1.06,8.93,1.08,11.84
+554112,2024-09-28 06:27:00+00:00,Katie Boulter,Coco Gauff,Boulter K.,Gauff C.,Gauff,b,two,2024-09-29,WTA,China Open,Hard,3rd Round,3,Completed,False,0.0,2.0,34.0,6.0,3.98,1.24,4.31,1.27
+554483,2024-10-02 19:05:00+00:00,Tommy Paul,Fabio Fognini,Paul T.,Fognini F.,Paul,a,two,2024-10-04,ATP,Shanghai Masters,Hard,2nd Round,3,Completed,True,2.0,0.0,13.0,81.0,1.06,8.67,1.09,10.77
+554485,2024-10-02 19:23:00+00:00,Denis Shapovalov,Ben Shelton,Shapovalov D.,Shelton B.,Shelton,b,three,2024-10-04,ATP,Shanghai Masters,Hard,2nd Round,3,Completed,False,0.0,2.0,102.0,16.0,2.18,1.67,2.33,1.73
+554488,2024-10-02 19:51:00+00:00,Arthur Fils,Roberto Carballes Baena,Fils A.,Carballes Baena R.,Fils,a,two,2024-10-04,ATP,Shanghai Masters,Hard,2nd Round,3,Completed,False,0.0,2.0,21.0,54.0,1.32,3.32,1.36,3.65
+554481,2024-10-02 17:58:00+00:00,Carlos Alcaraz,Juncheng Shang,Alcaraz C.,Shang J.,Alcaraz,a,two,2024-10-05,ATP,Shanghai Masters,Hard,2nd Round,3,Completed,True,2.0,0.0,2.0,51.0,1.08,7.59,1.11,8.82
+554543,2024-10-03 10:51:00+00:00,Jannik Sinner,Taro Daniel,Sinner J.,Daniel T.,Sinner,a,two,2024-10-05,ATP,Shanghai Masters,Hard,2nd Round,3,Completed,True,2.0,0.0,1.0,93.0,1.01,16.19,1.02,27.06
+554640,2024-10-03 22:40:00+00:00,Mattia Bellucci,Alexander Zverev,Bellucci M.,Zverev A.,Zverev,b,two,2024-10-05,ATP,Shanghai Masters,Hard,2nd Round,3,Completed,False,0.0,2.0,101.0,3.0,4.73,1.18,5.0,1.21
+554789,2024-10-05 12:07:00+00:00,Jannik Sinner,Tomas Martin Etcheverry,Sinner J.,Etcheverry T.,Sinner,a,two,2024-10-06,ATP,Shanghai Masters,Hard,3rd Round,3,Completed,True,2.0,1.0,1.0,37.0,1.03,12.58,1.05,16.0
+554796,2024-10-05 15:24:00+00:00,Carlos Alcaraz,Wu Yibing,Alcaraz C.,Wu Y.,Alcaraz,a,two,2024-10-06,ATP,Shanghai Masters,Hard,3rd Round,3,Completed,True,2.0,0.0,2.0,560.0,1.02,13.2,1.03,20.68
+554800,2024-10-05 17:20:00+00:00,Tommy Paul,Alejandro Tabilo,Paul T.,Tabilo A.,Paul,a,three,2024-10-06,ATP,Shanghai Masters,Hard,3rd Round,3,Completed,True,2.0,1.0,13.0,23.0,1.23,4.06,1.25,4.53
+554636,2024-10-03 22:15:00+00:00,Taylor Fritz,Terence Atmane,Fritz T.,Atmane T.,Fritz,a,two,2024-10-07,ATP,Shanghai Masters,Hard,2nd Round,3,Completed,True,2.0,0.0,7.0,161.0,1.13,5.86,1.2,7.0
+554641,2024-10-03 22:51:00+00:00,Matteo Berrettini,Holger Rune,Berrettini M.,Rune H.,Rune,b,three,2024-10-07,ATP,Shanghai Masters,Hard,2nd Round,3,Completed,False,1.0,2.0,44.0,14.0,1.93,1.84,2.03,1.91
+554808,2024-10-05 19:09:00+00:00,Diana Shnaider,Leylah Fernandez,Shnaider D.,Fernandez L.A.,Shnaider,a,three,2024-10-07,WTA,Wuhan Open,Hard,1st Round,3,Completed,False,1.0,2.0,16.0,28.0,1.58,2.33,1.63,2.45
+554810,2024-10-05 19:41:00+00:00,Beatriz Haddad Maia,Madison Keys,Haddad Maia B.,Keys M.,Haddad Maia,a,two,2024-10-07,WTA,Wuhan Open,Hard,1st Round,3,Completed,True,2.0,0.0,12.0,20.0,2.49,1.52,2.66,1.57
+554848,2024-10-06 14:47:00+00:00,Elise Mertens,Donna Vekic,Mertens E.,Vekic D.,Donna Vekic,b,three,2024-10-07,WTA,Wuhan Open,Hard,1st Round,3,Completed,False,1.0,2.0,30.0,18.0,2.25,1.62,2.35,1.68
+554867,2024-10-06 20:29:00+00:00,Flavio Cobolli,Stanislas Wawrinka,Cobolli F.,Wawrinka S.,Cobolli,a,three,2024-10-07,ATP,Shanghai Masters,Hard,2nd Round,3,Completed,True,2.0,1.0,30.0,236.0,1.37,3.06,1.46,3.37
+554795,2024-10-05 13:57:00+00:00,Roberto Carballes Baena,Ben Shelton,Carballes Baena R.,Shelton B.,Shelton,b,three,2024-10-08,ATP,Shanghai Masters,Hard,3rd Round,3,Completed,False,0.0,2.0,54.0,16.0,5.2,1.15,5.92,1.21
+554844,2024-10-06 14:41:00+00:00,Amanda Anisimova,Cristina Bucsa,Anisimova A.,Bucsa C.,Anisimova,a,three,2024-10-08,WTA,Wuhan Open,Hard,1st Round,3,Completed,True,2.0,0.0,39.0,71.0,1.34,3.2,1.41,3.45
+554901,2024-10-07 13:50:00+00:00,Alexei Popyrin,Grigor Dimitrov,Popyrin A.,Dimitrov G.,Dimitrov,b,three,2024-10-08,ATP,Shanghai Masters,Hard,3rd Round,3,Completed,False,0.0,2.0,24.0,10.0,2.21,1.65,2.37,1.76
+554903,2024-10-07 15:07:00+00:00,Tallon Griekspoor,Alexander Zverev,Griekspoor T.,Zverev A.,Zverev,b,three,2024-10-08,ATP,Shanghai Masters,Hard,3rd Round,3,Completed,False,1.0,2.0,40.0,3.0,4.51,1.2,5.33,1.24
+554910,2024-10-07 18:09:00+00:00,Jiri Lehecka,Holger Rune,Lehecka J.,Rune H.,Lehecka,a,three,2024-10-08,ATP,Shanghai Masters,Hard,3rd Round,3,Completed,False,0.0,2.0,34.0,14.0,2.38,1.57,2.51,1.65
+554912,2024-10-07 18:21:00+00:00,Flavio Cobolli,Novak Djokovic,Cobolli F.,Djokovic N.,Djokovic,b,three,2024-10-08,ATP,Shanghai Masters,Hard,3rd Round,3,Completed,False,0.0,2.0,30.0,4.0,6.49,1.11,7.07,1.14
+554913,2024-10-07 18:40:00+00:00,Mirra Andreeva,Wang Xiyu,Andreeva M.,Wang Xiy.,Andreeva,a,three,2024-10-08,WTA,Wuhan Open,Hard,1st Round,3,Completed,True,2.0,0.0,19.0,99.0,1.3,3.46,1.33,3.7
+554943,2024-10-08 09:12:00+00:00,Stefanos Tsitsipas,Daniil Medvedev,Tsitsipas S.,Medvedev D.,Medvedev,b,three,2024-10-09,ATP,Shanghai Masters,Hard,4th Round,3,Completed,False,0.0,2.0,12.0,5.0,2.86,1.41,3.14,1.46
+554948,2024-10-08 10:29:00+00:00,Jannik Sinner,Ben Shelton,Sinner J.,Shelton B.,Sinner,a,three,2024-10-09,ATP,Shanghai Masters,Hard,4th Round,3,Completed,True,2.0,0.0,1.0,16.0,1.16,5.03,1.2,5.78
+554964,2024-10-08 13:51:00+00:00,Tommy Paul,Tomas Machac,Paul T.,Machac T.,Paul,a,three,2024-10-09,ATP,Shanghai Masters,Hard,4th Round,3,Completed,False,1.0,2.0,13.0,33.0,1.53,2.47,1.59,2.87
+554976,2024-10-08 15:22:00+00:00,Carlos Alcaraz,Gael Monfils,Alcaraz C.,Monfils G.,Alcaraz,a,two,2024-10-09,ATP,Shanghai Masters,Hard,4th Round,3,Completed,True,2.0,0.0,2.0,46.0,1.05,9.97,1.07,14.01
+554988,2024-10-08 16:34:00+00:00,Jessica Pegula,Anastasia Potapova,Pegula J.,Potapova A.,Pegula,a,two,2024-10-09,WTA,Wuhan Open,Hard,2nd Round,3,Retired,True,1.0,0.0,3.0,38.0,1.21,4.29,1.25,5.06
+554990,2024-10-08 16:42:00+00:00,Jasmine Paolini,Yue Yuan,Paolini J.,Yuan Y.,Paolini,a,three,2024-10-09,WTA,Wuhan Open,Hard,2nd Round,3,Completed,True,2.0,0.0,6.0,41.0,1.36,3.11,1.44,3.34
+555059,2024-10-09 15:46:00+00:00,Aryna Sabalenka,Yulia Putintseva,Sabalenka A.,Putintseva Y.,Sabalenka,a,three,2024-10-10,WTA,Wuhan Open,Hard,3rd Round,3,Completed,True,2.0,1.0,2.0,35.0,1.14,5.54,1.17,6.4
+555081,2024-10-09 19:56:00+00:00,Jakub Mensik,Novak Djokovic,Mensik J.,Djokovic N.,Djokovic,b,three,2024-10-11,ATP,Shanghai Masters,Hard,Quarterfinals,3,Completed,False,1.0,2.0,65.0,4.0,6.66,1.1,7.61,1.13
+555087,2024-10-09 21:23:00+00:00,Taylor Fritz,David Goffin,Fritz T.,Goffin D.,Fritz,a,three,2024-10-11,ATP,Shanghai Masters,Hard,Quarterfinals,3,Completed,True,2.0,0.0,7.0,66.0,1.16,5.14,1.2,5.64
+555109,2024-10-10 06:34:00+00:00,Coco Gauff,Magda Linette,Gauff C.,Linette M.,Gauff,a,three,2024-10-11,WTA,Wuhan Open,Hard,Quarterfinals,3,Completed,True,2.0,0.0,4.0,45.0,1.13,5.99,1.15,6.56
+555155,2024-10-10 16:03:00+00:00,Jannik Sinner,Tomas Machac,Sinner J.,Machac T.,Sinner,a,three,2024-10-12,ATP,Shanghai Masters,Hard,Semifinals,3,Completed,True,2.0,0.0,1.0,33.0,1.11,6.49,1.14,8.02
+555227,2024-10-11 17:44:00+00:00,Novak Djokovic,Taylor Fritz,Djokovic N.,Fritz T.,Djokovic,a,two,2024-10-12,ATP,Shanghai Masters,Hard,Semifinals,3,Completed,True,2.0,0.0,4.0,7.0,1.4,2.92,1.46,3.16
+555228,2024-10-11 17:08:00+00:00,Coco Gauff,Aryna Sabalenka,Gauff C.,Sabalenka A.,Sabalenka,b,three,2024-10-12,WTA,Wuhan Open,Hard,Semifinals,3,Completed,False,1.0,2.0,4.0,2.0,2.31,1.6,2.41,1.68
+555236,2024-10-11 18:56:00+00:00,Zheng Qinwen,Wang Xinyu,Zheng Q.,Wang Xin.,Qinwen,a,three,2024-10-12,WTA,Wuhan Open,Hard,Semifinals,3,Completed,True,2.0,0.0,7.0,51.0,1.2,4.5,1.23,5.0
+555274,2024-10-12 16:36:00+00:00,Jannik Sinner,Novak Djokovic,Sinner J.,Djokovic N.,Djokovic,b,three,2024-10-13,ATP,Shanghai Masters,Hard,The Final,3,Completed,True,2.0,0.0,1.0,4.0,1.41,2.87,1.44,3.07
+555284,2024-10-12 20:00:00+00:00,Aryna Sabalenka,Zheng Qinwen,Sabalenka A.,Zheng Q.,Sabalenka,a,two,2024-10-13,WTA,Wuhan Open,Hard,The Final,3,Completed,True,2.0,1.0,2.0,7.0,1.43,2.79,1.48,3.0
+555407,2024-10-14 09:28:00+00:00,Cameron Norrie,Miomir Kecmanovic,Norrie C.,Kecmanovic M.,Kecmanovic,b,three,2024-10-15,ATP,Nordic Open,Hard,1st Round,3,Completed,False,0.0,2.0,52.0,55.0,1.94,1.84,2.02,1.95
+555550,2024-10-16 13:47:00+00:00,Frances Tiafoe,Dan Evans,Tiafoe F.,Evans D.,Tiafoe,a,two,2024-10-17,ATP,Almaty Open,Hard,2nd Round,3,Completed,True,2.0,1.0,15.0,180.0,1.39,2.93,1.45,3.1
+556053,2024-10-21 16:49:00+00:00,Frances Tiafoe,Cameron Norrie,Tiafoe F.,Norrie C.,Tiafoe,a,two,2024-10-22,ATP,Vienna Open,Hard,1st Round,3,Completed,True,2.0,0.0,15.0,53.0,1.48,2.59,1.54,2.9
+556055,2024-10-21 17:07:00+00:00,Dominic Thiem,Luciano Darderi,Thiem D.,Darderi L.,Darderi,b,three,2024-10-22,ATP,Vienna Open,Hard,1st Round,3,Completed,False,0.0,2.0,318.0,42.0,2.4,1.54,2.55,1.59
+556058,2024-10-21 17:26:00+00:00,Nicolas Jarry,Holger Rune,Jarry N.,Rune H.,Rune,b,two,2024-10-22,ATP,Swiss Indoors,Hard,1st Round,3,Completed,False,0.0,2.0,34.0,14.0,3.72,1.26,4.06,1.31
+556061,2024-10-21 17:41:00+00:00,Tomas Martin Etcheverry,Ben Shelton,Etcheverry T.,Shelton B.,Shelton,b,three,2024-10-22,ATP,Swiss Indoors,Hard,1st Round,3,Completed,False,0.0,2.0,36.0,23.0,3.1,1.35,3.27,1.38
+556064,2024-10-21 18:23:00+00:00,Diana Shnaider,Viktoriya Tomova,Shnaider D.,Tomova V.,Shnaider,a,two,2024-10-23,WTA,Toray Pan Pacific Open Tennis Tournament,Hard,2nd Round,3,Completed,True,2.0,0.0,16.0,49.0,1.29,3.56,1.33,3.86
+556065,2024-10-21 18:43:00+00:00,Bianca Andreescu,Beatriz Haddad Maia,Andreescu B.,Haddad Maia B.,Haddad Maia,b,three,2024-10-23,WTA,Toray Pan Pacific Open Tennis Tournament,Hard,2nd Round,3,Retired,True,0.0,0.0,159.0,10.0,3.0,1.38,3.2,1.49
+556110,2024-10-22 13:37:00+00:00,Felix Auger-Aliassime,Sebastian Baez,Auger-Aliassime F.,Baez S.,Auger-Aliassime,a,two,2024-10-23,ATP,Swiss Indoors,Hard,1st Round,3,Completed,True,2.0,0.0,19.0,26.0,1.11,6.21,1.13,7.03
+556113,2024-10-22 14:03:00+00:00,Roberto Bautista Agut,Casper Ruud,Bautista Agut R.,Ruud C.,Ruud,b,two,2024-10-23,ATP,Swiss Indoors,Hard,1st Round,3,Completed,True,2.0,1.0,45.0,8.0,2.65,1.47,2.78,1.51
+556123,2024-10-22 14:18:00+00:00,Brandon Nakashima,Tommy Paul,Nakashima B.,Paul T.,Paul,b,three,2024-10-23,ATP,Vienna Open,Hard,1st Round,3,Completed,True,2.0,0.0,38.0,12.0,3.04,1.37,3.26,1.4
+556128,2024-10-22 17:16:00+00:00,Frances Tiafoe,Matteo Berrettini,Tiafoe F.,Berrettini M.,Berrettini,b,three,2024-10-23,ATP,Vienna Open,Hard,2nd Round,3,Completed,False,1.0,2.0,15.0,41.0,2.25,1.63,2.33,1.68
+556131,2024-10-22 16:15:00+00:00,Qinwen Zheng,Moyuka Uchijima,Zheng Q.,Uchijima M.,Zheng,a,two,2024-10-24,WTA,Toray Pan Pacific Open Tennis Tournament,Hard,2nd Round,3,Completed,True,2.0,0.0,7.0,57.0,1.05,9.35,1.07,12.57
+556133,2024-10-22 16:19:00+00:00,McCartney Kessler,Daria Kasatkina,Kessler M.,Kasatkina D.,Kessler,a,three,2024-10-24,WTA,Toray Pan Pacific Open Tennis Tournament,Hard,2nd Round,3,Completed,False,1.0,2.0,73.0,9.0,3.1,1.35,3.4,1.4
+556158,2024-10-23 16:19:00+00:00,Sofia Kenin,Clara Tauson,Kenin S.,Tauson C.,Tauson,b,two,2024-10-24,WTA,Toray Pan Pacific Open Tennis Tournament,Hard,2nd Round,3,Completed,True,2.0,1.0,155.0,53.0,2.27,1.62,2.38,1.68
+556209,2024-10-23 16:40:00+00:00,Luciano Darderi,Jack Draper,Darderi L.,Draper J.,Draper,b,two,2024-10-24,ATP,Vienna Open,Hard,2nd Round,3,Completed,False,0.0,2.0,42.0,18.0,7.59,1.08,9.0,1.11
+556210,2024-10-23 16:54:00+00:00,Flavio Cobolli,Alex de Minaur,Cobolli F.,De Minaur A.,De Minaur,b,three,2024-10-24,ATP,Vienna Open,Hard,2nd Round,3,Retired,False,0.0,1.0,31.0,10.0,3.24,1.33,3.49,1.36
+556211,2024-10-23 17:13:00+00:00,Stefanos Tsitsipas,Botic van De Zandschulp,Tsitsipas S.,Van De Zandschulp B.,Tsitsipas,a,two,2024-10-24,ATP,Swiss Indoors,Hard,2nd Round,3,Completed,True,2.0,0.0,11.0,67.0,1.4,2.89,1.45,3.2
+556212,2024-10-23 17:34:00+00:00,Dominic Stricker,Holger Rune,Stricker D.,Rune H.,Rune,b,two,2024-10-24,ATP,Swiss Indoors,Hard,2nd Round,3,Completed,False,0.0,2.0,258.0,14.0,3.03,1.37,3.3,1.41
+556280,2024-10-24 12:23:00+00:00,Alexander Zverev,Lorenzo Musetti,Zverev A.,Musetti L.,Zverev,a,three,2024-10-25,ATP,Vienna Open,Hard,Quarterfinals,3,Completed,False,1.0,2.0,3.0,17.0,1.24,4.0,1.28,4.33
+556314,2024-10-24 18:07:00+00:00,Andrey Rublev,Ben Shelton,Rublev A.,Shelton B.,Shelton,b,three,2024-10-25,ATP,Swiss Indoors,Hard,Quarterfinals,3,Completed,False,1.0,2.0,7.0,23.0,1.71,2.11,1.78,2.21
+556318,2024-10-24 17:02:00+00:00,Qinwen Zheng,Leylah Fernandez,Zheng Q.,Fernandez L.A.,Zheng,a,three,2024-10-25,WTA,Toray Pan Pacific Open Tennis Tournament,Hard,Quarterfinals,3,Completed,True,2.0,1.0,7.0,35.0,1.26,3.75,1.3,4.0
+556440,2024-10-25 17:10:00+00:00,Ben Shelton,Arthur Fils,Shelton B.,Fils A.,Shelton,a,three,2024-10-26,ATP,Swiss Indoors,Hard,Semifinals,3,Completed,True,2.0,0.0,23.0,20.0,1.95,1.84,2.05,2.01
+556446,2024-10-25 18:57:00+00:00,Lorenzo Musetti,Jack Draper,Musetti L.,Draper J.,Musetti,a,three,2024-10-26,ATP,Vienna Open,Hard,Semifinals,3,Completed,False,0.0,2.0,17.0,18.0,2.93,1.4,3.18,1.48
+556448,2024-10-25 17:57:00+00:00,Qinwen Zheng,Diana Shnaider,Zheng Q.,Shnaider D.,Zheng,a,two,2024-10-26,WTA,Toray Pan Pacific Open Tennis Tournament,Hard,Semifinals,3,Completed,True,2.0,0.0,7.0,16.0,1.32,3.33,1.36,3.66
+556494,2024-10-26 08:40:00+00:00,Qinwen Zheng,Sofia Kenin,Zheng Q.,Kenin S.,Zheng,a,two,2024-10-27,WTA,Toray Pan Pacific Open Tennis Tournament,Hard,The Final,3,Completed,True,2.0,0.0,7.0,155.0,1.13,5.74,1.17,6.5
+556537,2024-10-26 20:45:00+00:00,Jack Draper,Karen Khachanov,Draper J.,Khachanov K.,Khachanov,b,three,2024-10-27,ATP,Vienna Open,Hard,The Final,3,Completed,True,2.0,0.0,18.0,24.0,1.65,2.21,1.69,2.31
+556539,2024-10-26 21:05:00+00:00,Ben Shelton,Giovanni Mpetshi Perricard,Shelton B.,Mpetshi G.,Shelton,a,three,2024-10-27,ATP,Swiss Indoors,Hard,The Final,3,Completed,False,0.0,2.0,23.0,50.0,1.44,2.76,1.5,2.95
+556607,2024-10-27 21:27:00+00:00,Jack Draper,Jiri Lehecka,Draper J.,Lehecka J.,Draper,a,three,2024-10-29,ATP,BNP Paribas Masters,Hard,1st Round,3,Completed,True,2.0,0.0,15.0,30.0,1.46,2.68,1.5,2.84
+556614,2024-10-27 22:38:00+00:00,Arthur Fils,Marin Cilic,Fils A.,Cilic M.,Fils,a,two,2024-10-29,ATP,BNP Paribas Masters,Hard,1st Round,3,Completed,True,2.0,0.0,20.0,201.0,1.28,3.65,1.32,4.01
+556615,2024-10-27 22:53:00+00:00,Frances Tiafoe,Giovanni Mpetshi Perricard,Tiafoe F.,Mpetshi G.,Mpetshi Perricard,b,three,2024-10-29,ATP,BNP Paribas Masters,Hard,1st Round,3,Completed,False,1.0,2.0,17.0,31.0,1.65,2.23,1.82,2.33
+556698,2024-10-28 18:03:00+00:00,Alex de Minaur,Mariano Navone,De Minaur A.,Navone M.,De Minaur,a,two,2024-10-29,ATP,BNP Paribas Masters,Hard,1st Round,3,Completed,True,2.0,0.0,10.0,45.0,1.09,7.18,1.11,8.5
+556699,2024-10-28 17:31:00+00:00,Ben Shelton,Corentin Moutet,Shelton B.,Moutet C.,Shelton,a,two,2024-10-29,ATP,BNP Paribas Masters,Hard,1st Round,3,Completed,True,2.0,1.0,19.0,70.0,1.28,3.65,1.33,3.85
+556700,2024-10-28 17:45:00+00:00,Alexei Popyrin,Matteo Berrettini,Popyrin A.,Berrettini M.,Berrettini,b,three,2024-10-29,ATP,BNP Paribas Masters,Hard,1st Round,3,Completed,True,2.0,0.0,24.0,36.0,2.43,1.55,2.55,1.61
+556703,2024-10-28 17:56:00+00:00,Matteo Arnaldi,Holger Rune,Arnaldi M.,Rune H.,Rune,b,two,2024-10-29,ATP,BNP Paribas Masters,Hard,1st Round,3,Completed,False,0.0,2.0,38.0,13.0,3.61,1.28,4.35,1.35
+556772,2024-10-29 16:57:00+00:00,Alexander Zverev,Tallon Griekspoor,Zverev A.,Griekspoor T.,Zverev,a,three,2024-10-30,ATP,BNP Paribas Masters,Hard,2nd Round,3,Completed,True,2.0,0.0,3.0,39.0,1.29,3.55,1.32,3.79
+556777,2024-10-29 18:06:00+00:00,Grigor Dimitrov,Tomas Martin Etcheverry,Dimitrov G.,Etcheverry T.,Dimitrov,a,two,2024-10-30,ATP,BNP Paribas Masters,Hard,2nd Round,3,Completed,True,2.0,1.0,9.0,40.0,1.26,3.85,1.29,4.08
+556781,2024-10-29 19:16:00+00:00,Alexei Popyrin,Daniil Medvedev,Popyrin A.,Medvedev D.,Medvedev,b,three,2024-10-30,ATP,BNP Paribas Masters,Hard,2nd Round,3,Completed,True,2.0,1.0,24.0,5.0,3.46,1.3,3.72,1.35
+556783,2024-10-29 21:46:00+00:00,Jack Draper,Taylor Fritz,Draper J.,Fritz T.,Draper,a,three,2024-10-30,ATP,BNP Paribas Masters,Hard,2nd Round,3,Completed,True,2.0,1.0,15.0,6.0,1.86,1.93,1.96,2.03
+556844,2024-10-30 17:39:00+00:00,Stefanos Tsitsipas,Francisco Cerundolo,Tsitsipas S.,Cerundolo F.,Tsitsipas,a,three,2024-10-31,ATP,BNP Paribas Masters,Hard,3rd Round,3,Completed,True,2.0,1.0,11.0,29.0,1.48,2.64,1.52,2.82
+556845,2024-10-30 19:58:00+00:00,Ugo Humbert,Carlos Alcaraz,Humbert U.,Alcaraz C.,Alcaraz,b,two,2024-10-31,ATP,BNP Paribas Masters,Hard,3rd Round,3,Completed,True,2.0,1.0,18.0,2.0,4.87,1.17,5.56,1.22
+556859,2024-10-30 21:26:00+00:00,Alexander Zverev,Arthur Fils,Zverev A.,Fils A.,Zverev,a,three,2024-10-31,ATP,BNP Paribas Masters,Hard,3rd Round,3,Completed,True,2.0,1.0,3.0,20.0,1.46,2.7,1.5,2.92
+556863,2024-10-30 22:51:00+00:00,Alex de Minaur,Jack Draper,De Minaur A.,Draper J.,Draper,b,three,2024-10-31,ATP,BNP Paribas Masters,Hard,3rd Round,3,Completed,True,2.0,1.0,10.0,15.0,2.22,1.65,2.35,1.7
+556992,2024-10-31 21:44:00+00:00,Alexander Zverev,Stefanos Tsitsipas,Zverev A.,Tsitsipas S.,Zverev,a,three,2024-11-01,ATP,BNP Paribas Masters,Hard,Quarterfinals,3,Completed,True,2.0,0.0,3.0,11.0,1.38,3.02,1.42,3.28
+557099,2024-11-01 17:31:00+00:00,Aryna Sabalenka,Qinwen Zheng,Sabalenka A.,Zheng Q.,Sabalenka,a,two,2024-11-02,WTA,WTA Finals,Hard,Round Robin,3,Completed,True,2.0,0.0,1.0,7.0,1.4,2.94,1.45,3.23
+557106,2024-11-01 19:20:00+00:00,Jasmine Paolini,Elena Rybakina,Paolini J.,Rybakina E.,Paolini,a,two,2024-11-02,WTA,WTA Finals,Hard,Round Robin,3,Completed,True,2.0,0.0,4.0,5.0,2.43,1.55,2.5,1.62
+557112,2024-11-01 20:36:00+00:00,Katie Boulter,Yuan Yue,Boulter K.,Yuan Y.,Boulter,a,three,2024-11-02,WTA,Hong Kong Tennis Open,Hard,Semifinals,3,Completed,True,2.0,1.0,29.0,45.0,1.44,2.75,1.5,2.86
+557117,2024-11-01 21:34:00+00:00,Holger Rune,Alexander Zverev,Rune H.,Zverev A.,Rune,a,three,2024-11-02,ATP,BNP Paribas Masters,Hard,Semifinals,3,Completed,False,0.0,2.0,13.0,3.0,2.87,1.42,3.0,1.49
+557128,2024-11-02 00:02:00+00:00,Karen Khachanov,Ugo Humbert,Khachanov K.,Humbert U.,Khachanov,a,three,2024-11-02,ATP,BNP Paribas Masters,Hard,Semifinals,3,Completed,False,1.0,2.0,21.0,18.0,2.12,1.72,2.22,1.78
+557162,2024-11-02 11:34:00+00:00,Katie Boulter,Diana Shnaider,Boulter K.,Shnaider D.,Shnaider,b,three,2024-11-03,WTA,Hong Kong Tennis Open,Hard,The Final,3,Completed,False,0.0,2.0,29.0,14.0,2.36,1.58,2.52,1.65
+557179,2024-11-02 18:17:00+00:00,Coco Gauff,Jessica Pegula,Gauff C.,Pegula J.,Gauff,a,two,2024-11-03,WTA,WTA Finals,Hard,Round Robin,3,Completed,True,2.0,0.0,3.0,6.0,1.54,2.47,1.59,2.63
+557180,2024-11-02 18:10:00+00:00,Iga Swiatek,Barbora Krejcikova,Swiatek I.,Krejcikova B.,Swiatek,a,three,2024-11-03,WTA,WTA Finals,Hard,Round Robin,3,Completed,True,2.0,1.0,2.0,13.0,1.14,5.74,1.16,6.4
+557186,2024-11-02 22:28:00+00:00,Alexander Zverev,Ugo Humbert,Zverev A.,Humbert U.,Zverev,a,three,2024-11-03,ATP,BNP Paribas Masters,Hard,The Final,3,Completed,True,2.0,0.0,3.0,18.0,1.41,2.91,1.47,3.01
+557211,2024-11-03 12:51:00+00:00,Aryna Sabalenka,Jasmine Paolini,Sabalenka A.,Paolini J.,Sabalenka,a,two,2024-11-04,WTA,WTA Finals,Hard,Round Robin,3,Completed,True,2.0,0.0,1.0,4.0,1.14,5.62,1.17,6.25
+557212,2024-11-03 14:53:00+00:00,Elena Rybakina,Qinwen Zheng,Rybakina E.,Zheng Q.,Zheng,b,two,2024-11-04,WTA,WTA Finals,Hard,Round Robin,3,Completed,False,1.0,2.0,5.0,7.0,2.29,1.62,2.38,1.7
+557326,2024-11-04 16:10:00+00:00,Iga Swiatek,Coco Gauff,Swiatek I.,Gauff C.,Swiatek,a,three,2024-11-05,WTA,WTA Finals,Hard,Round Robin,3,Completed,False,0.0,2.0,2.0,3.0,1.56,2.43,1.62,2.63
+557328,2024-11-04 16:22:00+00:00,Jessica Pegula,Barbora Krejcikova,Pegula J.,Krejcikova B.,Pegula,a,three,2024-11-05,WTA,WTA Finals,Hard,Round Robin,3,Completed,False,0.0,2.0,6.0,13.0,1.45,2.73,1.53,2.96
+557380,2024-11-05 13:18:00+00:00,Jasmine Paolini,Qinwen Zheng,Paolini J.,Zheng Q.,Zheng,b,three,2024-11-06,WTA,WTA Finals,Hard,Round Robin,3,Completed,False,0.0,2.0,4.0,7.0,2.93,1.4,3.15,1.44
+557388,2024-11-05 18:50:00+00:00,Aryna Sabalenka,Elena Rybakina,Sabalenka A.,Rybakina E.,Rybakina,b,two,2024-11-06,WTA,WTA Finals,Hard,Round Robin,3,Completed,False,1.0,2.0,1.0,5.0,1.19,4.63,1.22,5.24
+557622,2024-11-07 20:21:00+00:00,Qinwen Zheng,Barbora Krejcikova,Zheng Q.,Krejcikova B.,Zheng,a,three,2024-11-08,WTA,WTA Finals,Hard,Semifinals,3,Completed,True,2.0,0.0,7.0,13.0,1.4,2.93,1.48,3.31
+557624,2024-11-07 20:46:00+00:00,Aryna Sabalenka,Coco Gauff,Sabalenka A.,Gauff C.,Sabalenka,a,three,2024-11-08,WTA,WTA Finals,Hard,The Final,3,Completed,False,0.0,2.0,1.0,3.0,1.5,2.58,1.58,2.84
+557736,2024-11-08 21:46:00+00:00,Coco Gauff,Qinwen Zheng,Gauff C.,Zheng Q.,Zheng,b,three,2024-11-09,WTA,WTA Finals,Hard,The Final,3,Completed,True,2.0,1.0,3.0,7.0,1.6,2.31,1.65,2.45
+557743,2024-11-08 20:45:00+00:00,Cameron Norrie,Benjamin Bonzi,Norrie C.,Bonzi B.,Norrie,a,three,2024-11-09,ATP,Open de Moselle,Hard,The Final,3,Completed,False,0.0,2.0,57.0,124.0,1.91,1.87,2.0,1.94
+557772,2024-11-09 10:17:00+00:00,Daniil Medvedev,Taylor Fritz,Medvedev D.,Fritz T.,Medvedev,a,three,2024-11-10,ATP,Masters Cup,Hard,Round Robin,3,Completed,False,0.0,2.0,4.0,5.0,1.74,2.06,1.8,2.22
+557773,2024-11-09 10:50:00+00:00,Jannik Sinner,Alex de Minaur,Sinner J.,De Minaur A.,Sinner,a,two,2024-11-10,ATP,Masters Cup,Hard,Round Robin,3,Completed,True,2.0,0.0,1.0,9.0,1.11,6.57,1.16,8.24
+557775,2024-11-09 11:27:00+00:00,Carlos Alcaraz,Casper Ruud,Alcaraz C.,Ruud C.,Alcaraz,a,two,2024-11-11,ATP,Masters Cup,Hard,Round Robin,3,Completed,False,0.0,2.0,3.0,7.0,1.06,8.71,1.09,10.08
+557776,2024-11-09 13:02:00+00:00,Alexander Zverev,Andrey Rublev,Zverev A.,Rublev A.,Zverev,a,two,2024-11-11,ATP,Masters Cup,Hard,Round Robin,3,Completed,True,2.0,0.0,2.0,8.0,1.3,3.48,1.34,3.76
+557894,2024-11-11 17:23:00+00:00,Daniil Medvedev,Alex de Minaur,Medvedev D.,De Minaur A.,De Minaur,b,three,2024-11-12,ATP,Masters Cup,Hard,Round Robin,3,Completed,True,2.0,0.0,4.0,9.0,1.9,1.88,2.03,1.94
+557895,2024-11-11 17:40:00+00:00,Jannik Sinner,Taylor Fritz,Sinner J.,Fritz T.,Sinner,a,two,2024-11-12,ATP,Masters Cup,Hard,Round Robin,3,Completed,True,2.0,0.0,1.0,5.0,1.16,5.04,1.2,5.8
+557911,2024-11-12 06:14:00+00:00,Alexander Zverev,Casper Ruud,Zverev A.,Ruud C.,Zverev,a,two,2024-11-13,ATP,Masters Cup,Hard,Round Robin,3,Completed,True,2.0,0.0,2.0,7.0,1.15,5.46,1.18,6.0
+557912,2024-11-12 10:00:00+00:00,Carlos Alcaraz,Andrey Rublev,Alcaraz C.,Rublev A.,Alcaraz,a,three,2024-11-13,ATP,Masters Cup,Hard,Round Robin,3,Completed,True,2.0,0.0,3.0,8.0,1.54,2.46,1.6,2.6
+558010,2024-11-13 11:00:00+00:00,Taylor Fritz,Alex de Minaur,Fritz T.,De Minaur A.,Fritz,a,three,2024-11-14,ATP,Masters Cup,Hard,Round Robin,3,Completed,False,1.0,2.0,5.0,9.0,1.38,3.0,1.42,3.2
+558011,2024-11-13 11:15:00+00:00,Jannik Sinner,Daniil Medvedev,Sinner J.,Medvedev D.,Sinner,a,straight,2024-11-14,ATP,Masters Cup,Hard,Round Robin,3,Completed,True,2.0,0.0,1.0,4.0,1.17,4.85,1.22,5.6
+558087,2024-11-14 12:17:00+00:00,Alexander Zverev,Carlos Alcaraz,Zverev A.,Alcaraz C.,Alcaraz,b,three,2024-11-15,ATP,Masters Cup,Hard,Round Robin,3,Completed,True,2.0,0.0,2.0,3.0,1.91,1.87,2.02,1.92
+558089,2024-11-14 12:37:00+00:00,Casper Ruud,Andrey Rublev,Ruud C.,Rublev A.,Ruud,a,two,2024-11-15,ATP,Masters Cup,Hard,Round Robin,3,Completed,True,2.0,1.0,7.0,8.0,2.43,1.55,2.63,1.64
+558216,2024-11-15 19:15:00+00:00,Alexander Zverev,Taylor Fritz,Zverev A.,Fritz T.,Zverev,a,three,2024-11-16,ATP,Masters Cup,Hard,Semifinals,3,Completed,False,1.0,2.0,2.0,5.0,1.4,2.94,1.49,3.11
+558221,2024-11-15 22:18:00+00:00,Jannik Sinner,Casper Ruud,Sinner J.,Ruud C.,Sinner,a,two,2024-11-16,ATP,Masters Cup,Hard,Semifinals,3,Completed,True,2.0,0.0,1.0,7.0,1.05,9.58,1.07,12.48
+558269,2024-11-16 22:54:00+00:00,Jannik Sinner,Taylor Fritz,Sinner J.,Fritz T.,Sinner,a,two,2024-11-17,ATP,Masters Cup,Hard,The Final,3,Completed,True,2.0,0.0,1.0,5.0,1.15,5.22,1.2,5.7
+561916,2025-01-02 14:52:00+00:00,Kei Nishikori,Cameron Norrie,Nishikori K.,Norrie C.,Nishikori,a,three,2025-01-03,ATP,Hong Kong Tennis Open,Hard,Quarterfinals,3,Completed,True,2.0,1.0,106.0,49.0,1.7,2.13,1.73,2.25
+562610,2025-01-11 19:47:00+00:00,Jacob Fearnley,Nick Kyrgios,Fearnley J.,Kyrgios N.,Kyrgios,b,four,2025-01-13,ATP,Australian Open,Hard,1st Round,5,Completed,True,3.0,0.0,92.0,,2.01,1.79,2.14,1.86
+562611,2025-01-11 20:21:00+00:00,Jannik Sinner,Nicolas Jarry,Sinner J.,Jarry N.,Sinner,a,four,2025-01-13,ATP,Australian Open,Hard,1st Round,5,Completed,True,3.0,0.0,1.0,36.0,1.02,17.25,1.02,29.95
+562612,2025-01-11 20:38:00+00:00,Alexander Shevchenko,Carlos Alcaraz,Shevchenko A.,Alcaraz C.,Alcaraz,b,three,2025-01-13,ATP,Australian Open,Hard,1st Round,5,Completed,False,0.0,3.0,77.0,3.0,20.74,1.01,35.12,1.02
+562614,2025-01-11 20:59:00+00:00,Novak Djokovic,Nishesh Basavareddy,Djokovic N.,Basavareddy N.,Djokovic,a,four,2025-01-13,ATP,Australian Open,Hard,1st Round,5,Completed,True,3.0,1.0,7.0,107.0,1.04,11.02,1.07,14.3
+562631,2025-01-12 08:02:00+00:00,Caroline Garcia,Naomi Osaka,Garcia C.,Osaka N.,Osaka,b,two,2025-01-13,WTA,Australian Open,Hard,1st Round,3,Completed,False,1.0,2.0,67.0,51.0,4.14,1.23,4.5,1.3
+562623,2025-01-12 05:35:00+00:00,Gael Monfils,Giovanni Mpetshi Perricard,Monfils G.,Mpetshi G.,Monfils,a,four,2025-01-14,ATP,Australian Open,Hard,1st Round,5,Completed,True,3.0,2.0,41.0,30.0,2.1,1.74,2.3,1.81
+562624,2025-01-12 06:56:00+00:00,Taylor Fritz,Jenson Brooksby,Fritz T.,Brooksby J.,Fritz,a,three,2025-01-14,ATP,Australian Open,Hard,1st Round,5,Completed,True,3.0,0.0,4.0,,1.03,12.99,1.05,17.0
+562670,2025-01-12 16:12:00+00:00,Wei Sijia,Jasmine Paolini,Wei S.,Paolini J.,Paolini,b,two,2025-01-14,WTA,Australian Open,Hard,1st Round,3,Completed,False,0.0,2.0,117.0,4.0,5.07,1.17,5.5,1.2
+562770,2025-01-13 16:14:00+00:00,Ugo Humbert,Hady Habib,Humbert U.,Habib H.,Humbert,a,three,2025-01-15,ATP,Australian Open,Hard,2nd Round,5,Completed,True,3.0,0.0,14.0,219.0,1.1,6.99,1.13,8.0
+562775,2025-01-13 16:17:00+00:00,Aryna Sabalenka,Jessica Bouzas Maneiro,Sabalenka A.,Bouzas Maneiro J.,Sabalenka,a,two,2025-01-15,WTA,Australian Open,Hard,2nd Round,3,Completed,True,2.0,0.0,1.0,54.0,1.02,15.16,1.03,24.12
+562811,2025-01-13 22:01:00+00:00,Jack Draper,Thanasi Kokkinakis,Draper J.,Kokkinakis T.,Draper,a,four,2025-01-15,ATP,Australian Open,Hard,2nd Round,5,Completed,True,3.0,2.0,18.0,71.0,1.44,2.77,1.56,2.92
+562813,2025-01-13 22:05:00+00:00,Coco Gauff,Jodie Burrage,Gauff C.,Burrage J.,Gauff,a,two,2025-01-15,WTA,Australian Open,Hard,2nd Round,3,Completed,True,2.0,0.0,3.0,173.0,1.01,16.79,1.02,27.43
+562913,2025-01-14 21:30:00+00:00,Emma Raducanu,Amanda Anisimova,Raducanu E.,Anisimova A.,Anisimova,b,three,2025-01-16,WTA,Australian Open,Hard,2nd Round,3,Completed,True,2.0,0.0,61.0,35.0,2.3,1.61,2.4,1.73
+562914,2025-01-14 21:42:00+00:00,Rebecca Sramkova,Iga Swiatek,Sramkova R.,Swiatek I.,Swiatek,b,two,2025-01-16,WTA,Australian Open,Hard,2nd Round,3,Completed,False,0.0,2.0,49.0,2.0,13.88,1.02,20.0,1.05
+562924,2025-01-14 23:05:00+00:00,Matteo Berrettini,Holger Rune,Berrettini M.,Rune H.,Berrettini,a,five,2025-01-16,ATP,Australian Open,Hard,2nd Round,5,Completed,False,1.0,3.0,34.0,13.0,1.71,2.13,1.77,2.25
+562926,2025-01-14 23:57:00+00:00,Jannik Sinner,Tristan Schoolkate,Sinner J.,Schoolkate T.,Sinner,a,three,2025-01-16,ATP,Australian Open,Hard,2nd Round,5,Completed,True,3.0,1.0,1.0,173.0,1.01,20.26,1.02,51.48
+562996,2025-01-15 19:56:00+00:00,Novak Djokovic,Tomas Machac,Djokovic N.,Machac T.,Machac,b,five,2025-01-17,ATP,Australian Open,Hard,3rd Round,5,Completed,True,3.0,0.0,7.0,25.0,1.24,4.03,1.28,4.85
+562997,2025-01-15 20:12:00+00:00,Naomi Osaka,Belinda Bencic,Osaka N.,Bencic B.,Osaka,a,three,2025-01-17,WTA,Australian Open,Hard,3rd Round,3,Retired,False,0.0,1.0,51.0,294.0,1.68,2.19,1.75,2.22
+563000,2025-01-15 21:54:00+00:00,Jack Draper,Aleksandar Vukic,Draper J.,Vukic A.,Draper,a,four,2025-01-17,ATP,Australian Open,Hard,3rd Round,5,Completed,True,3.0,2.0,18.0,68.0,1.22,4.36,1.24,5.29
+563006,2025-01-15 23:39:00+00:00,Coco Gauff,Leylah Fernandez,Gauff C.,Fernandez L.A.,Gauff,a,two,2025-01-17,WTA,Australian Open,Hard,3rd Round,3,Completed,True,2.0,0.0,3.0,29.0,1.16,5.22,1.18,6.1
+563092,2025-01-16 17:59:00+00:00,Emma Raducanu,Iga Swiatek,Raducanu E.,Swiatek I.,Swiatek,b,two,2025-01-18,WTA,Australian Open,Hard,3rd Round,3,Completed,False,0.0,2.0,61.0,2.0,7.71,1.09,10.61,1.11
+563105,2025-01-16 19:56:00+00:00,Ben Shelton,Lorenzo Musetti,Shelton B.,Musetti L.,Musetti,b,five,2025-01-18,ATP,Australian Open,Hard,3rd Round,5,Completed,True,3.0,1.0,20.0,15.0,1.63,2.27,1.69,2.43
+563110,2025-01-16 23:05:00+00:00,Taylor Fritz,Gael Monfils,Fritz T.,Monfils G.,Fritz,a,four,2025-01-18,ATP,Australian Open,Hard,3rd Round,5,Completed,False,1.0,3.0,4.0,41.0,1.12,6.44,1.15,7.4
+563122,2025-01-16 23:20:00+00:00,Jannik Sinner,Marcos Giron,Sinner J.,Giron M.,Sinner,a,three,2025-01-18,ATP,Australian Open,Hard,3rd Round,5,Completed,True,3.0,0.0,1.0,46.0,1.02,16.82,1.03,32.69
+563261,2025-01-17 20:34:00+00:00,Novak Djokovic,Jiri Lehecka,Djokovic N.,Lehecka J.,Djokovic,a,four,2025-01-19,ATP,Australian Open,Hard,4th Round,5,Completed,True,3.0,0.0,7.0,29.0,1.25,3.96,1.28,4.68
+563263,2025-01-17 22:27:00+00:00,Jack Draper,Carlos Alcaraz,Draper J.,Alcaraz C.,Alcaraz,b,four,2025-01-19,ATP,Australian Open,Hard,4th Round,5,Retired,False,0.0,2.0,18.0,3.0,8.12,1.08,10.06,1.12
+563269,2025-01-17 22:47:00+00:00,Aryna Sabalenka,Mirra Andreeva,Sabalenka A.,Andreeva M.,Sabalenka,a,three,2025-01-19,WTA,Australian Open,Hard,4th Round,3,Completed,True,2.0,0.0,1.0,15.0,1.23,4.22,1.26,5.04
+563271,2025-01-17 23:02:00+00:00,Ugo Humbert,Alexander Zverev,Humbert U.,Zverev A.,Zverev,b,four,2025-01-19,ATP,Australian Open,Hard,4th Round,5,Completed,False,1.0,3.0,14.0,2.0,4.97,1.17,5.89,1.21
+563302,2025-01-18 15:43:00+00:00,Gael Monfils,Ben Shelton,Monfils G.,Shelton B.,Monfils,a,four,2025-01-20,ATP,Australian Open,Hard,4th Round,5,Retired,False,1.0,2.0,41.0,20.0,2.33,1.61,2.5,1.63
+563311,2025-01-18 15:25:00+00:00,Alex Michelsen,Alex de Minaur,Michelsen A.,De Minaur A.,De Minaur,b,five,2025-01-20,ATP,Australian Open,Hard,4th Round,5,Completed,False,0.0,3.0,42.0,8.0,3.83,1.26,4.12,1.29
+563326,2025-01-18 22:57:00+00:00,Elena Rybakina,Madison Keys,Rybakina E.,Keys M.,Rybakina,a,three,2025-01-20,WTA,Australian Open,Hard,4th Round,3,Completed,False,1.0,2.0,7.0,14.0,1.65,2.25,1.71,2.32
+563327,2025-01-18 22:58:00+00:00,Jannik Sinner,Holger Rune,Sinner J.,Rune H.,Sinner,a,four,2025-01-20,ATP,Australian Open,Hard,4th Round,5,Completed,True,3.0,1.0,1.0,13.0,1.08,8.31,1.09,11.23
+563355,2025-01-19 18:41:00+00:00,Novak Djokovic,Carlos Alcaraz,Djokovic N.,Alcaraz C.,Alcaraz,b,five,2025-01-21,ATP,Australian Open,Hard,Quarterfinals,5,Completed,True,3.0,1.0,7.0,3.0,2.57,1.52,2.7,1.56
+563357,2025-01-19 20:09:00+00:00,Tommy Paul,Alexander Zverev,Paul T.,Zverev A.,Zverev,b,five,2025-01-21,ATP,Australian Open,Hard,Quarterfinals,5,Completed,False,1.0,3.0,11.0,2.0,3.26,1.35,3.48,1.37
+563358,2025-01-19 23:00:00+00:00,Aryna Sabalenka,Anastasia Pavlyuchenkova,Sabalenka A.,Pavlyuchenkova A.,Sabalenka,a,two,2025-01-21,WTA,Australian Open,Hard,Quarterfinals,3,Completed,True,2.0,1.0,1.0,32.0,1.09,7.58,1.12,9.28
+563359,2025-01-19 23:01:00+00:00,Coco Gauff,Paula Badosa,Gauff C.,Badosa P.,Gauff,a,three,2025-01-21,WTA,Australian Open,Hard,Quarterfinals,3,Completed,False,0.0,2.0,3.0,12.0,1.28,3.75,1.31,4.27
+563443,2025-01-20 18:38:00+00:00,Jannik Sinner,Alex de Minaur,Sinner J.,De Minaur A.,Sinner,a,four,2025-01-22,ATP,Australian Open,Hard,Quarterfinals,5,Completed,True,3.0,0.0,1.0,8.0,1.17,5.1,1.19,5.5
+563444,2025-01-20 23:44:00+00:00,Ben Shelton,Lorenzo Sonego,Shelton B.,Sonego L.,Shelton,a,five,2025-01-22,ATP,Australian Open,Hard,Quarterfinals,5,Completed,True,3.0,1.0,20.0,55.0,1.37,3.15,1.4,3.3
+563446,2025-01-20 22:06:00+00:00,Madison Keys,Elina Svitolina,Keys M.,Svitolina E.,Keys,a,three,2025-01-22,WTA,Australian Open,Hard,Quarterfinals,3,Completed,True,2.0,1.0,14.0,27.0,1.54,2.51,1.63,2.63
+563447,2025-01-20 20:41:00+00:00,Emma Navarro,Iga Swiatek,Navarro E.,Swiatek I.,Swiatek,b,two,2025-01-22,WTA,Australian Open,Hard,Quarterfinals,3,Completed,False,0.0,2.0,8.0,2.0,9.17,1.07,11.2,1.1
+563531,2025-01-21 20:19:00+00:00,Aryna Sabalenka,Paula Badosa,Sabalenka A.,Badosa P.,Sabalenka,a,two,2025-01-23,WTA,Australian Open,Hard,Semifinals,3,Completed,True,2.0,0.0,1.0,12.0,1.3,3.56,1.35,3.75
+563565,2025-01-22 11:04:00+00:00,Madison Keys,Iga Swiatek,Keys M.,Swiatek I.,Swiatek,b,two,2025-01-23,WTA,Australian Open,Hard,Semifinals,3,Completed,True,2.0,1.0,14.0,2.0,4.99,1.18,5.51,1.24
+563530,2025-01-22 07:00:00+00:00,Novak Djokovic,Alexander Zverev,Djokovic N.,Zverev A.,Djokovic,a,four,2025-01-24,ATP,Australian Open,Hard,Semifinals,5,Retired,False,0.0,1.0,7.0,2.0,1.63,2.31,1.7,2.45
+563573,2025-01-22 16:38:00+00:00,Jannik Sinner,Ben Shelton,Sinner J.,Shelton B.,Sinner,a,four,2025-01-24,ATP,Australian Open,Hard,Semifinals,5,Completed,True,3.0,0.0,1.0,20.0,1.06,9.51,1.09,11.0
+563707,2025-01-23 19:11:00+00:00,Aryna Sabalenka,Madison Keys,Sabalenka A.,Keys M.,Sabalenka,a,three,2025-01-25,WTA,Australian Open,Hard,The Final,3,Completed,False,1.0,2.0,1.0,14.0,1.26,3.95,1.29,4.3
+563792,2025-01-24 18:43:00+00:00,Jannik Sinner,Alexander Zverev,Sinner J.,Zverev A.,Sinner,a,five,2025-01-26,ATP,Australian Open,Hard,The Final,5,Completed,True,3.0,0.0,1.0,2.0,1.35,3.31,1.39,3.4
+564590,2025-02-01 15:32:00+00:00,Marketa Vondrousova,Emma Raducanu,Vondrousova M.,Raducanu E.,Vondrousova,a,three,2025-02-04,WTA,Abu Dhabi WTA Women's Tennis Open,Hard,1st Round,3,Completed,True,2.0,0.0,36.0,56.0,1.71,2.12,1.78,2.22
+565142,2025-02-08 17:31:00+00:00,Emma Raducanu,Ekaterina Alexandrova,Raducanu E.,Alexandrova E.,Alexandrova,b,two,2025-02-09,WTA,Qatar Open,Hard,1st Round,3,Completed,False,0.0,2.0,60.0,26.0,2.08,1.73,2.18,1.8
+565146,2025-02-08 19:42:00+00:00,Marketa Vondrousova,Elina Svitolina,Vondrousova M.,Svitolina E.,Svitolina,b,three,2025-02-10,WTA,Qatar Open,Hard,1st Round,3,Completed,False,1.0,2.0,34.0,22.0,1.74,2.06,1.85,2.15
+565183,2025-02-09 15:33:00+00:00,Jasmine Paolini,Caroline Garcia,Paolini J.,Garcia C.,Paolini,a,three,2025-02-11,WTA,Qatar Open,Hard,2nd Round,3,Completed,True,2.0,0.0,4.0,76.0,1.42,2.81,1.45,2.98
+565189,2025-02-09 17:58:00+00:00,Coco Gauff,Marta Kostyuk,Gauff C.,Kostyuk M.,Gauff,a,three,2025-02-11,WTA,Qatar Open,Hard,2nd Round,3,Completed,False,0.0,2.0,3.0,21.0,1.19,4.44,1.27,5.25
+565223,2025-02-10 10:46:00+00:00,Aryna Sabalenka,Ekaterina Alexandrova,Sabalenka A.,Alexandrova E.,Sabalenka,a,three,2025-02-11,WTA,Qatar Open,Hard,2nd Round,3,Completed,False,1.0,2.0,1.0,26.0,1.19,4.55,1.23,5.05
+565256,2025-02-10 19:43:00+00:00,Elina Svitolina,Jessica Pegula,Svitolina E.,Pegula J.,Pegula,b,three,2025-02-11,WTA,Qatar Open,Hard,2nd Round,3,Completed,False,0.0,2.0,22.0,5.0,2.31,1.6,2.42,1.65
+565319,2025-02-11 20:47:00+00:00,Linda Noskova,Iga Swiatek,Noskova L.,Swiatek I.,Swiatek,b,three,2025-02-12,WTA,Qatar Open,Hard,3rd Round,3,Completed,False,1.0,2.0,33.0,2.0,4.1,1.22,4.54,1.25
+565320,2025-02-11 20:48:00+00:00,Jelena Ostapenko,Jasmine Paolini,Ostapenko J.,Paolini J.,Paolini,b,two,2025-02-12,WTA,Qatar Open,Hard,3rd Round,3,Completed,True,2.0,0.0,37.0,4.0,2.31,1.59,2.46,1.64
+565342,2025-02-11 22:14:00+00:00,Cameron Norrie,Arthur Rinderknech,Norrie C.,Rinderknech A.,Rinderknech,b,three,2025-02-12,ATP,Delray Beach Open,Hard,2nd Round,3,Completed,True,2.0,0.0,61.0,65.0,1.42,2.8,1.48,3.0
+565405,2025-02-12 21:08:00+00:00,Elena Rybakina,Iga Swiatek,Rybakina E.,Swiatek I.,Rybakina,a,three,2025-02-13,WTA,Qatar Open,Hard,Quarterfinals,3,Completed,False,0.0,2.0,7.0,2.0,2.43,1.54,2.58,1.62
+565406,2025-02-12 21:17:00+00:00,Ekaterina Alexandrova,Jessica Pegula,Alexandrova E.,Pegula J.,Alexandrova,a,three,2025-02-13,WTA,Qatar Open,Hard,Quarterfinals,3,Completed,True,2.0,1.0,26.0,5.0,2.28,1.61,2.45,1.75
+565520,2025-02-13 20:16:00+00:00,Jelena Ostapenko,Iga Swiatek,Ostapenko J.,Swiatek I.,Swiatek,b,three,2025-02-14,WTA,Qatar Open,Hard,Semifinals,3,Completed,True,2.0,0.0,37.0,2.0,3.2,1.33,3.4,1.36
+565547,2025-02-13 22:22:00+00:00,Ekaterina Alexandrova,Amanda Anisimova,Alexandrova E.,Anisimova A.,Alexandrova,a,three,2025-02-14,WTA,Qatar Open,Hard,Semifinals,3,Completed,False,0.0,2.0,26.0,41.0,1.72,2.09,1.85,2.23
+565633,2025-02-14 20:30:00+00:00,Amanda Anisimova,Jelena Ostapenko,Anisimova A.,Ostapenko J.,Ostapenko,b,three,2025-02-15,WTA,Qatar Open,Hard,The Final,3,Completed,True,2.0,0.0,41.0,37.0,2.19,1.66,2.35,1.74
+565763,2025-02-16 18:54:00+00:00,Paula Badosa,Elise Mertens,Badosa P.,Mertens E.,Badosa,a,three,2025-02-18,WTA,Dubai Duty Free Tennis Championships,Hard,2nd Round,3,Completed,True,2.0,0.0,10.0,31.0,1.72,2.11,1.77,2.25
+565811,2025-02-17 13:30:00+00:00,Emma Raducanu,Karolina Muchova,Raducanu E.,Muchova K.,Muchova,b,two,2025-02-18,WTA,Dubai Duty Free Tennis Championships,Hard,2nd Round,3,Completed,False,0.0,2.0,61.0,17.0,3.08,1.36,3.44,1.39
+565847,2025-02-17 19:53:00+00:00,Victoria Azarenka,Iga Swiatek,Azarenka V.,Swiatek I.,Swiatek,b,two,2025-02-18,WTA,Dubai Duty Free Tennis Championships,Hard,2nd Round,3,Completed,False,0.0,2.0,34.0,2.0,10.15,1.05,12.22,1.07
+565760,2025-02-16 18:46:00+00:00,Emma Navarro,Belinda Bencic,Navarro E.,Bencic B.,Bencic,b,three,2025-02-19,WTA,Dubai Duty Free Tennis Championships,Hard,2nd Round,3,Completed,True,2.0,1.0,9.0,66.0,3.13,1.35,3.35,1.39
+565866,2025-02-18 18:37:00+00:00,Elena Rybakina,Paula Badosa,Rybakina E.,Badosa P.,Rybakina,a,three,2025-02-19,WTA,Dubai Duty Free Tennis Championships,Hard,3rd Round,3,Completed,True,2.0,1.0,7.0,10.0,1.58,2.34,1.68,2.53
+565894,2025-02-18 16:00:00+00:00,Christopher O'Connell,Jack Draper,O Connell C.,Draper J.,Draper,b,two,2025-02-19,ATP,Qatar Exxon Mobil Open,Hard,2nd Round,3,Completed,False,0.0,2.0,82.0,16.0,4.33,1.21,4.61,1.24
+565907,2025-02-18 21:37:00+00:00,Sofia Kenin,Jasmine Paolini,Kenin S.,Paolini J.,Paolini,b,three,2025-02-19,WTA,Dubai Duty Free Tennis Championships,Hard,3rd Round,3,Completed,True,2.0,0.0,56.0,4.0,2.67,1.46,2.78,1.51
+565967,2025-02-19 22:33:00+00:00,Elena Rybakina,Sofia Kenin,Rybakina E.,Kenin S.,Rybakina,a,two,2025-02-20,WTA,Dubai Duty Free Tennis Championships,Hard,Quarterfinals,3,Completed,True,2.0,0.0,7.0,56.0,1.39,2.93,1.44,3.25
+565968,2025-02-19 19:57:00+00:00,Mirra Andreeva,Iga Swiatek,Andreeva M.,Swiatek I.,Swiatek,b,three,2025-02-20,WTA,Dubai Duty Free Tennis Championships,Hard,Quarterfinals,3,Completed,True,2.0,0.0,14.0,2.0,2.83,1.41,3.08,1.43
+566108,2025-02-20 22:35:00+00:00,Elena Rybakina,Mirra Andreeva,Rybakina E.,Andreeva M.,Rybakina,a,three,2025-02-21,WTA,Dubai Duty Free Tennis Championships,Hard,Semifinals,3,Completed,False,1.0,2.0,7.0,14.0,1.8,2.0,1.95,2.05
+566110,2025-02-20 22:53:00+00:00,Clara Tauson,Karolina Muchova,Tauson C.,Muchova K.,Tauson,a,two,2025-02-21,WTA,Dubai Duty Free Tennis Championships,Hard,Semifinals,3,Completed,True,2.0,1.0,38.0,17.0,2.2,1.66,2.32,1.74
+566221,2025-02-21 23:02:00+00:00,Clara Tauson,Mirra Andreeva,Tauson C.,Andreeva M.,Andreeva,b,three,2025-02-22,WTA,Dubai Duty Free Tennis Championships,Hard,The Final,3,Completed,False,0.0,2.0,38.0,14.0,2.3,1.61,2.45,1.69
+566222,2025-02-21 21:30:00+00:00,Jack Draper,Andrey Rublev,Draper J.,Rublev A.,Rublev,b,three,2025-02-22,ATP,Qatar Exxon Mobil Open,Hard,The Final,3,Completed,False,1.0,2.0,16.0,10.0,1.76,2.04,1.82,2.15
+567036,2025-03-04 11:28:00+00:00,Emma Raducanu,Moyuka Uchijima,Raducanu E.,Uchijima M.,Raducanu,a,two,2025-03-06,WTA,BNP Paribas Open,Hard,1st Round,3,Completed,False,0.0,2.0,55.0,52.0,1.4,2.95,1.46,3.2
+567141,2025-03-05 14:31:00+00:00,Jacob Fearnley,Joao Fonseca,Fearnley J.,Fonseca J.,Fonseca,b,three,2025-03-06,ATP,BNP Paribas Open,Hard,1st Round,3,Completed,False,1.0,2.0,81.0,80.0,3.54,1.3,3.75,1.33
+567140,2025-03-05 12:57:00+00:00,Botic van de Zandschulp,Nick Kyrgios,Van De Zandschulp B.,Kyrgios N.,Van de Zandschulp,a,two,2025-03-07,ATP,BNP Paribas Open,Hard,1st Round,3,Retired,True,1.0,0.0,85.0,1099.0,1.4,2.98,1.42,3.27
+567204,2025-03-06 21:52:00+00:00,Alexander Zverev,Tallon Griekspoor,Zverev A.,Griekspoor T.,Zverev,a,three,2025-03-07,ATP,BNP Paribas Open,Hard,2nd Round,3,Completed,False,1.0,2.0,2.0,43.0,1.26,3.87,1.31,4.01
+567203,2025-03-06 19:27:00+00:00,Qinwen Zheng,Victoria Azarenka,Zheng Q.,Azarenka V.,Zheng,a,two,2025-03-08,WTA,BNP Paribas Open,Hard,2nd Round,3,Completed,True,2.0,0.0,9.0,35.0,1.46,2.74,1.53,2.85
+567349,2025-03-07 20:19:00+00:00,Jack Draper,Joao Fonseca,Draper J.,Fonseca J.,Draper,a,three,2025-03-08,ATP,BNP Paribas Open,Hard,2nd Round,3,Completed,True,2.0,0.0,14.0,80.0,1.54,2.48,1.62,2.65
+567378,2025-03-07 17:26:00+00:00,Coco Gauff,Moyuka Uchijima,Gauff C.,Uchijima M.,Gauff,a,two,2025-03-08,WTA,BNP Paribas Open,Hard,2nd Round,3,Completed,True,2.0,1.0,3.0,52.0,1.09,7.48,1.1,8.66
+567443,2025-03-08 15:40:00+00:00,Elena Rybakina,Katie Boulter,Rybakina E.,Boulter K.,Rybakina,a,two,2025-03-09,WTA,BNP Paribas Open,Hard,3rd Round,3,Completed,True,2.0,0.0,7.0,38.0,1.19,4.83,1.21,5.36
+567444,2025-03-08 18:46:00+00:00,Matteo Berrettini,Stefanos Tsitsipas,Berrettini M.,Tsitsipas S.,Tsitsipas,b,three,2025-03-09,ATP,BNP Paribas Open,Hard,3rd Round,3,Completed,False,0.0,2.0,29.0,9.0,1.85,1.94,1.91,2.03
+567471,2025-03-09 13:30:00+00:00,Taylor Fritz,Alejandro Tabilo,Fritz T.,Tabilo A.,Fritz,a,two,2025-03-10,ATP,BNP Paribas Open,Hard,3rd Round,3,Completed,True,2.0,1.0,4.0,31.0,1.14,5.78,1.15,6.55
+567472,2025-03-09 13:17:00+00:00,Carlos Alcaraz,Denis Shapovalov,Alcaraz C.,Shapovalov D.,Alcaraz,a,two,2025-03-11,ATP,BNP Paribas Open,Hard,3rd Round,3,Completed,True,2.0,0.0,3.0,28.0,1.16,5.13,1.18,5.66
+567545,2025-03-10 16:22:00+00:00,Tommy Paul,Daniil Medvedev,Paul T.,Medvedev D.,Medvedev,b,three,2025-03-12,ATP,BNP Paribas Open,Hard,4th Round,3,Completed,False,0.0,2.0,11.0,6.0,2.01,1.8,2.12,1.88
+567546,2025-03-10 16:05:00+00:00,Elena Rybakina,Mirra Andreeva,Rybakina E.,Andreeva M.,Rybakina,a,three,2025-03-12,WTA,BNP Paribas Open,Hard,4th Round,3,Completed,False,0.0,2.0,7.0,11.0,1.86,1.93,1.92,2.11
+567629,2025-03-11 18:21:00+00:00,Jack Draper,Taylor Fritz,Draper J.,Fritz T.,Draper,a,three,2025-03-12,ATP,BNP Paribas Open,Hard,4th Round,3,Completed,True,2.0,0.0,14.0,4.0,1.78,2.01,1.86,2.1
+567630,2025-03-11 18:29:00+00:00,Grigor Dimitrov,Carlos Alcaraz,Dimitrov G.,Alcaraz C.,Alcaraz,b,two,2025-03-13,ATP,BNP Paribas Open,Hard,4th Round,3,Completed,False,0.0,2.0,15.0,3.0,6.82,1.11,7.92,1.12
+567677,2025-03-12 18:02:00+00:00,Qinwen Zheng,Iga Swiatek,Zheng Q.,Swiatek I.,Swiatek,b,three,2025-03-13,WTA,BNP Paribas Open,Hard,Quarterfinals,3,Completed,False,0.0,2.0,9.0,2.0,4.51,1.2,5.0,1.24
+567678,2025-03-12 18:14:00+00:00,Arthur Fils,Daniil Medvedev,Fils A.,Medvedev D.,Medvedev,b,three,2025-03-13,ATP,BNP Paribas Open,Hard,Quarterfinals,3,Completed,False,1.0,2.0,21.0,6.0,3.23,1.35,3.36,1.39
+567854,2025-03-14 00:32:00+00:00,Mirra Andreeva,Iga Swiatek,Andreeva M.,Swiatek I.,Swiatek,b,three,2025-03-14,WTA,BNP Paribas Open,Hard,Semifinals,3,Completed,True,2.0,1.0,11.0,2.0,2.52,1.52,2.63,1.6
+567960,2025-03-14 18:22:00+00:00,Jack Draper,Carlos Alcaraz,Draper J.,Alcaraz C.,Alcaraz,b,three,2025-03-15,ATP,BNP Paribas Open,Hard,Semifinals,3,Completed,True,2.0,1.0,14.0,3.0,3.44,1.31,3.68,1.33
+568011,2025-03-15 11:37:00+00:00,Aryna Sabalenka,Mirra Andreeva,Sabalenka A.,Andreeva M.,Andreeva,b,three,2025-03-16,WTA,BNP Paribas Open,Hard,The Final,3,Completed,False,1.0,2.0,1.0,11.0,1.51,2.54,1.63,2.77
+568043,2025-03-16 02:46:00+00:00,Holger Rune,Jack Draper,Rune H.,Draper J.,Draper,b,three,2025-03-16,ATP,BNP Paribas Open,Hard,The Final,3,Completed,False,0.0,2.0,13.0,14.0,2.44,1.55,2.61,1.59
+568138,2025-03-17 22:12:00+00:00,Petra Kvitova,Sofia Kenin,Kvitova P.,Kenin S.,Kenin,b,two,2025-03-18,WTA,Miami Open,Hard,1st Round,3,Completed,False,0.0,2.0,1126.0,46.0,3.19,1.35,3.5,1.38
+568137,2025-03-17 19:46:00+00:00,Sayaka Ishii,Emma Raducanu,Ishii S.,Raducanu E.,Raducanu,b,two,2025-03-19,WTA,Miami Open,Hard,1st Round,3,Completed,False,0.0,2.0,188.0,60.0,4.08,1.23,4.4,1.25
+568182,2025-03-18 14:08:00+00:00,Katie Boulter,Peyton Stearns,Boulter K.,Stearns P.,Boulter,a,three,2025-03-19,WTA,Miami Open,Hard,1st Round,3,Completed,False,0.0,2.0,35.0,43.0,2.04,1.76,2.1,1.87
+568183,2025-03-18 15:24:00+00:00,Joao Fonseca,Learner Tien,Fonseca J.,Tien L.,Fonseca,a,three,2025-03-20,ATP,Miami Open,Hard,1st Round,3,Completed,True,2.0,1.0,60.0,66.0,1.32,3.28,1.36,3.5
+568243,2025-03-19 02:02:00+00:00,Aryna Sabalenka,Viktoriya Tomova,Sabalenka A.,Tomova V.,Sabalenka,a,two,2025-03-20,WTA,Miami Open,Hard,2nd Round,3,Completed,True,2.0,0.0,1.0,64.0,1.02,14.0,1.03,19.65
+568245,2025-03-19 02:19:00+00:00,Coco Gauff,Sofia Kenin,Gauff C.,Kenin S.,Gauff,a,three,2025-03-20,WTA,Miami Open,Hard,2nd Round,3,Completed,True,2.0,0.0,3.0,46.0,1.39,2.91,1.44,3.22
+568326,2025-03-20 10:11:00+00:00,Emma Navarro,Emma Raducanu,Navarro E.,Raducanu E.,Navarro,a,three,2025-03-21,WTA,Miami Open,Hard,2nd Round,3,Completed,False,1.0,2.0,10.0,60.0,1.47,2.7,1.5,2.83
+568328,2025-03-20 11:52:00+00:00,Karolina Muchova,Victoria Azarenka,Muchova K.,Azarenka V.,Muchova,a,two,2025-03-21,WTA,Miami Open,Hard,2nd Round,3,Retired,True,1.0,0.0,14.0,32.0,1.38,3.01,1.4,3.33
+568405,2025-03-21 10:22:00+00:00,Jakub Mensik,Jack Draper,Mensik J.,Draper J.,Draper,b,two,2025-03-22,ATP,Miami Open,Hard,2nd Round,3,Completed,True,2.0,0.0,54.0,7.0,3.66,1.28,4.0,1.3
+568406,2025-03-21 09:03:00+00:00,Coco Gauff,Maria Sakkari,Gauff C.,Sakkari M.,Gauff,a,two,2025-03-22,WTA,Miami Open,Hard,3rd Round,3,Completed,True,2.0,0.0,3.0,51.0,1.2,4.53,1.24,5.0
+568469,2025-03-21 23:56:00+00:00,Novak Djokovic,Camilo Ugo Carabelli,Djokovic N.,Ugo Carabelli C.,Djokovic,a,two,2025-03-23,ATP,Miami Open,Hard,3rd Round,3,Completed,True,2.0,0.0,5.0,65.0,1.05,9.79,1.08,12.0
+568471,2025-03-22 00:05:00+00:00,Lorenzo Musetti,Felix Auger-Aliassime,Musetti L.,Auger-Aliassime F.,Auger-Aliassime,b,three,2025-03-23,ATP,Miami Open,Hard,3rd Round,3,Completed,True,2.0,1.0,16.0,19.0,2.44,1.55,2.55,1.61
+568522,2025-03-22 23:40:00+00:00,Alexander Zverev,Jordan Thompson,Zverev A.,Thompson J.,Zverev,a,two,2025-03-24,ATP,Miami Open,Hard,3rd Round,3,Completed,True,2.0,0.0,2.0,37.0,1.17,5.01,1.19,5.5
+568523,2025-03-22 23:45:00+00:00,Naomi Osaka,Jasmine Paolini,Osaka N.,Paolini J.,Paolini,b,three,2025-03-24,WTA,Miami Open,Hard,4th Round,3,Completed,False,1.0,2.0,61.0,7.0,1.61,2.3,1.65,2.38
+568596,2025-03-24 07:41:00+00:00,Emma Raducanu,Amanda Anisimova,Raducanu E.,Anisimova A.,Anisimova,b,three,2025-03-24,WTA,Miami Open,Hard,4th Round,3,Completed,True,2.0,0.0,60.0,17.0,2.26,1.62,2.45,1.72
+568611,2025-03-24 10:38:00+00:00,Alex de Minaur,Joao Fonseca,De Minaur A.,Fonseca J.,Fonseca,b,three,2025-03-24,ATP,Miami Open,Hard,3rd Round,3,Completed,True,2.0,1.0,11.0,60.0,1.74,2.09,1.81,2.18
+568632,2025-03-24 20:49:00+00:00,Lorenzo Musetti,Novak Djokovic,Musetti L.,Djokovic N.,Djokovic,b,three,2025-03-25,ATP,Miami Open,Hard,4th Round,3,Completed,False,0.0,2.0,16.0,5.0,3.42,1.31,3.6,1.35
+568633,2025-03-24 21:02:00+00:00,Gael Monfils,Sebastian Korda,Monfils G.,Korda S.,Monfils,a,three,2025-03-25,ATP,Miami Open,Hard,4th Round,3,Completed,False,1.0,2.0,46.0,25.0,2.14,1.7,2.24,1.75
+568650,2025-03-25 03:23:00+00:00,Aryna Sabalenka,Qinwen Zheng,Sabalenka A.,Zheng Q.,Sabalenka,a,two,2025-03-26,WTA,Miami Open,Hard,Quarterfinals,3,Completed,True,2.0,0.0,1.0,9.0,1.27,3.75,1.31,4.29
+568648,2025-03-25 01:30:00+00:00,Emma Raducanu,Jessica Pegula,Raducanu E.,Pegula J.,Pegula,b,two,2025-03-27,WTA,Miami Open,Hard,Quarterfinals,3,Completed,False,1.0,2.0,60.0,4.0,2.72,1.46,2.84,1.5
+568697,2025-03-26 01:41:00+00:00,Sebastian Korda,Novak Djokovic,Korda S.,Djokovic N.,Djokovic,b,two,2025-03-27,ATP,Miami Open,Hard,Quarterfinals,3,Completed,False,0.0,2.0,25.0,5.0,4.07,1.24,4.38,1.26
+568703,2025-03-26 03:41:00+00:00,Taylor Fritz,Matteo Berrettini,Fritz T.,Berrettini M.,Fritz,a,three,2025-03-27,ATP,Miami Open,Hard,Quarterfinals,3,Completed,True,2.0,1.0,4.0,30.0,1.44,2.76,1.5,2.85
+568760,2025-03-27 01:07:00+00:00,Arthur Fils,Jakub Mensik,Fils A.,Mensik J.,Mensik,b,three,2025-03-27,ATP,Miami Open,Hard,Quarterfinals,3,Completed,False,0.0,2.0,18.0,54.0,1.9,1.88,1.96,2.0
+568761,2025-03-26 23:40:00+00:00,Aryna Sabalenka,Jasmine Paolini,Sabalenka A.,Paolini J.,Sabalenka,a,two,2025-03-27,WTA,Miami Open,Hard,Semifinals,3,Completed,True,2.0,0.0,1.0,7.0,1.18,4.76,1.21,5.0
+568791,2025-03-27 10:35:00+00:00,Jessica Pegula,Alexandra Eala,Pegula J.,Eala A.,Pegula,a,two,2025-03-28,WTA,Miami Open,Hard,Semifinals,3,Completed,True,2.0,1.0,4.0,140.0,1.26,3.8,1.3,4.19
+568876,2025-03-28 02:55:00+00:00,Novak Djokovic,Grigor Dimitrov,Djokovic N.,Dimitrov G.,Djokovic,a,two,2025-03-28,ATP,Miami Open,Hard,Semifinals,3,Completed,True,2.0,0.0,5.0,15.0,1.25,3.98,1.28,4.33
+568923,2025-03-28 09:49:00+00:00,Jakub Mensik,Taylor Fritz,Mensik J.,Fritz T.,Fritz,b,three,2025-03-28,ATP,Miami Open,Hard,Semifinals,3,Completed,True,2.0,1.0,54.0,4.0,3.27,1.34,3.4,1.37
+568939,2025-03-28 17:57:00+00:00,Aryna Sabalenka,Jessica Pegula,Sabalenka A.,Pegula J.,Sabalenka,a,two,2025-03-29,WTA,Miami Open,Hard,The Final,3,Completed,True,2.0,0.0,1.0,4.0,1.25,3.94,1.28,4.28
+569021,2025-03-29 14:40:00+00:00,Jakub Mensik,Novak Djokovic,Mensik J.,Djokovic N.,Djokovic,b,three,2025-03-31,ATP,Miami Open,Hard,The Final,3,Completed,True,2.0,1.0,54.0,5.0,4.01,1.24,4.33,1.27
+569708,2025-04-07 14:10:00+00:00,Jack Draper,Marcos Giron,Draper J.,Giron M.,Draper,a,two,2025-04-08,ATP,Monte Carlo Masters,Clay,2nd Round,3,Completed,True,2.0,0.0,6.0,45.0,1.29,3.72,1.31,4.2
+569853,2025-04-09 13:51:00+00:00,Jack Draper,Alejandro Davidovich Fokina,Draper J.,Davidovich Fokina A.,Draper,a,two,2025-04-10,ATP,Monte Carlo Masters,Clay,3rd Round,3,Completed,False,1.0,2.0,6.0,42.0,1.47,2.71,1.57,2.92
+570268,2025-04-14 08:53:00+00:00,Karen Khachanov,Cameron Norrie,Khachanov K.,Norrie C.,Khachanov,a,three,2025-04-15,ATP,Barcelona Open,Clay,1st Round,3,Completed,True,2.0,1.0,27.0,88.0,1.57,2.42,1.63,2.62
+570341,2025-04-15 14:46:00+00:00,Jacob Fearnley,Alex de Minaur,Fearnley J.,De Minaur A.,De Minaur,b,two,2025-04-17,ATP,Barcelona Open,Clay,2nd Round,3,Completed,False,0.0,2.0,74.0,7.0,7.94,1.08,10.0,1.1
+571084,2025-04-24 14:56:00+00:00,Emma Raducanu,Marta Kostyuk,Raducanu E.,Kostyuk M.,Raducanu,a,three,2025-04-25,WTA,Mutua Madrid Open,Clay,2nd Round,3,Completed,False,1.0,2.0,49.0,36.0,1.84,1.98,1.94,2.07
+571333,2025-04-27 11:59:00+00:00,Jack Draper,Matteo Berrettini,Draper J.,Berrettini M.,Draper,a,three,2025-04-29,ATP,Mutua Madrid Open,Clay,3rd Round,3,Retired,True,1.0,0.0,6.0,31.0,1.56,2.44,1.6,2.62
+571545,2025-04-30 14:54:00+00:00,Jack Draper,Matteo Arnaldi,Draper J.,Arnaldi M.,Draper,a,two,2025-05-01,ATP,Mutua Madrid Open,Clay,Quarterfinals,3,Completed,True,2.0,0.0,6.0,44.0,1.28,3.71,1.31,4.2
+571801,2025-05-03 09:00:00+00:00,Casper Ruud,Jack Draper,Ruud C.,Draper J.,Draper,b,three,2025-05-03,ATP,Mutua Madrid Open,Clay,The Final,3,Completed,True,2.0,1.0,15.0,6.0,2.9,1.42,3.05,1.47
+572293,2025-05-09 18:42:00+00:00,Jack Draper,Vit Kopriva,Draper J.,Kopriva V.,Draper,a,two,2025-05-11,ATP,Internazionali BNL d'Italia,Clay,3rd Round,3,Completed,True,2.0,0.0,5.0,92.0,1.11,6.93,1.14,7.6
+572333,2025-05-10 11:31:00+00:00,Emma Raducanu,Veronika Kudermetova,Raducanu E.,Kudermetova V.,Raducanu,a,three,2025-05-11,WTA,Internazionali BNL d'Italia,Clay,3rd Round,3,Completed,True,2.0,1.0,49.0,50.0,1.72,2.12,1.78,2.2
+572489,2025-05-12 15:56:00+00:00,Jack Draper,Corentin Moutet,Draper J.,Moutet C.,Draper,a,two,2025-05-13,ATP,Internazionali BNL d'Italia,Clay,4th Round,3,Completed,True,2.0,1.0,5.0,83.0,1.11,6.94,1.14,7.75
+572559,2025-05-13 14:22:00+00:00,Jack Draper,Carlos Alcaraz,Draper J.,Alcaraz C.,Alcaraz,b,three,2025-05-14,ATP,Internazionali BNL d'Italia,Clay,Quarterfinals,3,Completed,False,0.0,2.0,5.0,3.0,3.29,1.35,3.55,1.38
+572868,2025-05-17 11:18:00+00:00,Jannik Sinner,Carlos Alcaraz,Sinner J.,Alcaraz C.,Sinner,a,three,2025-05-18,ATP,Internazionali BNL d'Italia,Clay,The Final,3,Completed,False,0.0,2.0,1.0,3.0,1.63,2.3,1.68,2.48
+573464,2025-05-24 21:10:00+00:00,Naomi Osaka,Paula Badosa,Osaka N.,Badosa P.,Osaka,a,three,2025-05-26,WTA,French Open,Clay,1st Round,3,Completed,False,1.0,2.0,49.0,10.0,1.77,2.08,1.9,2.11
+573495,2025-05-25 11:09:00+00:00,Rebecca Sramkova,Iga Swiatek,Sramkova R.,Swiatek I.,Swiatek,b,two,2025-05-26,WTA,French Open,Clay,1st Round,3,Completed,False,0.0,2.0,42.0,5.0,14.74,1.02,17.5,1.05
+573513,2025-05-25 15:39:00+00:00,Giulio Zeppieri,Carlos Alcaraz,Zeppieri G.,Alcaraz C.,Alcaraz,b,four,2025-05-26,ATP,French Open,Clay,1st Round,5,Completed,False,0.0,3.0,310.0,2.0,30.06,1.01,90.0,1.01
+573518,2025-05-25 17:57:00+00:00,Jannik Sinner,Arthur Rinderknech,Sinner J.,Rinderknech A.,Sinner,a,three,2025-05-26,ATP,French Open,Clay,1st Round,5,Completed,True,3.0,0.0,1.0,75.0,1.01,24.75,1.02,60.0
+573469,2025-05-24 21:32:00+00:00,Daniil Medvedev,Cameron Norrie,Medvedev D.,Norrie C.,Medvedev,a,four,2025-05-27,ATP,French Open,Clay,1st Round,5,Completed,False,2.0,3.0,11.0,81.0,1.23,4.33,1.27,4.5
+573471,2025-05-24 21:54:00+00:00,Alexander Zverev,Learner Tien,Zverev A.,Tien L.,Zverev,a,three,2025-05-27,ATP,French Open,Clay,1st Round,5,Completed,True,3.0,0.0,3.0,67.0,1.03,14.03,1.05,21.0
+573519,2025-05-25 22:52:00+00:00,Mattia Bellucci,Jack Draper,Bellucci M.,Draper J.,Draper,b,four,2025-05-27,ATP,French Open,Clay,1st Round,5,Completed,False,1.0,3.0,68.0,5.0,16.9,1.02,27.0,1.03
+573551,2025-05-26 09:57:00+00:00,Hubert Hurkacz,Joao Fonseca,Hurkacz H.,Fonseca J.,Hurkacz,a,five,2025-05-27,ATP,French Open,Clay,1st Round,5,Completed,False,0.0,3.0,28.0,65.0,2.03,1.8,2.1,1.89
+573553,2025-05-26 11:10:00+00:00,Mackenzie McDonald,Novak Djokovic,McDonald M.,Djokovic N.,Djokovic,b,three,2025-05-27,ATP,French Open,Clay,1st Round,5,Completed,False,0.0,3.0,98.0,6.0,18.03,1.01,38.0,1.02
+573562,2025-05-26 17:53:00+00:00,Emma Raducanu,Iga Swiatek,Raducanu E.,Swiatek I.,Swiatek,b,two,2025-05-28,WTA,French Open,Clay,2nd Round,3,Completed,False,0.0,2.0,41.0,5.0,7.57,1.1,10.0,1.12
+573600,2025-05-26 21:05:00+00:00,Fabian Marozsan,Carlos Alcaraz,Marozsan F.,Alcaraz C.,Alcaraz,b,four,2025-05-28,ATP,French Open,Clay,2nd Round,5,Completed,False,1.0,3.0,56.0,2.0,15.56,1.02,26.0,1.03
+573632,2025-05-27 12:29:00+00:00,Jannik Sinner,Richard Gasquet,Sinner J.,Gasquet R.,Sinner,a,three,2025-05-29,ATP,French Open,Clay,2nd Round,5,Completed,True,3.0,0.0,1.0,166.0,1.01,23.89,1.01,60.0
+573633,2025-05-27 14:18:00+00:00,Madison Keys,Katie Boulter,Keys M.,Boulter K.,Keys,a,two,2025-05-29,WTA,French Open,Clay,2nd Round,3,Completed,True,2.0,0.0,8.0,38.0,1.15,5.67,1.17,6.75
+573671,2025-05-27 19:08:00+00:00,Corentin Moutet,Novak Djokovic,Moutet C.,Djokovic N.,Djokovic,b,four,2025-05-29,ATP,French Open,Clay,2nd Round,5,Completed,False,0.0,3.0,73.0,6.0,8.41,1.08,9.6,1.11
+573673,2025-05-28 01:59:00+00:00,Gael Monfils,Jack Draper,Monfils G.,Draper J.,Draper,b,four,2025-05-29,ATP,French Open,Clay,2nd Round,5,Completed,False,1.0,3.0,42.0,5.0,6.2,1.13,7.6,1.15
+573706,2025-05-28 12:47:00+00:00,Victoria Mboko,Qinwen Zheng,Mboko V.,Zheng Q.,Zheng,b,three,2025-05-30,WTA,French Open,Clay,3rd Round,3,Completed,False,0.0,2.0,120.0,7.0,4.55,1.21,5.0,1.24
+573723,2025-05-28 17:05:00+00:00,Damir Dzumhur,Carlos Alcaraz,Dzumhur D.,Alcaraz C.,Alcaraz,b,three,2025-05-30,ATP,French Open,Clay,3rd Round,5,Completed,False,1.0,3.0,69.0,2.0,33.42,1.01,90.33,1.01
+573730,2025-05-28 19:15:00+00:00,Karen Khachanov,Tommy Paul,Khachanov K.,Paul T.,Paul,b,five,2025-05-30,ATP,French Open,Clay,3rd Round,5,Completed,False,2.0,3.0,24.0,12.0,1.75,2.08,1.8,2.22
+573732,2025-05-29 02:43:00+00:00,Elena Rybakina,Jelena Ostapenko,Rybakina E.,Ostapenko J.,Rybakina,a,three,2025-05-30,WTA,French Open,Clay,3rd Round,3,Completed,True,2.0,0.0,11.0,21.0,1.45,2.79,1.52,2.98
+573769,2025-05-29 15:06:00+00:00,Jannik Sinner,Jiri Lehecka,Sinner J.,Lehecka J.,Sinner,a,four,2025-05-31,ATP,French Open,Clay,3rd Round,5,Completed,True,3.0,0.0,1.0,34.0,1.06,9.83,1.08,13.67
+573810,2025-05-29 19:43:00+00:00,Cameron Norrie,Jacob Fearnley,Norrie C.,Fearnley J.,Norrie,a,four,2025-05-31,ATP,French Open,Clay,3rd Round,5,Completed,True,3.0,0.0,81.0,55.0,1.74,2.1,1.84,2.16
+573817,2025-05-30 00:00:00+00:00,Joao Fonseca,Jack Draper,Fonseca J.,Draper J.,Draper,b,four,2025-05-31,ATP,French Open,Clay,3rd Round,5,Completed,False,0.0,3.0,65.0,5.0,2.76,1.46,3.06,1.52
+573877,2025-05-30 14:18:00+00:00,Aryna Sabalenka,Amanda Anisimova,Sabalenka A.,Anisimova A.,Sabalenka,a,three,2025-06-01,WTA,French Open,Clay,4th Round,3,Completed,True,2.0,0.0,1.0,16.0,1.21,4.6,1.24,5.2
+573890,2025-05-30 17:13:00+00:00,Lorenzo Musetti,Holger Rune,Musetti L.,Rune H.,Musetti,a,four,2025-06-01,ATP,French Open,Clay,4th Round,5,Completed,True,3.0,1.0,7.0,10.0,1.46,2.75,1.52,2.98
+573892,2025-05-30 18:44:00+00:00,Elena Rybakina,Iga Swiatek,Rybakina E.,Swiatek I.,Rybakina,a,three,2025-06-01,WTA,French Open,Clay,4th Round,3,Completed,False,1.0,2.0,11.0,5.0,2.75,1.46,2.96,1.5
+573895,2025-05-30 21:54:00+00:00,Ben Shelton,Carlos Alcaraz,Shelton B.,Alcaraz C.,Alcaraz,b,four,2025-06-01,ATP,French Open,Clay,4th Round,5,Completed,False,1.0,3.0,13.0,2.0,11.11,1.04,14.0,1.07
+573933,2025-05-31 13:44:00+00:00,Jannik Sinner,Andrey Rublev,Sinner J.,Rublev A.,Sinner,a,three,2025-06-02,ATP,French Open,Clay,4th Round,5,Completed,True,3.0,0.0,1.0,15.0,1.05,10.7,1.07,14.5
+573946,2025-05-31 16:48:00+00:00,Alexander Bublik,Jack Draper,Bublik A.,Draper J.,Draper,b,four,2025-06-02,ATP,French Open,Clay,4th Round,5,Completed,True,3.0,1.0,62.0,5.0,8.56,1.08,11.5,1.1
+573962,2025-05-31 19:16:00+00:00,Alexander Zverev,Tallon Griekspoor,Zverev A.,Griekspoor T.,Zverev,a,five,2025-06-02,ATP,French Open,Clay,4th Round,5,Retired,True,1.0,0.0,3.0,35.0,1.13,6.16,1.16,7.2
+573966,2025-05-31 22:06:00+00:00,Cameron Norrie,Novak Djokovic,Norrie C.,Djokovic N.,Djokovic,b,three,2025-06-02,ATP,French Open,Clay,4th Round,5,Completed,False,0.0,3.0,81.0,6.0,8.71,1.08,12.26,1.1
+574018,2025-06-01 15:09:00+00:00,Elina Svitolina,Iga Swiatek,Svitolina E.,Swiatek I.,Swiatek,b,two,2025-06-03,WTA,French Open,Clay,Quarterfinals,3,Completed,False,0.0,2.0,14.0,5.0,3.91,1.27,4.01,1.31
+574025,2025-06-01 16:56:00+00:00,Aryna Sabalenka,Qinwen Zheng,Sabalenka A.,Zheng Q.,Sabalenka,a,two,2025-06-03,WTA,French Open,Clay,Quarterfinals,3,Completed,True,2.0,0.0,1.0,7.0,1.33,3.43,1.41,3.9
+574060,2025-06-01 23:24:00+00:00,Tommy Paul,Carlos Alcaraz,Paul T.,Alcaraz C.,Alcaraz,b,four,2025-06-03,ATP,French Open,Clay,Quarterfinals,5,Completed,False,0.0,3.0,12.0,2.0,7.99,1.09,10.0,1.12
+574061,2025-06-02 03:33:00+00:00,Lorenzo Musetti,Frances Tiafoe,Musetti L.,Tiafoe F.,Musetti,a,four,2025-06-03,ATP,French Open,Clay,Quarterfinals,5,Completed,True,3.0,1.0,7.0,16.0,1.22,4.41,1.25,5.1
+574117,2025-06-02 17:06:00+00:00,Mirra Andreeva,Lois Boisson,Andreeva M.,Boisson L.,Andreeva,a,two,2025-06-04,WTA,French Open,Clay,Quarterfinals,3,Completed,False,0.0,2.0,6.0,361.0,1.13,6.48,1.15,8.0
+574124,2025-06-02 19:52:00+00:00,Madison Keys,Coco Gauff,Keys M.,Gauff C.,Gauff,b,three,2025-06-04,WTA,French Open,Clay,Quarterfinals,3,Completed,False,1.0,2.0,8.0,2.0,2.82,1.45,3.11,1.5
+574125,2025-06-02 20:02:00+00:00,Alexander Zverev,Novak Djokovic,Zverev A.,Djokovic N.,Djokovic,b,five,2025-06-04,ATP,French Open,Clay,Quarterfinals,5,Completed,False,1.0,3.0,3.0,6.0,1.92,1.92,1.97,2.02
+574132,2025-06-02 21:39:00+00:00,Jannik Sinner,Alexander Bublik,Sinner J.,Bublik A.,Sinner,a,four,2025-06-04,ATP,French Open,Clay,Quarterfinals,5,Completed,True,3.0,0.0,1.0,62.0,1.02,14.36,1.04,21.0
+574202,2025-06-03 18:58:00+00:00,Aryna Sabalenka,Iga Swiatek,Sabalenka A.,Swiatek I.,Sabalenka,a,three,2025-06-05,WTA,French Open,Clay,Semifinals,3,Completed,True,2.0,1.0,1.0,5.0,1.79,2.05,1.85,2.16
+574280,2025-06-04 15:28:00+00:00,Lois Boisson,Coco Gauff,Boisson L.,Gauff C.,Gauff,b,three,2025-06-05,WTA,French Open,Clay,Semifinals,3,Completed,False,0.0,2.0,361.0,2.0,4.87,1.19,5.49,1.22
+574209,2025-06-04 06:00:00+00:00,Lorenzo Musetti,Carlos Alcaraz,Musetti L.,Alcaraz C.,Alcaraz,b,four,2025-06-06,ATP,French Open,Clay,Semifinals,5,Retired,False,1.0,2.0,7.0,2.0,6.08,1.14,6.8,1.16
+574322,2025-06-05 18:17:00+00:00,Jannik Sinner,Novak Djokovic,Sinner J.,Djokovic N.,Sinner,a,four,2025-06-06,ATP,French Open,Clay,Semifinals,5,Completed,True,3.0,0.0,1.0,6.0,1.25,4.03,1.29,4.33
+574342,2025-06-05 21:28:00+00:00,Aryna Sabalenka,Coco Gauff,Sabalenka A.,Gauff C.,Gauff,b,three,2025-06-07,WTA,French Open,Clay,The Final,3,Completed,False,1.0,2.0,1.0,2.0,2.9,1.42,3.2,1.45
+574424,2025-06-07 06:03:00+00:00,Jannik Sinner,Carlos Alcaraz,Sinner J.,Alcaraz C.,Sinner,a,four,2025-06-08,ATP,French Open,Clay,The Final,5,Completed,False,2.0,3.0,1.0,2.0,1.95,1.85,1.94,2.03
+574590,2025-06-09 19:59:00+00:00,Emma Raducanu,Cristina Bucsa,Raducanu E.,Bucsa C.,Raducanu,a,two,2025-06-10,WTA,Queen's Club Championships,Grass,1st Round,3,Completed,True,2.0,0.0,37.0,112.0,1.25,3.95,1.3,4.3
+574596,2025-06-09 21:27:00+00:00,Rebecca Sramkova,Barbora Krejcikova,Sramkova R.,Krejcikova B.,Sramkova,a,three,2025-06-10,WTA,Queen's Club Championships,Grass,1st Round,3,Completed,True,2.0,0.0,41.0,17.0,2.6,1.49,2.86,1.53
+574823,2025-06-10 21:39:00+00:00,Emma Raducanu,Rebecca Sramkova,Raducanu E.,Sramkova R.,Raducanu,a,two,2025-06-12,WTA,Queen's Club Championships,Grass,2nd Round,3,Completed,True,2.0,0.0,37.0,41.0,1.23,4.04,1.28,5.2
+574827,2025-06-10 21:48:00+00:00,Diana Shnaider,Katie Boulter,Shnaider D.,Boulter K.,Shnaider,a,two,2025-06-12,WTA,Queen's Club Championships,Grass,2nd Round,3,Completed,True,2.0,1.0,12.0,34.0,1.57,2.38,1.61,2.6
+575081,2025-06-11 16:21:00+00:00,Qinwen Zheng,McCartney Kessler,Zheng Q.,Kessler M.,Zheng,a,three,2025-06-12,WTA,Queen's Club Championships,Grass,2nd Round,3,Completed,True,2.0,1.0,5.0,42.0,1.43,2.81,1.5,2.96
+575109,2025-06-11 16:40:00+00:00,Dan Evans,Ugo Humbert,Evans D.,Humbert U.,Humbert,b,two,2025-06-12,ATP,Rosmalen Grass Court Championships,Grass,2nd Round,3,Completed,False,0.0,2.0,217.0,20.0,3.25,1.35,3.75,1.5
+575118,2025-06-11 18:30:00+00:00,Heather Watson,Elena Rybakina,Watson H.,Rybakina E.,Rybakina,b,two,2025-06-12,WTA,Queen's Club Championships,Grass,2nd Round,3,Completed,False,0.0,2.0,164.0,11.0,7.66,1.08,10.0,1.11
+575339,2025-06-12 10:30:00+00:00,Emma Navarro,Amanda Anisimova,Navarro E.,Anisimova A.,Anisimova,b,three,2025-06-13,WTA,Queen's Club Championships,Grass,Quarterfinals,3,Completed,False,0.0,2.0,10.0,15.0,2.71,1.45,3.0,1.5
+575417,2025-06-12 20:29:00+00:00,Qinwen Zheng,Emma Raducanu,Zheng Q.,Raducanu E.,Raducanu,b,three,2025-06-13,WTA,Queen's Club Championships,Grass,Quarterfinals,3,Completed,True,2.0,0.0,5.0,37.0,2.22,1.65,2.34,1.73
+575502,2025-06-13 21:58:00+00:00,Qinwen Zheng,Amanda Anisimova,Zheng Q.,Anisimova A.,Anisimova,b,three,2025-06-14,WTA,Queen's Club Championships,Grass,Semifinals,3,Completed,False,1.0,2.0,5.0,15.0,2.13,1.72,2.7,1.84
+575504,2025-06-13 22:07:00+00:00,Tatjana Maria,Madison Keys,Maria T.,Keys M.,Keys,b,two,2025-06-14,WTA,Queen's Club Championships,Grass,Semifinals,3,Completed,True,2.0,0.0,86.0,8.0,4.94,1.17,5.5,1.21
+575548,2025-06-14 18:59:00+00:00,Amanda Anisimova,Tatjana Maria,Anisimova A.,Maria T.,Anisimova,a,three,2025-06-15,WTA,Queen's Club Championships,Grass,The Final,3,Completed,False,0.0,2.0,15.0,86.0,1.35,3.15,1.43,3.5
+575599,2025-06-15 19:00:00+00:00,Cameron Norrie,Jakub Mensik,Norrie C.,Mensik J.,Norrie,a,three,2025-06-16,ATP,Queen's Club Championships,Grass,1st Round,3,Completed,False,1.0,2.0,61.0,17.0,2.22,1.66,2.32,1.74
+575580,2025-06-15 13:01:00+00:00,Lulu Sun,Katie Boulter,Sun L.,Boulter K.,Boulter,b,two,2025-06-17,WTA,Nottingham Open,Grass,1st Round,3,Completed,False,0.0,2.0,44.0,39.0,3.37,1.32,3.7,1.37
+575648,2025-06-16 18:25:00+00:00,Jenson Brooksby,Jack Draper,Brooksby J.,Draper J.,Draper,b,two,2025-06-17,ATP,Queen's Club Championships,Grass,1st Round,3,Completed,False,0.0,2.0,149.0,6.0,8.59,1.07,10.67,1.1
+575653,2025-06-16 20:18:00+00:00,Corentin Moutet,Taylor Fritz,Moutet C.,Fritz T.,Fritz,b,two,2025-06-17,ATP,Queen's Club Championships,Grass,1st Round,3,Completed,True,2.0,1.0,89.0,4.0,5.77,1.14,6.4,1.17
+575721,2025-06-17 21:46:00+00:00,Alexei Popyrin,Jack Draper,Popyrin A.,Draper J.,Draper,b,three,2025-06-18,ATP,Queen's Club Championships,Grass,2nd Round,3,Completed,False,1.0,2.0,21.0,6.0,5.55,1.14,6.8,1.16
+575718,2025-06-17 19:39:00+00:00,Sonay Kartal,Katie Boulter,Kartal S.,Boulter K.,Boulter,b,three,2025-06-19,WTA,Nottingham Open,Grass,2nd Round,3,Completed,False,1.0,2.0,50.0,39.0,2.35,1.59,2.5,1.65
+575720,2025-06-17 21:38:00+00:00,Carlos Alcaraz,Jaume Munar,Alcaraz C.,Munar J.,Alcaraz,a,two,2025-06-19,ATP,Queen's Club Championships,Grass,2nd Round,3,Completed,True,2.0,1.0,2.0,59.0,1.03,15.2,1.04,21.0
+575809,2025-06-19 06:26:00+00:00,Brandon Nakashima,Jack Draper,Nakashima B.,Draper J.,Draper,b,three,2025-06-20,ATP,Queen's Club Championships,Grass,Quarterfinals,3,Completed,False,1.0,2.0,32.0,6.0,4.54,1.2,5.3,1.22
+575832,2025-06-19 10:46:00+00:00,Holger Rune,Roberto Bautista Agut,Rune H.,Bautista Agut R.,Rune,a,three,2025-06-20,ATP,Queen's Club Championships,Grass,Quarterfinals,3,Completed,False,1.0,2.0,9.0,51.0,1.32,3.42,1.37,3.65
+575851,2025-06-19 17:30:00+00:00,Jiri Lehecka,Jacob Fearnley,Lehecka J.,Fearnley J.,Lehecka,a,two,2025-06-20,ATP,Queen's Club Championships,Grass,Quarterfinals,3,Completed,True,2.0,0.0,30.0,60.0,1.48,2.65,1.54,2.84
+575854,2025-06-19 15:44:00+00:00,McCartney Kessler,Katie Boulter,Kessler M.,Boulter K.,Boulter,b,three,2025-06-20,WTA,Nottingham Open,Grass,Quarterfinals,3,Completed,True,2.0,1.0,42.0,39.0,1.98,1.82,2.12,1.88
+575879,2025-06-19 22:48:00+00:00,Carlos Alcaraz,Arthur Rinderknech,Alcaraz C.,Rinderknech A.,Alcaraz,a,three,2025-06-20,ATP,Queen's Club Championships,Grass,Quarterfinals,3,Completed,True,2.0,0.0,2.0,80.0,1.09,7.51,1.13,8.5
+575929,2025-06-20 19:49:00+00:00,Jiri Lehecka,Jack Draper,Lehecka J.,Draper J.,Lehecka,a,three,2025-06-21,ATP,Queen's Club Championships,Grass,Semifinals,3,Completed,True,2.0,1.0,30.0,6.0,2.69,1.47,2.92,1.52
+575936,2025-06-20 21:45:00+00:00,Carlos Alcaraz,Roberto Bautista Agut,Alcaraz C.,Bautista Agut R.,Alcaraz,a,two,2025-06-21,ATP,Queen's Club Championships,Grass,Semifinals,3,Completed,True,2.0,0.0,2.0,51.0,1.1,7.07,1.12,9.4
+575965,2025-06-21 18:13:00+00:00,Carlos Alcaraz,Jiri Lehecka,Alcaraz C.,Lehecka J.,Lehecka,b,three,2025-06-22,ATP,Queen's Club Championships,Grass,The Final,3,Completed,True,2.0,1.0,2.0,30.0,1.23,4.22,1.26,4.7
+576134,2025-06-24 18:38:00+00:00,Maya Joint,Emma Raducanu,Joint M.,Raducanu E.,Raducanu,b,three,2025-06-25,WTA,Eastbourne Open,Grass,2nd Round,3,Completed,True,2.0,1.0,51.0,38.0,3.1,1.36,3.45,1.4
+576446,2025-06-29 11:28:00+00:00,Fabio Fognini,Carlos Alcaraz,Fognini F.,Alcaraz C.,Alcaraz,b,three,2025-06-30,ATP,Wimbledon,Grass,1st Round,5,Completed,False,2.0,3.0,138.0,2.0,29.42,1.01,90.0,1.01
+576448,2025-06-29 11:34:00+00:00,Paula Badosa,Katie Boulter,Badosa P.,Boulter K.,Badosa,a,three,2025-06-30,WTA,Wimbledon,Grass,1st Round,3,Completed,False,1.0,2.0,9.0,43.0,1.77,2.03,1.85,2.16
+576458,2025-06-29 16:45:00+00:00,Emma Raducanu,Mingge Xu,Raducanu E.,Xu M.,Raducanu,a,two,2025-06-30,WTA,Wimbledon,Grass,1st Round,3,Completed,True,2.0,0.0,40.0,318.0,1.17,4.85,1.18,5.32
+576460,2025-06-29 18:10:00+00:00,Jacob Fearnley,Joao Fonseca,Fearnley J.,Fonseca J.,Fearnley,a,four,2025-06-30,ATP,Wimbledon,Grass,1st Round,5,Completed,False,0.0,3.0,51.0,54.0,2.67,1.47,2.86,1.53
+576489,2025-06-30 10:29:00+00:00,Jack Draper,Sebastian Baez,Draper J.,Baez S.,Draper,a,three,2025-07-01,ATP,Wimbledon,Grass,1st Round,5,Retired,True,2.0,0.0,4.0,38.0,1.01,20.67,1.02,36.0
+576499,2025-06-30 12:30:00+00:00,Barbora Krejcikova,Alexandra Eala,Krejcikova B.,Eala A.,Eala,b,three,2025-07-01,WTA,Wimbledon,Grass,1st Round,3,Completed,True,2.0,1.0,16.0,56.0,2.11,1.72,2.2,1.82
+576503,2025-06-30 13:40:00+00:00,Petra Kvitova,Emma Navarro,Kvitova P.,Navarro E.,Navarro,b,three,2025-07-01,WTA,Wimbledon,Grass,1st Round,3,Completed,False,0.0,2.0,572.0,10.0,4.29,1.21,4.67,1.27
+576512,2025-06-30 15:34:00+00:00,Gael Monfils,Ugo Humbert,Monfils G.,Humbert U.,Humbert,b,five,2025-07-01,ATP,Wimbledon,Grass,1st Round,5,Completed,True,3.0,2.0,48.0,18.0,3.35,1.33,3.65,1.37
+576559,2025-07-01 13:10:00+00:00,Oliver Tarvet,Carlos Alcaraz,Tarvet O.,Alcaraz C.,Alcaraz,b,four,2025-07-02,ATP,Wimbledon,Grass,2nd Round,5,Completed,False,0.0,3.0,733.0,2.0,19.33,1.01,34.0,1.03
+576568,2025-07-01 15:22:00+00:00,Emma Raducanu,Marketa Vondrousova,Raducanu E.,Vondrousova M.,Vondrousova,b,two,2025-07-02,WTA,Wimbledon,Grass,2nd Round,3,Completed,True,2.0,0.0,40.0,73.0,2.57,1.5,2.76,1.56
+576574,2025-07-01 16:50:00+00:00,Cameron Norrie,Frances Tiafoe,Norrie C.,Tiafoe F.,Tiafoe,b,four,2025-07-02,ATP,Wimbledon,Grass,2nd Round,5,Completed,True,3.0,1.0,61.0,12.0,2.48,1.54,2.66,1.59
+576579,2025-07-01 19:05:00+00:00,Aryna Sabalenka,Marie Bouzkova,Sabalenka A.,Bouzkova M.,Sabalenka,a,two,2025-07-02,WTA,Wimbledon,Grass,2nd Round,3,Completed,True,2.0,0.0,1.0,48.0,1.08,7.93,1.11,9.68
+576623,2025-07-02 12:25:00+00:00,Maria Sakkari,Elena Rybakina,Sakkari M.,Rybakina E.,Rybakina,b,three,2025-07-03,WTA,Wimbledon,Grass,2nd Round,3,Completed,False,0.0,2.0,77.0,11.0,5.02,1.17,5.5,1.22
+576627,2025-07-02 13:27:00+00:00,Jannik Sinner,Aleksandar Vukic,Sinner J.,Vukic A.,Sinner,a,three,2025-07-03,ATP,Wimbledon,Grass,2nd Round,5,Completed,True,3.0,0.0,1.0,93.0,1.01,21.54,1.02,46.0
+576638,2025-07-02 17:01:00+00:00,Dan Evans,Novak Djokovic,Evans D.,Djokovic N.,Djokovic,b,four,2025-07-03,ATP,Wimbledon,Grass,2nd Round,5,Completed,False,0.0,3.0,154.0,6.0,10.96,1.05,16.0,1.06
+576642,2025-07-02 17:10:00+00:00,Jack Draper,Marin Cilic,Draper J.,Cilic M.,Draper,a,four,2025-07-03,ATP,Wimbledon,Grass,2nd Round,5,Completed,False,1.0,3.0,4.0,83.0,1.11,6.55,1.13,8.4
+576694,2025-07-03 14:30:00+00:00,Aryna Sabalenka,Emma Raducanu,Sabalenka A.,Raducanu E.,Sabalenka,a,two,2025-07-04,WTA,Wimbledon,Grass,3rd Round,3,Completed,True,2.0,0.0,1.0,40.0,1.25,3.91,1.28,4.4
+576695,2025-07-03 14:48:00+00:00,Elise Mertens,Elina Svitolina,Mertens E.,Svitolina E.,Svitolina,b,two,2025-07-04,WTA,Wimbledon,Grass,3rd Round,3,Completed,True,2.0,0.0,23.0,13.0,2.35,1.58,2.52,1.63
+576706,2025-07-03 16:29:00+00:00,Mattia Bellucci,Cameron Norrie,Bellucci M.,Norrie C.,Norrie,b,four,2025-07-04,ATP,Wimbledon,Grass,3rd Round,5,Completed,False,0.0,3.0,73.0,61.0,2.41,1.56,2.56,1.63
+576721,2025-07-03 18:48:00+00:00,Jan-Lennard Struff,Carlos Alcaraz,Struff J.L.,Alcaraz C.,Alcaraz,b,four,2025-07-04,ATP,Wimbledon,Grass,3rd Round,5,Completed,False,1.0,3.0,125.0,2.0,12.61,1.03,18.0,1.05
+576784,2025-07-04 17:05:00+00:00,Clara Tauson,Elena Rybakina,Tauson C.,Rybakina E.,Rybakina,b,three,2025-07-05,WTA,Wimbledon,Grass,3rd Round,3,Completed,True,2.0,0.0,22.0,11.0,4.46,1.21,5.2,1.23
+576785,2025-07-04 17:15:00+00:00,Barbora Krejcikova,Emma Navarro,Krejcikova B.,Navarro E.,Navarro,b,three,2025-07-05,WTA,Wimbledon,Grass,3rd Round,3,Completed,False,1.0,2.0,16.0,10.0,2.72,1.45,2.92,1.53
+576792,2025-07-04 19:29:00+00:00,Iga Swiatek,Danielle Collins,Swiatek I.,Collins D.,Swiatek,a,three,2025-07-05,WTA,Wimbledon,Grass,3rd Round,3,Completed,True,2.0,0.0,4.0,54.0,1.38,3.03,1.42,3.3
+576793,2025-07-04 19:44:00+00:00,Miomir Kecmanovic,Novak Djokovic,Kecmanovic M.,Djokovic N.,Djokovic,b,three,2025-07-05,ATP,Wimbledon,Grass,3rd Round,3,Completed,False,0.0,3.0,49.0,6.0,13.67,1.03,19.5,1.05
+576841,2025-07-05 18:58:00+00:00,Sonay Kartal,Anastasia Pavlyuchenkova,Kartal S.,Pavlyuchenkova A.,Pavlyuchenkova,b,three,2025-07-06,WTA,Wimbledon,Grass,4th Round,3,Completed,False,0.0,2.0,51.0,50.0,1.85,1.94,1.96,2.02
+576846,2025-07-05 20:42:00+00:00,Aryna Sabalenka,Elise Mertens,Sabalenka A.,Mertens E.,Sabalenka,a,two,2025-07-06,WTA,Wimbledon,Grass,4th Round,3,Completed,True,2.0,0.0,1.0,23.0,1.21,4.36,1.25,4.8
+576852,2025-07-05 22:11:00+00:00,Nicolas Jarry,Cameron Norrie,Jarry N.,Norrie C.,Norrie,b,five,2025-07-06,ATP,Wimbledon,Grass,4th Round,5,Completed,False,2.0,3.0,143.0,61.0,1.96,1.84,2.08,2.1
+576853,2025-07-05 22:37:00+00:00,Andrey Rublev,Carlos Alcaraz,Rublev A.,Alcaraz C.,Alcaraz,b,four,2025-07-06,ATP,Wimbledon,Grass,4th Round,5,Completed,False,1.0,3.0,14.0,2.0,7.5,1.09,9.4,1.11
+576878,2025-07-06 16:50:00+00:00,Alex de Minaur,Novak Djokovic,De Minaur A.,Djokovic N.,Djokovic,b,four,2025-07-07,ATP,Wimbledon,Grass,4th Round,5,Completed,False,1.0,3.0,11.0,6.0,5.04,1.17,5.9,1.2
+576880,2025-07-06 16:59:00+00:00,Jannik Sinner,Grigor Dimitrov,Sinner J.,Dimitrov G.,Sinner,a,three,2025-07-07,ATP,Wimbledon,Grass,4th Round,5,Retired,True,0.0,2.0,1.0,21.0,1.03,13.83,1.05,18.06
+576890,2025-07-06 19:57:00+00:00,Iga Swiatek,Clara Tauson,Swiatek I.,Tauson C.,Swiatek,a,two,2025-07-07,WTA,Wimbledon,Grass,4th Round,3,Completed,True,2.0,0.0,4.0,22.0,1.3,3.53,1.34,3.85
+576891,2025-07-06 20:11:00+00:00,Mirra Andreeva,Emma Navarro,Andreeva M.,Navarro E.,Navarro,b,three,2025-07-07,WTA,Wimbledon,Grass,4th Round,3,Completed,True,2.0,0.0,7.0,10.0,1.57,2.38,1.65,2.52
+576963,2025-07-07 22:05:00+00:00,Cameron Norrie,Carlos Alcaraz,Norrie C.,Alcaraz C.,Alcaraz,b,five,2025-07-08,ATP,Wimbledon,Grass,Quarterfinals,5,Completed,False,0.0,3.0,61.0,2.0,9.96,1.05,13.5,1.07
+576964,2025-07-07 22:05:00+00:00,Taylor Fritz,Karen Khachanov,Fritz T.,Khachanov K.,Fritz,a,five,2025-07-08,ATP,Wimbledon,Grass,Quarterfinals,5,Completed,True,3.0,1.0,5.0,20.0,1.27,3.76,1.31,4.2
+576965,2025-07-07 22:15:00+00:00,Aryna Sabalenka,Laura Siegemund,Sabalenka A.,Siegemund L.,Sabalenka,a,two,2025-07-08,WTA,Wimbledon,Grass,Quarterfinals,3,Completed,True,2.0,1.0,1.0,104.0,1.07,9.0,1.09,13.0
+576966,2025-07-07 22:15:00+00:00,Amanda Anisimova,Anastasia Pavlyuchenkova,Anisimova A.,Pavlyuchenkova A.,Anisimova,a,three,2025-07-08,WTA,Wimbledon,Grass,Quarterfinals,3,Completed,True,2.0,0.0,12.0,50.0,1.38,3.05,1.41,3.35
+576996,2025-07-08 14:32:00+00:00,Jannik Sinner,Ben Shelton,Sinner J.,Shelton B.,Sinner,a,four,2025-07-09,ATP,Wimbledon,Grass,Quarterfinals,5,Completed,True,3.0,0.0,1.0,10.0,1.29,3.58,1.34,3.9
+576998,2025-07-08 14:40:00+00:00,Flavio Cobolli,Novak Djokovic,Cobolli F.,Djokovic N.,Djokovic,b,three,2025-07-09,ATP,Wimbledon,Grass,Quarterfinals,5,Completed,False,1.0,3.0,24.0,6.0,7.53,1.09,8.6,1.12
+577006,2025-07-08 18:25:00+00:00,Mirra Andreeva,Belinda Bencic,Andreeva M.,Bencic B.,Andreeva,a,three,2025-07-09,WTA,Wimbledon,Grass,Quarterfinals,3,Completed,False,0.0,2.0,7.0,35.0,1.46,2.7,1.52,2.9
+577007,2025-07-08 18:39:00+00:00,Iga Swiatek,Liudmila Samsonova,Swiatek I.,Samsonova L.,Swiatek,a,two,2025-07-09,WTA,Wimbledon,Grass,Quarterfinals,3,Completed,True,2.0,0.0,4.0,19.0,1.33,3.33,1.36,3.65
+577051,2025-07-09 16:38:00+00:00,Aryna Sabalenka,Amanda Anisimova,Sabalenka A.,Anisimova A.,Sabalenka,a,three,2025-07-10,WTA,Wimbledon,Grass,Semifinals,3,Completed,False,1.0,2.0,1.0,12.0,1.34,3.24,1.38,3.55
+577063,2025-07-09 18:55:00+00:00,Belinda Bencic,Iga Swiatek,Bencic B.,Swiatek I.,Swiatek,b,three,2025-07-10,WTA,Wimbledon,Grass,Semifinals,3,Completed,False,0.0,2.0,35.0,4.0,3.73,1.27,4.26,1.32
+577111,2025-07-10 14:06:00+00:00,Taylor Fritz,Carlos Alcaraz,Fritz T.,Alcaraz C.,Alcaraz,b,four,2025-07-11,ATP,Wimbledon,Grass,Semifinals,5,Completed,False,1.0,3.0,5.0,2.0,4.98,1.17,5.25,1.24
+577120,2025-07-10 15:44:00+00:00,Jannik Sinner,Novak Djokovic,Sinner J.,Djokovic N.,Sinner,a,four,2025-07-11,ATP,Wimbledon,Grass,Semifinals,5,Completed,True,3.0,0.0,1.0,6.0,1.42,2.85,1.47,3.05
+577191,2025-07-11 19:21:00+00:00,Amanda Anisimova,Iga Swiatek,Anisimova A.,Swiatek I.,Swiatek,b,two,2025-07-12,WTA,Wimbledon,Grass,The Final,3,Completed,False,0.0,2.0,12.0,4.0,3.24,1.34,3.6,1.36
+578075,2025-07-26 22:44:00+00:00,Marketa Vondrousova,Alexandra Eala,Vondrousova M.,Eala A.,Vondrousova,a,three,2025-07-27,WTA,Canadian Open,Hard,1st Round,3,Completed,True,2.0,1.0,63.0,65.0,1.42,2.81,1.45,2.97
+578077,2025-07-27 01:46:00+00:00,Leylah Fernandez,Anna Kalinskaya,Fernandez L.A.,Kalinskaya A.,Kalinskaya,b,two,2025-07-27,WTA,Citi Open,Hard,The Final,3,Completed,True,2.0,0.0,36.0,48.0,2.28,1.61,2.37,1.66
+578071,2025-07-26 21:25:00+00:00,Bianca Andreescu,Barbora Krejcikova,Andreescu B.,Krejcikova B.,Krejcikova,b,three,2025-07-28,WTA,Canadian Open,Hard,1st Round,3,Completed,True,2.0,0.0,187.0,80.0,1.64,2.22,1.73,2.3
+578076,2025-07-27 01:03:00+00:00,Naomi Osaka,Ariana Arseneault,Osaka N.,Arseneault A.,Osaka,a,two,2025-07-28,WTA,Canadian Open,Hard,1st Round,3,Completed,True,2.0,0.0,49.0,515.0,1.03,13.84,1.04,17.98
+578078,2025-07-27 23:25:00+00:00,Eugenie Bouchard,Emiliana Arango,Bouchard E.,Arango E.,Bouchard,a,three,2025-07-29,WTA,Canadian Open,Hard,1st Round,3,Completed,True,2.0,1.0,,82.0,3.46,1.3,3.81,1.33
+578713,2025-08-06 15:00:00+00:00,Venus Williams,Jessica Bouzas Maneiro,Williams V.,Bouzas Maneiro J.,Bouzas Maneiro,b,two,2025-08-07,WTA,Western & Southern Financial Group Women's Open,Hard,1st Round,3,Completed,False,0.0,2.0,644.0,42.0,5.58,1.14,6.0,1.15
+578724,2025-08-06 16:38:00+00:00,Sonay Kartal,Caroline Garcia,Kartal S.,Garcia C.,Kartal,a,two,2025-08-08,WTA,Western & Southern Financial Group Women's Open,Hard,1st Round,3,Completed,False,1.0,2.0,48.0,200.0,1.24,3.94,1.25,4.2
+578922,2025-08-08 19:42:00+00:00,Olga Danilovic,Emma Raducanu,Danilovic O.,Raducanu E.,Raducanu,b,three,2025-08-09,WTA,Western & Southern Financial Group Women's Open,Hard,2nd Round,3,Completed,False,0.0,2.0,43.0,39.0,3.07,1.36,3.2,1.4
+578997,2025-08-10 11:55:00+00:00,Aryna Sabalenka,Emma Raducanu,Sabalenka A.,Raducanu E.,Sabalenka,a,three,2025-08-11,WTA,Western & Southern Financial Group Women's Open,Hard,3rd Round,3,Completed,True,2.0,1.0,1.0,39.0,1.34,3.22,1.36,3.4
+579966,2025-08-24 15:39:00+00:00,Barbora Krejcikova,Victoria Mboko,Krejcikova B.,Mboko V.,Mboko,b,three,2025-08-25,WTA,US Open,Hard,1st Round,3,Completed,True,2.0,0.0,62.0,23.0,2.67,1.46,2.75,1.48
+579967,2025-08-24 18:05:00+00:00,Venus Williams,Karolina Muchova,Williams V.,Muchova K.,Muchova,b,two,2025-08-26,WTA,US Open,Hard,1st Round,3,Completed,False,1.0,2.0,602.0,13.0,9.14,1.06,10.5,1.08
+580015,2025-08-25 19:14:00+00:00,Lorenzo Musetti,Giovanni Mpetshi Perricard,Musetti L.,Mpetshi G.,Musetti,a,five,2025-08-26,ATP,US Open,Hard,1st Round,5,Completed,True,3.0,1.0,10.0,37.0,1.39,2.92,1.44,3.0
+580014,2025-08-25 14:27:00+00:00,Ajla Tomljanovic,Coco Gauff,Tomljanovic A.,Gauff C.,Gauff,b,two,2025-08-27,WTA,US Open,Hard,1st Round,3,Completed,False,1.0,2.0,79.0,3.0,8.47,1.07,10.0,1.08
+580073,2025-08-26 13:55:00+00:00,Joao Fonseca,Tomas Machac,Fonseca J.,Machac T.,Fonseca,a,four,2025-08-27,ATP,US Open,Hard,2nd Round,5,Completed,False,0.0,3.0,45.0,22.0,1.8,1.99,1.88,2.05
+580074,2025-08-26 19:12:00+00:00,Mattia Bellucci,Carlos Alcaraz,Bellucci M.,Alcaraz C.,Alcaraz,b,three,2025-08-28,ATP,US Open,Hard,2nd Round,5,Completed,False,0.0,3.0,65.0,2.0,14.88,1.02,21.0,1.03
+580137,2025-08-27 14:31:00+00:00,Jannik Sinner,Alexei Popyrin,Sinner J.,Popyrin A.,Sinner,a,four,2025-08-28,ATP,US Open,Hard,2nd Round,5,Completed,True,3.0,0.0,1.0,36.0,1.02,14.88,1.04,21.0
+580136,2025-08-27 14:19:00+00:00,Donna Vekic,Coco Gauff,Vekic D.,Gauff C.,Gauff,b,two,2025-08-29,WTA,US Open,Hard,2nd Round,3,Completed,False,0.0,2.0,49.0,3.0,5.83,1.13,6.1,1.14
+580184,2025-08-28 06:49:00+00:00,Elena Rybakina,Emma Raducanu,Rybakina E.,Raducanu E.,Rybakina,a,three,2025-08-29,WTA,US Open,Hard,3rd Round,3,Completed,True,2.0,0.0,10.0,36.0,1.56,2.39,1.6,2.6
+580183,2025-08-28 06:38:00+00:00,Novak Djokovic,Cameron Norrie,Djokovic N.,Norrie C.,Djokovic,a,four,2025-08-30,ATP,US Open,Hard,3rd Round,5,Completed,True,3.0,1.0,7.0,35.0,1.09,7.25,1.12,8.0
+580312,2025-08-29 06:26:00+00:00,Anna Kalinskaya,Iga Swiatek,Kalinskaya A.,Swiatek I.,Swiatek,b,two,2025-08-31,WTA,US Open,Hard,3rd Round,3,Completed,False,0.0,2.0,29.0,2.0,5.26,1.15,5.5,1.17
+580356,2025-08-29 12:50:00+00:00,Alexander Bublik,Tommy Paul,Bublik A.,Paul T.,Bublik,a,four,2025-08-31,ATP,US Open,Hard,3rd Round,5,Completed,True,3.0,2.0,24.0,14.0,1.88,1.9,1.95,2.1
+580454,2025-08-30 19:08:00+00:00,Barbora Krejcikova,Taylor Townsend,Krejcikova B.,Townsend T.,Krejcikova,a,three,2025-08-31,WTA,US Open,Hard,4th Round,3,Completed,True,2.0,1.0,62.0,139.0,1.72,2.09,1.75,2.15
+580460,2025-08-30 21:52:00+00:00,Tomas Machac,Taylor Fritz,Machac T.,Fritz T.,Fritz,b,four,2025-08-31,ATP,US Open,Hard,4th Round,5,Completed,False,0.0,3.0,22.0,4.0,3.07,1.36,3.2,1.4
+580502,2025-08-31 16:43:00+00:00,Naomi Osaka,Coco Gauff,Osaka N.,Gauff C.,Gauff,b,three,2025-09-01,WTA,US Open,Hard,4th Round,3,Completed,True,2.0,0.0,24.0,3.0,2.11,1.72,2.25,1.78
+580592,2025-09-01 16:22:00+00:00,Jiri Lehecka,Carlos Alcaraz,Lehecka J.,Alcaraz C.,Alcaraz,b,four,2025-09-02,ATP,US Open,Hard,Quarterfinals,5,Completed,False,0.0,3.0,21.0,2.0,10.11,1.05,11.0,1.08
+580611,2025-09-01 19:26:00+00:00,Jessica Pegula,Barbora Krejcikova,Pegula J.,Krejcikova B.,Pegula,a,two,2025-09-02,WTA,US Open,Hard,Quarterfinals,3,Completed,True,2.0,0.0,4.0,62.0,1.35,3.21,1.37,3.5
+580528,2025-09-01 02:52:00+00:00,Novak Djokovic,Taylor Fritz,Djokovic N.,Fritz T.,Fritz,b,five,2025-09-03,ATP,US Open,Hard,Quarterfinals,5,Completed,True,3.0,1.0,7.0,4.0,1.45,2.76,1.48,2.88
+580678,2025-09-02 14:53:00+00:00,Felix Auger-Aliassime,Alex de Minaur,Auger-Aliassime F.,De Minaur A.,Auger-Aliassime,a,four,2025-09-03,ATP,US Open,Hard,Quarterfinals,5,Completed,True,3.0,1.0,27.0,8.0,2.23,1.66,2.3,1.82
+580710,2025-09-02 21:30:00+00:00,Amanda Anisimova,Iga Swiatek,Anisimova A.,Swiatek I.,Swiatek,b,three,2025-09-03,WTA,US Open,Hard,Quarterfinals,3,Completed,True,2.0,0.0,9.0,2.0,4.1,1.24,4.33,1.25
+580674,2025-09-02 14:40:00+00:00,Jannik Sinner,Lorenzo Musetti,Sinner J.,Musetti L.,Sinner,a,three,2025-09-04,ATP,US Open,Hard,Quarterfinals,5,Completed,True,3.0,0.0,1.0,10.0,1.04,12.69,1.05,17.0
+580711,2025-09-02 21:40:00+00:00,Karolina Muchova,Naomi Osaka,Muchova K.,Osaka N.,Osaka,b,two,2025-09-04,WTA,US Open,Hard,Quarterfinals,3,Completed,False,0.0,2.0,13.0,24.0,3.3,1.34,3.5,1.38
+580746,2025-09-03 12:49:00+00:00,Aryna Sabalenka,Jessica Pegula,Sabalenka A.,Pegula J.,Sabalenka,a,two,2025-09-05,WTA,US Open,Hard,Semifinals,3,Completed,True,2.0,1.0,1.0,4.0,1.3,3.56,1.32,3.75
+580760,2025-09-03 15:39:00+00:00,Novak Djokovic,Carlos Alcaraz,Djokovic N.,Alcaraz C.,Alcaraz,b,five,2025-09-05,ATP,US Open,Hard,Semifinals,5,Completed,False,0.0,3.0,7.0,2.0,3.73,1.27,4.0,1.3
+580799,2025-09-04 03:33:00+00:00,Naomi Osaka,Amanda Anisimova,Osaka N.,Anisimova A.,Anisimova,b,three,2025-09-05,WTA,US Open,Hard,Semifinals,3,Completed,False,1.0,2.0,24.0,9.0,1.9,1.9,2.1,1.97
+580801,2025-09-04 07:11:00+00:00,Jannik Sinner,Felix Auger-Aliassime,Sinner J.,Auger-Aliassime F.,Sinner,a,three,2025-09-06,ATP,US Open,Hard,Semifinals,5,Completed,True,3.0,1.0,1.0,27.0,1.03,13.38,1.05,17.0
+580900,2025-09-05 11:08:00+00:00,Aryna Sabalenka,Amanda Anisimova,Sabalenka A.,Anisimova A.,Sabalenka,a,three,2025-09-06,WTA,US Open,Hard,The Final,3,Completed,True,2.0,0.0,1.0,9.0,1.56,2.44,1.62,2.63
+580943,2025-09-06 06:59:00+00:00,Jannik Sinner,Carlos Alcaraz,Sinner J.,Alcaraz C.,Alcaraz,b,four,2025-09-07,ATP,US Open,Hard,The Final,5,Completed,False,1.0,3.0,1.0,2.0,1.75,2.09,1.83,2.15
+581592,2025-09-16 14:31:00+00:00,Jaqueline Cristian,Emma Raducanu,Cristian J.,Raducanu E.,Raducanu,b,three,2025-09-17,WTA,Korea Open,Hard,1st Round,3,Completed,False,0.0,2.0,41.0,33.0,3.51,1.29,3.75,1.3
+583262,2025-10-09 13:20:00+00:00,Novak Djokovic,Valentin Vacherot,Djokovic N.,Vacherot V.,Djokovic,a,two,2025-10-11,ATP,Shanghai Masters,Hard,Semifinals,3,Completed,False,0.0,2.0,5.0,204.0,1.13,5.77,1.15,6.5
+583368,2025-10-11 14:07:00+00:00,Arthur Rinderknech,Valentin Vacherot,Rinderknech A.,Vacherot V.,Rinderknech,a,three,2025-10-12,ATP,Shanghai Masters,Hard,The Final,3,Completed,False,1.0,2.0,54.0,204.0,1.62,2.26,1.68,2.38
+583377,2025-10-11 16:15:00+00:00,Jessica Pegula,Coco Gauff,Pegula J.,Gauff C.,Gauff,b,three,2025-10-12,WTA,Wuhan Open,Hard,The Final,3,Completed,False,0.0,2.0,6.0,3.0,2.25,1.63,2.5,1.7
+583474,2025-10-13 08:41:00+00:00,Emma Raducanu,Lin Zhu,Raducanu E.,Zhu L.,Raducanu,a,two,2025-10-14,WTA,Ningbo Open,Hard,1st Round,3,Completed,False,1.0,2.0,29.0,219.0,1.2,4.34,1.21,4.5
+583528,2025-10-14 15:14:00+00:00,Sorana Cirstea,Katie Boulter,Cirstea S.,Boulter K.,Boulter,b,three,2025-10-15,WTA,Japan Open,Hard,2nd Round,3,Completed,True,2.0,0.0,51.0,59.0,1.79,1.99,1.88,2.05
+584529,2025-10-27 20:27:00+00:00,Carlos Alcaraz,Cameron Norrie,Alcaraz C.,Norrie C.,Alcaraz,a,two,2025-10-28,ATP,BNP Paribas Masters,Hard,2nd Round,3,Completed,False,1.0,2.0,1.0,31.0,1.05,10.54,1.06,13.0
+584725,2025-10-30 23:53:00+00:00,Iga Swiatek,Madison Keys,Swiatek I.,Keys M.,Swiatek,a,two,2025-11-01,WTA,WTA Finals,Hard,Round Robin,3,Completed,True,2.0,0.0,2.0,7.0,1.2,4.49,1.21,5.0
+584866,2025-10-31 22:46:00+00:00,Aryna Sabalenka,Jasmine Paolini,Sabalenka A.,Paolini J.,Sabalenka,a,two,2025-11-02,WTA,WTA Finals,Hard,Round Robin,3,Completed,True,2.0,0.0,1.0,8.0,1.28,3.69,1.32,4.1
+584868,2025-10-31 23:37:00+00:00,Coco Gauff,Jessica Pegula,Gauff C.,Pegula J.,Gauff,a,three,2025-11-02,WTA,WTA Finals,Hard,Round Robin,3,Completed,False,1.0,2.0,3.0,5.0,1.58,2.44,2.2,2.63
+584917,2025-11-01 22:19:00+00:00,Iga Swiatek,Elena Rybakina,Swiatek I.,Rybakina E.,Swiatek,a,two,2025-11-03,WTA,WTA Finals,Hard,Round Robin,3,Completed,False,1.0,2.0,2.0,6.0,1.66,2.21,1.7,2.25
+584918,2025-11-01 22:54:00+00:00,Amanda Anisimova,Madison Keys,Anisimova A.,Keys M.,Anisimova,a,two,2025-11-03,WTA,WTA Finals,Hard,Round Robin,3,Completed,True,2.0,1.0,4.0,7.0,1.29,3.64,1.32,4.1
+585043,2025-11-03 22:32:00+00:00,Coco Gauff,Jasmine Paolini,Gauff C.,Paolini J.,Gauff,a,three,2025-11-04,WTA,WTA Finals,Hard,Round Robin,3,Completed,True,2.0,0.0,3.0,8.0,1.45,2.75,1.5,3.0
+585044,2025-11-03 23:51:00+00:00,Aryna Sabalenka,Jessica Pegula,Sabalenka A.,Pegula J.,Sabalenka,a,two,2025-11-04,WTA,WTA Finals,Hard,Round Robin,3,Completed,True,2.0,1.0,1.0,5.0,1.3,3.56,1.33,3.75
+585064,2025-11-04 11:00:00+00:00,Iga Swiatek,Amanda Anisimova,Swiatek I.,Anisimova A.,Anisimova,b,three,2025-11-05,WTA,WTA Finals,Hard,Round Robin,3,Completed,False,1.0,2.0,2.0,4.0,1.46,2.7,1.5,2.8
+585133,2025-11-05 13:56:00+00:00,Aryna Sabalenka,Coco Gauff,Sabalenka A.,Gauff C.,Gauff,b,three,2025-11-06,WTA,WTA Finals,Hard,Round Robin,3,Completed,True,2.0,0.0,1.0,3.0,1.48,2.63,1.52,2.75
+585134,2025-11-05 18:50:00+00:00,Jessica Pegula,Jasmine Paolini,Pegula J.,Paolini J.,Pegula,a,two,2025-11-06,WTA,WTA Finals,Hard,Round Robin,3,Completed,True,2.0,0.0,5.0,8.0,1.24,3.93,1.26,4.33
+585271,2025-11-06 21:24:00+00:00,Jessica Pegula,Elena Rybakina,Pegula J.,Rybakina E.,Rybakina,b,two,2025-11-07,WTA,WTA Finals,Hard,Semifinals,3,Completed,False,1.0,2.0,5.0,6.0,2.81,1.42,2.95,1.45
+585273,2025-11-06 22:39:00+00:00,Aryna Sabalenka,Amanda Anisimova,Sabalenka A.,Anisimova A.,Sabalenka,a,three,2025-11-07,WTA,WTA Finals,Hard,The Final,3,Completed,True,2.0,1.0,1.0,4.0,1.4,2.94,1.46,3.1
+585379,2025-11-07 21:15:00+00:00,Aryna Sabalenka,Elena Rybakina,Sabalenka A.,Rybakina E.,Sabalenka,a,three,2025-11-08,WTA,WTA Finals,Hard,The Final,3,Completed,False,0.0,2.0,1.0,6.0,1.5,2.57,1.56,2.7
+585395,2025-11-08 01:49:00+00:00,Carlos Alcaraz,Alex de Minaur,Alcaraz C.,De Minaur A.,Alcaraz,a,two,2025-11-09,ATP,Masters Cup,Hard,Round Robin,3,Completed,True,2.0,0.0,1.0,7.0,1.19,4.66,1.21,5.0
+585396,2025-11-08 03:36:00+00:00,Alexander Zverev,Ben Shelton,Zverev A.,Shelton B.,Zverev,a,two,2025-11-09,ATP,Masters Cup,Hard,Round Robin,3,Completed,True,2.0,0.0,3.0,5.0,1.54,2.46,1.58,2.6
+585401,2025-11-09 01:45:00+00:00,Lorenzo Musetti,Taylor Fritz,Musetti L.,Fritz T.,Fritz,b,two,2025-11-10,ATP,Masters Cup,Hard,Round Robin,3,Completed,False,0.0,2.0,9.0,6.0,2.87,1.41,3.1,1.44
+585427,2025-11-09 01:48:00+00:00,Jannik Sinner,Felix Auger-Aliassime,Sinner J.,Auger-Aliassime F.,Sinner,a,two,2025-11-10,ATP,Masters Cup,Hard,Round Robin,3,Completed,True,2.0,0.0,2.0,8.0,1.07,8.64,1.09,10.0
+585508,2025-11-10 18:37:00+00:00,Lorenzo Musetti,Alex de Minaur,Musetti L.,De Minaur A.,de Minaur,b,three,2025-11-11,ATP,Masters Cup,Hard,Round Robin,3,Completed,True,2.0,1.0,9.0,7.0,3.13,1.36,3.3,1.38
+585514,2025-11-10 23:23:00+00:00,Ben Shelton,Felix Auger-Aliassime,Shelton B.,Auger-Aliassime F.,Shelton,a,two,2025-11-12,ATP,Masters Cup,Hard,Round Robin,3,Completed,False,1.0,2.0,5.0,8.0,1.68,2.18,1.74,2.4
+585515,2025-11-10 23:41:00+00:00,Jannik Sinner,Alexander Zverev,Sinner J.,Zverev A.,Sinner,a,two,2025-11-12,ATP,Masters Cup,Hard,Round Robin,3,Completed,True,2.0,0.0,2.0,3.0,1.11,6.48,1.14,7.5
+585576,2025-11-11 23:13:00+00:00,Carlos Alcaraz,Lorenzo Musetti,Alcaraz C.,Musetti L.,Alcaraz,a,two,2025-11-13,ATP,Masters Cup,Hard,Round Robin,3,Completed,True,2.0,0.0,1.0,9.0,1.13,6.05,1.14,7.0
+585578,2025-11-11 23:44:00+00:00,Taylor Fritz,Alex de Minaur,Fritz T.,De Minaur A.,Fritz,a,three,2025-11-13,ATP,Masters Cup,Hard,Round Robin,3,Completed,False,0.0,2.0,6.0,7.0,1.36,3.09,1.4,3.3
+585601,2025-11-12 23:28:00+00:00,Alexander Zverev,Felix Auger-Aliassime,Zverev A.,Auger-Aliassime F.,Auger-Aliassime,b,three,2025-11-14,ATP,Masters Cup,Hard,Round Robin,3,Completed,False,0.0,2.0,3.0,8.0,4.8,1.19,5.3,1.22
+585602,2025-11-12 23:57:00+00:00,Jannik Sinner,Ben Shelton,Sinner J.,Shelton B.,Sinner,a,two,2025-11-14,ATP,Masters Cup,Hard,Round Robin,3,Completed,True,2.0,0.0,2.0,5.0,1.06,9.41,1.07,11.0
+585742,2025-11-14 16:18:00+00:00,Jannik Sinner,Alex de Minaur,Sinner J.,De Minaur A.,Sinner,a,two,2025-11-15,ATP,Masters Cup,Hard,Semifinals,3,Completed,True,2.0,0.0,2.0,7.0,1.06,9.44,1.07,11.0
+585767,2025-11-14 22:42:00+00:00,Carlos Alcaraz,Felix Auger-Aliassime,Alcaraz C.,Auger-Aliassime F.,Auger-Aliassime,b,three,2025-11-15,ATP,Masters Cup,Hard,Semifinals,3,Completed,True,2.0,0.0,1.0,8.0,1.19,4.75,1.22,5.3
+585810,2025-11-15 23:13:00+00:00,Carlos Alcaraz,Jannik Sinner,Alcaraz C.,Sinner J.,Sinner,b,three,2025-11-16,ATP,Masters Cup,Hard,The Final,3,Completed,False,0.0,2.0,1.0,2.0,2.61,1.49,2.8,1.56
+589428,2026-01-08 11:46:41+00:00,Elina Svitolina,Sonay Kartal,Svitolina E.,Kartal S.,Svitolina,a,three,2026-01-09,WTA,ASB Classic,Hard,Quarterfinals,3,Completed,True,2,1,13.0,68.0,1.3,3.61,1.34,5.5
+589684,2026-01-12 12:08:18+00:00,Emma Raducanu,Camila Osorio,Raducanu E.,Osorio M.,Raducanu,a,two,2026-01-14,WTA,Hobart International,Hard,1st Round,3,Completed,True,2,0,29.0,82.0,1.3,3.41,1.33,3.5
+589805,2026-01-14 13:00:00+00:00,Emma Raducanu,Taylah Preston,Raducanu E.,Preston T.,Raducanu,a,two,2026-01-15,WTA,Hobart International,Hard,Quarterfinals,3,Completed,False,0,2,29.0,204.0,1.28,3.63,1.3,4.0
+589956,2026-01-15 22:36:00+00:00,Carlos Alcaraz,Adam Walton,Alcaraz C.,Walton A.,Alcaraz,a,three,2026-01-18,ATP,Australian Open,Hard,1st Round,5,Completed,True,3,0,1.0,81.0,1.01,24.06,1.01,41.0
+590062,2026-01-17 09:13:00+00:00,Olga Danilovic,Venus Williams,Danilovic O.,Williams V.,Danilovic,a,two,2026-01-18,WTA,Australian Open,Hard,1st Round,3,Completed,True,2,1,69.0,578.0,1.15,5.28,1.17,5.75
+590103,2026-01-18 04:45:00+00:00,Novak Djokovic,Pedro Martinez,Djokovic N.,Martinez P.,Djokovic,a,three,2026-01-19,ATP,Australian Open,Hard,1st Round,5,Completed,True,3,0,4.0,71.0,1.03,12.53,1.04,17.0
+590101,2026-01-18 14:19:00+00:00,Ben Shelton,Ugo Humbert,Shelton B.,Humbert U.,Shelton,a,four,2026-01-20,ATP,Australian Open,Hard,1st Round,5,Completed,True,3,0,7.0,33.0,1.57,2.34,1.62,2.43
+590104,2026-01-18 05:02:00+00:00,Jannik Sinner,Hugo Gaston,Sinner J.,Gaston H.,Sinner,a,three,2026-01-20,ATP,Australian Open,Hard,1st Round,5,Retired,True,2,0,2.0,93.0,1.01,26.85,1.01,51.0
+590148,2026-01-18 18:30:13+00:00,Carlos Alcaraz,Yannick Hanfmann,Alcaraz C.,Hanfmann Y.,Alcaraz,a,three,2026-01-21,ATP,Australian Open,Hard,2nd Round,5,Completed,True,3,0,1.0,102.0,1.01,19.31,1.02,29.0
+590232,2026-01-20 04:57:20+00:00,Coco Gauff,Olga Danilovic,Gauff C.,Danilovic O.,Gauff,a,two,2026-01-21,WTA,Australian Open,Hard,2nd Round,3,Completed,True,2,0,3.0,69.0,1.09,7.38,1.11,10.0
+590293,2026-01-21 01:20:09+00:00,Denis Shapovalov,Marin Cilic,Shapovalov D.,Cilic M.,Shapovalov,a,four,2026-01-22,ATP,Australian Open,Hard,2nd Round,5,Completed,False,0,3,23.0,70.0,1.65,2.21,1.7,2.3
+590296,2026-01-21 06:49:56+00:00,Tomas Machac,Stefanos Tsitsipas,Machac T.,Tsitsipas S.,Machac,a,four,2026-01-22,ATP,Australian Open,Hard,2nd Round,5,Completed,True,3,1,24.0,35.0,1.59,2.32,1.7,2.45
+590321,2026-01-21 17:00:00+00:00,Alexander Zverev,Cameron Norrie,Zverev A.,Norrie C.,Zverev,a,four,2026-01-23,ATP,Australian Open,Hard,3rd Round,5,Completed,True,3,1,3.0,27.0,1.21,4.35,1.22,5.25
+590348,2026-01-22 02:13:00+00:00,Alex de Minaur,Frances Tiafoe,De Minaur A.,Tiafoe F.,de Minaur,a,five,2026-01-23,ATP,Australian Open,Hard,3rd Round,5,Completed,True,3,0,6.0,34.0,1.17,4.8,1.18,5.1
+590421,2026-01-22 20:47:48+00:00,Stanislas Wawrinka,Taylor Fritz,Wawrinka S.,Fritz T.,Fritz,b,four,2026-01-24,ATP,Australian Open,Hard,3rd Round,5,Completed,False,1,3,139.0,9.0,7.48,1.08,8.5,1.09
+590458,2026-01-22 23:09:39+00:00,Jannik Sinner,Eliot Spizzirri,Sinner J.,Spizzirri E.,Sinner,a,three,2026-01-24,ATP,Australian Open,Hard,3rd Round,5,Completed,True,3,1,2.0,85.0,1.01,33.15,1.01,67.0
+590463,2026-01-23 00:11:00+00:00,Iga Swiatek,Anna Kalinskaya,Swiatek I.,Kalinskaya A.,Swiatek,a,three,2026-01-24,WTA,Australian Open,Hard,3rd Round,3,Completed,True,2,1,2.0,33.0,1.22,4.15,1.25,4.5
+590558,2026-01-23 23:19:53+00:00,Carlos Alcaraz,Tommy Paul,Alcaraz C.,Paul T.,Alcaraz,a,four,2026-01-25,ATP,Australian Open,Hard,4th Round,5,Completed,True,3,0,1.0,20.0,1.09,6.94,1.12,8.0
+590596,2026-01-24 17:43:18+00:00,Lorenzo Musetti,Taylor Fritz,Musetti L.,Fritz T.,Fritz,b,five,2026-01-26,ATP,Australian Open,Hard,4th Round,5,Completed,True,3,0,5.0,9.0,2.1,1.72,2.15,1.75
+590597,2026-01-24 17:59:22+00:00,Jessica Pegula,Madison Keys,Pegula J.,Keys M.,Keys,b,three,2026-01-26,WTA,Australian Open,Hard,4th Round,3,Completed,True,2,0,6.0,9.0,1.59,2.33,1.65,2.5
+590634,2026-01-25 15:25:56+00:00,Carlos Alcaraz,Alex de Minaur,Alcaraz C.,De Minaur A.,Alcaraz,a,five,2026-01-27,ATP,Australian Open,Hard,Quarterfinals,5,Completed,True,3,0,1.0,6.0,1.14,5.39,1.16,6.0
+590688,2026-01-27 05:57:00+00:00,Elena Rybakina,Iga Swiatek,Rybakina E.,Swiatek I.,Rybakina,a,three,2026-01-28,WTA,Australian Open,Hard,Quarterfinals,3,Completed,True,2,0,5.0,2.0,1.71,2.13,1.75,2.2
+590742,2026-01-27 00:02:53+00:00,Novak Djokovic,Lorenzo Musetti,Djokovic N.,Musetti L.,Djokovic,a,four,2026-01-28,ATP,Australian Open,Hard,Quarterfinals,5,Retired,True,0,2,4.0,5.0,1.31,3.38,1.35,4.0
+590760,2026-01-27 13:04:03+00:00,Ben Shelton,Jannik Sinner,Shelton B.,Sinner J.,Sinner,b,four,2026-01-28,ATP,Australian Open,Hard,Quarterfinals,5,Completed,False,0,3,7.0,2.0,7.42,1.08,8.5,1.1
+590810,2026-01-28 10:21:39+00:00,Aryna Sabalenka,Elina Svitolina,Sabalenka A.,Svitolina E.,Sabalenka,a,two,2026-01-29,WTA,Australian Open,Hard,Semifinals,3,Completed,True,2,0,1.0,12.0,1.22,4.19,1.29,4.6
+590811,2026-01-28 12:54:00+00:00,Jessica Pegula,Elena Rybakina,Pegula J.,Rybakina E.,Rybakina,b,three,2026-01-29,WTA,Australian Open,Hard,Semifinals,3,Completed,False,0,2,6.0,5.0,2.77,1.43,2.95,1.48
+590904,2026-01-29 12:09:00+00:00,Carlos Alcaraz,Alexander Zverev,Alcaraz C.,Zverev A.,Alcaraz,a,four,2026-01-30,ATP,Australian Open,Hard,Semifinals,5,Completed,True,3,2,1.0,3.0,1.16,5.19,1.19,5.5
+590906,2026-01-29 14:43:17+00:00,Novak Djokovic,Jannik Sinner,Djokovic N.,Sinner J.,Sinner,b,four,2026-01-30,ATP,Australian Open,Hard,Semifinals,5,Completed,True,3,2,4.0,2.0,8.63,1.07,10.0,1.08
+591028,2026-01-30 13:26:25+00:00,Aryna Sabalenka,Elena Rybakina,Sabalenka A.,Rybakina E.,Rybakina,b,three,2026-01-31,WTA,Australian Open,Hard,The Final,3,Completed,False,1,2,1.0,5.0,1.6,2.36,1.63,2.48
+591083,2026-01-31 18:13:00+00:00,Carlos Alcaraz,Novak Djokovic,Alcaraz C.,Djokovic N.,Alcaraz,a,four,2026-02-01,ATP,Australian Open,Hard,The Final,5,Completed,True,3,1,1.0,4.0,1.31,3.44,1.33,3.8
+591295,2026-02-03 09:57:10+00:00,Emma Raducanu,Kaja Juvan,Raducanu E.,Juvan K.,Raducanu,a,two,2026-02-04,WTA,Transylvania Open,Hard,2nd Round,3,Completed,True,2,0,30.0,97.0,1.28,3.61,1.3,4.33
+593141,2026-03-04 02:28:00+00:00,Yulia Putintseva,Paula Badosa,Putintseva Y.,Badosa P.,Badosa,b,two,2026-03-04,WTA,BNP Paribas Open,Hard,1st Round,3,Completed,True,2,0,76.0,106.0,2.71,1.44,2.8,1.48
+593123,2026-03-03 14:36:49+00:00,Stefanos Tsitsipas,Denis Shapovalov,Tsitsipas S.,Shapovalov D.,Shapovalov,b,three,2026-03-05,ATP,BNP Paribas Open,Hard,1st Round,3,Completed,False,1,2,43.0,39.0,1.72,2.09,1.76,2.1
+593139,2026-03-03 21:48:00+00:00,Terence Atmane,Grigor Dimitrov,Atmane T.,Dimitrov G.,Atmane,a,two,2026-03-05,ATP,BNP Paribas Open,Hard,1st Round,3,Completed,False,1,2,52.0,42.0,2.24,1.62,2.3,1.64
+593143,2026-03-04 14:05:42+00:00,Diane Parry,Venus Williams,Parry D.,Williams V.,Parry,a,three,2026-03-05,WTA,BNP Paribas Open,Hard,1st Round,3,Completed,True,2,1,111.0,554.0,1.25,3.87,1.27,4.25
+593214,2026-03-05 10:25:27+00:00,Matteo Berrettini,Alexander Zverev,Berrettini M.,Zverev A.,Zverev,b,two,2026-03-06,ATP,BNP Paribas Open,Hard,2nd Round,3,Completed,False,0,2,66.0,4.0,4.2,1.21,4.5,1.24
+593216,2026-03-05 13:02:31+00:00,Gael Monfils,Felix Auger-Aliassime,Monfils G.,Auger-Aliassime F.,Auger-Aliassime,b,three,2026-03-06,ATP,BNP Paribas Open,Hard,2nd Round,3,Completed,False,1,2,148.0,9.0,4.71,1.18,5.25,1.2
+593303,2026-03-06 14:22:05+00:00,Roberto Bautista Agut,Jack Draper,Bautista Agut R.,Draper J.,Draper,b,two,2026-03-07,ATP,BNP Paribas Open,Hard,2nd Round,3,Completed,False,1,2,93.0,14.0,5.75,1.13,6.25,1.13
+593302,2026-03-06 10:46:00+00:00,Carlos Alcaraz,Grigor Dimitrov,Alcaraz C.,Dimitrov G.,Alcaraz,a,two,2026-03-08,ATP,BNP Paribas Open,Hard,2nd Round,3,Completed,True,2,0,1.0,42.0,1.03,12.05,1.04,15.0
+593365,2026-03-07 04:43:17+00:00,Ben Shelton,Learner Tien,Shelton B.,Tien L.,Tien,b,three,2026-03-08,ATP,BNP Paribas Open,Hard,3rd Round,3,Completed,False,1,2,8.0,27.0,1.63,2.22,1.68,2.3
+593366,2026-03-07 17:35:03+00:00,Emma Raducanu,Amanda Anisimova,Raducanu E.,Anisimova A.,Anisimova,b,two,2026-03-08,WTA,BNP Paribas Open,Hard,3rd Round,3,Completed,False,0,2,24.0,6.0,3.36,1.31,3.5,1.33
+593414,2026-03-08 16:40:32+00:00,Cameron Norrie,Alex de Minaur,Norrie C.,De Minaur A.,De Minaur,b,three,2026-03-09,ATP,BNP Paribas Open,Hard,3rd Round,3,Completed,True,2,0,29.0,6.0,4.48,1.19,5.25,1.21
+593443,2026-03-08 16:12:00+00:00,Novak Djokovic,Aleksandar Kovacevic,Djokovic N.,Kovacevic A.,Djokovic,a,two,2026-03-09,ATP,BNP Paribas Open,Hard,3rd Round,3,Completed,True,2,1,3.0,72.0,1.11,6.43,1.13,7.0
+593445,2026-03-08 16:26:04+00:00,Casper Ruud,Valentin Vacherot,Ruud C.,Vacherot V.,Ruud,a,three,2026-03-09,ATP,BNP Paribas Open,Hard,3rd Round,3,Completed,True,2,1,13.0,26.0,1.55,2.41,1.58,2.55
+593413,2026-03-08 14:54:00+00:00,Carlos Alcaraz,Arthur Rinderknech,Alcaraz C.,Rinderknech A.,Alcaraz,a,two,2026-03-10,ATP,BNP Paribas Open,Hard,3rd Round,3,Completed,True,2,1,1.0,28.0,1.03,13.07,1.03,18.0
+593501,2026-03-09 16:22:34+00:00,Aryna Sabalenka,Naomi Osaka,Sabalenka A.,Osaka N.,Sabalenka,a,three,2026-03-10,WTA,BNP Paribas Open,Hard,4th Round,3,Completed,True,2,0,1.0,16.0,1.16,5.06,1.18,5.5
+593502,2026-03-09 17:28:00+00:00,Joao Fonseca,Jannik Sinner,Fonseca J.,Sinner J.,Sinner,b,two,2026-03-11,ATP,BNP Paribas Open,Hard,4th Round,3,Completed,False,0,2,35.0,2.0,8.09,1.07,9.0,1.08
+593582,2026-03-11 03:11:35+00:00,Carlos Alcaraz,Casper Ruud,Alcaraz C.,Ruud C.,Alcaraz,a,two,2026-03-11,ATP,BNP Paribas Open,Hard,4th Round,3,Completed,True,2,0,1.0,13.0,1.07,8.11,1.08,10.0
+593583,2026-03-11 00:18:25+00:00,Novak Djokovic,Jack Draper,Djokovic N.,Draper J.,Djokovic,a,three,2026-03-12,ATP,BNP Paribas Open,Hard,4th Round,3,Completed,False,1,2,3.0,14.0,1.65,2.2,1.71,2.25
+593594,2026-03-11 10:03:25+00:00,Aryna Sabalenka,Victoria Mboko,Sabalenka A.,Mboko V.,Sabalenka,a,three,2026-03-12,WTA,BNP Paribas Open,Hard,Quarterfinals,3,Completed,True,2,0,1.0,10.0,1.29,3.56,1.3,3.75
+593595,2026-03-11 18:35:05+00:00,Learner Tien,Jannik Sinner,Tien L.,Sinner J.,Sinner,b,two,2026-03-12,ATP,BNP Paribas Open,Hard,Quarterfinals,3,Completed,False,0,2,27.0,2.0,8.61,1.07,10.0,1.08
+593639,2026-03-12 03:25:00+00:00,Carlos Alcaraz,Cameron Norrie,Alcaraz C.,Norrie C.,Alcaraz,a,two,2026-03-13,ATP,BNP Paribas Open,Hard,Quarterfinals,3,Completed,True,2,0,1.0,29.0,1.04,10.54,1.05,13.0
+593640,2026-03-12 08:54:41+00:00,Jack Draper,Daniil Medvedev,Draper J.,Medvedev D.,Medvedev,b,two,2026-03-13,ATP,BNP Paribas Open,Hard,Quarterfinals,3,Completed,False,0,2,14.0,11.0,2.45,1.53,2.55,1.6
+593770,2026-03-13 10:28:01+00:00,Carlos Alcaraz,Daniil Medvedev,Alcaraz C.,Medvedev D.,Alcaraz,a,three,2026-03-14,ATP,BNP Paribas Open,Hard,Semifinals,3,Completed,False,0,2,1.0,11.0,1.17,4.84,1.2,5.1
+593852,2026-03-14 08:03:00+00:00,Aryna Sabalenka,Elena Rybakina,Sabalenka A.,Rybakina E.,Sabalenka,a,three,2026-03-15,WTA,BNP Paribas Open,Hard,The Final,3,Completed,True,2,1,1.0,3.0,1.62,2.28,1.65,2.35
+593894,2026-03-15 08:45:33+00:00,Daniil Medvedev,Jannik Sinner,Medvedev D.,Sinner J.,Medvedev,a,three,2026-03-15,ATP,BNP Paribas Open,Hard,The Final,3,Completed,False,0,2,11.0,2.0,3.9,1.25,4.33,1.3
+594524,2026-03-26 10:16:26+00:00,Aryna Sabalenka,Elena Rybakina,Sabalenka A.,Rybakina E.,Sabalenka,a,three,2026-03-27,WTA,Miami Open,Hard,Semifinals,3,Completed,True,2,0,1.0,2.0,1.72,2.09,1.75,2.17
+594587,2026-03-27 09:31:00+00:00,Aryna Sabalenka,Coco Gauff,Sabalenka A.,Gauff C.,Sabalenka,a,three,2026-03-28,WTA,Miami Open,Hard,The Final,3,Completed,True,2,1,1.0,4.0,1.28,3.64,1.32,3.8
+594634,2026-03-28 10:14:18+00:00,Jiri Lehecka,Jannik Sinner,Lehecka J.,Sinner J.,Sinner,b,two,2026-03-29,ATP,Miami Open,Hard,The Final,3,Completed,False,0,2,22.0,2.0,9.21,1.06,13.0,1.08
+595169,2026-04-06 22:53:00+00:00,Carlos Alcaraz,Sebastian Baez,Alcaraz C.,Baez S.,Alcaraz,a,two,2026-04-07,ATP,Monte Carlo Masters,Clay,2nd Round,3,Completed,True,2,0,1.0,65.0,1.03,13.5,1.04,21.0
+595170,2026-04-06 21:21:00+00:00,Ugo Humbert,Jannik Sinner,Humbert U.,Sinner J.,Sinner,b,two,2026-04-07,ATP,Monte Carlo Masters,Clay,2nd Round,3,Completed,False,0,2,34.0,2.0,13.42,1.03,19.0,1.03
+595244,2026-04-07 22:15:43+00:00,Daniil Medvedev,Matteo Berrettini,Medvedev D.,Berrettini M.,Medvedev,a,three,2026-04-08,ATP,Monte Carlo Masters,Clay,2nd Round,3,Completed,False,0,2,10.0,90.0,1.37,3.05,1.4,3.25
+595245,2026-04-08 02:42:29+00:00,Lorenzo Musetti,Valentin Vacherot,Musetti L.,Vacherot V.,Vacherot,b,three,2026-04-08,ATP,Monte Carlo Masters,Clay,2nd Round,3,Completed,False,0,2,5.0,23.0,1.46,2.68,1.5,2.8
+595283,2026-04-08 20:41:00+00:00,Matteo Berrettini,Joao Fonseca,Berrettini M.,Fonseca J.,Fonseca,b,three,2026-04-09,ATP,Monte Carlo Masters,Clay,3rd Round,3,Completed,False,0,2,90.0,40.0,2.24,1.63,2.31,1.67
+595285,2026-04-08 21:41:22+00:00,Tomas Machac,Jannik Sinner,Machac T.,Sinner J.,Sinner,b,two,2026-04-09,ATP,Monte Carlo Masters,Clay,3rd Round,3,Completed,False,1,2,53.0,2.0,13.46,1.03,19.0,1.03
+595366,2026-04-09 15:25:00+00:00,Joao Fonseca,Alexander Zverev,Fonseca J.,Zverev A.,Zverev,b,three,2026-04-10,ATP,Monte Carlo Masters,Clay,Quarterfinals,3,Completed,False,1,2,40.0,3.0,2.3,1.6,2.38,1.63
+595367,2026-04-09 19:25:12+00:00,Felix Auger-Aliassime,Jannik Sinner,Auger-Aliassime F.,Sinner J.,Sinner,b,two,2026-04-10,ATP,Monte Carlo Masters,Clay,Quarterfinals,3,Completed,False,0,2,7.0,2.0,6.56,1.1,7.5,1.13
+595476,2026-04-10 21:07:07+00:00,Alexander Zverev,Jannik Sinner,Zverev A.,Sinner J.,Sinner,b,three,2026-04-11,ATP,Monte Carlo Masters,Clay,Semifinals,3,Completed,False,0,2,3.0,2.0,4.88,1.17,5.1,1.19
+595477,2026-04-10 22:23:05+00:00,Carlos Alcaraz,Valentin Vacherot,Alcaraz C.,Vacherot V.,Alcaraz,a,two,2026-04-11,ATP,Monte Carlo Masters,Clay,Semifinals,3,Completed,True,2,0,1.0,23.0,1.05,9.75,1.06,12.0
+595556,2026-04-11 22:54:00+00:00,Carlos Alcaraz,Jannik Sinner,Alcaraz C.,Sinner J.,Sinner,b,three,2026-04-12,ATP,Monte Carlo Masters,Clay,The Final,3,Completed,False,0,2,1.0,2.0,1.94,1.85,2.0,1.91
+595646,2026-04-13 17:45:37+00:00,Cameron Norrie,Ethan Quinn,Norrie C.,Quinn E.,Norrie,a,three,2026-04-15,ATP,Barcelona Open,Clay,2nd Round,3,Completed,True,2,1,24.0,50.0,1.5,2.54,1.53,2.65
+595694,2026-04-14 18:58:08+00:00,Katie Boulter,Jaqueline Cristian,Boulter K.,Cristian J.,Boulter,a,three,2026-04-15,WTA,Open de Rouen,Clay,2nd Round,3,Completed,True,2,1,62.0,33.0,1.67,2.16,1.7,2.2
+595812,2026-04-16 13:14:52+00:00,Cameron Norrie,Rafael Jodar,Norrie C.,Jodar R.,Jodar,b,three,2026-04-17,ATP,Barcelona Open,Clay,Quarterfinals,3,Completed,False,0,2,24.0,55.0,3.33,1.31,3.6,1.33
+596035,2026-04-19 21:12:00+00:00,Ashlyn Krueger,Sofia Kenin,Krueger A.,Kenin S.,Kenin,b,three,2026-04-22,WTA,Mutua Madrid Open,Clay,1st Round,3,Completed,False,0,2,108.0,68.0,1.76,2.03,1.8,2.1
+596088,2026-04-20 16:23:00+00:00,Taylor Townsend,Katie Boulter,Townsend T.,Boulter K.,Boulter,b,two,2026-04-22,WTA,Mutua Madrid Open,Clay,1st Round,3,Completed,False,0,2,90.0,61.0,1.8,1.96,1.83,2.0
+596109,2026-04-20 22:56:00+00:00,Marin Cilic,Zizou Bergs,Cilic M.,Bergs Z.,Bergs,b,three,2026-04-22,ATP,Mutua Madrid Open,Clay,1st Round,3,Completed,True,2,1,51.0,44.0,1.94,1.84,2.0,1.91
+596131,2026-04-21 20:39:00+00:00,Camilo Ugo Carabelli,Gael Monfils,Ugo Carabelli C.,Monfils G.,Ugo Carabelli,a,three,2026-04-23,ATP,Mutua Madrid Open,Clay,1st Round,3,Completed,True,2,0,57.0,200.0,1.51,2.52,1.53,2.63
+596217,2026-04-22 22:40:00+00:00,Jannik Sinner,Benjamin Bonzi,Sinner J.,Bonzi B.,Sinner,a,two,2026-04-24,ATP,Mutua Madrid Open,Clay,2nd Round,3,Completed,True,2,1,1.0,104.0,1.01,25.17,1.02,51.0
+596287,2026-04-23 18:24:06+00:00,Alexander Bublik,Stefanos Tsitsipas,Bublik A.,Tsitsipas S.,Bublik,a,three,2026-04-25,ATP,Mutua Madrid Open,Clay,2nd Round,3,Completed,False,0,2,11.0,80.0,5.26,1.14,7.0,1.17
+596325,2026-04-24 01:51:34+00:00,Aryna Sabalenka,Jaqueline Cristian,Sabalenka A.,Cristian J.,Sabalenka,a,two,2026-04-25,WTA,Mutua Madrid Open,Clay,3rd Round,3,Completed,True,2,0,1.0,33.0,1.03,12.71,1.03,17.0
+596378,2026-04-24 17:33:48+00:00,Qinwen Zheng,Elena Rybakina,Zheng Q.,Rybakina E.,Rybakina,b,three,2026-04-26,WTA,Mutua Madrid Open,Clay,3rd Round,3,Completed,False,1,2,36.0,2.0,3.86,1.25,4.2,1.27
+596439,2026-04-25 18:20:00+00:00,Terence Atmane,Alexander Zverev,Atmane T.,Zverev A.,Zverev,b,two,2026-04-27,ATP,Mutua Madrid Open,Clay,3rd Round,3,Completed,False,0,2,47.0,3.0,5.29,1.14,5.5,1.15
+596462,2026-04-26 00:59:15+00:00,Belinda Bencic,Hailey Baptiste,Bencic B.,Baptiste H.,Bencic,a,two,2026-04-27,WTA,Mutua Madrid Open,Clay,4th Round,3,Completed,False,1,2,12.0,32.0,1.35,3.09,1.4,3.3
+596484,2026-04-26 15:57:18+00:00,Jiri Lehecka,Lorenzo Musetti,Lehecka J.,Musetti L.,Lehecka,a,three,2026-04-28,ATP,Mutua Madrid Open,Clay,4th Round,3,Completed,True,2,0,14.0,9.0,2.35,1.57,2.5,1.62
+596532,2026-04-27 20:45:00+00:00,Stefanos Tsitsipas,Casper Ruud,Tsitsipas S.,Ruud C.,Ruud,b,three,2026-04-28,ATP,Mutua Madrid Open,Clay,4th Round,3,Completed,False,1,2,80.0,15.0,3.1,1.36,3.3,1.38
+596546,2026-04-27 22:56:00+00:00,Marta Kostyuk,Linda Noskova,Kostyuk M.,Noskova L.,Kostyuk,a,two,2026-04-29,WTA,Mutua Madrid Open,Clay,Quarterfinals,3,Completed,True,2,0,23.0,13.0,1.48,2.59,1.53,2.75
+596576,2026-04-28 20:58:04+00:00,Jannik Sinner,Rafael Jodar,Sinner J.,Jodar R.,Sinner,a,two,2026-04-29,ATP,Mutua Madrid Open,Clay,Quarterfinals,3,Completed,True,2,0,1.0,42.0,1.15,5.13,1.18,5.5
+596663,2026-04-29 21:37:35+00:00,Marta Kostyuk,Anastasia Potapova,Kostyuk M.,Potapova A.,Kostyuk,a,three,2026-04-30,WTA,Mutua Madrid Open,Clay,Semifinals,3,Completed,True,2,1,23.0,56.0,1.34,3.2,1.36,3.4
+596657,2026-04-29 22:14:00+00:00,Jannik Sinner,Arthur Fils,Sinner J.,Fils A.,Sinner,a,three,2026-05-01,ATP,Mutua Madrid Open,Clay,Semifinals,3,Completed,True,2,0,1.0,25.0,1.15,5.28,1.17,6.5
+596743,2026-04-30 20:50:29+00:00,Alexander Blockx,Alexander Zverev,Blockx A.,Zverev A.,Zverev,b,two,2026-05-01,ATP,Mutua Madrid Open,Clay,Semifinals,3,Completed,False,0,2,69.0,3.0,4.12,1.22,4.5,1.25
+596802,2026-05-01 14:19:00+00:00,Mirra Andreeva,Marta Kostyuk,Andreeva M.,Kostyuk M.,Andreeva,a,two,2026-05-02,WTA,Mutua Madrid Open,Clay,The Final,3,Completed,False,0,2,8.0,23.0,1.68,2.18,1.73,2.3
+596891,2026-05-02 16:55:54+00:00,Jannik Sinner,Alexander Zverev,Sinner J.,Zverev A.,Sinner,a,three,2026-05-03,ATP,Mutua Madrid Open,Clay,The Final,3,Completed,True,2,0,1.0,3.0,1.16,5.12,1.2,5.5
+596969,2026-05-04 17:03:00+00:00,Katie Boulter,Eva Lys,Boulter K.,Lys E.,Boulter,a,three,2026-05-06,WTA,Internazionali BNL d'Italia,Clay,1st Round,3,Completed,False,1,2,60.0,80.0,1.63,2.24,1.67,2.33
+597691,2026-05-16 16:05:00+00:00,Jannik Sinner,Casper Ruud,Sinner J.,Ruud C.,Sinner,a,three,2026-05-17,ATP,Internazionali BNL d'Italia,Clay,The Final,3,Completed,True,2,0,1.0,25.0,1.13,6.05,1.15,7.0
+597696,2026-05-16 17:41:00+00:00,Diane Parry,Emma Raducanu,Parry D.,Raducanu E.,Raducanu,b,two,2026-05-19,WTA,Internationaux de Strasbourg,Clay,1st Round,3,Completed,True,2,0,94.0,37.0,1.89,1.87,1.95,1.91
+597971,2026-05-22 00:11:34+00:00,Novak Djokovic,Giovanni Mpetshi Perricard,Djokovic N.,Mpetshi G.,Djokovic,a,three,2026-05-24,ATP,French Open,Clay,1st Round,5,Completed,True,3,1,4.0,83.0,1.08,7.39,1.1,8.0
+598041,2026-05-22 19:44:05+00:00,Benjamin Bonzi,Alexander Zverev,Bonzi B.,Zverev A.,Zverev,b,four,2026-05-24,ATP,French Open,Clay,1st Round,5,Completed,False,0,3,95.0,3.0,13.93,1.03,21.0,1.04
+598057,2026-05-22 23:15:31+00:00,Hugo Gaston,Gael Monfils,Gaston H.,Monfils G.,Monfils,b,four,2026-05-25,ATP,French Open,Clay,1st Round,5,Completed,True,3,2,118.0,218.0,2.05,1.74,2.2,1.8
+598129,2026-05-24 15:54:00+00:00,Tatjana Maria,Elise Mertens,Maria T.,Mertens E.,Mertens,b,three,2026-05-25,WTA,French Open,Clay,1st Round,3,Completed,False,0,2,54.0,21.0,9.45,1.06,11.0,1.07
+598130,2026-05-24 16:11:00+00:00,Jasmine Paolini,Dayana Yastremska,Paolini J.,Yastremska D.,Paolini,a,three,2026-05-25,WTA,French Open,Clay,1st Round,3,Completed,True,2,0,13.0,45.0,1.53,2.47,1.57,2.55
+598131,2026-05-24 16:32:00+00:00,Casper Ruud,Roman Safiullin,Ruud C.,Safiullin R.,Ruud,a,three,2026-05-25,ATP,French Open,Clay,1st Round,5,Completed,True,3,2,16.0,141.0,1.09,7.09,1.1,8.0
+598132,2026-05-24 16:44:00+00:00,Iga Swiatek,Emerson Jones,Swiatek I.,Jones E.,Swiatek,a,two,2026-05-25,WTA,French Open,Clay,1st Round,3,Completed,True,2,0,3.0,136.0,1.01,25.25,1.01,51.0
+598042,2026-05-22 22:08:00+00:00,Coco Gauff,Taylor Townsend,Gauff C.,Townsend T.,Gauff,a,three,2026-05-26,WTA,French Open,Clay,1st Round,3,Completed,True,2,0,4.0,75.0,1.1,6.59,1.12,7.5
+598056,2026-05-22 23:10:00+00:00,Aryna Sabalenka,Jessica Bouzas,Sabalenka A.,Bouzas Maneiro J.,Sabalenka,a,two,2026-05-26,WTA,French Open,Clay,1st Round,3,Completed,True,2,0,1.0,50.0,1.03,12.63,1.05,19.0
+598097,2026-05-24 01:04:00+00:00,Jannik Sinner,Clement Tabur,Sinner J.,Tabur C.,Sinner,a,three,2026-05-26,ATP,French Open,Clay,1st Round,5,Completed,True,3,0,1.0,171.0,1.01,40.64,1.01,67.0
+598098,2026-05-24 09:28:00+00:00,Marin Cilic,Moise Kouame,Cilic M.,Kouame M.,Cilic,a,four,2026-05-26,ATP,French Open,Clay,1st Round,5,Completed,False,0,3,46.0,318.0,1.26,3.81,1.3,4.0
+598136,2026-05-25 00:21:05+00:00,Alejandro Davidovich Fokina,Thiago Agustin Tirante,Davidovich Fokina A.,Tirante T.A.,Tirante,b,five,2026-05-27,ATP,French Open,Clay,2nd Round,5,Completed,False,1,3,23.0,60.0,2.32,1.58,2.43,1.63
+598137,2026-05-24 19:52:13+00:00,Tomas Machac,Alexander Zverev,Machac T.,Zverev A.,Zverev,b,three,2026-05-27,ATP,French Open,Clay,2nd Round,5,Completed,False,0,3,43.0,3.0,6.56,1.1,7.5,1.12
+598191,2026-05-25 20:24:10+00:00,Valentin Royer,Novak Djokovic,Royer V.,Djokovic N.,Djokovic,b,four,2026-05-27,ATP,French Open,Clay,2nd Round,5,Completed,False,1,3,74.0,4.0,6.61,1.1,7.5,1.12
+598193,2026-05-25 19:33:00+00:00,Joao Fonseca,Dino Prizmic,Fonseca J.,Prizmic D.,Prizmic,b,five,2026-05-27,ATP,French Open,Clay,2nd Round,5,Completed,True,3,2,30.0,72.0,1.87,1.9,1.95,2.0
+598206,2026-05-26 00:17:30+00:00,Sara Bejlek,Iga Swiatek,Bejlek S.,Swiatek I.,Swiatek,b,two,2026-05-27,WTA,French Open,Clay,2nd Round,3,Completed,False,0,2,35.0,3.0,13.44,1.03,17.0,1.04
+598207,2026-05-26 00:21:10+00:00,Lorenzo Sonego,Tommy Paul,Sonego L.,Paul T.,Paul,b,four,2026-05-27,ATP,French Open,Clay,2nd Round,5,Completed,False,0,3,70.0,21.0,5.68,1.13,6.0,1.14
+598247,2026-05-26 22:01:29+00:00,Donna Vekic,Naomi Osaka,Vekic D.,Osaka N.,Osaka,b,three,2026-05-28,WTA,French Open,Clay,2nd Round,3,Completed,False,0,2,72.0,16.0,3.53,1.29,3.75,1.3
+598250,2026-05-27 00:56:00+00:00,Jannik Sinner,Juan Manuel Cerundolo,Sinner J.,Cerundolo J.M.,Sinner,a,three,2026-05-28,ATP,French Open,Clay,2nd Round,5,Completed,False,2,3,1.0,56.0,1.01,23.5,1.01,51.0
+598255,2026-05-27 02:17:44+00:00,Aryna Sabalenka,Elsa Jacquemot,Sabalenka A.,Jacquemot E.,Sabalenka,a,two,2026-05-28,WTA,French Open,Clay,2nd Round,3,Completed,True,2,0,1.0,67.0,1.02,18.41,1.03,26.0
+598256,2026-05-27 02:27:55+00:00,Felix Auger-Aliassime,Roman Andres Burruchaga,Auger-Aliassime F.,Burruchaga R.,Auger-Aliassime,a,three,2026-05-28,ATP,French Open,Clay,2nd Round,5,Completed,True,3,1,6.0,68.0,1.33,3.31,1.36,3.75
+598277,2026-05-27 18:36:34+00:00,Magda Linette,Iga Swiatek,Linette M.,Swiatek I.,Swiatek,b,two,2026-05-29,WTA,French Open,Clay,3rd Round,3,Completed,False,0,2,73.0,3.0,14.0,1.03,21.0,1.04
+598291,2026-05-28 01:49:45+00:00,Mirra Andreeva,Marie Bouzkova,Andreeva M.,Bouzkova M.,Andreeva,a,three,2026-05-29,WTA,French Open,Clay,3rd Round,3,Completed,True,2,0,8.0,28.0,1.13,5.6,1.14,6.0
+598292,2026-05-28 02:02:00+00:00,Alex de Minaur,Jakub Mensik,De Minaur A.,Mensik J.,de Minaur,a,four,2026-05-29,ATP,French Open,Clay,3rd Round,5,Completed,False,1,3,7.0,27.0,1.21,4.27,1.25,4.5
+598295,2026-05-28 06:25:10+00:00,Joao Fonseca,Novak Djokovic,Fonseca J.,Djokovic N.,Djokovic,b,four,2026-05-29,ATP,French Open,Clay,3rd Round,5,Completed,True,3,2,30.0,4.0,2.71,1.45,2.88,1.5
+598333,2026-05-29 09:25:00+00:00,Coco Gauff,Anastasia Potapova,Gauff C.,Potapova A.,Gauff,a,three,2026-05-30,WTA,French Open,Clay,3rd Round,3,Completed,False,1,2,4.0,30.0,1.26,3.78,1.33,4.0
+598334,2026-05-29 08:31:17+00:00,Victoria Mboko,Madison Keys,Mboko V.,Keys M.,Mboko,a,three,2026-05-30,WTA,French Open,Clay,3rd Round,3,Completed,False,1,2,9.0,19.0,1.9,1.86,2.05,1.92
+598337,2026-05-29 00:10:11+00:00,Iva Jovic,Naomi Osaka,Jovic I.,Osaka N.,Osaka,b,three,2026-05-30,WTA,French Open,Clay,3rd Round,3,Completed,False,1,2,17.0,16.0,1.99,1.8,2.02,1.84
+598338,2026-05-29 00:13:58+00:00,Aryna Sabaleka,Daria Kasatkina,Sabalenka A.,Kasatkina D.,Sabalenka,,two,2026-05-30,WTA,French Open,Clay,3rd Round,3,Completed,True,2,0,1.0,53.0,1.07,8.61,1.08,10.0
+598352,2026-05-29 13:10:59+00:00,Marta Kostyuk,Iga Swiatek,Kostyuk M.,Swiatek I.,Swiatek,b,three,2026-05-31,WTA,French Open,Clay,4th Round,3,Completed,True,2,0,15.0,3.0,3.22,1.34,3.5,1.37
+598396,2026-05-30 06:47:00+00:00,Joao Fonseca,Casper Ruud,Fonseca J.,Ruud C.,Ruud,b,four,2026-05-31,ATP,French Open,Clay,4th Round,5,Completed,True,3,1,30.0,16.0,2.53,1.5,2.63,1.53
+598400,2026-05-29 23:38:43+00:00,Jakub Mensik,Andrey Rublev,Mensik J.,Rublev A.,Mensik,a,five,2026-05-31,ATP,French Open,Clay,4th Round,5,Completed,True,3,2,27.0,13.0,2.0,1.77,2.06,1.82
+598401,2026-05-29 23:50:35+00:00,Rafael Jodar,Pablo Carreno Busta,Jodar R.,Carreno Busta P.,Jodar,a,five,2026-05-31,ATP,French Open,Clay,4th Round,5,Completed,True,3,2,29.0,89.0,1.24,3.96,1.27,4.25
+598443,2026-05-31 01:05:00+00:00,Aryna Sabalenka,Naomi Osaka,Sabalenka A.,Osaka N.,Sabalenka,a,two,2026-06-01,WTA,French Open,Clay,4th Round,3,Completed,True,2,0,1.0,16.0,1.22,4.2,1.24,4.5
+598450,2026-05-31 02:27:09+00:00,Felix Auger-Aliassime,Alejandro Tabilo,Auger-Aliassime F.,Tabilo A.,Auger-Aliassime,a,four,2026-06-01,ATP,French Open,Clay,4th Round,5,Completed,True,3,0,6.0,36.0,1.49,2.57,1.55,2.75
+598477,2026-05-31 17:50:09+00:00,Flavio Cobolli,Zachary Zvajda,Cobolli F.,Svajda Z.,Cobolli,a,four,2026-06-01,ATP,French Open,Clay,4th Round,5,Completed,True,3,1,14.0,85.0,1.12,6.14,1.13,6.5
+598479,2026-05-31 17:55:00+00:00,Madison Keys,Diana Shnaider,Keys M.,Shnaider D.,Keys,a,three,2026-06-01,WTA,French Open,Clay,4th Round,3,Completed,False,1,2,19.0,23.0,1.67,2.17,1.7,2.24
+598472,2026-05-31 17:53:31+00:00,Elina Svitolina,Marta Kostyuk,Svitolina E.,Kostyuk M.,Kostyuk,b,three,2026-06-02,WTA,French Open,Clay,Quarterfinals,3,Completed,False,1,2,7.0,15.0,1.99,1.78,2.02,1.83
+598491,2026-06-01 04:41:00+00:00,Jakub Mensik,Joao Fonseca,Mensik J.,Fonseca J.,Fonseca,b,four,2026-06-02,ATP,French Open,Clay,Quarterfinals,5,Completed,True,3,0,27.0,30.0,2.75,1.43,2.88,1.47
+598515,2026-06-01 15:09:00+00:00,Rafael Jodar,Alexander Zverev,Jodar R.,Zverev A.,Zverev,b,five,2026-06-02,ATP,French Open,Clay,Quarterfinals,5,Completed,False,0,3,29.0,3.0,3.94,1.24,4.33,1.27
+598513,2026-06-01 21:11:09+00:00,Anna Kalinskaya,Maja Chwalinska,Kalinskaya A.,Chwalinska M.,Kalinskaya,a,three,2026-06-03,WTA,French Open,Clay,Quarterfinals,3,Completed,False,0,2,24.0,114.0,1.73,2.08,1.78,2.1
+598527,2026-06-01 19:23:00+00:00,Felix Auger-Aliassime,Flavio Cobolli,Auger-Aliassime F.,Cobolli F.,Auger-Aliassime,a,four,2026-06-03,ATP,French Open,Clay,Quarterfinals,5,Completed,False,1,3,6.0,14.0,1.82,1.96,1.91,2.05
+598530,2026-06-01 23:46:14+00:00,Aryna Sabalenka,Diana Shnaider,Sabalenka A.,Shnaider D.,Sabalenka,a,two,2026-06-03,WTA,French Open,Clay,Quarterfinals,3,Completed,False,1,2,1.0,23.0,1.08,7.45,1.1,8.5
+598548,2026-06-02 10:18:20+00:00,Matteo Berrettini,Matteo Arnaldi,Berrettini M.,Arnaldi M.,Berrettini,a,four,2026-06-03,ATP,French Open,Clay,Quarterfinals,5,Retired,False,0,1,105.0,104.0,1.51,2.53,1.54,2.63
+598556,2026-06-02 14:12:00+00:00,Marta Kostyuk,Mirra Andreeva,Kostyuk M.,Andreeva M.,Kostyuk,a,three,2026-06-04,WTA,French Open,Clay,Semifinals,3,Completed,False,0,2,15.0,8.0,1.74,2.06,1.8,2.1
+598602,2026-06-03 15:13:27+00:00,Diana Shnaider,Maja Chwalinska,Shnaider D.,Chwalinska M.,Shnaider,a,three,2026-06-04,WTA,French Open,Clay,Semifinals,3,Completed,False,0,2,23.0,114.0,1.55,2.42,1.57,2.53
+598579,2026-06-03 12:29:00+00:00,Jakub Mensik,Alexander Zverev,Mensik J.,Zverev A.,Zverev,b,four,2026-06-05,ATP,French Open,Clay,Semifinals,5,Completed,False,1,3,27.0,3.0,3.82,1.26,4.0,1.29
+598680,2026-06-05 05:00:00+00:00,Maja Chwalinska,Mirra Andreeva,Chwalinska M.,Andreeva M.,Chwalinska,a,three,2026-06-06,WTA,French Open,Clay,The Final,3,Completed,False,0,2,114.0,8.0,4.36,1.22,4.8,1.25
+598739,2026-06-06 07:44:00+00:00,Flavio Cobolli,Alexander Zverev,Cobolli F.,Zverev A.,Zverev,b,four,2026-06-07,ATP,French Open,Clay,The Final,5,Completed,False,2,3,14.0,3.0,4.56,1.21,5.25,1.25
+599194,2026-06-14 16:28:00+00:00,Alex de Minaur,Gabriel Diallo,De Minaur A.,Diallo G.,De Minaur,a,two,2026-06-16,ATP,Queen's Club Championships,Grass,1st Round,3,Completed,True,2,0,6.0,84.0,1.17,4.74,1.2,5.5
+599197,2026-06-14 16:21:18+00:00,Cameron Norrie,Alejandro Davidovich Fokina,Norrie C.,Davidovich Fokina A.,Davidovich Fokina,b,three,2026-06-16,ATP,Queen's Club Championships,Grass,1st Round,3,Completed,False,0,2,29.0,22.0,2.15,1.68,2.2,1.73
+599205,2026-06-14 18:25:00+00:00,Ugo Humbert,Marin Cilic,Humbert U.,Cilic M.,Cilic,b,three,2026-06-16,ATP,Queen's Club Championships,Grass,1st Round,3,Completed,True,2,0,33.0,46.0,1.65,2.18,1.73,2.3
+599302,2026-06-15 15:13:00+00:00,Jakub Mensik,Adrian Mannarino,Mensik J.,Mannarino A.,Mannarino,b,three,2026-06-16,ATP,Queen's Club Championships,Grass,1st Round,3,Completed,False,1,2,16.0,44.0,1.48,2.6,1.5,2.63
+599324,2026-06-15 22:28:00+00:00,Tommy Paul,Botic van de Zandschulp,Paul T.,Van De Zandschulp B.,Paul,a,three,2026-06-18,ATP,Queen's Club Championships,Grass,2nd Round,3,Completed,True,2,0,28.0,56.0,1.26,3.73,1.28,4.0
+599394,2026-06-16 21:05:00+00:00,Corentin Moutet,Alejandro Davidovich Fokina,Moutet C.,Davidovich Fokina A.,Davidovich Fokina,b,two,2026-06-18,ATP,Queen's Club Championships,Grass,2nd Round,3,Completed,False,0,2,36.0,22.0,2.47,1.52,2.63,1.55
+599390,2026-06-16 18:49:00+00:00,Hamad Medjedovic,Ugo Humbert,Medjedovic H.,Humbert U.,Humbert,b,two,2026-06-19,ATP,Queen's Club Championships,Grass,2nd Round,3,Completed,False,1,2,67.0,33.0,2.3,1.62,2.4,1.67
+599447,2026-06-17 14:16:55+00:00,Alex de Minaur,Brandon Nakashima,De Minaur A.,Nakashima B.,De Minaur,a,three,2026-06-19,ATP,Queen's Club Championships,Grass,Quarterfinals,3,Completed,False,0,2,6.0,32.0,1.36,3.01,1.4,3.2
+599480,2026-06-17 19:41:45+00:00,Arthur Fery,Francisco Cerundolo,Fery A.,Cerundolo F.,Fery,a,three,2026-06-19,ATP,Queen's Club Championships,Grass,Quarterfinals,3,Completed,False,1,2,140.0,27.0,2.35,1.56,2.63,1.63
+599541,2026-06-18 16:52:54+00:00,Tommy Paul,Alejandro Davidovich Fokina,Paul T.,Davidovich Fokina A.,Paul,a,three,2026-06-19,ATP,Queen's Club Championships,Grass,Quarterfinals,3,Completed,True,2,0,28.0,22.0,1.37,2.99,1.4,3.1
+599632,2026-06-19 17:56:00+00:00,Brandon Nakashima,Francisco Cerundolo,Nakashima B.,Cerundolo F.,Nakashima,a,two,2026-06-20,ATP,Queen's Club Championships,Grass,Semifinals,3,Completed,False,1,2,32.0,27.0,1.54,2.41,1.58,2.55
+599688,2026-06-20 17:59:12+00:00,Francisco Cerundolo,Tommy Paul,Cerundolo F.,Paul T.,Paul,b,three,2026-06-21,ATP,Queen's Club Championships,Grass,The Final,3,Completed,True,2,1,27.0,28.0,2.76,1.43,3.0,1.45
+600180,2026-06-27 18:15:36+00:00,Alejandro Davidovich Fokina,Juan Manuel Cerundolo,Davidovich Fokina A.,Cerundolo J.M.,Davidovich Fokina,a,three,2026-06-29,ATP,Wimbledon,Grass,1st Round,5,Completed,True,3,0,23.0,42.0,1.22,4.14,1.25,4.5
+600182,2026-06-26 22:24:00+00:00,Casper Ruud,Hubert Hurkacz,Ruud C.,Hurkacz H.,Ruud,a,four,2026-06-29,ATP,Wimbledon,Grass,1st Round,5,Completed,False,0,3,12.0,96.0,2.71,1.45,2.83,1.47
+600192,2026-06-27 21:20:50+00:00,Marin Cilic,Daniil Medvedev,Cilic M.,Medvedev D.,Medvedev,b,four,2026-06-29,ATP,Wimbledon,Grass,1st Round,5,Completed,False,0,3,62.0,9.0,3.22,1.33,3.45,1.4
+600291,2026-06-28 16:48:00+00:00,Stanislas Wawrinka,Matteo Berrettini,Wawrinka S.,Berrettini M.,Berrettini,b,four,2026-06-30,ATP,Wimbledon,Grass,1st Round,5,Completed,False,1,3,109.0,51.0,4.19,1.22,4.5,1.25
+600293,2026-06-28 16:53:00+00:00,Taylor Townsend,Iga Swiatek,Townsend T.,Swiatek I.,Swiatek,b,two,2026-06-30,WTA,Wimbledon,Grass,1st Round,3,Completed,False,1,2,79.0,3.0,5.27,1.15,5.75,1.2
+600323,2026-06-29 08:23:52+00:00,Serena Williams,Maya Joint,Williams S.,Joint M.,Joint,b,two,2026-06-30,WTA,Wimbledon,Grass,1st Round,3,Completed,False,1,2,471.0,87.0,1.92,1.84,2.0,1.95
+600363,2026-06-29 19:30:00+00:00,Tatjana Maria,Iva Jovic,Maria T.,Jovic I.,Jovic,b,two,2026-07-01,WTA,Wimbledon,Grass,2nd Round,3,Completed,False,0,2,96.0,16.0,2.92,1.39,3.05,1.4
+600365,2026-06-29 19:40:00+00:00,Jannik Sinner,Nuno Borges,Sinner J.,Borges N.,Sinner,a,three,2026-07-01,ATP,Wimbledon,Grass,2nd Round,5,Completed,True,3,0,1.0,48.0,1.02,15.28,1.03,23.0
+600384,2026-06-30 05:12:01+00:00,Barbora Krejcikova,Mirra Andreeva,Krejcikova B.,Andreeva M.,Andreeva,b,three,2026-07-01,WTA,Wimbledon,Grass,2nd Round,3,Completed,True,2,1,38.0,5.0,2.58,1.49,2.65,1.52
+600385,2026-06-30 07:38:38+00:00,Stefanos Tsitsipas,Novak Djokovic,Tsitsipas S.,Djokovic N.,Djokovic,b,four,2026-07-01,ATP,Wimbledon,Grass,2nd Round,5,Completed,False,0,3,87.0,8.0,5.02,1.16,5.25,1.17
+600417,2026-06-30 17:55:17+00:00,Amanda Anisimova,Sofia Kenin,Anisimova A.,Kenin S.,Anisimova,a,three,2026-07-02,WTA,Wimbledon,Grass,2nd Round,3,Completed,True,2,1,6.0,105.0,1.13,5.71,1.14,6.5
+600418,2026-06-30 18:00:27+00:00,Jasmine Paolini,Viktorija Golubic,Paolini J.,Golubic V.,Paolini,a,three,2026-07-02,WTA,Wimbledon,Grass,2nd Round,3,Completed,True,2,0,17.0,62.0,1.72,2.08,1.83,2.15
+600445,2026-07-01 05:33:56+00:00,Karolina Pliskova,Iga Swiatek,Pliskova Ka.,Swiatek I.,Swiatek,b,two,2026-07-02,WTA,Wimbledon,Grass,2nd Round,3,Completed,False,0,2,73.0,3.0,3.78,1.26,4.33,1.29
+600446,2026-07-01 05:34:48+00:00,Alex de Minaur,Adrian Mannarino,De Minaur A.,Mannarino A.,De Minaur,a,four,2026-07-02,ATP,Wimbledon,Grass,2nd Round,5,Completed,True,3,0,6.0,40.0,1.12,6.11,1.13,6.5
+600517,2026-07-02 02:19:00+00:00,Hubert Hurkacz,Tommy Paul,Hurkacz H.,Paul T.,Paul,b,five,2026-07-03,ATP,Wimbledon,Grass,3rd Round,5,Completed,True,3,1,96.0,25.0,2.42,1.55,2.55,1.57
+600521,2026-07-02 02:23:00+00:00,Aryna Sabalenka,Jelena Ostapenko,Sabalenka A.,Ostapenko J.,Sabalenka,a,two,2026-07-03,WTA,Wimbledon,Grass,3rd Round,3,Completed,True,2,0,1.0,31.0,1.24,3.86,1.29,4.1
+600558,2026-07-02 14:49:00+00:00,Liudmila Samsonova,Marie Bouzkova,Samsonova L.,Bouzkova M.,Bouzkova,b,three,2026-07-04,WTA,Wimbledon,Grass,3rd Round,3,Completed,False,1,2,41.0,23.0,2.26,1.63,2.38,1.67
+600568,2026-07-02 21:12:29+00:00,Alexandra Eala,Iga Swiatek,Eala A.,Swiatek I.,Eala,a,three,2026-07-04,WTA,Wimbledon,Grass,3rd Round,3,Completed,True,2,0,32.0,3.0,3.8,1.25,4.0,1.29
+600634,2026-07-04 01:11:53+00:00,Novak Djokovic,Roman Safiullin,Djokovic N.,Safiullin R.,Djokovic,a,three,2026-07-05,ATP,Wimbledon,Grass,4th Round,5,Completed,True,3,1,8.0,132.0,1.16,5.0,1.21,5.5
+600636,2026-07-04 01:15:00+00:00,Belinda Bencic,Coco Gauff,Bencic B.,Gauff C.,Gauff,b,three,2026-07-05,WTA,Wimbledon,Grass,4th Round,3,Completed,False,1,2,11.0,7.0,1.85,1.92,1.91,2.0
+600673,2026-07-04 16:00:00+00:00,Jasmine Paolini,Alexandra Eala,Paolini J.,Eala A.,Eala,b,three,2026-07-06,WTA,Wimbledon,Grass,4th Round,3,Completed,True,2,1,17.0,32.0,2.3,1.59,2.38,1.63
+600697,2026-07-05 05:11:00+00:00,Alex de Minaur,Flavio Cobolli,De Minaur A.,Cobolli F.,De Minaur,a,four,2026-07-06,ATP,Wimbledon,Grass,4th Round,5,Completed,False,0,3,6.0,10.0,1.26,3.8,1.28,4.1
+600733,2026-07-05 19:23:00+00:00,Novak Djokovic,Felix Auger-Aliassime,Djokovic N.,Auger-Aliassime F.,Djokovic,a,five,2026-07-07,ATP,Wimbledon,Grass,Quarterfinals,5,Completed,True,3,2,8.0,4.0,1.6,2.31,1.62,2.4
+600739,2026-07-06 04:10:27+00:00,Naomi Osaka,Karolina Muchova,Osaka N.,Muchova K.,Osaka,a,three,2026-07-07,WTA,Wimbledon,Grass,Quarterfinals,3,Completed,False,0,2,14.0,9.0,1.66,2.19,1.7,2.25
+600783,2026-07-06 15:43:00+00:00,Marta Kostyuk,Jasmine Paolini,Kostyuk M.,Paolini J.,Paolini,b,three,2026-07-08,WTA,Wimbledon,Grass,Quarterfinals,3,Completed,True,2,0,13.0,17.0,1.36,3.08,1.38,3.25
+600800,2026-07-07 05:36:23+00:00,Flavio Cobolli,Arthur Fery,Cobolli F.,Fery A.,Cobolli,a,four,2026-07-08,ATP,Wimbledon,Grass,Quarterfinals,5,Completed,False,0,3,10.0,114.0,1.36,3.08,1.4,3.3
+600858,2026-07-08 01:24:00+00:00,Karolina Muchova,Coco Gauff,Muchova K.,Gauff C.,Gauff,b,three,2026-07-09,WTA,Wimbledon,Grass,Semifinals,3,Completed,True,2,1,9.0,7.0,1.8,1.99,1.85,2.1
+600877,2026-07-09 11:31:00+00:00,Marta Kostyuk,Linda Noskova,Kostyuk M.,Noskova L.,Kostyuk,a,three,2026-07-09,WTA,Wimbledon,Grass,Semifinals,3,Completed,False,0,2,13.0,12.0,1.71,2.12,1.77,2.3
+600861,2026-07-08 08:05:00+00:00,Jannik Sinner,Novak Djokovic,Sinner J.,Djokovic N.,Djokovic,b,five,2026-07-10,ATP,Wimbledon,Grass,Semifinals,5,Completed,True,3,0,1.0,8.0,1.19,4.71,1.22,5.0
+600902,2026-07-08 22:25:19+00:00,Arthur Fery,Alexander Zverev,Fery A.,Zverev A.,Zverev,b,three,2026-07-10,ATP,Wimbledon,Grass,Semifinals,5,Completed,False,0,3,114.0,3.0,1.13,5.86,1.14,6.5
+600960,2026-07-09 18:10:00+00:00,Karolina Muchova,Linda Noskova,Muchova K.,Noskova L.,Muchova,a,three,2026-07-11,WTA,Wimbledon,Grass,The Final,3,Completed,False,1,2,9.0,12.0,1.65,2.25,1.7,2.3
+601022,2026-07-10 22:57:00+00:00,Jannik Sinner,Alexander Zverev,Sinner J.,Zverev A.,Sinner,a,four,2026-07-12,ATP,Wimbledon,Grass,The Final,5,Completed,True,3,1,1.0,3.0,1.19,4.53,1.22,5.0
+603881,2026-08-27 20:46:55+00:00,Venus Williams,Sofia Kenin,Williams V.,Kenin S.,Kenin,b,two,2026-08-31,WTA,US Open,Hard,1st Round,3,Completed,False,0,2,618.0,110.0,6.5,1.11,7.0,1.13
+603957,2026-08-28 19:47:00+00:00,Matteo Berrettini,Stanislas Wawrinka,Berrettini M.,Wawrinka S.,Berrettini,a,five,2026-08-31,ATP,US Open,Hard,1st Round,5,Completed,True,3,0,43.0,127.0,1.24,4.07,1.25,4.33
+603993,2026-08-30 01:02:00+00:00,Stefanos Tsitsipas,Arthur Fils,Tsitsipas S.,Fils A.,Fils,b,four,2026-08-31,ATP,US Open,Hard,1st Round,5,Completed,True,3,1,53.0,11.0,4.85,1.17,5.0,1.2
+603990,2026-08-29 00:31:00+00:00,Ben Shelton,Tallon Griekspoor,Shelton B.,Griekspoor T.,Shelton,a,four,2026-09-01,ATP,US Open,Hard,1st Round,5,Completed,True,3,1,9.0,56.0,1.12,6.19,1.13,7.0
+604087,2026-08-30 17:57:00+00:00,Arthur Fery,Lorenzo Musetti,Fery A.,Musetti L.,Musetti,b,four,2026-09-01,ATP,US Open,Hard,1st Round,5,Completed,False,0,3,33.0,14.0,3.68,1.27,3.75,1.29
+604088,2026-08-31 00:21:00+00:00,Alexander Zverev,Lorenzo Sonego,Zverev A.,Sonego L.,Zverev,a,four,2026-09-02,ATP,US Open,Hard,1st Round,5,Completed,True,3,2,2.0,89.0,1.05,9.95,1.05,11.0
+604166,2026-09-01 03:44:10+00:00,Jessica Pegula,Sofia Kenin,Pegula J.,Kenin S.,Pegula,a,two,2026-09-02,WTA,US Open,Hard,2nd Round,3,Completed,True,2,0,3.0,110.0,1.06,9.25,1.06,10.0
+604172,2026-08-31 23:17:04+00:00,Jasmine Paolini,Lucrezia Stefanini,Paolini J.,Stefanini L.,Paolini,a,two,2026-09-02,WTA,US Open,Hard,2nd Round,3,Completed,True,2,0,21.0,119.0,1.4,2.86,1.42,3.0
+604244,2026-09-01 20:34:00+00:00,Jaime Faria,Carlos Alcaraz,Faria J.,Alcaraz C.,Alcaraz,b,three,2026-09-03,ATP,US Open,Hard,2nd Round,5,Completed,False,1,3,72.0,3.0,9.23,1.06,10.0,1.06
+604276,2026-09-02 14:20:00+00:00,Gael Monfils,Learner Tien,Monfils G.,Tien L.,Tien,b,four,2026-09-04,ATP,US Open,Hard,2nd Round,5,Completed,False,0,3,311.0,15.0,4.82,1.17,5.0,1.18
+604307,2026-09-02 19:18:24+00:00,Jessica Pegula,Leylah Fernandez,Pegula J.,Fernandez L.A.,Pegula,a,three,2026-09-04,WTA,US Open,Hard,3rd Round,3,Completed,True,2,1,3.0,33.0,1.15,5.31,1.17,5.75
+604342,2026-09-03 00:03:32+00:00,Jasmine Paolini,Sorana Cirstea,Paolini J.,Cirstea S.,Paolini,a,two,2026-09-04,WTA,US Open,Hard,3rd Round,3,Completed,False,0,2,21.0,17.0,2.39,1.57,2.5,1.62
+604343,2026-09-03 09:44:00+00:00,Ben Shelton,Denis Shapovalov,Shelton B.,Shapovalov D.,Shelton,a,four,2026-09-05,ATP,US Open,Hard,3rd Round,5,Completed,True,3,1,9.0,48.0,1.22,4.09,1.24,4.4
+604441,2026-09-04 10:50:49+00:00,Jakub Mensik,Learner Tien,Mensik J.,Tien L.,Tien,b,four,2026-09-06,ATP,US Open,Hard,3rd Round,5,Completed,False,2,3,18.0,15.0,2.1,1.7,2.2,1.73
+604475,2026-09-04 13:03:50+00:00,Naomi Osaka,Elise Mertens,Osaka N.,Mertens E.,Mertens,b,three,2026-09-06,WTA,US Open,Hard,3rd Round,3,Completed,True,2,1,13.0,20.0,1.3,3.39,1.33,3.6
+604517,2026-09-04 22:38:39+00:00,Aryna Sabalenka,Taylor Townsend,Sabalenka A.,Townsend T.,Sabalenka,a,two,2026-09-06,WTA,US Open,Hard,4th Round,3,Completed,True,2,0,1.0,96.0,1.17,4.8,1.2,5.25
+604521,2026-09-05 05:30:27+00:00,Tommy Paul,Carlos Alcaraz,Paul T.,Alcaraz C.,Alcaraz,b,four,2026-09-06,ATP,US Open,Hard,4th Round,5,Completed,False,0,3,21.0,3.0,4.46,1.19,4.8,1.21
+604516,2026-09-04 22:33:20+00:00,Jessica Pegula,Sorana Cirstea,Pegula J.,Cirstea S.,Pegula,a,three,2026-09-07,WTA,US Open,Hard,4th Round,3,Completed,True,2,0,3.0,17.0,1.32,3.35,1.33,3.5
+604632,2026-09-06 23:49:31+00:00,Aryna Sabalenka,Linda Noskova,Sabalenka A.,Noskova L.,Sabalenka,a,two,2026-09-08,WTA,US Open,Hard,Quarterfinals,3,Completed,True,2,1,1.0,6.0,1.32,3.32,1.34,3.5
+604635,2026-09-07 10:12:00+00:00,Ben Shelton,Carlos Alcaraz,Shelton B.,Alcaraz C.,Alcaraz,b,four,2026-09-09,ATP,US Open,Hard,Quarterfinals,5,Completed,True,3,2,9.0,3.0,3.82,1.25,4.0,1.28
+604681,2026-09-07 16:54:12+00:00,Jessica Pegula,Emma Navarro,Pegula J.,Navarro E.,Pegula,a,three,2026-09-09,WTA,US Open,Hard,Quarterfinals,3,Completed,True,2,1,3.0,27.0,1.24,3.91,1.25,4.1
+604687,2026-09-08 01:41:00+00:00,Qinwen Zheng,Elena Rybakina,Zheng Q.,Rybakina E.,Rybakina,b,three,2026-09-09,WTA,US Open,Hard,Quarterfinals,3,Completed,False,1,2,121.0,2.0,3.46,1.29,3.75,1.33
+604734,2026-09-08 14:44:39+00:00,Mirra Andreeva,Coco Gauff,Andreeva M.,Gauff C.,Gauff,b,three,2026-09-09,WTA,US Open,Hard,Quarterfinals,3,Completed,False,1,2,5.0,4.0,2.75,1.43,2.9,1.47
+604786,2026-09-09 14:54:53+00:00,Aryna Sabalenka,Jessica Pegula,Sabalenka A.,Pegula J.,Sabalenka,a,three,2026-09-11,WTA,US Open,Hard,Semifinals,3,Completed,True,2,0,1.0,3.0,1.5,2.56,1.55,2.63
+604813,2026-09-10 02:10:00+00:00,Coco Gauff,Elena Rybakina,Gauff C.,Rybakina E.,Gauff,a,three,2026-09-11,WTA,US Open,Hard,Semifinals,3,Completed,False,1,2,4.0,2.0,1.97,1.81,2.01,1.85
+604874,2026-09-10 15:14:53+00:00,Alexander Zverev,Karen Khachanov,Zverev A.,Khachanov K.,Zverev,a,four,2026-09-11,ATP,US Open,Hard,Semifinals,5,Completed,True,3,0,2.0,50.0,1.2,4.41,1.22,4.7
+604756,2026-09-09 14:09:00+00:00,Frances Tiafoe,Ben Shelton,Tiafoe F.,Shelton B.,Shelton,b,four,2026-09-12,ATP,US Open,Hard,Semifinals,5,Completed,False,1,3,12.0,9.0,3.19,1.34,3.4,1.4
+604918,2026-09-11 09:21:00+00:00,Aryna Sabalenka,Elena Rybakina,Sabalenka A.,Rybakina E.,Sabalenka,a,three,2026-09-12,WTA,US Open,Hard,The Final,3,Completed,False,1,2,2.0,2.0,1.64,2.26,1.7,2.4
+605027,2026-09-12 15:15:00+00:00,Alexander Zverev,Ben Shelton,Zverev A.,Shelton B.,Shelton,b,five,2026-09-13,ATP,US Open,Hard,The Final,5,Completed,True,3,1,2.0,9.0,1.67,2.2,1.7,2.3
+608653,2026-11-07 00:07:35+00:00,Coco Gauff,Jessica Pegula,Gauff C.,Pegula J.,Gauff,a,three,2026-11-08,WTA,WTA Finals,Hard,Round Robin,3,Completed,True,2,1,4.0,5.0,1.66,2.17,1.7,2.24
+608656,2026-11-07 00:13:00+00:00,Marta Kostyuk,Linda Noskova,Kostyuk M.,Noskova L.,Noskova,b,two,2026-11-08,WTA,WTA Finals,Hard,Round Robin,3,Completed,False,0,2,10.0,8.0,2.25,1.6,2.3,1.67
+608689,2026-11-07 21:21:00+00:00,Aryna Sabalenka,Karolina Muchova,Sabalenka A.,Muchova K.,Sabalenka,a,two,2026-11-09,WTA,WTA Finals,Hard,Round Robin,3,Completed,True,2,0,2.0,7.0,1.44,2.68,1.48,2.75
+608690,2026-11-07 21:21:00+00:00,Mirra Andreeva,Elina Svitolina,Andreeva M.,Svitolina E.,Andreeva,a,three,2026-11-09,WTA,WTA Finals,Hard,Round Robin,3,Completed,True,2,0,3.0,6.0,1.47,2.59,1.5,2.7
+608790,2026-11-09 15:10:00+00:00,Coco Gauff,Linda Noskova,Gauff C.,Noskova L.,Gauff,a,three,2026-11-10,WTA,WTA Finals,Hard,Round Robin,3,Completed,False,0,2,4.0,8.0,1.52,2.47,1.58,2.54
+608791,2026-11-09 15:15:40+00:00,Marta Kostyuk,Jessica Pegula,Kostyuk M.,Pegula J.,Kostyuk,a,three,2026-11-10,WTA,WTA Finals,Hard,Round Robin,3,Completed,False,0,2,10.0,5.0,2.57,1.48,2.7,1.55
+608808,2026-11-10 13:24:00+00:00,Aryna Sabalenka,Mirra Andreeva,Sabalenka A.,Andreeva M.,Sabalenka,a,three,2026-11-11,WTA,WTA Finals,Hard,Round Robin,3,Completed,False,0,2,2.0,3.0,1.78,1.99,1.83,2.25
+608809,2026-11-10 13:27:36+00:00,Elina Svitolina,Karolina Muchova,Svitolina E.,Muchova K.,Svitolina,a,three,2026-11-11,WTA,WTA Finals,Hard,Round Robin,3,Completed,True,2,1,6.0,7.0,2.25,1.62,2.83,1.67
+608882,2026-11-11 14:17:39+00:00,Jessica Pegula,Linda Noskova,Pegula J.,Noskova L.,Noskova,b,two,2026-11-12,WTA,WTA Finals,Hard,Round Robin,3,Completed,True,2,1,5.0,8.0,2.11,1.69,2.2,1.73
+608884,2026-11-11 14:20:19+00:00,Marta Kostyuk,Coco Gauff,Kostyuk M.,Gauff C.,Gauff,b,two,2026-11-12,WTA,WTA Finals,Hard,Round Robin,3,Completed,False,0,2,10.0,4.0,3.8,1.25,4.33,1.29
+608955,2026-11-12 02:10:24+00:00,Aryna Sabalenka,Elina Svitolina,Sabalenka A.,Svitolina E.,Svitolina,b,two,2026-11-13,WTA,WTA Finals,Hard,Round Robin,3,Completed,False,1,2,2.0,6.0,1.4,2.85,1.45,3.0
+609077,2026-11-13 22:32:00+00:00,Jessica Pegula,Mirra Andreeva,Pegula J.,Andreeva M.,Andreeva,b,two,2026-11-14,WTA,WTA Finals,Hard,Semifinals,3,Completed,False,0,2,5.0,3.0,3.03,1.35,3.25,1.38
