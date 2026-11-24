@@ -1,0 +1,6 @@
+season,articles,articles_missing_away_only,articles_missing_both_exclusive,articles_missing_either_exclusive,articles_missing_either_including_both,articles_missing_home_only,articles_without_primary_sentences,matched_alignment_ordered,sampled_articles,sentences_ambiguous_shared_name,sentences_away,sentences_both,sentences_conflicting_role_and_name,sentences_home,sentences_neither,sentences_unresolved_generic_reference,source_alignment_ordered,source_matches_exported_sides,sentences
+2122,2376,0,0,0,0,0,0,2376,13,104,10594,1949,226,10551,26889,10385,2376,2376,49983
+2223,2376,0,0,0,0,0,0,2376,13,110,10795,1967,167,10883,25471,9879,2376,2376,49116
+2324,2303,0,0,0,0,0,0,2303,12,172,10447,2134,242,11020,21729,9331,2303,2303,45330
+2425,2300,0,0,0,0,0,0,2300,12,111,10944,2182,258,11289,19491,9625,2300,2300,43906
+pooled,9355,0,0,0,0,0,0,9355,50,497,42780,8232,893,43743,93580,39220,9355,9355,188335

@@ -35,7 +35,7 @@ MATCH_DURATION_BUFFER = pd.Timedelta(hours=3)
 class FootballDataset:
     """Aligned rows for one market, with each component using the same index."""
 
-    target: pd.Series
+    target: pd.Series | None
     metadata: pd.DataFrame
     text: pd.DataFrame
     numerical: pd.DataFrame
@@ -67,6 +67,8 @@ def load_football(
     *,
     matches_path: Path = config.PROCESSED / "matched_football.csv",
     previews_path: Path = config.INTERIM / "previews.csv",
+    seasons: tuple[str, ...] | None = None,
+    include_outcomes: bool = True,
 ) -> FootballDataset:
     """Load records eligible at one market's prediction time.
 
@@ -81,15 +83,20 @@ def load_football(
 
     Malformed schemas or ambiguous IDs raise. Row-level exclusion reasons
     can overlap. The excluded_rows total counts each dropped row once.
+    With include_outcomes=False, outcome-free cohorts neither load nor
+    filter by realized results, and target is None.
     """
     if market not in ODDS_COLUMNS:
         raise ValueError(f"Unknown market {market!r}; use 'early' or 'closing'")
 
     odds_columns = ODDS_COLUMNS[market]
+    outcome_columns = ("result",) if include_outcomes else ()
     matches = _read_source(
         matches_path,
-        ("article_id", *FIXTURE_COLUMNS, "published", "result", "pick_result", *PICK_SCORES, *odds_columns),
+        ("article_id", *FIXTURE_COLUMNS, "published", *outcome_columns, "pick_result", *PICK_SCORES, *odds_columns),
     ).rename(columns={"published": "matched_published"})
+    if seasons is not None:
+        matches = matches.loc[matches["season"].isin(seasons)]
     previews = _read_source(previews_path, ("article_id", "sport", "published", *TEXT_COLUMNS))
     games = matches.merge(previews, on="article_id", how="left", validate="one_to_one", indicator=True)
 
@@ -125,7 +132,7 @@ def load_football(
         "missing_article_body": has_article & ~has_body,
         "invalid_season": ~games["season"].isin(config.FOOTBALL_SEASONS),
         "missing_fixture_metadata": missing_fixture,
-        "invalid_result": ~games["result"].isin(OUTCOME_CODES),
+        "invalid_result": ~games["result"].isin(OUTCOME_CODES) if include_outcomes else False,
         "missing_pick": games["pick_result"].isna(),
         "invalid_pick": games["pick_result"].notna() & ~games["pick_result"].isin(OUTCOME_CODES),
         "invalid_pick_score": games["pick_result"].isin(OUTCOME_CODES) & ~valid_scores.all(axis=1),
@@ -148,7 +155,8 @@ def load_football(
         pick_goal_diff=scores.loc[eligible, "pick_home_goals"] - scores.loc[eligible, "pick_away_goals"],
     )
     return FootballDataset(
-        target=games.loc[eligible, "result"].map(OUTCOME_CODES).astype(int).rename("y").reset_index(drop=True),
+        target=(games.loc[eligible, "result"].map(OUTCOME_CODES).astype(int).rename("y").reset_index(drop=True)
+                if include_outcomes else None),
         metadata=games.loc[eligible, [
             "article_id", *FIXTURE_COLUMNS, "published", "prediction_at", "outcome_available_at",
         ]].reset_index(drop=True),

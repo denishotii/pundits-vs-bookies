@@ -2,24 +2,17 @@
 
 ## Phase 1 complete
 
-- `pvb.advanced.dataset.load_football("early" | "closing")` uses configured paths
-  with optional overrides. It joins records by unique article ID, checks the
-  fixture and source data, and returns aligned `target`, `metadata`, `text`,
-  `numerical`, and exclusion `counts`. Counts by reason can overlap.
-- The numerical allowlist contains the selected market's average home, draw,
-  and away odds plus three baseline expert-pick features. The target uses
-  H = 0, D = 1, A = 2. Actual scores and precomputed features, including the
-  supervised Naive Bayes values, are excluded from model inputs.
-- `pvb.advanced.validation.season_positions(metadata)` returns development,
-  test and check positions. `chronological_folds(metadata)` returns positional
-  train/validation pairs and statistics. For scikit-learn search and refit,
-  subset all inputs to development first and compute folds on that subset.
-  A training outcome must be available strictly before the first validation
-  prediction in its fold. Fold 3 treats the requested `2323` as `2324`.
+- `pvb.advanced.dataset.load_football("early" | "closing")` joins unique article IDs,
+  validates fixtures and returns aligned `target`, `metadata`, `text`, `numerical`
+  and overlapping exclusion `counts`. The allowlist uses market-specific average H/D/A
+  odds and three expert-pick features. Targets use H = 0, D = 1, A = 2.
+- `season_positions(metadata)` returns development, test and check positions.
+  Compute `chronological_folds(metadata)` on development only for search and refit.
+  Training outcomes must precede the first validation prediction. Fold 3 uses `2324`.
 
-Both markets start with 12,303 matched records. Closing excludes one missing
-pick. Early exclusion reasons overlap, including 2,528 articles without
-established pre-snapshot availability and 78 snapshots at or after kickoff.
+Both markets start with 12,303 matches. Closing excludes one missing pick. Early
+exclusions overlap, including 2,528 without established pre-snapshot availability
+and 78 with snapshots at or after kickoff.
 
 | Market | Eligible | Excluded | Development | 2526 test | 2627 check |
 | --- | ---: | ---: | ---: | ---: | ---: |
@@ -34,28 +27,37 @@ established pre-snapshot availability and 78 snapshots at or after kickoff.
 
 The real-data folds purged zero outcomes. All 164 tests passed at Phase 1.
 
+## Phase 2 complete — pilot HTML integrity audit
+
+- Salted SHA-256 picked 25 of 9,356 matched articles per development season. The consented download
+  checked robots.txt and fetched 100/100 at two-second intervals. Private files are in `data/pilot_html_integrity/`.
+- `html_integrity.audit_article(page, reference, fetched_at=())` compares a saved page to the CSV.
+  `html_audit.audit_saved` reads `<article_id>.html` and optional `manifest.csv` and writes private diagnostics
+  under `results/advanced/html_integrity/` while preserving timestamp provenance and precision.
+- All 100 pages parsed. Publication and modification sources agreed across JSON-LD, Open Graph and HTML.
+  Timestamps had second precision, and publication agreed with both CSVs. All publications preceded kickoff
+  and 28 followed the early cutoff. All modification markers followed kickoff and 95 shared a UTC date.
+- Normalized sections, titles, verdicts and picks agreed with the historical CSV for all 100. There were zero
+  conservative post-match text flags. The original HTML and fetch manifest are still needed for version verification.
+  Download took 224.6 s, offline analysis 24.8 s, and all 210 tests passed.
+
+Replay with `.\.venv\Scripts\python.exe -m pvb.advanced.html_audit audit --version pilot_download`.
+Use `audit --version original --html-dir <archive_dir>` for the original archive, with optional `--sample` or `--manifest`.
+
 ## Phase 3 complete
 
-- `pvb.advanced.market` validates H/D/A arrays and proportionally normalizes
-  reciprocal decimal odds. `market_probabilities(numerical, market)` selects
-  only the named market's average odds.
-- `pvb.advanced.models` provides `RawMarket` (M0), `MarketLogistic(l2)` (M1),
-  and `MarketResidual(l2)` (M2). M1 uses L2-regularized multinomial logistic
-  regression on standardized log market probabilities. M2 adds a linear
-  correction to the fixed log market offset and uses sum-to-zero class
-  coordinates. `fit(market, y, features=None)` and `predict_proba(market,
-  features=None)` on M2 accept optional dense or CSR correction features.
-  With no features passed, M2 uses log market probabilities for its correction.
-  Scaling is learned inside each fold. Both models penalize slopes relative
-  to mean training loss and expose `convergence_`.
-- `pvb.advanced.evaluation.evaluate_predictions(target, predictions)` aligns
-  by match ID and returns log loss, Brier, accuracy, class metrics, calibration
-  bins, and paired per-match log-loss changes versus M0. Log loss uses the
-  original 1e-15 floor and Brier sums squared errors across classes per match.
-- `pvb.advanced.experiments.run_experiment(market)` selects L2 from
-  0.0001, 0.001, 0.01 and 0.1 by pooled per-match development log loss. Scores,
-  calibration, predictions and the input manifest are in
-  `results/advanced/{early,closing}/`.
+- `market_probabilities(numerical, market)` proportionally normalizes inverse decimal
+  odds for one named market. Models are `RawMarket` (M0), `MarketLogistic(l2)` (M1)
+  and `MarketResidual(l2)` (M2). M1 fits L2 multinomial logistic regression on log
+  market probabilities. M2 adds a linear correction with sum-to-zero classes to
+  the log market offset. M2 accepts optional dense or CSR correction features in
+  `fit` and `predict_proba`, defaulting to log market probabilities. Scaling is fit
+  inside each fold. Penalized models expose `convergence_`.
+- `evaluate_predictions(target, predictions)` aligns by match ID. It reports log
+  loss with a 1e-15 floor, multiclass Brier, accuracy, class metrics, calibration
+  and paired log-loss changes versus M0. `experiments.run_experiment(market)`
+  selects L2 from 0.0001, 0.001, 0.01 and 0.1 by pooled development log loss.
+  Scores, calibration, predictions and manifests are in `results/advanced/{early,closing}/`.
 
 Run `.\.venv\Scripts\python.exe -m pvb.advanced.experiments --market early` or use `closing`.
 
@@ -77,33 +79,25 @@ availability, so it represents a subset of matches with early odds.
 
 ## Phase 4 complete — preliminary classical NLP
 
-- `pvb.advanced.preprocessing.prepare_documents` joins NFC-normalized sections
-  with collapsed whitespace. Primary uses preview, team news and head-to-head.
-  Full article adds title, intro, verdict and other. Primary can still contain
-  explicit predictions. Scoreline and phrase diagnostics are heuristic counts.
-- `fit_tfidf` fits word unigrams/bigrams per training fold and representation.
-  It lowercases, retains single digits and contractions, uses sublinear TF,
-  smoothed IDF and L2 document normalization, and sets min_df=5, max_df=0.95,
-  max_features=10000. Training and validation text matrices stay in CSR.
-- `MarketResidual(l2, standardize=False)` accepts preprocessed correction
-  features. Phase 3 keeps the original default. The runner standardizes log
-  market probabilities and expert-pick columns on each training fold, then
-  combines them as needed with TF-IDF weighted by 0.5. M3 adds `pick_home`,
-  `pick_draw` and `pick_goal_diff` to M2. M4 adds primary TF-IDF to M2. M5
-  combines picks and primary TF-IDF. The residual logit offset is `log(p_market)`.
-  The penalty is L2/2 times the squared slope norm relative to mean log loss,
-  with unpenalized intercepts and a 4× effective penalty on unweighted text slopes.
-- `pvb.advanced.nlp_experiments.run_experiment(market)` uses the Phase 3 folds
-  and L2 grid, requiring convergence in every fold. The full-article ablation
-  uses M5's selected L2. Reports are in `results/advanced/nlp/{early,closing}/`.
+- `preprocessing.prepare_documents` normalizes NFC and whitespace. Primary uses
+  preview, team news and head-to-head. Full adds title, intro, verdict and other.
+  Primary can contain picks. Scoreline and phrase diagnostics are heuristic.
+- `fit_tfidf` fits lowercase word unigrams/bigrams per training fold in CSR, with
+  sublinear TF, smoothed IDF, L2 normalization, min_df=5, max_df=0.95 and 10,000
+  features. It retains single digits and contractions.
+- `MarketResidual(l2, standardize=False)` accepts preprocessed features. The runner
+  standardizes numerical inputs per fold and weights TF-IDF by 0.5, equivalent to
+  a 4× text slope penalty. M3 adds three pick features to M2, M4 adds primary TF-IDF
+  to M2, and M5 uses both. `nlp_experiments.run_experiment(market)` uses the Phase 3
+  folds and grid with full convergence. The full-article ablation reuses M5's L2.
+  Reports are in `results/advanced/nlp/{early,closing}/`.
 - With 5,484 early and 6,979 closing validation matches, M5 minus M3 log loss
   was +0.000009784 and +0.000000875 respectively. M3 minus M2 was +0.000537727
   and +0.000214891. M4 minus M2 was +0.000009871 and +0.000000854. Full-article
   M5 also scored slightly worse than M3 in both markets. M2–M5 selected L2=0.1
   for both markets. All 63 optimizer fits per market converged. Each text
   configuration had 10,000 features per fold. All 196 suite tests passed.
-- Phase 4 used the same development folds for tuning and scoring. It excluded
-  both historical holdout seasons.
+- Phase 4 tuned and scored on the same development folds and excluded both holdouts.
 
 Run with `.\.venv\Scripts\python.exe -m pvb.advanced.nlp_experiments --market early`
 or substitute `closing`.
@@ -111,15 +105,12 @@ or substitute `closing`.
 ## Phase 5 complete — block penalties and contextual NLP
 
 - `MarketResidual(l2, text_l2=..., standardize=False).fit(..., numerical_width=...)`
-  penalizes numerical and text slopes separately. The original scalar L2
-  interface, sum-to-zero class contrasts and fixed log-market offset still apply.
-- `pvb.advanced.contextual_experiments.run_experiment` selects L2 for M2 and M3
-  first, then freezes each penalty for its text comparisons. M4/M5 use primary
-  TF-IDF and M6/M7 use frozen MiniLM embeddings, each without/with picks.
-- `pvb.advanced.embeddings.embed_articles` chunks primary sections by token ID
-  and weights normalized chunk vectors by token count before article normalization.
-  An empty input yields zeros. The private SQLite cache under `data/cache/contextual/`
-  keys on article ID, normalized section content, encoder revision and configuration.
+  penalizes numerical and text slopes separately with the fixed log-market offset.
+- `contextual_experiments.run_experiment` freezes selected M2/M3 penalties for text
+  comparisons. M4/M5 use primary TF-IDF and M6/M7 use frozen MiniLM, each without/with picks.
+- `embeddings.embed_articles` token-chunks primary sections, pools normalized chunk
+  vectors by token count and normalizes the article. Empty inputs yield zeros. The
+  private SQLite cache keys on ID, normalized content, encoder revision and settings.
 - MiniLM was [first uploaded on 2021-08-30](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/commit/acbb28c8aa70f5503c85d6b90e8cd65606993a20).
   Historical availability of the pinned revision and overlap with its pretraining
   corpora are unverified. Global pooling can lose team attribution.
@@ -133,17 +124,26 @@ or substitute `closing`.
   0.0000106 with picks. Closing generated 9,355 vectors on CUDA and early
   reused all 7,364 it needed. All selected fits converged and all 200 tests passed.
 
-## Timing limitations and next step
+## Phase 06A complete — signal diagnostics
+
+- Run `.\.venv\Scripts\python.exe -m pvb.advanced.diagnostics` offline. See `results/advanced/diagnostics/`
+  for aggregates and the report. Its ignored `private/` folder holds forecasts and the 50-article review.
+- `MarketResidual.fit_soft` shares the audited hard-label objective. Eight gradient checks passed, five seeds recovered the planted signal and Phase 05 scores replayed.
+- Standalone MiniLM improved class-frequency loss by 0.00048 early and 0.00065 closing.
+  Explicit picks recovered 62–64% of market KL, versus 1.6–2.4% for text alone. Primary
+  MiniLM barely recovered pick direction. The full-article TF-IDF verdict control performed better.
+- Text gave no consistent gain over market calibration for closing-odds movement across
+  publication groups. Learning curves showed no monotonic text gain. Seven-day conditional
+  resolution for MiniLM plus picks was 0.000026 early and 0.000191 closing in log loss.
+- All audited articles had cues for each side. Manually check attribution before a team-aware comparison.
+  Legacy aliases use the whole corpus. Article-version integrity is unresolved. All 221 tests passed.
+
+## Market timing limitations
 
 - The baseline's approximate early snapshot is 15:00 Europe/London on
   Tuesday for Tuesday through Thursday fixtures and Friday for Friday
   through Monday fixtures. Closing uses kickoff as the prediction cutoff
   proxy. The actual odds capture times are unavailable.
-- UTC midnight values are treated as date-only. This policy excludes five
-  additional same-day articles from the early sample. Outcome availability
-  is estimated as kickoff plus three hours, or the next UTC day plus three
-  hours when kickoff is date-only. Actual result release times are unavailable.
-- Phase 2 remains deferred until raw HTML is available. Then audit article
-  versions, publication timestamps, and market timestamp provenance before
-  drawing conclusions from text experiments. Original publication times alone
-  cannot establish when the scraped text or expert pick became available.
+- UTC midnight values are treated as date-only, excluding five more same-day early articles.
+  Outcome availability is kickoff plus three hours, or the next UTC day plus three hours
+  when kickoff is date-only. Actual result release times are unavailable.

@@ -1,0 +1,9 @@
+matrix,target,penalty,step,max_abs_error,passed
+dense,hard,single,1e-06,1.284170964011011e-10,True
+dense,hard,block,1e-06,1.284170964011011e-10,True
+dense,soft,single,1e-06,1.7044179956293704e-10,True
+dense,soft,block,1e-06,1.9362370040632015e-10,True
+csr,hard,single,1e-06,1.996980913965274e-10,True
+csr,hard,block,1e-06,1.284170964011011e-10,True
+csr,soft,single,1e-06,1.7044178568514923e-10,True
+csr,soft,block,1e-06,1.9362367265074454e-10,True

@@ -14,7 +14,7 @@ import numpy as np
 import pandas as pd
 
 from ..config import ROOT
-from .preprocessing import PRIMARY_TEXT_COLUMNS, UNICODE_FORM, prepare_documents
+from .preprocessing import PRIMARY_TEXT_COLUMNS, TEXT_REPRESENTATIONS, UNICODE_FORM, prepare_documents
 
 MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
 MODEL_REVISION = "c9745ed1d9f207416be6d2e6f8de32d1f16199bf"
@@ -168,16 +168,19 @@ class EmbeddingResult:
     statistics: dict
 
 
-def embed_articles(sections: pd.DataFrame, encoder, cache_path: Path) -> EmbeddingResult:
+def embed_articles(
+    sections: pd.DataFrame, encoder, cache_path: Path, *, representation: str = "primary",
+) -> EmbeddingResult:
     """Embed only the supplied article IDs and cache vectors by content and encoder."""
     if sections.empty or not sections.index.is_unique or sections.index.hasnans:
         raise ValueError("Embedding inputs require nonempty, unique, nonmissing article IDs")
     start = perf_counter()
+    columns = TEXT_REPRESENTATIONS[representation]
     normalized = pd.DataFrame({
-        name: prepare_documents(sections.reindex(columns=[name])) for name in PRIMARY_TEXT_COLUMNS
+        name: prepare_documents(sections.reindex(columns=[name]), representation) for name in columns
     })
     contents = list(normalized.itertuples(index=False, name=None))
-    signature = _fingerprint((encoder.config, REPRESENTATION))
+    signature = _fingerprint((encoder.config, {**REPRESENTATION, "sections": columns}))
     keys = [_fingerprint((str(article_id), _fingerprint(content), signature))
             for article_id, content in zip(sections.index, contents, strict=True)]
 

@@ -47,6 +47,23 @@ data/processed/*
 !/results/advanced/contextual/**/block_diagnostics.csv
 !/results/advanced/contextual/**/feature_norms.csv
 !/results/advanced/contextual/**/tfidf_diagnostics.csv
+!/results/advanced/diagnostics/
+!/results/advanced/diagnostics/metadata.json
+!/results/advanced/diagnostics/report.md
+!/results/advanced/diagnostics/gradient_checks.csv
+!/results/advanced/diagnostics/synthetic_*.csv
+!/results/advanced/diagnostics/attribution_coverage.csv
+!/results/advanced/diagnostics/movement_*.csv
+!/results/advanced/diagnostics/early_outcome_*.csv
+!/results/advanced/diagnostics/closing_outcome_*.csv
+!/results/advanced/diagnostics/early_pick_*.csv
+!/results/advanced/diagnostics/closing_pick_*.csv
+!/results/advanced/diagnostics/*_market_recovery.csv
+!/results/advanced/diagnostics/*_folds.csv
+!/results/advanced/diagnostics/*_selection.csv
+!/results/advanced/diagnostics/*_learning_curves.csv
+!/results/advanced/diagnostics/*_paired.csv
+!/results/advanced/diagnostics/*_bootstrap.csv
 
 # Teammates' working notes (e.g. the Kalshi PDFs), shared outside the repo
 docs/docs_from_team/

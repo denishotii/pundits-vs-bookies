@@ -94,6 +94,26 @@ def residual_probabilities(market: np.ndarray, corrections: np.ndarray) -> np.nd
         return np.exp(log_softmax(np.log(probabilities) + centered, axis=1))
 
 
+def _residual_objective(parameters, matrix, offset, target, slope_penalties):
+    coefficients = parameters.reshape(matrix.shape[1] + 1, N_CLASSES - 1)
+    intercept, slopes = coefficients[0], coefficients[1:]
+    corrections = (matrix @ slopes + intercept) @ CONTRASTS.T
+    log_probabilities = log_softmax(offset + corrections, axis=1)
+    errors = np.exp(log_probabilities)
+    if target.ndim == 1:
+        observed = np.arange(len(target)), target
+        cross_entropy = -log_probabilities[observed].mean()
+        errors[observed] -= 1
+    else:
+        cross_entropy = -(target * log_probabilities).sum(axis=1).mean()
+        errors -= target
+    penalty_gradient = slope_penalties * slopes
+    loss = cross_entropy + (slopes * penalty_gradient).sum() / 2
+    gradient = (errors @ CONTRASTS) / len(target)
+    slope_gradient = matrix.T @ gradient + penalty_gradient
+    return loss, np.vstack((gradient.sum(axis=0), slope_gradient)).ravel()
+
+
 class MarketResidual(BaseEstimator):
     """M2 fits a linear correction to the fixed log market offset.
 
@@ -120,6 +140,17 @@ class MarketResidual(BaseEstimator):
     def fit(self, market: np.ndarray, y: np.ndarray, features=None, *, numerical_width: int | None = None):
         offset = np.log(validate_probabilities(market, positive=True))
         target = _training_targets(y, len(offset))
+        return self._fit_offset(offset, target, features, numerical_width)
+
+    def fit_soft(self, market: np.ndarray, target: np.ndarray, features=None, *, numerical_width: int | None = None):
+        """Fit the same correction against H/D/A probability targets."""
+        offset = np.log(validate_probabilities(market, positive=True))
+        target = validate_probabilities(target)
+        if target.shape != offset.shape or np.any(target.sum(axis=0) == 0):
+            raise ValueError("Soft targets must align with the market and give each class positive total mass")
+        return self._fit_offset(offset, target, features, numerical_width)
+
+    def _fit_offset(self, offset, target, features, numerical_width):
         matrix = self._features(offset, features)
         slope_penalties = self.l2
         if self.text_l2 is not None:
@@ -134,24 +165,11 @@ class MarketResidual(BaseEstimator):
         if self.standardize:
             scaler = StandardScaler(with_mean=not sparse.issparse(matrix))
             matrix = scaler.fit_transform(matrix)
-        rows = np.arange(len(target))
         parameter_shape = (matrix.shape[1] + 1, N_CLASSES - 1)
 
-        def objective(parameters):
-            coefficients = parameters.reshape(parameter_shape)
-            intercept, slopes = coefficients[0], coefficients[1:]
-            corrections = (matrix @ slopes + intercept) @ CONTRASTS.T
-            log_probabilities = log_softmax(offset + corrections, axis=1)
-            penalty_gradient = slope_penalties * slopes
-            loss = -log_probabilities[rows, target].mean() + (slopes * penalty_gradient).sum() / 2
-            errors = np.exp(log_probabilities)
-            errors[rows, target] -= 1
-            gradient = (errors @ CONTRASTS) / len(target)
-            slope_gradient = matrix.T @ gradient + penalty_gradient
-            return loss, np.vstack((gradient.sum(axis=0), slope_gradient)).ravel()
-
         result = minimize(
-            objective, np.zeros(np.prod(parameter_shape)), method="L-BFGS-B", jac=True,
+            _residual_objective, np.zeros(np.prod(parameter_shape)), method="L-BFGS-B", jac=True,
+            args=(matrix, offset, target, slope_penalties),
             options={"maxiter": MAX_ITER, "ftol": 1e-12, "gtol": TOL},
         )
         coefficients = result.x.reshape(parameter_shape)
