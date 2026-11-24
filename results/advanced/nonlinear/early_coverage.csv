@@ -1,0 +1,8 @@
+scope,split,matches,author_missing_byline,author_missing_history,author_missing_agree_history,author_missing_disagree_history,author_history_1_to_4,author_history_median,author_history_p90,history_missing_side,history_short_last_5,history_missing_venue,text_missing_side
+2223,training,1880,0,51,54,65,63,84.0,241.0,47,236,94,0
+2223,validation,1868,0,27,34,49,62,220.0,499.0,12,54,22,0
+2324,training,3748,0,78,88,114,125,125.0,436.0,59,290,116,0
+2324,validation,1792,0,4,6,10,11,412.0,770.0,7,35,15,0
+2425,training,5540,0,82,94,124,136,182.0,645.0,66,325,131,0
+2425,validation,1824,0,9,9,21,21,413.0,978.0,5,27,11,0
+pooled,validation,5484,0,40,49,80,94,340.0,822.0,24,116,48,0

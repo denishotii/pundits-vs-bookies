@@ -141,15 +141,18 @@ class SentenceAttribution:
         ]
         self.roles = [_expression(set(ROLE_WORDS[side]), re.I) for side in ("a", "b")]
 
-    def classify(self, sentence):
-        normalized = _name_form(sentence)
+    def name_mentions(self, normalized):
         mentions = [(match.start(), match.end(), side) for side, pattern in enumerate(self.names) if pattern
                     for match in pattern.finditer(normalized)]
         # A short name contained in the other team's longer name is not a second mention.
-        mentions = [
+        return [
             (start, end, side) for start, end, side in mentions
             if not any(i <= start and end <= j and (i < start or end < j) for i, j, _ in mentions)
         ]
+
+    def classify(self, sentence):
+        normalized = _name_form(sentence)
+        mentions = self.name_mentions(normalized)
         named_sides = {side for _, _, side in mentions}
         roles = {side for side, pattern in enumerate(self.roles) if pattern.search(normalized)}
         common = bool(self.shared and any(

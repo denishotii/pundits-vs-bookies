@@ -1,0 +1,70 @@
+{
+  "status": "Recommended after original HTML and timing verification. Holdouts unevaluated.",
+  "class_codes": {"H": 0, "D": 1, "A": 2},
+  "markets": {
+    "early": {"odds_columns": ["early_odds_home", "early_odds_draw", "early_odds_away"], "market_l2": 1.0, "market_picks_l2": 10.0},
+    "closing": {"odds_columns": ["closing_odds_home", "closing_odds_draw", "closing_odds_away"], "market_l2": 0.1, "market_picks_l2": 1.0}
+  },
+  "market_probabilities": "Normalize reciprocal average decimal odds across H/D/A within one market.",
+  "models": {
+    "raw_market": {"output": "market probabilities"},
+    "market_residual": {"correction_blocks": ["log_market"], "block_penalties": ["market_l2"]},
+    "market_picks_residual": {"correction_blocks": ["log_market_and_picks"], "block_penalties": ["market_picks_l2"]},
+    "team_text_residual": {
+      "correction_blocks": ["log_market_and_picks", "side_tfidf"],
+      "block_penalties": ["market_picks_l2", 1.0]
+    }
+  },
+  "residual": {
+    "implementation": "pvb.advanced.models.MarketResidual",
+    "constructor": {"l2": 1.0, "standardize": false, "text_l2": null},
+    "fit_arguments": "Pass explicit contiguous (block_width, L2) pairs in correction-block order.",
+    "output": "Softmax of log market probabilities plus sum-to-zero linear correction and unpenalized intercept.",
+    "objective": "Mean multinomial cross-entropy plus half the block L2 times squared slope norm.",
+    "optimizer": {"method": "L-BFGS-B", "initial_parameters": 0, "maxiter": 1000, "ftol": 1e-12, "gtol": 1e-8}
+  },
+  "feature_blocks": {
+    "log_market": {"inputs": ["log_p_home", "log_p_draw", "log_p_away"], "preprocessing": "Training-only StandardScaler"},
+    "log_market_and_picks": {
+      "inputs": ["log_p_home", "log_p_draw", "log_p_away", "pick_home", "pick_draw", "pick_goal_diff"],
+      "pick_definition": "Home and draw pick indicators, followed by predicted home goals minus predicted away goals.",
+      "preprocessing": "Training-only StandardScaler"
+    },
+    "side_tfidf": {
+      "implementation": "pvb.advanced.team_text.side_documents and side_tfidf",
+      "attribution_schema": 1,
+      "sections": ["text_preview", "text_team_news", "text_head_to_head"],
+      "attribution": "Assign fixture-oriented exclusive sentences using fixed fixture names, curated spellings and explicit roles. Mask accepted team mentions to TEAM. Exclude both-team, ambiguous and unattributed sentences.",
+      "document_normalization": "NFC and whitespace collapse via prepare_documents",
+      "vectorizer_fit": "One shared training-only vocabulary and IDF over home and away side documents.",
+      "tfidf": {
+        "analyzer": "word",
+        "ngram_range": [1, 2],
+        "token_pattern": "(?u)\\b\\w+(?:['’]\\w+)*\\b",
+        "lowercase": true,
+        "sublinear_tf": true,
+        "norm": "l2",
+        "min_df": 5,
+        "max_df": 0.95,
+        "max_features": 10000,
+        "use_idf": true,
+        "smooth_idf": true
+      },
+      "output": "Sparse home minus away, mean of home and away, home missing flag and away missing flag. Use zero vectors for empty sides. No further scaling or SVD."
+    }
+  },
+  "selection": {
+    "development_folds": ["2223", "2324", "2425"],
+    "reference": "../team_historical/metadata.json",
+    "rule": "Keep Phase 06B numerical penalties chosen by pooled development log loss from 0.01, 0.1, 1 and 10. Keep the side representation with lowest pooled closing pick-recovery loss and its text L2 selected from 0.001, 0.01, 0.1 and 1 at frozen numerical L2.",
+    "holdout_rule": "After integrity verification, refit once on eligible released 2122–2425 rows, purging releases at or after the first test prediction if necessary. Freeze transforms and model weights for 2526 and 2627. Use identical fixture IDs within each market. Compare multiclass log loss primarily, Brier secondarily, with paired date-block intervals. Do not select or retune on either holdout."
+  },
+  "timing_limits": [
+    "Early odds use an approximate Tuesday or Friday 15:00 Europe/London cutoff.",
+    "Closing uses kickoff as a proxy for the odds capture time.",
+    "Outcomes use kickoff plus three hours, or next UTC day plus three hours for date-only kickoffs.",
+    "The original HTML version, contemporary picks and bylines, and actual capture and release times remain unverified.",
+    "Side attribution is heuristic and its private review lacks human labels."
+  ],
+  "additional_model": null
+}

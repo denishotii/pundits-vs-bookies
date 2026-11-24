@@ -161,7 +161,17 @@ def _scopes(folds):
     return [(fold.season, fold.valid) for fold in folds] + [("pooled", np.concatenate([fold.valid for fold in folds]))]
 
 
+def _check_validation_cohort(folds, index, forecasts):
+    expected = index[np.concatenate([fold.valid for fold in folds])]
+    if not expected.is_unique or any(
+        not frame.index.is_unique or len(frame) != len(expected) or not expected.isin(frame.index).all()
+        for frame in forecasts.values()
+    ):
+        raise ValueError("Each forecast must have exactly the same validation match IDs")
+
+
 def _categorical_tables(folds, target, forecasts):
+    _check_validation_cohort(folds, target.index, forecasts)
     tables = {"metrics": [], "classwise": [], "confusion": []}
     for scope, positions in _scopes(folds):
         truth = target.iloc[positions]
@@ -172,6 +182,7 @@ def _categorical_tables(folds, target, forecasts):
 
 
 def _soft_table(folds, index, target, forecasts, reference, early=None):
+    _check_validation_cohort(folds, index, forecasts)
     rows = []
     for scope, positions in _scopes(folds):
         ids = index[positions]
@@ -243,6 +254,7 @@ def _learning_curve(fold, data, market, settings, numerical, documents, embeddin
 
 
 def _uncertainty(folds, data, forecasts):
+    _check_validation_cohort(folds, data.target.index, forecasts)
     paired_rows, intervals, private_rows, replay = [], [], [], []
     for scope, positions in _scopes(folds):
         target = data.target.iloc[positions]

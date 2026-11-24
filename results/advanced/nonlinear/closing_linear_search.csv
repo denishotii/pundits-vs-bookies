@@ -1,0 +1,37 @@
+model,scope,matches,loss,converged,iterations,message,seconds,penalties,selected
+linear_market,2223,2376,0.9952832629652332,True,11,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.0049426000005041715,"{""market"": 0.1}",True
+linear_market,2324,2303,0.9662106672056272,True,10,CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL,0.00820929999827058,"{""market"": 0.1}",True
+linear_market,2425,2300,0.9760406934495314,True,11,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.010717299999669194,"{""market"": 0.1}",True
+linear_market,pooled,6979,0.9793480146602486,True,32,,0.023869199998443946,"{""market"": 0.1}",True
+linear_picks,2223,2376,0.9948468834514785,True,12,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.005264200000965502,"{""market_and_picks"": 1.0}",True
+linear_picks,2324,2303,0.9665364983672142,True,12,CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL,0.00872719999824767,"{""market_and_picks"": 1.0}",True
+linear_picks,2425,2300,0.9765268284588151,True,12,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.01253759999963222,"{""market_and_picks"": 1.0}",True
+linear_picks,pooled,6979,0.9794671810109875,True,36,,0.026528999998845393,"{""market_and_picks"": 1.0}",True
+linear_picks_author,2223,2376,0.9994252736313253,True,22,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.010545799999817973,"{""author"": 0.1, ""market_and_picks"": 1.0}",False
+linear_picks_author,2324,2303,0.968093147838233,True,22,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.01607480000166106,"{""author"": 0.1, ""market_and_picks"": 1.0}",False
+linear_picks_author,2425,2300,0.976735866296803,True,23,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.024568799999542534,"{""author"": 0.1, ""market_and_picks"": 1.0}",False
+linear_picks_author,pooled,6979,0.9816084628316558,True,67,,0.05118940000102157,"{""author"": 0.1, ""market_and_picks"": 1.0}",False
+linear_picks_author,2223,2376,0.9956281869076665,True,13,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.0064937999995891005,"{""author"": 1.0, ""market_and_picks"": 1.0}",False
+linear_picks_author,2324,2303,0.966895666805002,True,13,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.011217200000828598,"{""author"": 1.0, ""market_and_picks"": 1.0}",False
+linear_picks_author,2425,2300,0.9764453703829745,True,13,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.014491400001134025,"{""author"": 1.0, ""market_and_picks"": 1.0}",False
+linear_picks_author,pooled,6979,0.9798248523607074,True,39,,0.03220240000155172,"{""author"": 1.0, ""market_and_picks"": 1.0}",False
+linear_picks_author,2223,2376,0.9948994444419882,True,26,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.011668700000882382,"{""author"": 10.0, ""market_and_picks"": 1.0}",True
+linear_picks_author,2324,2303,0.9665734602247953,True,23,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.01696050000100513,"{""author"": 10.0, ""market_and_picks"": 1.0}",True
+linear_picks_author,2425,2300,0.9764996060989422,True,25,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.027747999996790895,"{""author"": 10.0, ""market_and_picks"": 1.0}",True
+linear_picks_author,pooled,6979,0.9794883010344512,True,74,,0.05637719999867841,"{""author"": 10.0, ""market_and_picks"": 1.0}",True
+linear_history_picks,2223,2376,0.9946088256871891,True,30,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.015048499997647014,"{""history"": 10.0, ""market_and_picks"": 1.0}",True
+linear_history_picks,2324,2303,0.9667276345237711,True,26,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.02458200000182842,"{""history"": 10.0, ""market_and_picks"": 1.0}",True
+linear_history_picks,2425,2300,0.9766732786249743,True,26,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.035260599997855024,"{""history"": 10.0, ""market_and_picks"": 1.0}",True
+linear_history_picks,pooled,6979,0.9794974714111545,True,82,,0.07489109999733046,"{""history"": 10.0, ""market_and_picks"": 1.0}",True
+linear_history_picks_author,2223,2376,0.9992044007281721,True,59,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.031743200001074,"{""author"": 0.1, ""history"": 10.0, ""market_and_picks"": 1.0}",False
+linear_history_picks_author,2324,2303,0.9682511771214007,True,55,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.055948900000657886,"{""author"": 0.1, ""history"": 10.0, ""market_and_picks"": 1.0}",False
+linear_history_picks_author,2425,2300,0.976875703837254,True,52,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.06698690000121132,"{""author"": 0.1, ""history"": 10.0, ""market_and_picks"": 1.0}",False
+linear_history_picks_author,pooled,6979,0.9816314996226404,True,166,,0.1546790000029432,"{""author"": 0.1, ""history"": 10.0, ""market_and_picks"": 1.0}",False
+linear_history_picks_author,2223,2376,0.9953739110684655,True,28,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.017997599999944214,"{""author"": 1.0, ""history"": 10.0, ""market_and_picks"": 1.0}",False
+linear_history_picks_author,2324,2303,0.967106336803144,True,27,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.028613300000870368,"{""author"": 1.0, ""history"": 10.0, ""market_and_picks"": 1.0}",False
+linear_history_picks_author,2425,2300,0.9765895399909483,True,28,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.04289919999791891,"{""author"": 1.0, ""history"": 10.0, ""market_and_picks"": 1.0}",False
+linear_history_picks_author,pooled,6979,0.9798553157093417,True,83,,0.0895100999987335,"{""author"": 1.0, ""history"": 10.0, ""market_and_picks"": 1.0}",False
+linear_history_picks_author,2223,2376,0.9946601194227919,True,28,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.017822699999669567,"{""author"": 10.0, ""history"": 10.0, ""market_and_picks"": 1.0}",True
+linear_history_picks_author,2324,2303,0.9667690739982446,True,27,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.02890049999768962,"{""author"": 10.0, ""history"": 10.0, ""market_and_picks"": 1.0}",True
+linear_history_picks_author,2425,2300,0.9766458945293022,True,26,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.03748829999676673,"{""author"": 10.0, ""history"": 10.0, ""market_and_picks"": 1.0}",True
+linear_history_picks_author,pooled,6979,0.9795195842647809,True,81,,0.08421149999412592,"{""author"": 10.0, ""history"": 10.0, ""market_and_picks"": 1.0}",True

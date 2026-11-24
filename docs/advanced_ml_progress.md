@@ -14,18 +14,10 @@ Both markets start with 12,303 matches. Closing excludes one missing pick. Early
 exclusions overlap, including 2,528 without established pre-snapshot availability
 and 78 with snapshots at or after kickoff.
 
-| Market | Eligible | Excluded | Development | 2526 test | 2627 check |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| Closing | 12,302 | 1 | 9,355 | 2,271 | 676 |
-| Early | 9,696 | 2,607 | 7,364 | 1,784 | 548 |
-
-| Train seasons | Validation season | Closing train / validation | Early train / validation |
-| --- | --- | ---: | ---: |
-| 2122 | 2223 | 2,376 / 2,376 | 1,880 / 1,868 |
-| 2122–2223 | 2324 | 4,752 / 2,303 | 3,748 / 1,792 |
-| 2122–2324 | 2425 | 7,055 / 2,300 | 5,540 / 1,824 |
-
-The real-data folds purged zero outcomes. All 164 tests passed at Phase 1.
+The early development/test/check counts are 7,364/1,784/548 and closing counts
+are 9,355/2,271/676. Across the three expanding folds, early validates on
+1,868/1,792/1,824 fixtures and closing on 2,376/2,303/2,300. The folds purged zero
+training outcomes at validation boundaries. All 164 tests passed at Phase 1.
 
 ## Phase 2 complete — pilot HTML integrity audit
 
@@ -61,21 +53,9 @@ Use `audit --version original --html-dir <archive_dir>` for the original archive
 
 Run `.\.venv\Scripts\python.exe -m pvb.advanced.experiments --market early` or use `closing`.
 
-### Pooled development out-of-fold results
-
-| Market | Matches | Model | L2 | Log loss | Brier | Accuracy |
-| --- | ---: | --- | ---: | ---: | ---: | ---: |
-| Early | 5,484 | M0 | — | 0.980928 | 0.584944 | 52.90% |
-| Early | 5,484 | M1 | 0.0001 | 0.981686 | 0.585587 | 52.95% |
-| Early | 5,484 | M2 | 0.1 | 0.981282 | 0.585268 | 52.86% |
-| Closing | 6,979 | M0 | — | 0.979448 | 0.583735 | 53.22% |
-| Closing | 6,979 | M1 | 0.001 | 0.979540 | 0.583846 | 52.99% |
-| Closing | 6,979 | M2 | 0.1 | 0.979348 | 0.583718 | 53.10% |
-
-All 48 fits converged and all 190 tests passed. The same folds select L2 and
-supply the scores. The original project's historical aggregates are already
-known. The early cohort is conditional on estimated pre-snapshot article
-availability, so it represents a subset of matches with early odds.
+Pooled log loss for M0/M1/M2 was 0.980928/0.981686/0.981282 early and
+0.979448/0.979540/0.979348 closing. All 48 fits converged and all 190 tests passed.
+The early cohort is conditional on estimated pre-snapshot article availability.
 
 ## Phase 4 complete — preliminary classical NLP
 
@@ -126,24 +106,42 @@ or substitute `closing`.
 
 ## Phase 06A complete — signal diagnostics
 
-- Run `.\.venv\Scripts\python.exe -m pvb.advanced.diagnostics` offline. See `results/advanced/diagnostics/`
-  for aggregates and the report. Its ignored `private/` folder holds forecasts and the 50-article review.
-- `MarketResidual.fit_soft` shares the audited hard-label objective. Eight gradient checks passed, five seeds recovered the planted signal and Phase 05 scores replayed.
-- Standalone MiniLM improved class-frequency loss by 0.00048 early and 0.00065 closing.
-  Explicit picks recovered 62–64% of market KL, versus 1.6–2.4% for text alone. Primary
-  MiniLM barely recovered pick direction. The full-article TF-IDF verdict control performed better.
-- Text gave no consistent gain over market calibration for closing-odds movement across
-  publication groups. Learning curves showed no monotonic text gain. Seven-day conditional
-  resolution for MiniLM plus picks was 0.000026 early and 0.000191 closing in log loss.
-- All audited articles had cues for each side. Manually check attribution before a team-aware comparison.
-  Legacy aliases use the whole corpus. Article-version integrity is unresolved. All 221 tests passed.
+- Run `pvb.advanced.diagnostics` offline. See `results/advanced/diagnostics/`. Eight gradient checks
+  passed for the shared residual objective, five seeds recovered planted signal and Phase 05 replayed.
+- MiniLM had weak pick recovery and no consistent gain on odds movement. Picks recovered 62–64%
+  of market KL and global text 1.6–2.4%. Legacy aliases learn from the whole corpus and are
+  excluded from advanced models. The ignored 50-article attribution review has no human labels.
+
+## Phase 06B complete — team-aware NLP and observed football history
+
+- Run `pvb.advanced.team_historical` with the private Phase 06A review and local MiniLM cache.
+  Reports in `results/advanced/team_historical/` retain 5,484 early and 6,979 closing validation fixtures.
+- `team_text` builds fixture-oriented, name-masked side documents. Side TF-IDF led pick recovery
+  at 52.33% early and 52.92% closing, and recovered 31.86% and 32.47% of market KL.
+- `historical_features.load_history` accepts local football-data files with matched-export fallback.
+  The as-of replay carries Elo and form across seasons and the two English divisions.
+- Residual `block_penalties` separate numerical, historical and text regularization. History and
+  team text gave no consistent incremental gain. All 528 fits and 239 tests passed.
+
+## Phase 07 complete — author reliability and nonlinear models
+
+- `author_features.author_features` replays each market and fold with strict result-release cutoffs,
+  shrinking rates by 20 previous population observations excluding the current author.
+- `pvb.advanced.nonlinear_experiments` reuses Phase 06B cohorts, the side cache and prior penalties.
+  CatBoost uses two fixed-iteration candidates and 32 training-fold SVD components plus two flags.
+  Install optional `requirements-nonlinear.txt` in the existing Python 3.11 environment.
+- Fixed exact validation-cohort checks and overlapping source kickoff validation. The matched
+  history reproduces 9,356 fixtures, eight short of a double round robin for the observed teams.
+- Author reliability worsened pooled linear loss in both markets. Every CatBoost comparison
+  trailed raw odds and selected alpha zero. All 114 candidate fits completed and 251 tests passed.
+- See `results/advanced/nonlinear/report.md` and `frozen_models.json`. Freeze raw odds, market
+  residual, picks residual and side-TF-IDF picks residual. Next verify original HTML, odds/result
+  timing and attribution before evaluating 2526 or 2627. Both remain unevaluated.
 
 ## Market timing limitations
 
-- The baseline's approximate early snapshot is 15:00 Europe/London on
-  Tuesday for Tuesday through Thursday fixtures and Friday for Friday
-  through Monday fixtures. Closing uses kickoff as the prediction cutoff
-  proxy. The actual odds capture times are unavailable.
-- UTC midnight values are treated as date-only, excluding five more same-day early articles.
-  Outcome availability is kickoff plus three hours, or the next UTC day plus three hours
-  when kickoff is date-only. Actual result release times are unavailable.
+- The approximate early snapshot is 15:00 Europe/London on Tuesday for Tuesday–Thursday
+  fixtures and Friday for Friday–Monday fixtures. Closing uses kickoff. Actual odds capture
+  times are unavailable.
+- UTC midnight denotes date-only. Outcome release is proxied by kickoff plus three hours,
+  or the next UTC day plus three hours for date-only kickoffs.

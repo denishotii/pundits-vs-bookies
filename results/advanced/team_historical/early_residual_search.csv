@@ -1,0 +1,129 @@
+model,scope,matches,loss,converged,iterations,message,seconds,penalties,selected
+market_only,2223,1868,0.9961583427155786,True,18,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.006882600002427353,"{""market"": 0.01}",False
+market_only,2324,1792,0.9680636828867145,True,18,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.010872500002733432,"{""market"": 0.01}",False
+market_only,2425,1824,0.9796489460332056,True,18,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.012786300001607742,"{""market"": 0.01}",False
+market_only,pooled,5484,0.9814867945824691,True,54,,0.030541400006768527,"{""market"": 0.01}",False
+market_only,2223,1868,0.9953498809137824,True,10,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.004152400000748457,"{""market"": 0.1}",False
+market_only,2324,1792,0.9681316708543869,True,12,CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL,0.007001199999649543,"{""market"": 0.1}",False
+market_only,2425,1824,0.9797958600991347,True,11,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.009421800001291558,"{""market"": 0.1}",False
+market_only,pooled,5484,0.9812824909808221,True,33,,0.02057540000168956,"{""market"": 0.1}",False
+market_only,2223,1868,0.9944270557805605,True,12,CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL,0.004428699998243246,"{""market"": 1.0}",True
+market_only,2324,1792,0.9683261084360956,True,9,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.006270400001085363,"{""market"": 1.0}",True
+market_only,2425,1824,0.9802157449683839,True,11,CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL,0.009060600001248531,"{""market"": 1.0}",True
+market_only,pooled,5484,0.9811713430594279,True,32,,0.01975970000057714,"{""market"": 1.0}",True
+market_only,2223,1868,0.9941806936928873,True,11,CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL,0.0049793999969551805,"{""market"": 10.0}",False
+market_only,2324,1792,0.9684288590633535,True,11,CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL,0.007708799999818439,"{""market"": 10.0}",False
+market_only,2425,1824,0.9805138221160741,True,10,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.0101570000006177,"{""market"": 10.0}",False
+market_only,pooled,5484,0.9812201427424438,True,32,,0.02284519999739132,"{""market"": 10.0}",False
+market_picks,2223,1868,0.9980421348024106,True,31,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.008798999999271473,"{""market_and_picks"": 0.01}",False
+market_picks,2324,1792,0.9688014367856272,True,29,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.014241599998058518,"{""market_and_picks"": 0.01}",False
+market_picks,2425,1824,0.9796589345749096,True,28,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.019749400002183393,"{""market_and_picks"": 0.01}",False
+market_picks,pooled,5484,0.9823728627270937,True,88,,0.042789999999513384,"{""market_and_picks"": 0.01}",False
+market_picks,2223,1868,0.996517161196519,True,14,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.004737900002510287,"{""market_and_picks"": 0.1}",False
+market_picks,2324,1792,0.9685954482386344,True,14,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.007694600000831997,"{""market_and_picks"": 0.1}",False
+market_picks,2425,1824,0.9797614990333848,True,14,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.010727499997301493,"{""market_and_picks"": 0.1}",False
+market_picks,pooled,5484,0.9818202178329002,True,42,,0.023160000000643777,"{""market_and_picks"": 0.1}",False
+market_picks,2223,1868,0.9946214048737082,True,11,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.00482469999769819,"{""market_and_picks"": 1.0}",False
+market_picks,2324,1792,0.9684467267034584,True,12,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.007191400000010617,"{""market_and_picks"": 1.0}",False
+market_picks,2425,1824,0.9801143278121569,True,12,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.010855499996978324,"{""market_and_picks"": 1.0}",False
+market_picks,pooled,5484,0.9812432262009588,True,35,,0.02287159999468713,"{""market_and_picks"": 1.0}",False
+market_picks,2223,1868,0.9941949575009835,True,14,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.0057793999985733535,"{""market_and_picks"": 10.0}",True
+market_picks,2324,1792,0.9684460935279573,True,13,CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL,0.0101278000001912,"{""market_and_picks"": 10.0}",True
+market_picks,2425,1824,0.9804867972408473,True,12,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.01217009999891161,"{""market_and_picks"": 10.0}",True
+market_picks,pooled,5484,0.9812216444896502,True,39,,0.028077299997676164,"{""market_and_picks"": 10.0}",True
+market_picks_global_minilm,2223,1868,1.001408917184163,True,473,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.5394876999998814,"{""global_minilm"": 0.001, ""market_and_picks"": 10.0}",False
+market_picks_global_minilm,2324,1792,0.9718145883236626,True,461,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.9778153999977803,"{""global_minilm"": 0.001, ""market_and_picks"": 10.0}",False
+market_picks_global_minilm,2425,1824,0.9832316453334634,True,467,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,1.478769099998317,"{""global_minilm"": 0.001, ""market_and_picks"": 10.0}",False
+market_picks_global_minilm,pooled,5484,0.9856925821780191,True,1401,,2.9960721999959787,"{""global_minilm"": 0.001, ""market_and_picks"": 10.0}",False
+market_picks_global_minilm,2223,1868,0.9946745949854012,True,149,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.18031490000066697,"{""global_minilm"": 0.01, ""market_and_picks"": 10.0}",False
+market_picks_global_minilm,2324,1792,0.967992869126776,True,141,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.3211609000027238,"{""global_minilm"": 0.01, ""market_and_picks"": 10.0}",False
+market_picks_global_minilm,2425,1824,0.9813408360153488,True,142,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.4921662999986438,"{""global_minilm"": 0.01, ""market_and_picks"": 10.0}",False
+market_picks_global_minilm,pooled,5484,0.9815209791757673,True,432,,0.9936421000020346,"{""global_minilm"": 0.01, ""market_and_picks"": 10.0}",False
+market_picks_global_minilm,2223,1868,0.9942476413680869,True,45,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.06437019999793847,"{""global_minilm"": 0.1, ""market_and_picks"": 10.0}",False
+market_picks_global_minilm,2324,1792,0.9683085893228635,True,45,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.11920939999981783,"{""global_minilm"": 0.1, ""market_and_picks"": 10.0}",False
+market_picks_global_minilm,2425,1824,0.9806452182676094,True,41,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.15526760000284412,"{""global_minilm"": 0.1, ""market_and_picks"": 10.0}",False
+market_picks_global_minilm,pooled,5484,0.9812473494278404,True,131,,0.3388472000006004,"{""global_minilm"": 0.1, ""market_and_picks"": 10.0}",False
+market_picks_global_minilm,2223,1868,0.9941993693689851,True,22,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.02955600000132108,"{""global_minilm"": 1.0, ""market_and_picks"": 10.0}",True
+market_picks_global_minilm,2324,1792,0.9684297620042907,True,21,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.054131900000356836,"{""global_minilm"": 1.0, ""market_and_picks"": 10.0}",True
+market_picks_global_minilm,2425,1824,0.9805040824020372,True,21,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.0820400000011432,"{""global_minilm"": 1.0, ""market_and_picks"": 10.0}",True
+market_picks_global_minilm,pooled,5484,0.9812235597728427,True,64,,0.16572790000282112,"{""global_minilm"": 1.0, ""market_and_picks"": 10.0}",True
+market_picks_side_tfidf,2223,1868,1.0137019115536199,True,300,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,1.7375956999967457,"{""market_and_picks"": 10.0, ""side_tfidf"": 0.001}",False
+market_picks_side_tfidf,2324,1792,0.9770369197998072,True,330,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,3.2800434999990102,"{""market_and_picks"": 10.0, ""side_tfidf"": 0.001}",False
+market_picks_side_tfidf,2425,1824,0.9891480025210192,True,347,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,4.839853299999959,"{""market_and_picks"": 10.0, ""side_tfidf"": 0.001}",False
+market_picks_side_tfidf,pooled,5484,0.993554210003967,True,977,,9.857492499995715,"{""market_and_picks"": 10.0, ""side_tfidf"": 0.001}",False
+market_picks_side_tfidf,2223,1868,0.9951660781147939,True,88,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.5321249999979045,"{""market_and_picks"": 10.0, ""side_tfidf"": 0.01}",False
+market_picks_side_tfidf,2324,1792,0.9682286088036325,True,54,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.5689137000008486,"{""market_and_picks"": 10.0, ""side_tfidf"": 0.01}",False
+market_picks_side_tfidf,2425,1824,0.9809153589614289,True,65,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.9894186999990779,"{""market_and_picks"": 10.0, ""side_tfidf"": 0.01}",False
+market_picks_side_tfidf,pooled,5484,0.981623908760064,True,207,,2.090457399997831,"{""market_and_picks"": 10.0, ""side_tfidf"": 0.01}",False
+market_picks_side_tfidf,2223,1868,0.9942606540291311,True,24,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.1734013999994204,"{""market_and_picks"": 10.0, ""side_tfidf"": 0.1}",False
+market_picks_side_tfidf,2324,1792,0.9683998490145221,True,34,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.4182618000013463,"{""market_and_picks"": 10.0, ""side_tfidf"": 0.1}",False
+market_picks_side_tfidf,2425,1824,0.9805220289512798,True,25,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.3840020999996341,"{""market_and_picks"": 10.0, ""side_tfidf"": 0.1}",False
+market_picks_side_tfidf,pooled,5484,0.9812406294616293,True,83,,0.9756653000004007,"{""market_and_picks"": 10.0, ""side_tfidf"": 0.1}",False
+market_picks_side_tfidf,2223,1868,0.994201159170762,True,19,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.14102859999911743,"{""market_and_picks"": 10.0, ""side_tfidf"": 1.0}",True
+market_picks_side_tfidf,2324,1792,0.9684411922139454,True,19,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.22498220000125002,"{""market_and_picks"": 10.0, ""side_tfidf"": 1.0}",True
+market_picks_side_tfidf,2425,1824,0.9804902442041766,True,21,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.34194059999936144,"{""market_and_picks"": 10.0, ""side_tfidf"": 1.0}",True
+market_picks_side_tfidf,pooled,5484,0.981223301824725,True,59,,0.7079513999997289,"{""market_and_picks"": 10.0, ""side_tfidf"": 1.0}",True
+market_picks_team_minilm,2223,1868,1.0284964936464471,True,458,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.9495859000016935,"{""market_and_picks"": 10.0, ""team_minilm"": 0.001}",False
+market_picks_team_minilm,2324,1792,0.9781609999990568,True,436,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,1.9251820999998017,"{""market_and_picks"": 10.0, ""team_minilm"": 0.001}",False
+market_picks_team_minilm,2425,1824,0.9943182165424433,True,428,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,3.200745000001916,"{""market_and_picks"": 10.0, ""team_minilm"": 0.001}",False
+market_picks_team_minilm,pooled,5484,1.0006805961165737,True,1322,,6.075513000003411,"{""market_and_picks"": 10.0, ""team_minilm"": 0.001}",False
+market_picks_team_minilm,2223,1868,0.9972469296123979,True,157,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.3944216000018059,"{""market_and_picks"": 10.0, ""team_minilm"": 0.01}",False
+market_picks_team_minilm,2324,1792,0.9674847510478557,True,147,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.6772243999985221,"{""market_and_picks"": 10.0, ""team_minilm"": 0.01}",False
+market_picks_team_minilm,2425,1824,0.9824842931069417,True,114,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.8224005999982182,"{""market_and_picks"": 10.0, ""team_minilm"": 0.01}",False
+market_picks_team_minilm,pooled,5484,0.9826114677280777,True,418,,1.8940465999985463,"{""market_and_picks"": 10.0, ""team_minilm"": 0.01}",False
+market_picks_team_minilm,2223,1868,0.9943435560614068,True,39,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.09398519999740529,"{""market_and_picks"": 10.0, ""team_minilm"": 0.1}",False
+market_picks_team_minilm,2324,1792,0.9681822884892087,True,44,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.1954485999995086,"{""market_and_picks"": 10.0, ""team_minilm"": 0.1}",False
+market_picks_team_minilm,2425,1824,0.980706532936518,True,45,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.3457635999984632,"{""market_and_picks"": 10.0, ""team_minilm"": 0.1}",False
+market_picks_team_minilm,pooled,5484,0.9812591429196899,True,128,,0.635197399995377,"{""market_and_picks"": 10.0, ""team_minilm"": 0.1}",False
+market_picks_team_minilm,2223,1868,0.9942064505561221,True,21,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.05859010000131093,"{""market_and_picks"": 10.0, ""team_minilm"": 1.0}",True
+market_picks_team_minilm,2324,1792,0.9684162797927254,True,21,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.10916549999819836,"{""market_and_picks"": 10.0, ""team_minilm"": 1.0}",True
+market_picks_team_minilm,2425,1824,0.9805089130422161,True,21,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.16750730000057956,"{""market_and_picks"": 10.0, ""team_minilm"": 1.0}",True
+market_picks_team_minilm,pooled,5484,0.9812231729424512,True,63,,0.33526290000008885,"{""market_and_picks"": 10.0, ""team_minilm"": 1.0}",True
+market_history,2223,1868,1.0123556903767565,True,79,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.030637399999250192,"{""history"": 0.01, ""market"": 1.0}",False
+market_history,2324,1792,0.9867536270323602,True,81,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.054921399998420384,"{""history"": 0.01, ""market"": 1.0}",False
+market_history,2425,1824,0.9853154961893161,True,74,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.07121729999926174,"{""history"": 0.01, ""market"": 1.0}",False
+market_history,pooled,5484,0.9949960602325097,True,234,,0.15677609999693232,"{""history"": 0.01, ""market"": 1.0}",False
+market_history,2223,1868,1.0006537317039077,True,30,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.012853700001869584,"{""history"": 0.1, ""market"": 1.0}",False
+market_history,2324,1792,0.9795831307763267,True,27,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.021227500001259614,"{""history"": 0.1, ""market"": 1.0}",False
+market_history,2425,1824,0.983321353464116,True,27,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.027595799998380244,"{""history"": 0.1, ""market"": 1.0}",False
+market_history,pooled,5484,0.9880036998345413,True,84,,0.06167700000150944,"{""history"": 0.1, ""market"": 1.0}",False
+market_history,2223,1868,0.9931807102492878,True,16,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.0068929000008211005,"{""history"": 1.0, ""market"": 1.0}",False
+market_history,2324,1792,0.9724311359315194,True,16,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.012977200000023004,"{""history"": 1.0, ""market"": 1.0}",False
+market_history,2425,1824,0.9814247175085231,True,14,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.016076899999461602,"{""history"": 1.0, ""market"": 1.0}",False
+market_history,pooled,5484,0.9824903076350289,True,46,,0.03594700000030571,"{""history"": 1.0, ""market"": 1.0}",False
+market_history,2223,1868,0.9936507522400965,True,27,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.011196900002687471,"{""history"": 10.0, ""market"": 1.0}",True
+market_history,2324,1792,0.9687973491467512,True,24,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.019857799998135306,"{""history"": 10.0, ""market"": 1.0}",True
+market_history,2425,1824,0.980413464982502,True,26,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.02809720000004745,"{""history"": 10.0, ""market"": 1.0}",True
+market_history,pooled,5484,0.981126662104953,True,77,,0.05915190000087023,"{""history"": 10.0, ""market"": 1.0}",True
+market_history_picks,2223,1868,1.0118065295565761,True,163,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.059365100001741666,"{""history"": 0.01, ""market_and_picks"": 10.0}",False
+market_history_picks,2324,1792,0.9869409115415265,True,155,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.10715189999973518,"{""history"": 0.01, ""market_and_picks"": 10.0}",False
+market_history_picks,2425,1824,0.9854748414953765,True,154,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.1494769000019005,"{""history"": 0.01, ""market_and_picks"": 10.0}",False
+market_history_picks,pooled,5484,0.9949231986837466,True,472,,0.31599390000337735,"{""history"": 0.01, ""market_and_picks"": 10.0}",False
+market_history_picks,2223,1868,1.0002176238430827,True,57,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.023218499998620246,"{""history"": 0.1, ""market_and_picks"": 10.0}",False
+market_history_picks,2324,1792,0.9797683957627285,True,56,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.041572900001483504,"{""history"": 0.1, ""market_and_picks"": 10.0}",False
+market_history_picks,2425,1824,0.9834876769217308,True,55,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.053227300002617994,"{""history"": 0.1, ""market_and_picks"": 10.0}",False
+market_history_picks,pooled,5484,0.9879710082514451,True,168,,0.11801870000272174,"{""history"": 0.1, ""market_and_picks"": 10.0}",False
+market_history_picks,2223,1868,0.992950726615392,True,27,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.011943100002099527,"{""history"": 1.0, ""market_and_picks"": 10.0}",False
+market_history_picks,2324,1792,0.972603632012264,True,28,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.021172299999307143,"{""history"": 1.0, ""market_and_picks"": 10.0}",False
+market_history_picks,2425,1824,0.9816263632627337,True,26,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.0284825999988243,"{""history"": 1.0, ""market_and_picks"": 10.0}",False
+market_history_picks,pooled,5484,0.9825354034417861,True,81,,0.06159800000023097,"{""history"": 1.0, ""market_and_picks"": 10.0}",False
+market_history_picks,2223,1868,0.9934191364233912,True,16,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.007821100000001024,"{""history"": 10.0, ""market_and_picks"": 10.0}",True
+market_history_picks,2324,1792,0.968929296316875,True,15,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.013512000001355773,"{""history"": 10.0, ""market_and_picks"": 10.0}",True
+market_history_picks,2425,1824,0.9806691330586567,True,16,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.01817490000030375,"{""history"": 10.0, ""market_and_picks"": 10.0}",True
+market_history_picks,pooled,5484,0.981175919864647,True,47,,0.03950800000166055,"{""history"": 10.0, ""market_and_picks"": 10.0}",True
+market_history_picks_team_text,2223,1868,1.0131872339324655,True,338,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,2.0083415000008245,"{""history"": 10.0, ""market_and_picks"": 10.0, ""side_tfidf"": 0.001}",False
+market_history_picks_team_text,2324,1792,0.9774959207743639,True,366,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,3.788484000000608,"{""history"": 10.0, ""market_and_picks"": 10.0, ""side_tfidf"": 0.001}",False
+market_history_picks_team_text,2425,1824,0.9892937118639523,True,336,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,4.841692400001193,"{""history"": 10.0, ""market_and_picks"": 10.0, ""side_tfidf"": 0.001}",False
+market_history_picks_team_text,pooled,5484,0.993577347456848,True,1040,,10.638517900002626,"{""history"": 10.0, ""market_and_picks"": 10.0, ""side_tfidf"": 0.001}",False
+market_history_picks_team_text,2223,1868,0.9944095268338078,True,96,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.5630560999998124,"{""history"": 10.0, ""market_and_picks"": 10.0, ""side_tfidf"": 0.01}",False
+market_history_picks_team_text,2324,1792,0.9687124515454018,True,75,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.7771151999986614,"{""history"": 10.0, ""market_and_picks"": 10.0, ""side_tfidf"": 0.01}",False
+market_history_picks_team_text,2425,1824,0.9810932562888611,True,74,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,1.116599100001622,"{""history"": 10.0, ""market_and_picks"": 10.0, ""side_tfidf"": 0.01}",False
+market_history_picks_team_text,pooled,5484,0.9815834808106849,True,245,,2.456770400000096,"{""history"": 10.0, ""market_and_picks"": 10.0, ""side_tfidf"": 0.01}",False
+market_history_picks_team_text,2223,1868,0.993486508446592,True,31,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.19327469999916502,"{""history"": 10.0, ""market_and_picks"": 10.0, ""side_tfidf"": 0.1}",False
+market_history_picks_team_text,2324,1792,0.9688832529429343,True,37,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.4469189000010374,"{""history"": 10.0, ""market_and_picks"": 10.0, ""side_tfidf"": 0.1}",False
+market_history_picks_team_text,2425,1824,0.9807039453107259,True,29,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.4624660999979824,"{""history"": 10.0, ""market_and_picks"": 10.0, ""side_tfidf"": 0.1}",False
+market_history_picks_team_text,pooled,5484,0.9811954017685515,True,97,,1.1026596999981848,"{""history"": 10.0, ""market_and_picks"": 10.0, ""side_tfidf"": 0.1}",False
+market_history_picks_team_text,2223,1868,0.9934254821032574,True,21,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.13983350000125938,"{""history"": 10.0, ""market_and_picks"": 10.0, ""side_tfidf"": 1.0}",True
+market_history_picks_team_text,2324,1792,0.9689244112340158,True,22,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.2373420999974769,"{""history"": 10.0, ""market_and_picks"": 10.0, ""side_tfidf"": 1.0}",True
+market_history_picks_team_text,2425,1824,0.980672528286588,True,21,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH,0.3309913000011875,"{""history"": 10.0, ""market_and_picks"": 10.0, ""side_tfidf"": 1.0}",True
+market_history_picks_team_text,pooled,5484,0.9811776143499231,True,64,,0.7081668999999238,"{""history"": 10.0, ""market_and_picks"": 10.0, ""side_tfidf"": 1.0}",True

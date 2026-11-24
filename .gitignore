@@ -64,6 +64,34 @@ data/processed/*
 !/results/advanced/diagnostics/*_learning_curves.csv
 !/results/advanced/diagnostics/*_paired.csv
 !/results/advanced/diagnostics/*_bootstrap.csv
+!/results/advanced/team_historical/
+!/results/advanced/team_historical/metadata.json
+!/results/advanced/team_historical/report.md
+!/results/advanced/team_historical/historical_sources.csv
+!/results/advanced/team_historical/*_coverage.csv
+!/results/advanced/team_historical/*_dimensions.csv
+!/results/advanced/team_historical/*_folds.csv
+!/results/advanced/team_historical/*_metrics.csv
+!/results/advanced/team_historical/*_classwise.csv
+!/results/advanced/team_historical/*_confusion.csv
+!/results/advanced/team_historical/*_verdict_control.csv
+!/results/advanced/team_historical/*_search.csv
+!/results/advanced/team_historical/*_paired.csv
+!/results/advanced/team_historical/*_bootstrap.csv
+!/results/advanced/team_historical/*_block_corrections.csv
+!/results/advanced/nonlinear/
+!/results/advanced/nonlinear/report.md
+!/results/advanced/nonlinear/frozen_models.json
+!/results/advanced/nonlinear/metadata.json
+!/results/advanced/nonlinear/historical_sources.csv
+!/results/advanced/nonlinear/*_folds.csv
+!/results/advanced/nonlinear/*_coverage.csv
+!/results/advanced/nonlinear/*_dimensions.csv
+!/results/advanced/nonlinear/*_metrics.csv
+!/results/advanced/nonlinear/*_calibration.csv
+!/results/advanced/nonlinear/*_paired.csv
+!/results/advanced/nonlinear/*_bootstrap.csv
+!/results/advanced/nonlinear/*_search.csv
 
 # Teammates' working notes (e.g. the Kalshi PDFs), shared outside the repo
 docs/docs_from_team/

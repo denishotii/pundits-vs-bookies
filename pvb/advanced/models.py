@@ -123,6 +123,7 @@ class MarketResidual(BaseEstimator):
     Set standardize=False to pass preprocessed inputs through unchanged.
     With text_l2, pass numerical_width to fit and put the text columns after
     the numerical columns. l2 then applies only to the numerical slopes.
+    Alternatively, pass (width, l2) pairs as block_penalties for contiguous blocks.
     """
 
     def __init__(self, l2: float, *, standardize: bool = True, text_l2: float | None = None):
@@ -137,22 +138,33 @@ class MarketResidual(BaseEstimator):
             raise ValueError("Correction features and market probabilities must have the same row count")
         return matrix
 
-    def fit(self, market: np.ndarray, y: np.ndarray, features=None, *, numerical_width: int | None = None):
+    def fit(self, market: np.ndarray, y: np.ndarray, features=None, *,
+            numerical_width: int | None = None, block_penalties=None):
         offset = np.log(validate_probabilities(market, positive=True))
         target = _training_targets(y, len(offset))
-        return self._fit_offset(offset, target, features, numerical_width)
+        return self._fit_offset(offset, target, features, numerical_width, block_penalties)
 
-    def fit_soft(self, market: np.ndarray, target: np.ndarray, features=None, *, numerical_width: int | None = None):
+    def fit_soft(self, market: np.ndarray, target: np.ndarray, features=None, *,
+                 numerical_width: int | None = None, block_penalties=None):
         """Fit the same correction against H/D/A probability targets."""
         offset = np.log(validate_probabilities(market, positive=True))
         target = validate_probabilities(target)
         if target.shape != offset.shape or np.any(target.sum(axis=0) == 0):
             raise ValueError("Soft targets must align with the market and give each class positive total mass")
-        return self._fit_offset(offset, target, features, numerical_width)
+        return self._fit_offset(offset, target, features, numerical_width, block_penalties)
 
-    def _fit_offset(self, offset, target, features, numerical_width):
+    def _fit_offset(self, offset, target, features, numerical_width, block_penalties):
         matrix = self._features(offset, features)
         slope_penalties = self.l2
+        if block_penalties is not None:
+            if features is None or numerical_width is not None or self.text_l2 is not None:
+                raise ValueError("Explicit block penalties require features and their own block widths")
+            blocks = tuple(block_penalties)
+            if (any(not isinstance(width, (int, np.integer)) or isinstance(width, bool) or width <= 0
+                    for width, _ in blocks) or sum(width for width, _ in blocks) != matrix.shape[1]):
+                raise ValueError("Block widths must be positive integers covering all feature columns")
+            slope_penalties = np.repeat([_validate_l2(l2) for _, l2 in blocks],
+                                        [width for width, _ in blocks])[:, None]
         if self.text_l2 is not None:
             if (features is None or not isinstance(numerical_width, (int, np.integer))
                     or isinstance(numerical_width, bool) or not 0 < numerical_width < matrix.shape[1]):

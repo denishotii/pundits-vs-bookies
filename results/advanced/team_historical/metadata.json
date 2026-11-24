@@ -1,0 +1,401 @@
+{
+  "grids": {
+    "diagnostics": [
+      0.0001,
+      0.001,
+      0.01,
+      0.1
+    ],
+    "numerical": [
+      0.01,
+      0.1,
+      1.0,
+      10.0
+    ],
+    "history": [
+      0.01,
+      0.1,
+      1.0,
+      10.0
+    ],
+    "text": [
+      0.001,
+      0.01,
+      0.1,
+      1.0
+    ]
+  },
+  "bootstrap": {
+    "replicates": 3000,
+    "seed": 60108,
+    "days": [
+      7,
+      14
+    ]
+  },
+  "development_only": true,
+  "review": {
+    "sample_rows": 192,
+    "proposals": {
+      "neither": 59,
+      "home": 48,
+      "away": 48,
+      "both": 37
+    },
+    "recognized_human_labels": 0,
+    "unrecognized_nonempty_labels": 0,
+    "proposal_agreement_on_labeled_subset": null
+  },
+  "attribution": {
+    "schema": 1,
+    "names": "Fixture names, curated spellings, and verified fixture-oriented article sides",
+    "mask": "TEAM",
+    "policy": "Case-sensitive names, longest span, no standalone shared tokens, no coreference or both-team text",
+    "roles": {
+      "a": [
+        "the hosts",
+        "the home side",
+        "the home team"
+      ],
+      "b": [
+        "the visitors",
+        "the away side",
+        "the away team",
+        "the guests",
+        "the visiting side"
+      ]
+    },
+    "aliases": {
+      "Ath Bilbao": "Athletic Bilbao",
+      "Ath Madrid": "Atletico Madrid",
+      "Ein Frankfurt": "Eintracht Frankfurt",
+      "Espanol": "Espanyol",
+      "Hamburg": "Hamburger SV",
+      "Inter": "Inter Milan",
+      "M'gladbach": "Monchengladbach",
+      "Man City": "Manchester City",
+      "Man United": "Manchester United",
+      "Milan": "AC Milan",
+      "Nott'm Forest": "Nottingham Forest",
+      "Paris SG": "Paris Saint-Germain",
+      "Peterboro": "Peterborough",
+      "QPR": "Queens Park Rangers",
+      "Sheffield Weds": "Sheffield Wednesday",
+      "St Etienne": "Saint-Etienne",
+      "West Brom": "West Bromwich Albion",
+      "Wolves": "Wolverhampton"
+    },
+    "sentence_break": "(?<=[.!?])(?<!\\bNo\\.)(?<!\\bSt\\.)(?<!\\bvs\\.)(?<!\\bMr\\.)(?<!\\bDr\\.)\\s+(?=[\\\"'\u2018\u201cA-Z0-9])|\\n+",
+    "sections": [
+      "text_preview",
+      "text_team_news",
+      "text_head_to_head"
+    ]
+  },
+  "attribution_cache_hit": true,
+  "attribution_input_sha256": "59b8b9690b6aa604775d2fd844bae3612dc1599eca8379072bf3fdf9889946d5",
+  "encoder": {
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "c9745ed1d9f207416be6d2e6f8de32d1f16199bf",
+    "dimensions": 384,
+    "tokenizer": {
+      "class": "BertTokenizerFast",
+      "is_fast": true,
+      "model_max_length": 256,
+      "max_input_tokens": 256,
+      "special_tokens_per_chunk": 2,
+      "special_token_ids": [
+        100,
+        102,
+        0,
+        101,
+        103
+      ],
+      "padding_side": "right",
+      "vocab_size": 30522,
+      "do_lower_case": true
+    },
+    "versions": {
+      "torch": "2.8.0+cu128",
+      "sentence-transformers": "5.1.2",
+      "transformers": "4.57.6",
+      "tokenizers": "0.22.2",
+      "huggingface-hub": "0.36.2",
+      "safetensors": "0.8.0"
+    }
+  },
+  "encoder_runtime": {
+    "device": "cuda",
+    "cuda_version": "12.8",
+    "cuda_device": "NVIDIA GeForce RTX 4090 Laptop GPU",
+    "inference_batch_size": 64,
+    "encoder_load_seconds": 6.160885200002667
+  },
+  "tfidf": {
+    "analyzer": "word",
+    "ngram_range": [
+      1,
+      2
+    ],
+    "token_pattern": "(?u)\\b\\w+(?:['\u2019]\\w+)*\\b",
+    "lowercase": true,
+    "sublinear_tf": true,
+    "norm": "l2",
+    "min_df": 5,
+    "max_df": 0.95,
+    "max_features": 10000,
+    "use_idf": true,
+    "smooth_idf": true
+  },
+  "verdict_control": {
+    "source": "previews.csv pick_text",
+    "parsed_class_probability": 0.98
+  },
+  "embeddings": {
+    "global": {
+      "articles": 9355,
+      "coverage": 1.0,
+      "empty_articles": 0,
+      "empty_sections": {
+        "text_preview": 1,
+        "text_team_news": 4,
+        "text_head_to_head": 9354
+      },
+      "dimensions": 384,
+      "total_chunks": 40621,
+      "new_chunks": 0,
+      "mean_chunks": 4.342169962586852,
+      "p95_chunks": 5.0,
+      "max_chunks": 9,
+      "cache_hits": 9355,
+      "cache_misses": 0,
+      "article_cache_key_fingerprint": "0e001fec2611055b6e5e2e23002c8b57b26f04145c8017472633cf234d2727d0",
+      "generation_devices": {
+        "cuda": 9355
+      },
+      "inference_and_pooling_seconds": 0.0,
+      "total_seconds": 1.6288988999986032
+    },
+    "team": {
+      "articles": 18710,
+      "coverage": 1.0,
+      "empty_articles": 0,
+      "empty_sections": {
+        "text_preview": 1286,
+        "text_team_news": 8,
+        "text_head_to_head": 18709
+      },
+      "dimensions": 384,
+      "total_chunks": 36831,
+      "new_chunks": 0,
+      "mean_chunks": 1.9685195082843399,
+      "p95_chunks": 2.0,
+      "max_chunks": 5,
+      "cache_hits": 18710,
+      "cache_misses": 0,
+      "article_cache_key_fingerprint": "e5aa01946ae169465edb68bc9a7ee29116668715c7e0e62f9915185d15647b3a",
+      "generation_devices": {
+        "cuda": 18710
+      },
+      "inference_and_pooling_seconds": 0.0,
+      "total_seconds": 2.6453886999988754
+    }
+  },
+  "historical_source_counts": {
+    "matched_export": 9356
+  },
+  "historical_input_sha256": "048302a098c75bea07fe73b8aeb9dbeacaeb37a9ad0f709ba606d3be889aeb95",
+  "historical_features": [
+    "home_elo",
+    "home_observed_matches",
+    "home_observed_venue_matches",
+    "home_venue_points_per_match",
+    "home_days_since_known_match",
+    "home_points_last_5",
+    "home_goals_for_last_5",
+    "home_goals_against_last_5",
+    "home_goal_difference_last_5",
+    "home_points_last_10",
+    "home_goals_for_last_10",
+    "home_goals_against_last_10",
+    "home_goal_difference_last_10",
+    "away_elo",
+    "away_observed_matches",
+    "away_observed_venue_matches",
+    "away_venue_points_per_match",
+    "away_days_since_known_match",
+    "away_points_last_5",
+    "away_goals_for_last_5",
+    "away_goals_against_last_5",
+    "away_goal_difference_last_5",
+    "away_points_last_10",
+    "away_goals_for_last_10",
+    "away_goals_against_last_10",
+    "away_goal_difference_last_10",
+    "elo_difference"
+  ],
+  "historical_missing_flags": [
+    "home_venue_points_per_match",
+    "home_days_since_known_match",
+    "home_points_last_5",
+    "home_goals_for_last_5",
+    "home_goals_against_last_5",
+    "home_goal_difference_last_5",
+    "home_points_last_10",
+    "home_goals_for_last_10",
+    "home_goals_against_last_10",
+    "home_goal_difference_last_10",
+    "away_venue_points_per_match",
+    "away_days_since_known_match",
+    "away_points_last_5",
+    "away_goals_for_last_5",
+    "away_goals_against_last_5",
+    "away_goal_difference_last_5",
+    "away_points_last_10",
+    "away_goals_for_last_10",
+    "away_goals_against_last_10",
+    "away_goal_difference_last_10"
+  ],
+  "elo": {
+    "initial": 1500.0,
+    "home_advantage": 60.0,
+    "k": 20.0,
+    "scale": 400.0
+  },
+  "market": {
+    "early": {
+      "eligibility_counts": {
+        "input_rows": 9356,
+        "eligible_rows": 7364,
+        "excluded_rows": 1992,
+        "missing_article": 0,
+        "wrong_article_sport": 0,
+        "missing_article_body": 0,
+        "invalid_season": 0,
+        "missing_fixture_metadata": 0,
+        "invalid_result": 0,
+        "missing_pick": 1,
+        "invalid_pick": 0,
+        "invalid_pick_score": 0,
+        "missing_odds": 1,
+        "invalid_odds": 0,
+        "invalid_kickoff": 0,
+        "invalid_match_publication": 0,
+        "invalid_article_publication": 0,
+        "publication_mismatch": 0,
+        "early_snapshot_not_before_kickoff": 56,
+        "article_not_before_cutoff": 1935
+      },
+      "matches_removed_for_features": 0,
+      "validation_matches": 5484,
+      "validation_ids_sha256": "18f37bc50497646e8da6ba340bb91f9c24402888c49f421591a298f15d470210",
+      "development_inputs_sha256": "13465ee4e5f9e644c5541a315c864a1d7e93a9a893259d0bb5ff21b55893a26b",
+      "matches_phase06a_development_fingerprint": true,
+      "fold_preprocessing_seconds": 18.305934899999556,
+      "diagnostic_seconds": 93.02929419999782,
+      "selected_penalties": {
+        "market_only": {
+          "market": 1.0
+        },
+        "market_picks": {
+          "market_and_picks": 10.0
+        },
+        "market_picks_global_minilm": {
+          "market_and_picks": 10.0,
+          "global_minilm": 1.0
+        },
+        "market_picks_side_tfidf": {
+          "market_and_picks": 10.0,
+          "side_tfidf": 1.0
+        },
+        "market_picks_team_minilm": {
+          "market_and_picks": 10.0,
+          "team_minilm": 1.0
+        },
+        "market_history": {
+          "market": 1.0,
+          "history": 10.0
+        },
+        "market_history_picks": {
+          "market_and_picks": 10.0,
+          "history": 10.0
+        },
+        "market_history_picks_team_text": {
+          "market_and_picks": 10.0,
+          "history": 10.0,
+          "side_tfidf": 1.0
+        }
+      },
+      "residual_seconds": 43.612929599999916
+    },
+    "closing": {
+      "eligibility_counts": {
+        "input_rows": 9356,
+        "eligible_rows": 9355,
+        "excluded_rows": 1,
+        "missing_article": 0,
+        "wrong_article_sport": 0,
+        "missing_article_body": 0,
+        "invalid_season": 0,
+        "missing_fixture_metadata": 0,
+        "invalid_result": 0,
+        "missing_pick": 1,
+        "invalid_pick": 0,
+        "invalid_pick_score": 0,
+        "missing_odds": 0,
+        "invalid_odds": 0,
+        "invalid_kickoff": 0,
+        "invalid_match_publication": 0,
+        "invalid_article_publication": 0,
+        "publication_mismatch": 0,
+        "early_snapshot_not_before_kickoff": 0,
+        "article_not_before_cutoff": 0
+      },
+      "matches_removed_for_features": 0,
+      "validation_matches": 6979,
+      "validation_ids_sha256": "ad07c3e7da2bba1dfe72ee0bb1d5c3f22e6c284d0ae46dcb425b6a1faf2bc7a5",
+      "development_inputs_sha256": "25b614ef2aef427d9af9e0e3be5c3b61930317a10785205e10541ccc724868d8",
+      "matches_phase06a_development_fingerprint": true,
+      "fold_preprocessing_seconds": 22.794919799998752,
+      "diagnostic_seconds": 97.87460250000004,
+      "selected_penalties": {
+        "market_only": {
+          "market": 0.1
+        },
+        "market_picks": {
+          "market_and_picks": 1.0
+        },
+        "market_picks_global_minilm": {
+          "market_and_picks": 1.0,
+          "global_minilm": 0.1
+        },
+        "market_picks_side_tfidf": {
+          "market_and_picks": 1.0,
+          "side_tfidf": 1.0
+        },
+        "market_picks_team_minilm": {
+          "market_and_picks": 1.0,
+          "team_minilm": 1.0
+        },
+        "market_history": {
+          "market": 0.1,
+          "history": 10.0
+        },
+        "market_history_picks": {
+          "market_and_picks": 1.0,
+          "history": 10.0
+        },
+        "market_history_picks_team_text": {
+          "market_and_picks": 1.0,
+          "history": 10.0,
+          "side_tfidf": 1.0
+        }
+      },
+      "residual_seconds": 41.19999580000149
+    }
+  },
+  "preparation_seconds": 14.367341699999088,
+  "selected_team_representation": "side_tfidf",
+  "team_selection": "Lowest pooled closing-cohort expert-pick recovery log loss",
+  "total_seconds": 331.18921129999944
+}

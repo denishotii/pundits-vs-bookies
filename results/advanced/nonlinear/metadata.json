@@ -1,0 +1,421 @@
+{
+  "development_seasons": [
+    "2122",
+    "2223",
+    "2324",
+    "2425"
+  ],
+  "holdout_seasons_excluded": [
+    "2526",
+    "2627"
+  ],
+  "class_order": [
+    "home",
+    "draw",
+    "away"
+  ],
+  "author_grid": [
+    0.1,
+    1.0,
+    10.0
+  ],
+  "author_prior_strength": 20.0,
+  "author_features": [
+    "author_previous_predictions",
+    "author_accuracy",
+    "author_pick_frequency_home",
+    "author_pick_frequency_draw",
+    "author_pick_frequency_away",
+    "author_accuracy_agree",
+    "author_accuracy_disagree",
+    "author_excess_accuracy",
+    "author_missing_byline",
+    "author_missing_history",
+    "author_missing_agree_history",
+    "author_missing_disagree_history"
+  ],
+  "history_features": [
+    "home_elo",
+    "home_observed_matches",
+    "home_observed_venue_matches",
+    "home_venue_points_per_match",
+    "home_days_since_known_match",
+    "home_points_last_5",
+    "home_goals_for_last_5",
+    "home_goals_against_last_5",
+    "home_goal_difference_last_5",
+    "home_points_last_10",
+    "home_goals_for_last_10",
+    "home_goals_against_last_10",
+    "home_goal_difference_last_10",
+    "away_elo",
+    "away_observed_matches",
+    "away_observed_venue_matches",
+    "away_venue_points_per_match",
+    "away_days_since_known_match",
+    "away_points_last_5",
+    "away_goals_for_last_5",
+    "away_goals_against_last_5",
+    "away_goal_difference_last_5",
+    "away_points_last_10",
+    "away_goals_for_last_10",
+    "away_goals_against_last_10",
+    "away_goal_difference_last_10",
+    "elo_difference"
+  ],
+  "history_missing_flags": [
+    "home_venue_points_per_match",
+    "home_days_since_known_match",
+    "home_points_last_5",
+    "home_goals_for_last_5",
+    "home_goals_against_last_5",
+    "home_goal_difference_last_5",
+    "home_points_last_10",
+    "home_goals_for_last_10",
+    "home_goals_against_last_10",
+    "home_goal_difference_last_10",
+    "away_venue_points_per_match",
+    "away_days_since_known_match",
+    "away_points_last_5",
+    "away_goals_for_last_5",
+    "away_goals_against_last_5",
+    "away_goal_difference_last_5",
+    "away_points_last_10",
+    "away_goals_for_last_10",
+    "away_goals_against_last_10",
+    "away_goal_difference_last_10"
+  ],
+  "expert_picks": [
+    "pick_home",
+    "pick_draw",
+    "pick_goal_diff"
+  ],
+  "catboost_fixed": {
+    "loss_function": "MultiClass",
+    "classes_count": 3,
+    "task_type": "CPU",
+    "boosting_type": "Plain",
+    "bootstrap_type": "No",
+    "random_strength": 1.0,
+    "random_seed": 70107,
+    "thread_count": 4,
+    "allow_writing_files": false,
+    "verbose": false,
+    "use_best_model": false
+  },
+  "catboost_grid": [
+    {
+      "depth": 2,
+      "iterations": 400,
+      "learning_rate": 0.035,
+      "l2_leaf_reg": 30.0
+    },
+    {
+      "depth": 4,
+      "iterations": 500,
+      "learning_rate": 0.025,
+      "l2_leaf_reg": 45.0
+    }
+  ],
+  "catboost_features": {
+    "A": [
+      "book"
+    ],
+    "B": [
+      "book",
+      "picks"
+    ],
+    "C": [
+      "book",
+      "picks",
+      "history"
+    ],
+    "D": [
+      "book",
+      "picks",
+      "history",
+      "author"
+    ],
+    "E": [
+      "book",
+      "picks",
+      "history",
+      "author",
+      "team_text_svd"
+    ]
+  },
+  "alpha_grid": [
+    0.0,
+    0.1,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "selection": "Pooled match-weighted development log loss. Select unblended fits first, then alpha. Ties use stronger linear penalties, the first tree candidate and the smaller alpha.",
+  "attribution": {
+    "schema": 1,
+    "names": "Fixture names, curated spellings, and verified fixture-oriented article sides",
+    "mask": "TEAM",
+    "policy": "Case-sensitive names, longest span, no standalone shared tokens, no coreference or both-team text",
+    "roles": {
+      "a": [
+        "the hosts",
+        "the home side",
+        "the home team"
+      ],
+      "b": [
+        "the visitors",
+        "the away side",
+        "the away team",
+        "the guests",
+        "the visiting side"
+      ]
+    },
+    "aliases": {
+      "Ath Bilbao": "Athletic Bilbao",
+      "Ath Madrid": "Atletico Madrid",
+      "Ein Frankfurt": "Eintracht Frankfurt",
+      "Espanol": "Espanyol",
+      "Hamburg": "Hamburger SV",
+      "Inter": "Inter Milan",
+      "M'gladbach": "Monchengladbach",
+      "Man City": "Manchester City",
+      "Man United": "Manchester United",
+      "Milan": "AC Milan",
+      "Nott'm Forest": "Nottingham Forest",
+      "Paris SG": "Paris Saint-Germain",
+      "Peterboro": "Peterborough",
+      "QPR": "Queens Park Rangers",
+      "Sheffield Weds": "Sheffield Wednesday",
+      "St Etienne": "Saint-Etienne",
+      "West Brom": "West Bromwich Albion",
+      "Wolves": "Wolverhampton"
+    },
+    "sentence_break": "(?<=[.!?])(?<!\\bNo\\.)(?<!\\bSt\\.)(?<!\\bvs\\.)(?<!\\bMr\\.)(?<!\\bDr\\.)\\s+(?=[\\\"'\u2018\u201cA-Z0-9])|\\n+",
+    "sections": [
+      "text_preview",
+      "text_team_news",
+      "text_head_to_head"
+    ]
+  },
+  "tfidf": {
+    "analyzer": "word",
+    "ngram_range": [
+      1,
+      2
+    ],
+    "token_pattern": "(?u)\\b\\w+(?:['\u2019]\\w+)*\\b",
+    "lowercase": true,
+    "sublinear_tf": true,
+    "norm": "l2",
+    "min_df": 5,
+    "max_df": 0.95,
+    "max_features": 10000,
+    "use_idf": true,
+    "smooth_idf": true
+  },
+  "svd": {
+    "n_components": 32,
+    "algorithm": "randomized",
+    "n_iter": 7,
+    "n_oversamples": 10,
+    "random_state": 70107
+  },
+  "attribution_cache_hit": true,
+  "attribution_input_sha256": "59b8b9690b6aa604775d2fd844bae3612dc1599eca8379072bf3fdf9889946d5",
+  "bootstrap": {
+    "seed": 60108,
+    "replicates": 3000,
+    "days": [
+      7,
+      14
+    ]
+  },
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.1.1",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.17.1"
+  },
+  "catboost_version": "1.2.10",
+  "python": "3.11.9",
+  "blas_threads": 1,
+  "historical_source_counts": {
+    "matched_export": 9356
+  },
+  "historical_input_sha256": "048302a098c75bea07fe73b8aeb9dbeacaeb37a9ad0f709ba606d3be889aeb95",
+  "preparation_seconds": 2.4100990000006277,
+  "markets": {
+    "early": {
+      "validation_ids_sha256": "18f37bc50497646e8da6ba340bb91f9c24402888c49f421591a298f15d470210",
+      "development_inputs_sha256": "13465ee4e5f9e644c5541a315c864a1d7e93a9a893259d0bb5ff21b55893a26b",
+      "matches_phase06b_fingerprints": true,
+      "development_matches": 7364,
+      "validation_matches": 5484,
+      "eligible_distinct_bylines": 43,
+      "author_input_sha256": "b127fc7b8bdac3cf4dc78509194821f0ff6c522829271375ef3b5252a6914b6e",
+      "preprocessing_seconds": 7.454539399997884,
+      "linear_seconds": 0.5049437999987276,
+      "catboost_seconds": 24.445237499996438,
+      "linear": {
+        "linear_market": {
+          "market": 1.0
+        },
+        "linear_picks": {
+          "market_and_picks": 10.0
+        },
+        "linear_picks_author": {
+          "market_and_picks": 10.0,
+          "author": 10.0
+        },
+        "linear_history_picks": {
+          "market_and_picks": 10.0,
+          "history": 10.0
+        },
+        "linear_history_picks_author": {
+          "market_and_picks": 10.0,
+          "history": 10.0,
+          "author": 10.0
+        }
+      },
+      "catboost_and_blend": {
+        "A": {
+          "candidate": 1,
+          "parameters": {
+            "depth": 2,
+            "iterations": 400,
+            "learning_rate": 0.035,
+            "l2_leaf_reg": 30.0
+          },
+          "alpha": 0.0
+        },
+        "B": {
+          "candidate": 1,
+          "parameters": {
+            "depth": 2,
+            "iterations": 400,
+            "learning_rate": 0.035,
+            "l2_leaf_reg": 30.0
+          },
+          "alpha": 0.0
+        },
+        "C": {
+          "candidate": 1,
+          "parameters": {
+            "depth": 2,
+            "iterations": 400,
+            "learning_rate": 0.035,
+            "l2_leaf_reg": 30.0
+          },
+          "alpha": 0.0
+        },
+        "D": {
+          "candidate": 1,
+          "parameters": {
+            "depth": 2,
+            "iterations": 400,
+            "learning_rate": 0.035,
+            "l2_leaf_reg": 30.0
+          },
+          "alpha": 0.0
+        },
+        "E": {
+          "candidate": 1,
+          "parameters": {
+            "depth": 2,
+            "iterations": 400,
+            "learning_rate": 0.035,
+            "l2_leaf_reg": 30.0
+          },
+          "alpha": 0.0
+        }
+      }
+    },
+    "closing": {
+      "validation_ids_sha256": "ad07c3e7da2bba1dfe72ee0bb1d5c3f22e6c284d0ae46dcb425b6a1faf2bc7a5",
+      "development_inputs_sha256": "25b614ef2aef427d9af9e0e3be5c3b61930317a10785205e10541ccc724868d8",
+      "matches_phase06b_fingerprints": true,
+      "development_matches": 9355,
+      "validation_matches": 6979,
+      "eligible_distinct_bylines": 44,
+      "author_input_sha256": "1748f17949f0589b2ff37d072d4d5d6235f4228394c02cbead1ce0867393003b",
+      "preprocessing_seconds": 9.256097299999965,
+      "linear_seconds": 0.6077070999999705,
+      "catboost_seconds": 30.55566959999851,
+      "linear": {
+        "linear_market": {
+          "market": 0.1
+        },
+        "linear_picks": {
+          "market_and_picks": 1.0
+        },
+        "linear_picks_author": {
+          "market_and_picks": 1.0,
+          "author": 10.0
+        },
+        "linear_history_picks": {
+          "market_and_picks": 1.0,
+          "history": 10.0
+        },
+        "linear_history_picks_author": {
+          "market_and_picks": 1.0,
+          "history": 10.0,
+          "author": 10.0
+        }
+      },
+      "catboost_and_blend": {
+        "A": {
+          "candidate": 1,
+          "parameters": {
+            "depth": 2,
+            "iterations": 400,
+            "learning_rate": 0.035,
+            "l2_leaf_reg": 30.0
+          },
+          "alpha": 0.0
+        },
+        "B": {
+          "candidate": 1,
+          "parameters": {
+            "depth": 2,
+            "iterations": 400,
+            "learning_rate": 0.035,
+            "l2_leaf_reg": 30.0
+          },
+          "alpha": 0.0
+        },
+        "C": {
+          "candidate": 1,
+          "parameters": {
+            "depth": 2,
+            "iterations": 400,
+            "learning_rate": 0.035,
+            "l2_leaf_reg": 30.0
+          },
+          "alpha": 0.0
+        },
+        "D": {
+          "candidate": 1,
+          "parameters": {
+            "depth": 2,
+            "iterations": 400,
+            "learning_rate": 0.035,
+            "l2_leaf_reg": 30.0
+          },
+          "alpha": 0.0
+        },
+        "E": {
+          "candidate": 1,
+          "parameters": {
+            "depth": 2,
+            "iterations": 400,
+            "learning_rate": 0.035,
+            "l2_leaf_reg": 30.0
+          },
+          "alpha": 0.0
+        }
+      }
+    }
+  },
+  "total_seconds": 75.65627699999823
+}

@@ -1,0 +1,2 @@
+# Optional CPU dependency for the Phase 07 nonlinear experiments.
+catboost==1.2.10

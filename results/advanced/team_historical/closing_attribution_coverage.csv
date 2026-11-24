@@ -1,0 +1,6 @@
+scope,matches,sentences_home,sentences_away,sentences_both,sentences_neither,ambiguous,unresolved,conflicting,source_matches_export,source_orientation_ordered,matched_orientation_ordered,missing_home,missing_away,missing_either,missing_both
+development,9355,43614,42654,8211,93856,550,39239,893,9355,9355,9355,0,0,0,0
+2223,2376,10856,10764,1960,25536,123,9882,167,2376,2376,2376,0,0,0,0
+2324,2303,10974,10401,2128,21827,186,9336,242,2303,2303,2303,0,0,0,0
+2425,2300,11256,10918,2178,19554,125,9630,258,2300,2300,2300,0,0,0,0
+pooled,6979,33086,32083,6266,66917,434,28848,667,6979,6979,6979,0,0,0,0
