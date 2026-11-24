@@ -100,10 +100,15 @@ class MarketResidual(BaseEstimator):
     Supply a row-aligned dense or sparse feature matrix to define the correction
     inputs. By default the correction uses log market probabilities. Scaling is
     learned in fit. Sparse inputs are scaled without centering to preserve sparsity.
+    Set standardize=False to pass preprocessed inputs through unchanged.
+    With text_l2, pass numerical_width to fit and put the text columns after
+    the numerical columns. l2 then applies only to the numerical slopes.
     """
 
-    def __init__(self, l2: float):
+    def __init__(self, l2: float, *, standardize: bool = True, text_l2: float | None = None):
         self.l2 = _validate_l2(l2)
+        self.standardize = standardize
+        self.text_l2 = None if text_l2 is None else _validate_l2(text_l2)
 
     @staticmethod
     def _features(offset: np.ndarray, features):
@@ -112,12 +117,23 @@ class MarketResidual(BaseEstimator):
             raise ValueError("Correction features and market probabilities must have the same row count")
         return matrix
 
-    def fit(self, market: np.ndarray, y: np.ndarray, features=None):
+    def fit(self, market: np.ndarray, y: np.ndarray, features=None, *, numerical_width: int | None = None):
         offset = np.log(validate_probabilities(market, positive=True))
         target = _training_targets(y, len(offset))
         matrix = self._features(offset, features)
-        scaler = StandardScaler(with_mean=not sparse.issparse(matrix))
-        matrix = scaler.fit_transform(matrix)
+        slope_penalties = self.l2
+        if self.text_l2 is not None:
+            if (features is None or not isinstance(numerical_width, (int, np.integer))
+                    or isinstance(numerical_width, bool) or not 0 < numerical_width < matrix.shape[1]):
+                raise ValueError("Block penalties require a numerical_width separating two nonempty feature blocks")
+            slope_penalties = np.full((matrix.shape[1], 1), self.text_l2)
+            slope_penalties[:numerical_width] = self.l2
+        elif numerical_width is not None:
+            raise ValueError("numerical_width requires text_l2")
+        scaler = None
+        if self.standardize:
+            scaler = StandardScaler(with_mean=not sparse.issparse(matrix))
+            matrix = scaler.fit_transform(matrix)
         rows = np.arange(len(target))
         parameter_shape = (matrix.shape[1] + 1, N_CLASSES - 1)
 
@@ -126,11 +142,12 @@ class MarketResidual(BaseEstimator):
             intercept, slopes = coefficients[0], coefficients[1:]
             corrections = (matrix @ slopes + intercept) @ CONTRASTS.T
             log_probabilities = log_softmax(offset + corrections, axis=1)
-            loss = -log_probabilities[rows, target].mean() + self.l2 * np.square(slopes).sum() / 2
+            penalty_gradient = slope_penalties * slopes
+            loss = -log_probabilities[rows, target].mean() + (slopes * penalty_gradient).sum() / 2
             errors = np.exp(log_probabilities)
             errors[rows, target] -= 1
             gradient = (errors @ CONTRASTS) / len(target)
-            slope_gradient = matrix.T @ gradient + self.l2 * slopes
+            slope_gradient = matrix.T @ gradient + penalty_gradient
             return loss, np.vstack((gradient.sum(axis=0), slope_gradient)).ravel()
 
         result = minimize(
@@ -150,5 +167,9 @@ class MarketResidual(BaseEstimator):
         if (features is not None) != self.custom_features_:
             raise ValueError("Use the same correction feature inputs as in fit")
         offset = np.log(validate_probabilities(market, positive=True))
-        matrix = self.scaler_.transform(self._features(offset, features))
+        matrix = self._features(offset, features)
+        if matrix.shape[1] != self.coef_.shape[0]:
+            raise ValueError("Correction features must have the same column count as in fit")
+        if self.scaler_ is not None:
+            matrix = self.scaler_.transform(matrix)
         return residual_probabilities(market, matrix @ self.coef_ + self.intercept_)

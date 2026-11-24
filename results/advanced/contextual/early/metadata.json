@@ -1,0 +1,237 @@
+{
+  "market": "early",
+  "evaluation": "development_model_selection",
+  "independent_evaluation": false,
+  "development_rows": 7364,
+  "development_seasons": [
+    "2122",
+    "2223",
+    "2324",
+    "2425"
+  ],
+  "holdout_seasons_excluded": [
+    "2526",
+    "2627"
+  ],
+  "inputs": {
+    "matches": "data/processed/matched_football.csv",
+    "previews": "data/interim/previews.csv"
+  },
+  "effective_development_input_sha256": "13465ee4e5f9e644c5541a315c864a1d7e93a9a893259d0bb5ff21b55893a26b",
+  "class_order": [
+    "home",
+    "draw",
+    "away"
+  ],
+  "odds_columns": [
+    "early_odds_home",
+    "early_odds_draw",
+    "early_odds_away"
+  ],
+  "expert_pick_columns": [
+    "pick_home",
+    "pick_draw",
+    "pick_goal_diff"
+  ],
+  "models": {
+    "M0": "Raw de-vigged market probabilities",
+    "M2": "Market residual with log market probabilities",
+    "M3": "M2 plus expert picks",
+    "M4": "M2 plus primary TF-IDF",
+    "M5": "M3 plus primary TF-IDF",
+    "M6": "M2 plus frozen MiniLM article embeddings",
+    "M7": "M3 plus frozen MiniLM article embeddings"
+  },
+  "objective": "Mean multinomial log loss + numerical_l2/2 * ||W_num||^2 + text_l2/2 * ||W_text||^2",
+  "residual": "Fixed log-market offset, orthonormal sum-to-zero class contrasts, unpenalized intercept",
+  "scaling": "Numerical standardization and TF-IDF vocabulary/IDF fit in the training fold. TF-IDF and MiniLM article features retain their native L2 normalization.",
+  "selection": "Pooled per-match development log loss among candidates converged in every fold. Ties favor stronger L2. Text models inherit numerical L2 from the corresponding no-text model.",
+  "numerical_grid": [
+    0.0001,
+    0.001,
+    0.01,
+    0.1,
+    1.0,
+    10.0
+  ],
+  "text_grid": [
+    0.0001,
+    0.001,
+    0.01,
+    0.1,
+    1.0
+  ],
+  "selected_penalties": {
+    "M2": {
+      "numerical_l2": 1.0,
+      "text_l2": null
+    },
+    "M3": {
+      "numerical_l2": 10.0,
+      "text_l2": null
+    },
+    "M4": {
+      "numerical_l2": 1.0,
+      "text_l2": 1.0
+    },
+    "M5": {
+      "numerical_l2": 10.0,
+      "text_l2": 1.0
+    },
+    "M6": {
+      "numerical_l2": 1.0,
+      "text_l2": 1.0
+    },
+    "M7": {
+      "numerical_l2": 10.0,
+      "text_l2": 1.0
+    }
+  },
+  "tfidf": {
+    "sections": [
+      "text_preview",
+      "text_team_news",
+      "text_head_to_head"
+    ],
+    "settings": {
+      "analyzer": "word",
+      "ngram_range": [
+        1,
+        2
+      ],
+      "token_pattern": "(?u)\\b\\w+(?:['\u2019]\\w+)*\\b",
+      "lowercase": true,
+      "sublinear_tf": true,
+      "norm": "l2",
+      "min_df": 5,
+      "max_df": 0.95,
+      "max_features": 10000,
+      "use_idf": true,
+      "smooth_idf": true
+    }
+  },
+  "phase04_reference": {
+    "models": [
+      "phase04_M4",
+      "phase04_M5"
+    ],
+    "shared_l2": 0.1,
+    "original_grid": [
+      0.0001,
+      0.001,
+      0.01,
+      0.1
+    ],
+    "text_weight": 0.5,
+    "effective_text_l2_in_unweighted_coordinates": 0.4,
+    "diagnostic_reconstruction_only": true
+  },
+  "embedding": {
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "c9745ed1d9f207416be6d2e6f8de32d1f16199bf",
+    "first_public_upload": "2021-08-30",
+    "release_source": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/commit/acbb28c8aa70f5503c85d6b90e8cd65606993a20",
+    "representation": {
+      "schema": 1,
+      "sections": [
+        "text_preview",
+        "text_team_news",
+        "text_head_to_head"
+      ],
+      "normalization": "NFC, collapse whitespace per section",
+      "chunking": "Nonoverlapping consecutive token IDs within each section, reserving special-token slots",
+      "pooling": "L2-normalized chunks, weighted by content token count, then L2-normalize the article",
+      "empty_document": "All-zero article vector",
+      "dtype": "float32"
+    },
+    "status": "complete",
+    "encoder": {
+      "model": "sentence-transformers/all-MiniLM-L6-v2",
+      "revision": "c9745ed1d9f207416be6d2e6f8de32d1f16199bf",
+      "dimensions": 384,
+      "tokenizer": {
+        "class": "BertTokenizerFast",
+        "is_fast": true,
+        "model_max_length": 256,
+        "max_input_tokens": 256,
+        "special_tokens_per_chunk": 2,
+        "special_token_ids": [
+          100,
+          102,
+          0,
+          101,
+          103
+        ],
+        "padding_side": "right",
+        "vocab_size": 30522,
+        "do_lower_case": true
+      },
+      "versions": {
+        "torch": "2.8.0+cu128",
+        "sentence-transformers": "5.1.2",
+        "transformers": "4.57.6",
+        "tokenizers": "0.22.2",
+        "huggingface-hub": "0.36.2",
+        "safetensors": "0.8.0"
+      }
+    },
+    "runtime": {
+      "device": "cuda",
+      "cuda_version": "12.8",
+      "cuda_device": "NVIDIA GeForce RTX 4090 Laptop GPU",
+      "inference_batch_size": 64,
+      "encoder_load_seconds": 5.78668049999942
+    },
+    "articles": 7364,
+    "coverage": 1.0,
+    "empty_articles": 0,
+    "empty_sections": {
+      "text_preview": 0,
+      "text_team_news": 3,
+      "text_head_to_head": 7363
+    },
+    "dimensions": 384,
+    "total_chunks": 31885,
+    "new_chunks": 0,
+    "mean_chunks": 4.329847908745247,
+    "p95_chunks": 5.0,
+    "max_chunks": 9,
+    "cache_hits": 7364,
+    "cache_misses": 0,
+    "article_cache_key_fingerprint": "64d6229b47da7e978c442a84afba0d3abbbf433b85d4415cf12d0bef18a1770a",
+    "generation_devices": {
+      "cuda": 7364
+    },
+    "inference_and_pooling_seconds": 0.0,
+    "total_seconds": 1.4356768999987253
+  },
+  "diagnostics": {
+    "logit_sd": "Root mean of the three per-class population variances across validation matches",
+    "logit_rms": "Root mean square across validation matches and classes",
+    "pooled_coefficients": "Validation-match-weighted RMS of fold Frobenius norms",
+    "probability_change": "Within fitted model, remove only the text correction and retain numerical slopes and intercept"
+  },
+  "limitations": [
+    "Results use the same development folds for tuning and scoring.",
+    "Article-version leakage remains unresolved pending the Phase 02 timing and provenance audit.",
+    "Pretraining corpora may overlap evaluation-era material. The pinned revision is not established as historically available.",
+    "Global article pooling may lose which team a statement refers to."
+  ],
+  "optimizer": {
+    "max_iterations": 1000,
+    "gradient_tolerance": 1e-08,
+    "relative_loss_tolerance": 1e-12
+  },
+  "versions": {
+    "python": "3.11.9",
+    "numpy": "2.4.6",
+    "pandas": "3.1.1",
+    "scipy": "1.17.1",
+    "scikit_learn": "1.9.1"
+  },
+  "runtime": {
+    "blas_threads": 1,
+    "feature_preparation_seconds": 13.052033600000868,
+    "seconds_before_artifact_writes": 94.88880490000156
+  }
+}

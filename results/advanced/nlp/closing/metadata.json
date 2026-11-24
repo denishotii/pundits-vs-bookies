@@ -1,0 +1,134 @@
+{
+  "market": "closing",
+  "evaluation": "development_model_selection",
+  "preliminary": true,
+  "independent_evaluation": false,
+  "cohort": "Phase 01 eligibility and Phase 03 expanding folds for the named market",
+  "holdouts": "2526 and 2627 are reserved historical holdouts with known original-project aggregate results",
+  "limitations": [
+    "Publication and odds timing proxies do not establish the scraped article version at prediction time",
+    "Primary sections can contain explicit predictions and scorelines",
+    "The same development folds select L2 and supply pooled OOF scores"
+  ],
+  "inputs": {
+    "matches": "data/processed/matched_football.csv",
+    "previews": "data/interim/previews.csv"
+  },
+  "effective_development_input_sha256": "558a7b9606b3535c912d7d911067fca8d4cd17cbaa98f239ed9e1eb270709f60",
+  "development_rows": 9355,
+  "development_seasons": [
+    "2122",
+    "2223",
+    "2324",
+    "2425"
+  ],
+  "class_order": [
+    "H",
+    "D",
+    "A"
+  ],
+  "odds_columns": [
+    "closing_odds_home",
+    "closing_odds_draw",
+    "closing_odds_away"
+  ],
+  "expert_pick_columns": [
+    "pick_home",
+    "pick_draw",
+    "pick_goal_diff"
+  ],
+  "text_preprocessing": {
+    "representations": {
+      "primary": [
+        "text_preview",
+        "text_team_news",
+        "text_head_to_head"
+      ],
+      "full_article": [
+        "title",
+        "text_intro",
+        "text_preview",
+        "text_team_news",
+        "text_head_to_head",
+        "text_verdict",
+        "text_other"
+      ]
+    },
+    "unicode_form": "NFC",
+    "whitespace": "Collapse whitespace and join sections with single spaces; missing sections are empty",
+    "tfidf": {
+      "analyzer": "word",
+      "ngram_range": [
+        1,
+        2
+      ],
+      "token_pattern": "(?u)\\b\\w+(?:['\u2019]\\w+)*\\b",
+      "lowercase": true,
+      "sublinear_tf": true,
+      "norm": "l2",
+      "min_df": 5,
+      "max_df": 0.95,
+      "max_features": 10000,
+      "use_idf": true,
+      "smooth_idf": true
+    },
+    "scoreline_pattern": "(?<!\\w)\\d{1,2}\\s*[-\u2010\u2011\u2012\u2013\u2014\u2212:]\\s*\\d{1,2}(?!\\w)",
+    "prediction_phrase_pattern_case_insensitive": "\\b(?:we (?:say|predict|expect|tip)|our (?:prediction|pick)|predicted (?:score(?:line)?|result)|(?:match|score(?:line)?) prediction)\\b"
+  },
+  "models": {
+    "M0": "Proportionally de-vigged market probabilities",
+    "M1": "Multinomial logistic regression with standardized log market probabilities",
+    "M2": "Market residual with standardized log market probabilities",
+    "M3": "M2 plus standardized expert picks",
+    "M4": "M2 plus weighted primary TF-IDF",
+    "M5": "M3 plus weighted primary TF-IDF",
+    "M5_full": "M5 with full-article TF-IDF at the selected M5 L2"
+  },
+  "objective": "Mean multinomial log loss + l2/2 * squared slope norm; intercepts unpenalized",
+  "residual": "softmax(log(p_market) + intercept + standardized_numerical @ B + weighted_tfidf @ C)",
+  "scaling": "Numerical columns centered and scaled by training-fold population SD (unit scale for constants); no column scaling of TF-IDF; penalties use orthonormal class contrasts for residual models",
+  "text_block_weight": 0.5,
+  "effective_text_l2_multiplier": 4.0,
+  "l2_grid": [
+    0.0001,
+    0.001,
+    0.01,
+    0.1
+  ],
+  "selected_l2": {
+    "M1": 0.001,
+    "M2": 0.1,
+    "M3": 0.1,
+    "M4": 0.1,
+    "M5": 0.1
+  },
+  "selection_rule": "Minimum pooled per-match OOF log loss among candidates converged in every fold; ties favor stronger L2",
+  "ablation": {
+    "model": "M5_full",
+    "l2": 0.1,
+    "converged": true
+  },
+  "metric_conventions": {
+    "log_loss": "Natural logarithm with a realized probability floor of 1e-15",
+    "brier": "Mean per-match sum of squared class errors",
+    "accuracy": "Argmax with ties resolved in H/D/A order",
+    "paired_log_loss": "Mean per-match model loss minus reference loss; negative favors the model"
+  },
+  "optimizer": {
+    "max_iterations": 1000,
+    "gradient_tolerance": 1e-08,
+    "residual_relative_loss_tolerance": 1e-12
+  },
+  "versions": {
+    "python": "3.11.9",
+    "numpy": "2.4.6",
+    "pandas": "3.1.1",
+    "scipy": "1.17.1",
+    "scikit_learn": "1.9.1"
+  },
+  "runtime": {
+    "blas_threads": 1,
+    "document_preparation_seconds": 1.0042647999998735,
+    "seconds_before_artifact_writes": 72.96050800000012
+  }
+}

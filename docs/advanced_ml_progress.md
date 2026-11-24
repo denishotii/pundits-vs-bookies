@@ -17,19 +17,14 @@
   A training outcome must be available strictly before the first validation
   prediction in its fold. Fold 3 treats the requested `2323` as `2324`.
 
-### Phase 1 cohort verification
-
-Both markets start with 12,303 matched records.
+Both markets start with 12,303 matched records. Closing excludes one missing
+pick. Early exclusion reasons overlap, including 2,528 articles without
+established pre-snapshot availability and 78 snapshots at or after kickoff.
 
 | Market | Eligible | Excluded | Development | 2526 test | 2627 check |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | Closing | 12,302 | 1 | 9,355 | 2,271 | 676 |
 | Early | 9,696 | 2,607 | 7,364 | 1,784 | 548 |
-
-Closing excludes one missing pick and preserves the baseline sample. Early
-exclusion counts are 2,528 articles without established pre-snapshot
-availability, 78 snapshots at or after kickoff, one missing odds record,
-and one missing pick. The reason counts overlap.
 
 | Train seasons | Validation season | Closing train / validation | Early train / validation |
 | --- | --- | ---: | ---: |
@@ -37,8 +32,7 @@ and one missing pick. The reason counts overlap.
 | 2122–2223 | 2324 | 4,752 / 2,303 | 3,748 / 1,792 |
 | 2122–2324 | 2425 | 7,055 / 2,300 | 5,540 / 1,824 |
 
-Zero outcomes were purged in the real-data folds. The 26 Phase 1 tests and
-all 164 suite tests passed at the end of Phase 1.
+The real-data folds purged zero outcomes. All 164 tests passed at Phase 1.
 
 ## Phase 3 complete
 
@@ -59,16 +53,11 @@ all 164 suite tests passed at the end of Phase 1.
   bins, and paired per-match log-loss changes versus M0. Log loss uses the
   original 1e-15 floor and Brier sums squared errors across classes per match.
 - `pvb.advanced.experiments.run_experiment(market)` selects L2 from
-  `0.0001, 0.001, 0.01, 0.1` by pooled development log loss, weighting each
-  match equally. `results/advanced/{early,closing}/` contains `metrics.csv`,
-  `folds.csv`, `regularization_search.csv`, `class_metrics.csv`,
-  `calibration.csv`, `oof_predictions.csv`, and `metadata.json`. The manifest
-  records a fingerprint of the effective development inputs and package versions.
+  0.0001, 0.001, 0.01 and 0.1 by pooled per-match development log loss. Scores,
+  calibration, predictions and the input manifest are in
+  `results/advanced/{early,closing}/`.
 
-```powershell
-.\.venv\Scripts\python.exe -m pvb.advanced.experiments --market early
-.\.venv\Scripts\python.exe -m pvb.advanced.experiments --market closing
-```
+Run `.\.venv\Scripts\python.exe -m pvb.advanced.experiments --market early` or use `closing`.
 
 ### Pooled development out-of-fold results
 
@@ -81,17 +70,68 @@ all 164 suite tests passed at the end of Phase 1.
 | Closing | 6,979 | M1 | 0.001 | 0.979540 | 0.583846 | 52.99% |
 | Closing | 6,979 | M2 | 0.1 | 0.979348 | 0.583718 | 53.10% |
 
-All 48 candidate fits converged. The 52 focused advanced tests and all 190
-suite tests passed under Python 3.11.9. Saved OOF predictions reproduce the
-pooled metrics and paired losses. The same folds selected L2 and supplied
-these scores, so the scores describe development selection. Seasons 2526
-and 2627 remain reserved for independent evaluation.
+All 48 fits converged and all 190 tests passed. The same folds select L2 and
+supply the scores. The original project's historical aggregates are already
+known. The early cohort is conditional on estimated pre-snapshot article
+availability, so it represents a subset of matches with early odds.
 
-The runner uses Phase 1 eligibility for reproducible comparisons with future
-NLP experiments. The loader checks article-body presence and valid picks, then
-the runner discards text and pick features. In particular, the early cohort is
-conditional on estimated pre-snapshot article availability and is not
-representative of all matches with early odds.
+## Phase 4 complete — preliminary classical NLP
+
+- `pvb.advanced.preprocessing.prepare_documents` joins NFC-normalized sections
+  with collapsed whitespace. Primary uses preview, team news and head-to-head.
+  Full article adds title, intro, verdict and other. Primary can still contain
+  explicit predictions. Scoreline and phrase diagnostics are heuristic counts.
+- `fit_tfidf` fits word unigrams/bigrams per training fold and representation.
+  It lowercases, retains single digits and contractions, uses sublinear TF,
+  smoothed IDF and L2 document normalization, and sets min_df=5, max_df=0.95,
+  max_features=10000. Training and validation text matrices stay in CSR.
+- `MarketResidual(l2, standardize=False)` accepts preprocessed correction
+  features. Phase 3 keeps the original default. The runner standardizes log
+  market probabilities and expert-pick columns on each training fold, then
+  combines them as needed with TF-IDF weighted by 0.5. M3 adds `pick_home`,
+  `pick_draw` and `pick_goal_diff` to M2. M4 adds primary TF-IDF to M2. M5
+  combines picks and primary TF-IDF. The residual logit offset is `log(p_market)`.
+  The penalty is L2/2 times the squared slope norm relative to mean log loss,
+  with unpenalized intercepts and a 4× effective penalty on unweighted text slopes.
+- `pvb.advanced.nlp_experiments.run_experiment(market)` uses the Phase 3 folds
+  and L2 grid, requiring convergence in every fold. The full-article ablation
+  uses M5's selected L2. Reports are in `results/advanced/nlp/{early,closing}/`.
+- With 5,484 early and 6,979 closing validation matches, M5 minus M3 log loss
+  was +0.000009784 and +0.000000875 respectively. M3 minus M2 was +0.000537727
+  and +0.000214891. M4 minus M2 was +0.000009871 and +0.000000854. Full-article
+  M5 also scored slightly worse than M3 in both markets. M2–M5 selected L2=0.1
+  for both markets. All 63 optimizer fits per market converged. Each text
+  configuration had 10,000 features per fold. All 196 suite tests passed.
+- Phase 4 used the same development folds for tuning and scoring. It excluded
+  both historical holdout seasons.
+
+Run with `.\.venv\Scripts\python.exe -m pvb.advanced.nlp_experiments --market early`
+or substitute `closing`.
+
+## Phase 5 complete — block penalties and contextual NLP
+
+- `MarketResidual(l2, text_l2=..., standardize=False).fit(..., numerical_width=...)`
+  penalizes numerical and text slopes separately. The original scalar L2
+  interface, sum-to-zero class contrasts and fixed log-market offset still apply.
+- `pvb.advanced.contextual_experiments.run_experiment` selects L2 for M2 and M3
+  first, then freezes each penalty for its text comparisons. M4/M5 use primary
+  TF-IDF and M6/M7 use frozen MiniLM embeddings, each without/with picks.
+- `pvb.advanced.embeddings.embed_articles` chunks primary sections by token ID
+  and weights normalized chunk vectors by token count before article normalization.
+  An empty input yields zeros. The private SQLite cache under `data/cache/contextual/`
+  keys on article ID, normalized section content, encoder revision and configuration.
+- MiniLM was [first uploaded on 2021-08-30](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/commit/acbb28c8aa70f5503c85d6b90e8cd65606993a20).
+  Historical availability of the pinned revision and overlap with its pretraining
+  corpora are unverified. Global pooling can lose team attribution.
+- Install `requirements-contextual.txt` with `.\.venv\Scripts\python.exe -m pip install -r requirements-contextual.txt`.
+  Run `.\.venv\Scripts\python.exe -m pvb.advanced.contextual_experiments --market both`.
+  Add `--offline` after caching the checkpoint, or `--tfidf-only` to skip MiniLM.
+- Reports in `results/advanced/contextual/{early,closing}/` cover 5,484 and
+  6,979 development validation matches. The two TF-IDF models chose L2=1 in
+  both markets and trailed their numerical references. MiniLM slightly worsened
+  early log loss and reduced closing log loss by 0.0000083 without picks and
+  0.0000106 with picks. Closing generated 9,355 vectors on CUDA and early
+  reused all 7,364 it needed. All selected fits converged and all 200 tests passed.
 
 ## Timing limitations and next step
 

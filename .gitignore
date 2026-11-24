@@ -17,6 +17,37 @@ data/processed/*
 # ...and the result tables, which hold only numbers
 !results/*.csv
 
+# Advanced results are private by default, with exceptions for aggregate reports.
+/results/advanced/**
+!/results/advanced/early/
+!/results/advanced/closing/
+!/results/advanced/early/metadata.json
+!/results/advanced/closing/metadata.json
+!/results/advanced/nlp/
+!/results/advanced/nlp/early/
+!/results/advanced/nlp/closing/
+!/results/advanced/nlp/*/metadata.json
+!/results/advanced/nlp/*/metrics.csv
+!/results/advanced/nlp/*/folds.csv
+!/results/advanced/nlp/*/paired_log_loss.csv
+!/results/advanced/nlp/*/regularization_search.csv
+!/results/advanced/nlp/*/feature_diagnostics.csv
+!/results/advanced/nlp/*/text_diagnostics.csv
+!/results/advanced/contextual/
+!/results/advanced/contextual/early/
+!/results/advanced/contextual/closing/
+!/results/advanced/contextual/regularization_only/
+!/results/advanced/contextual/regularization_only/*/
+!/results/advanced/contextual/**/metadata.json
+!/results/advanced/contextual/**/metrics.csv
+!/results/advanced/contextual/**/folds.csv
+!/results/advanced/contextual/**/paired_log_loss.csv
+!/results/advanced/contextual/**/regularization_search.csv
+!/results/advanced/contextual/**/search_boundaries.csv
+!/results/advanced/contextual/**/block_diagnostics.csv
+!/results/advanced/contextual/**/feature_norms.csv
+!/results/advanced/contextual/**/tfidf_diagnostics.csv
+
 # Teammates' working notes (e.g. the Kalshi PDFs), shared outside the repo
 docs/docs_from_team/
 

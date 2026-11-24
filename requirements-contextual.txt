@@ -1,0 +1,7 @@
+# Optional Phase 05 dependencies. Install the CUDA build of torch first when available.
+torch==2.8.0
+sentence-transformers==5.1.2
+transformers==4.57.6
+tokenizers==0.22.2
+huggingface-hub==0.36.2
+safetensors==0.8.0
