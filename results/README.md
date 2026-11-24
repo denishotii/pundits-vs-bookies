@@ -22,9 +22,19 @@ Each model predicts the probability of each result (home, draw, away; or player 
 - `market`: the closing odds, turned into probabilities (1/odds, scaled to add up to 1). Nothing is fitted.
 - `odds`: a logistic regression on the odds alone. It can correct biases in the odds, such as long shots winning less often than their odds say.
 - `odds + pick`: also uses the pick: which result, and the goal difference of the predicted score (football) or whether it says straight sets (tennis).
-- `odds + pick + text`: also uses the text features from `features.csv`. These are starter features for now (uncertainty words, absence words).
+- `odds + pick + text`: also uses the text features from `data/processed/features.csv`: the tone towards each side, absence words in the team news (football), hedging words (football) and the Naive Bayes log odds of the results. See `data/README.md`.
 
 `log_loss` and `brier` measure how far the probabilities were from what happened, so lower is better. `change_vs_odds` is the model's log loss minus the `odds` model's, on the same games. **Below 0, with the whole interval below 0, means the text knows something the odds don't.**
+
+## `text_measures.csv` (checks for test 1)
+
+Do the text measures pick up anything at all? This table gives the correlation of each measure with the odds and with the result, with 95% intervals. It uses the training seasons only, so that the test seasons are looked at once, in test 1.
+
+- Each measure points towards side a (the home team, or player a): `pick` is +1 if the pick is a, −1 if b, 0 for a draw; `tone_diff` is the tone about a minus the tone about b; `naive_bayes` is the Naive Bayes log P(a wins) − log P(b wins); `absence_diff` is the absence words about a minus those about b.
+- `corr_odds` is the correlation with the market's probability for a minus that for b. `corr_result` is the correlation with the result: +1 if a won, −1 if b won, 0 for a draw.
+- `absence_diff` should be below 0: more absences, worse chances.
+
+A measure that knows nothing correlates with neither. One that correlates with both but adds nothing in test 1 knows only what the odds already know.
 
 ## `odds_movement.csv` and `.png` (test 2, football)
 

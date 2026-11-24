@@ -26,12 +26,16 @@ Sports Mole previews every competition, not just our six leagues: about 45,000 f
 
 | Feature | How |
 | --- | --- |
-| The pick ("We say: Fulham 1-0 Burnley") | Regex |
-| Tone towards each team | Sentiment dictionary on sentences naming that team |
-| Team news (injured, suspended, doubtful) | Word counts in the Team News section |
+| The pick ("We say: Fulham 1-0 Burnley") | Regex (`parse.py`) |
+| Tone towards each side | Harvard IV adapted to sport (`sentiment.py`), on the sentences about each side |
+| Team news (injured, suspended, without) | Absence words per 100 words of team news about each side |
 | Uncertainty ("could", "tight") | Word list |
-| Naive Bayes probabilities | Trained on earlier seasons |
-| Recycled text (optional) | Jaccard similarity |
+| Naive Bayes log odds | Words marked with the side they are about; trained on the training seasons only, cross-fitted by season |
+| Recycled text (optional) | Jaccard similarity; not done |
+
+Which sentences are about which side: a sentence that names one side is about it, and so are the sentences after it that name neither side. A sentence naming both sides is about neither, and each section starts afresh, so about a quarter of the words (most of the introduction and the verdict) count for neither side. Names include each team's nickname, manager and players, learned per season from the previews (`features.py`). In a sample of real previews, about 97% of football sentences and 95% of tennis sentences credited to a side were right.
+
+Why adapt the dictionary: Loughran and McDonald (2011) showed that a general dictionary misreads the words of a field. Harvard IV counts "against", "points" and "clash" as negative and "home" as positive, and these words are in nearly every preview. It also lacks "win" and "victory". So, as Loughran and McDonald did for annual reports, we went through every Harvard word in at least 1% of the previews from before the test season, dropped those without tone in sport, and added the sports words Harvard lacks. The review, word by word with the reason, is in `data/processed/dictionary_review.csv`. One person did it; a second person coding the same words independently, and reporting how often the two agree, would make it stronger.
 
 ## Strategy
 
@@ -48,6 +52,8 @@ Sports Mole previews every competition, not just our six leagues: about 45,000 f
 | Backing the favourite is right | 53% | 73% |
 
 Football pundits pick a draw in 31% of previews, but only 25% of games end in one, and the market almost never makes a draw the favourite. The three tests are in [results/](../results/README.md), made by `python -m pvb analyse`.
+
+The text measures are not noise. On the training seasons, the tone towards each side correlates 0.25 with the odds and the Naive Bayes log odds 0.52. Yet adding them to the odds and the pick doesn't predict the 2025/26 results any better (test 1), nor 2026/27 so far, nor tennis 2026. So far, what the previews know, the odds already know.
 
 ## Roles
 

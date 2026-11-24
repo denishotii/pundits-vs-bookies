@@ -23,9 +23,9 @@ The full plan, with scope, strategy and timeline, is in [docs/plan.md](docs/plan
 | 2. Download the pages | `python -m pvb scrape` | `data/raw/sportsmole/*.html` | Working |
 | 3. Parse pick, sections, date | `python -m pvb parse` | `data/interim/previews.csv`, `data/processed/picks.csv` | Working |
 | 4. Download odds | `python -m pvb odds football` (or `tennis`) | `data/raw/odds/` | Working |
-| 5. Text features | `python -m pvb features` | `data/processed/features.csv` | Started |
-| 6. Match previews to games | `python -m pvb match` | `data/processed/matched_football.csv`, `matched_tennis.csv` | Working |
-| 7. Analysis: the three tests | `python -m pvb analyse` | `results/` (tables and charts) | Working; better text features to add |
+| 5. Match previews to games | `python -m pvb match` | `data/processed/matched_football.csv`, `matched_tennis.csv` | Working |
+| 6. Text features | `python -m pvb features` | `data/processed/features.csv` | Working |
+| 7. Analysis: the three tests | `python -m pvb analyse` | `results/` (tables and charts) | Working |
 | Part 2: Polymarket prices | `pvb/polymarket.py` | | Downloads work, analysis to do |
 
 ## Getting started
@@ -74,16 +74,17 @@ The full scrape takes about 25 hours, so the tables the analysis needs are alrea
 | File | One row per | What's in it |
 | --- | --- | --- |
 | `picks.csv` | preview (44,948) | Date, sport, teams or players, author, the "We say" pick, word count |
-| `features.csv` | preview | Numbers measured from the text, such as uncertainty words per 1,000 words |
+| `features.csv` | preview | Numbers measured from the text: tone towards each side, absence words, hedging words, Naive Bayes log odds |
+| `dictionary_review.csv` | word | The review behind the tone dictionary: how often each word appears, and why we kept or dropped it |
 | `matched_football.csv`, `matched_tennis.csv` | game | The pick, the odds and the result side by side |
 
 The matched tables already hold the odds, so the analysis (step 7) needs nothing else. To redo the matching (step 6), first download the odds with `python -m pvb odds football` and `python -m pvb odds tennis` (about a minute), then run `python -m pvb match`. The study ends on 14 November 2026 (`STUDY_END` in `pvb/config.py`), the last day in the tennis files we downloaded, so the matching gives the same tables even after tennis-data adds newer matches.
 
-After a new `parse`, run `features`, `match` and `analyse` again. A test fails if the tables in `data/processed/` don't agree with each other, or if `results/` doesn't match a fresh run.
+After a new `parse`, run `match`, `features` and `analyse` again, in that order: the text features need the matched results, because Naive Bayes learns from them. A test fails if the tables in `data/processed/` don't agree with each other, or if `results/` doesn't match a fresh run.
 
 The results are in `results/`, on GitHub too. [results/README.md](results/README.md) explains how to read each table.
 
-The article text itself is not on GitHub (see the scraping rules). To re-run the text steps, ask us for `previews_full_text.zip` (66 MB), which we share privately with the team and the examiner. Unzip it into `data/interim/`, then run `python -m pvb features`.
+The article text itself is not on GitHub (see the scraping rules). To re-run the text steps, ask us for `previews_full_text.zip` (66 MB), which we share privately with the team and the examiner. Unzip it into `data/interim/`. The tone measure also needs the Harvard IV dictionary: download [inqtabs.txt](https://inquirer.sites.fas.harvard.edu/inqtabs.txt) by hand into `data/raw/dictionaries/` (our scraper won't fetch it, see `pvb/sentiment.py`). Then run `python -m pvb features`.
 
 ## Project structure
 
@@ -96,8 +97,9 @@ pundits-vs-bookies/
 │   ├── sportsmole.py     find previews in the sitemaps, save raw HTML
 │   ├── parse.py          raw HTML -> one row per preview
 │   ├── odds.py           football-data and tennis-data downloads
-│   ├── features.py       text features (started)
 │   ├── matching.py       previews -> games and odds
+│   ├── features.py       text features: tone per side, absences, Naive Bayes
+│   ├── sentiment.py      the tone dictionary: Harvard IV adapted to sport
 │   ├── polymarket.py     part 2: Polymarket tennis prices
 │   └── analysis.py       the three tests -> results/
 ├── tests/                tests, no internet needed
@@ -120,7 +122,7 @@ pundits-vs-bookies/
 | --- | --- | --- | --- |
 | Scraper | `sportsmole.py`, `parse.py` | `previews.csv` | |
 | Odds and matching | `odds.py`, `matching.py` | `matched_*.csv` | |
-| Text analysis | `features.py` | `features.csv` | |
+| Text analysis | `features.py`, `sentiment.py` | `features.csv` | |
 | Part 2 (Polymarket) | `polymarket.py` | Part 2 results | |
 | Analysis and writing | `analysis.py`, proposal, slides | Proposal and slides | |
 

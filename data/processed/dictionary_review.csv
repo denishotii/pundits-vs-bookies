@@ -1,0 +1,721 @@
+word,share_of_previews,harvard,ours,reason
+against,0.9265,negative,,"describes the play, the venue or the fixture"
+points,0.8729,negative,,"describes the play, the venue or the fixture"
+back,0.8263,positive,,"describes the play, the venue or the fixture"
+home,0.8112,positive,,"describes the play, the venue or the fixture"
+win,0.8015,,positive,added: sports tone that Harvard lacks
+games,0.7769,positive,,"describes the play, the venue or the fixture"
+just,0.7407,positive,,"an everyday word, no tone here"
+victory,0.7282,,positive,added: sports tone that Harvard lacks
+injury,0.7198,negative,negative,
+defeat,0.7087,negative,negative,
+game,0.6855,positive,,"describes the play, the venue or the fixture"
+run,0.5919,negative,,"a result, with no direction"
+return,0.5251,positive,,"describes the play, the venue or the fixture"
+winning,0.4984,,positive,added: sports tone that Harvard lacks
+make,0.498,both,,in both Harvard lists
+won,0.4759,,positive,added: sports tone that Harvard lacks
+point,0.4753,negative,,"describes the play, the venue or the fixture"
+lost,0.4732,negative,negative,
+wins,0.4422,,positive,added: sports tone that Harvard lacks
+spot,0.4309,negative,,"describes the play, the venue or the fixture"
+losing,0.4297,negative,negative,
+club,0.428,negative,,"describes the play, the venue or the fixture"
+lead,0.4123,positive,,"a result, with no direction"
+unbeaten,0.3973,,positive,added: sports tone that Harvard lacks
+likely,0.3838,positive,,"an everyday word, no tone here"
+opening,0.3664,positive,,"describes the play, the venue or the fixture"
+front,0.3603,negative,,"describes the play, the venue or the fixture"
+competitions,0.3439,negative,,"describes the play, the venue or the fixture"
+relegation,0.3279,,negative,added: sports tone that Harvard lacks
+clash,0.3247,negative,,"describes the play, the venue or the fixture"
+defeats,0.3182,negative,negative,
+opponents,0.3091,negative,,"describes the play, the venue or the fixture"
+loss,0.3028,negative,negative,
+failed,0.2854,negative,negative,
+get,0.2847,negative,,"an everyday word, no tone here"
+round,0.2781,positive,,"describes the play, the venue or the fixture"
+victories,0.2715,,positive,added: sports tone that Harvard lacks
+suffered,0.2685,negative,negative,
+forward,0.2632,positive,,"describes the play, the venue or the fixture"
+picked,0.256,negative,,"an everyday word, no tone here"
+attack,0.2547,negative,,"describes the play, the venue or the fixture"
+competition,0.2524,negative,,"describes the play, the venue or the fixture"
+success,0.2508,positive,positive,
+welcome,0.2504,positive,,"an everyday word, no tone here"
+clean,0.2501,positive,positive,
+break,0.2486,negative,,"describes the play, the venue or the fixture"
+straight,0.2427,positive,,"a result, with no direction"
+impressive,0.2358,positive,positive,
+suspension,0.2345,negative,negative,
+conceded,0.2308,,negative,added: sports tone that Harvard lacks
+well,0.2272,positive,,"an everyday word, no tone here"
+winless,0.2267,,negative,added: sports tone that Harvard lacks
+defensive,0.2237,negative,,"describes the play, the venue or the fixture"
+attacking,0.2218,negative,,"describes the play, the venue or the fixture"
+strong,0.2194,,positive,added: sports tone that Harvard lacks
+hand,0.2179,both,,in both Harvard lists
+champions,0.2174,positive,positive,
+secure,0.2142,positive,,what every side wants
+positive,0.2132,positive,positive,
+division,0.2127,negative,,"describes the play, the venue or the fixture"
+sidelined,0.2089,,negative,added: sports tone that Harvard lacks
+defender,0.2083,positive,,"describes the play, the venue or the fixture"
+injuries,0.2075,negative,negative,
+clear,0.2066,positive,,"an everyday word, no tone here"
+problem,0.2056,negative,negative,
+need,0.2006,negative,,what every side wants
+making,0.1993,both,,in both Harvard lists
+miss,0.1989,negative,negative,
+picking,0.1958,negative,,"an everyday word, no tone here"
+evening,0.1951,both,,in both Harvard lists
+conceding,0.1928,,negative,added: sports tone that Harvard lacks
+confidence,0.1923,positive,positive,
+hope,0.19,positive,,what every side wants
+too,0.19,negative,,"an everyday word, no tone here"
+beat,0.1892,negative,,"a result, with no direction"
+better,0.1881,positive,positive,
+missing,0.1873,negative,negative,
+battle,0.1855,negative,,what every side wants
+strike,0.1849,negative,,"describes the play, the venue or the fixture"
+triumph,0.1846,positive,positive,
+drop,0.1833,negative,negative,
+missed,0.1824,negative,negative,
+beating,0.18,negative,,"a result, with no direction"
+best,0.178,positive,positive,
+even,0.177,both,,in both Harvard lists
+suffering,0.1715,negative,negative,
+hoping,0.1662,positive,,what every side wants
+rivals,0.166,negative,,"a result, with no direction"
+able,0.1651,positive,,"an everyday word, no tone here"
+advantage,0.165,positive,,"describes the play, the venue or the fixture"
+meeting,0.1646,positive,,"describes the play, the venue or the fixture"
+difficult,0.1643,negative,negative,
+good,0.1601,positive,positive,
+turn,0.1592,negative,,"an everyday word, no tone here"
+winner,0.1589,,positive,added: sports tone that Harvard lacks
+travel,0.1566,positive,,"describes the play, the venue or the fixture"
+promotion,0.1562,,positive,added: sports tone that Harvard lacks
+thanks,0.155,positive,,"an everyday word, no tone here"
+charge,0.1521,negative,,"an everyday word, no tone here"
+avoid,0.1519,negative,,what every side wants
+doubt,0.1511,negative,negative,
+returned,0.1492,positive,,"describes the play, the venue or the fixture"
+leading,0.1489,positive,,"a result, with no direction"
+quality,0.1487,positive,positive,
+right,0.1464,positive,,"an everyday word, no tone here"
+absence,0.146,negative,negative,
+struggled,0.1443,negative,negative,
+courtesy,0.1435,positive,,"an everyday word, no tone here"
+services,0.143,negative,,"describes the play, the venue or the fixture"
+hopes,0.1425,positive,,what every side wants
+pick,0.1422,negative,,"an everyday word, no tone here"
+competitive,0.1384,negative,,"describes the play, the venue or the fixture"
+secured,0.1381,positive,,what every side wants
+forced,0.1361,negative,negative,
+poor,0.1333,negative,negative,
+meaning,0.1311,negative,,"an everyday word, no tone here"
+disappointing,0.131,negative,negative,
+close,0.13,negative,,"an everyday word, no tone here"
+unavailable,0.1292,,negative,added: sports tone that Harvard lacks
+hands,0.1283,both,,in both Harvard lists
+opportunity,0.1237,positive,,what every side wants
+spoils,0.123,negative,,"a result, with no direction"
+fitness,0.1223,positive,,"an everyday word, no tone here"
+qualifying,0.1222,positive,,"describes the play, the venue or the fixture"
+major,0.1221,positive,,"an everyday word, no tone here"
+plenty,0.1217,positive,,"an everyday word, no tone here"
+share,0.1203,positive,,"a result, with no direction"
+struggling,0.12,negative,negative,
+winners,0.1162,,positive,added: sports tone that Harvard lacks
+returning,0.1147,positive,,"describes the play, the venue or the fixture"
+securing,0.1138,positive,,what every side wants
+fellow,0.113,positive,,"an everyday word, no tone here"
+suspended,0.1128,negative,negative,
+confident,0.1127,positive,positive,
+comfortable,0.1099,positive,positive,
+failing,0.1098,negative,negative,
+dropped,0.1096,negative,negative,
+joined,0.1075,positive,,"an everyday word, no tone here"
+momentum,0.1055,,positive,added: sports tone that Harvard lacks
+challenge,0.1048,negative,,what every side wants
+losses,0.1044,negative,negative,
+lose,0.1029,negative,negative,
+favourites,0.1025,positive,positive,
+give,0.1018,positive,,"an everyday word, no tone here"
+experienced,0.0997,positive,,"an everyday word, no tone here"
+likes,0.0984,positive,,"an everyday word, no tone here"
+strikes,0.0981,negative,,"describes the play, the venue or the fixture"
+clubs,0.0974,negative,,"describes the play, the venue or the fixture"
+short,0.0974,negative,,"an everyday word, no tone here"
+enjoyed,0.0969,positive,positive,
+double,0.0967,negative,,"an everyday word, no tone here"
+concerns,0.0959,negative,negative,
+pushing,0.0958,negative,,what every side wants
+keen,0.0954,positive,,what every side wants
+involved,0.0951,negative,,"an everyday word, no tone here"
+race,0.0947,negative,,"a result, with no direction"
+travels,0.0945,positive,,"describes the play, the venue or the fixture"
+call,0.0942,positive,,"an everyday word, no tone here"
+progress,0.0937,positive,positive,
+injured,0.0936,negative,negative,
+meet,0.0935,positive,,"describes the play, the venue or the fixture"
+particularly,0.0932,both,,in both Harvard lists
+means,0.0921,negative,,"an everyday word, no tone here"
+safety,0.0915,positive,,what every side wants
+threat,0.091,negative,,"an everyday word, no tone here"
+fit,0.0907,positive,positive,
+problems,0.0889,negative,negative,
+hit,0.0887,both,,in both Harvard lists
+training,0.0886,positive,,"describes the play, the venue or the fixture"
+solid,0.088,,positive,added: sports tone that Harvard lacks
+desperate,0.0874,negative,negative,
+defeated,0.0864,negative,,"a result, with no direction"
+spots,0.0862,negative,,"describes the play, the venue or the fixture"
+fresh,0.0856,positive,,"an everyday word, no tone here"
+edge,0.0855,negative,,"a result, with no direction"
+handed,0.0849,both,,in both Harvard lists
+friendly,0.0845,positive,,"describes the play, the venue or the fixture"
+getting,0.0841,negative,,"an everyday word, no tone here"
+fine,0.0839,both,,in both Harvard lists
+backing,0.0837,positive,,"describes the play, the venue or the fixture"
+considering,0.0829,positive,,"an everyday word, no tone here"
+assists,0.0828,positive,,"an everyday word, no tone here"
+like,0.0828,positive,,"an everyday word, no tone here"
+aggregate,0.0818,positive,,"a result, with no direction"
+fancy,0.0813,positive,,"an everyday word, no tone here"
+fight,0.0801,negative,,what every side wants
+boast,0.08,negative,positive,moved: Harvard has the wrong sign for sport
+dropping,0.0797,negative,negative,
+stalemate,0.0791,negative,,"a result, with no direction"
+improve,0.077,positive,positive,
+turned,0.077,negative,,"an everyday word, no tone here"
+push,0.0767,negative,,what every side wants
+helped,0.0759,both,,in both Harvard lists
+absent,0.0756,negative,negative,
+opposition,0.0756,negative,,"describes the play, the venue or the fixture"
+survival,0.0748,positive,,what every side wants
+support,0.0747,positive,,"an everyday word, no tone here"
+worst,0.0744,negative,negative,
+serve,0.0739,negative,,"describes the play, the venue or the fixture"
+shots,0.0736,negative,,"describes the play, the venue or the fixture"
+falling,0.0734,negative,negative,
+settle,0.0733,positive,,"an everyday word, no tone here"
+important,0.073,positive,,"an everyday word, no tone here"
+join,0.0729,positive,,"an everyday word, no tone here"
+provide,0.0719,positive,,"an everyday word, no tone here"
+comeback,0.0718,positive,positive,
+excellent,0.0714,positive,positive,
+opened,0.0708,positive,,"describes the play, the venue or the fixture"
+absentee,0.0707,negative,negative,
+capital,0.0706,negative,,"an everyday word, no tone here"
+horns,0.0688,negative,,"an everyday word, no tone here"
+sticks,0.0681,negative,,"describes the play, the venue or the fixture"
+perfect,0.0675,positive,positive,
+absentees,0.0673,negative,negative,
+kick,0.0661,negative,,"describes the play, the venue or the fixture"
+running,0.0656,negative,,"a result, with no direction"
+exit,0.0654,negative,negative,
+force,0.0652,negative,negative,
+hard,0.0646,negative,,"an everyday word, no tone here"
+help,0.0643,both,,in both Harvard lists
+boost,0.064,positive,positive,
+open,0.0639,positive,,"describes the play, the venue or the fixture"
+knock,0.0636,negative,negative,
+opposing,0.0636,negative,,"describes the play, the venue or the fixture"
+in-form,0.0633,,positive,added: sports tone that Harvard lacks
+thrashing,0.0628,negative,,"a result, with no direction"
+ball,0.062,positive,,"describes the play, the venue or the fixture"
+serious,0.0618,positive,,about injuries (absence words)
+ban,0.061,,negative,added: sports tone that Harvard lacks
+show,0.0606,negative,,"an everyday word, no tone here"
+lack,0.0604,negative,negative,
+joining,0.0603,positive,,"an everyday word, no tone here"
+partner,0.0603,positive,,"an everyday word, no tone here"
+concern,0.0598,negative,negative,
+struggles,0.0595,negative,negative,
+opponent,0.0593,negative,,"describes the play, the venue or the fixture"
+rounds,0.0593,positive,,"describes the play, the venue or the fixture"
+victorious,0.0592,positive,positive,
+struck,0.0583,negative,,"describes the play, the venue or the fixture"
+qualify,0.0577,positive,positive,
+successful,0.0577,positive,positive,
+board,0.0573,both,,in both Harvard lists
+defeating,0.0569,negative,,"a result, with no direction"
+actually,0.0568,positive,,"an everyday word, no tone here"
+experience,0.0565,positive,,"an everyday word, no tone here"
+main,0.0559,positive,,"an everyday word, no tone here"
+duty,0.055,negative,,"an everyday word, no tone here"
+danger,0.0549,negative,,"tone depends on the phrase (hot form, danger man)"
+order,0.0547,both,,in both Harvard lists
+shock,0.0546,negative,,"a result, with no direction"
+know,0.0543,positive,,"an everyday word, no tone here"
+improved,0.0541,positive,positive,
+dominant,0.0539,,positive,added: sports tone that Harvard lacks
+improvement,0.0536,positive,positive,
+trophy,0.0535,positive,,what every side wants
+illness,0.0532,negative,negative,
+deficit,0.0527,negative,negative,
+significant,0.0522,positive,,"an everyday word, no tone here"
+boasting,0.0518,negative,positive,moved: Harvard has the wrong sign for sport
+serving,0.0516,negative,,"describes the play, the venue or the fixture"
+struggle,0.0516,negative,negative,
+defensively,0.0511,negative,,"describes the play, the venue or the fixture"
+deal,0.051,both,,in both Harvard lists
+eye,0.0509,positive,,"an everyday word, no tone here"
+overcome,0.0506,positive,positive,
+heart,0.0504,positive,,"an everyday word, no tone here"
+capable,0.0501,positive,positive,
+closing,0.0495,negative,,"an everyday word, no tone here"
+showing,0.0494,negative,,"an everyday word, no tone here"
+opportunities,0.049,positive,,what every side wants
+fall,0.0489,negative,negative,
+fighting,0.0489,negative,,what every side wants
+needed,0.0489,negative,,what every side wants
+summit,0.0485,positive,positive,
+advance,0.0474,positive,positive,
+enjoying,0.0473,positive,positive,
+great,0.0473,positive,positive,
+shot,0.0471,negative,,"describes the play, the venue or the fixture"
+complete,0.0468,positive,,"an everyday word, no tone here"
+stick,0.0467,negative,,"describes the play, the venue or the fixture"
+offer,0.0464,positive,,"an everyday word, no tone here"
+leads,0.0459,positive,,"a result, with no direction"
+shared,0.0459,positive,,"a result, with no direction"
+disappointment,0.0457,negative,negative,
+doubts,0.0454,negative,negative,
+giving,0.0451,positive,,"an everyday word, no tone here"
+eliminated,0.0449,negative,negative,
+undefeated,0.0447,,positive,added: sports tone that Harvard lacks
+returns,0.0443,positive,,"describes the play, the venue or the fixture"
+alive,0.0442,positive,,what every side wants
+blow,0.044,negative,negative,
+consistency,0.0439,positive,positive,
+promoted,0.0436,,positive,added: sports tone that Harvard lacks
+assist,0.0435,positive,,"an everyday word, no tone here"
+ensure,0.0434,positive,,"an everyday word, no tone here"
+upset,0.0432,negative,,"a result, with no direction"
+cut,0.0429,negative,,"an everyday word, no tone here"
+compete,0.0426,negative,,"describes the play, the venue or the fixture"
+doubtful,0.0425,negative,negative,
+real,0.0424,positive,,"an everyday word, no tone here"
+wait,0.0424,negative,,what every side wants
+mixed,0.0422,negative,,"an everyday word, no tone here"
+competing,0.0419,negative,,"describes the play, the venue or the fixture"
+favour,0.0418,positive,positive,
+entertaining,0.0414,positive,,"an everyday word, no tone here"
+relegated,0.0411,,negative,added: sports tone that Harvard lacks
+battling,0.041,negative,,what every side wants
+remarkable,0.0409,positive,positive,
+setback,0.0408,,negative,added: sports tone that Harvard lacks
+familiar,0.0404,positive,,"an everyday word, no tone here"
+challenging,0.0398,negative,,what every side wants
+allowed,0.0394,positive,,"an everyday word, no tone here"
+knocked,0.0394,negative,negative,
+slightly,0.0394,negative,,"an everyday word, no tone here"
+defending,0.0393,positive,,"describes the play, the venue or the fixture"
+avoiding,0.0392,negative,,what every side wants
+stand,0.0388,positive,,"an everyday word, no tone here"
+completed,0.0384,positive,,"an everyday word, no tone here"
+provided,0.0383,positive,,"an everyday word, no tone here"
+expense,0.038,negative,,"an everyday word, no tone here"
+kicked,0.038,negative,,"describes the play, the venue or the fixture"
+dismal,0.0379,negative,negative,
+pleased,0.0379,positive,positive,
+avoided,0.0378,negative,,what every side wants
+boosted,0.0377,positive,positive,
+restored,0.0377,positive,positive,
+mean,0.0373,negative,,"an everyday word, no tone here"
+superior,0.0373,positive,positive,
+called,0.0372,positive,,"an everyday word, no tone here"
+let,0.0372,negative,,"an everyday word, no tone here"
+worse,0.0369,negative,negative,
+served,0.0368,negative,,"describes the play, the venue or the fixture"
+trouble,0.0368,negative,negative,
+providing,0.036,positive,,"an everyday word, no tone here"
+strain,0.036,negative,negative,
+friendlies,0.0359,positive,,"describes the play, the venue or the fixture"
+suffer,0.0359,negative,negative,
+disappointed,0.0358,negative,negative,
+edged,0.0358,negative,,"a result, with no direction"
+guaranteed,0.0354,positive,,"an everyday word, no tone here"
+allowing,0.035,positive,,"an everyday word, no tone here"
+fail,0.0346,negative,negative,
+aware,0.0345,positive,,"an everyday word, no tone here"
+considered,0.0345,positive,,"an everyday word, no tone here"
+impressed,0.0345,positive,positive,
+concede,0.0341,,negative,added: sports tone that Harvard lacks
+slight,0.0341,negative,,"an everyday word, no tone here"
+thrilling,0.0341,positive,,"an everyday word, no tone here"
+inconsistent,0.0338,,negative,added: sports tone that Harvard lacks
+free,0.0335,positive,,"describes the play, the venue or the fixture"
+showed,0.0333,negative,,"an everyday word, no tone here"
+convincing,0.0329,positive,positive,
+deadlock,0.0329,negative,,"describes the play, the venue or the fixture"
+progressed,0.0329,positive,positive,
+try,0.0327,negative,,what every side wants
+defenders,0.0325,positive,,"describes the play, the venue or the fixture"
+denied,0.0325,negative,negative,
+approach,0.0324,positive,,"an everyday word, no tone here"
+advanced,0.0323,positive,positive,
+triumphs,0.0314,positive,positive,
+dealing,0.0312,both,,in both Harvard lists
+promising,0.0312,positive,positive,
+fired,0.0309,negative,,"an everyday word, no tone here"
+makes,0.0309,both,,in both Harvard lists
+matters,0.0304,both,,in both Harvard lists
+dominance,0.0302,positive,positive,
+owing,0.0302,negative,,"an everyday word, no tone here"
+broke,0.03,negative,,"a result, with no direction"
+concerned,0.03,negative,negative,
+optimism,0.03,positive,positive,
+stronger,0.03,,positive,added: sports tone that Harvard lacks
+firing,0.0299,negative,,"an everyday word, no tone here"
+achieve,0.0298,positive,positive,
+faithful,0.0296,positive,,"an everyday word, no tone here"
+appointed,0.0295,positive,,"an everyday word, no tone here"
+fought,0.0295,negative,,what every side wants
+chasing,0.0294,negative,,what every side wants
+stands,0.0294,positive,,"an everyday word, no tone here"
+hopeful,0.0293,positive,,what every side wants
+glory,0.0292,positive,positive,
+dominated,0.0291,negative,,"a result, with no direction"
+standing,0.0291,positive,,"an everyday word, no tone here"
+ensured,0.0288,positive,,"an everyday word, no tone here"
+notable,0.0288,positive,,"an everyday word, no tone here"
+taste,0.0284,positive,,"an everyday word, no tone here"
+undoubtedly,0.0283,positive,,"an everyday word, no tone here"
+lower,0.0282,negative,,"an everyday word, no tone here"
+progressing,0.0282,positive,positive,
+wrong,0.0279,negative,negative,
+low,0.0275,negative,,"an everyday word, no tone here"
+edging,0.0273,negative,,"a result, with no direction"
+mind,0.0273,both,,in both Harvard lists
+fire,0.027,negative,,"an everyday word, no tone here"
+condemned,0.0268,negative,negative,
+knowing,0.0267,positive,,"an everyday word, no tone here"
+thrashed,0.0267,negative,,"a result, with no direction"
+hunt,0.0266,negative,,what every side wants
+lone,0.0265,negative,,"an everyday word, no tone here"
+easy,0.0264,positive,positive,
+exactly,0.0264,positive,,"an everyday word, no tone here"
+achieved,0.0263,positive,positive,
+hopefuls,0.0263,positive,,what every side wants
+brilliant,0.0262,positive,positive,
+nursing,0.0261,positive,negative,moved: Harvard has the wrong sign for sport
+significantly,0.0261,positive,,"an everyday word, no tone here"
+qualified,0.026,positive,positive,
+revenge,0.026,negative,,"an everyday word, no tone here"
+helping,0.0259,both,,in both Harvard lists
+ideal,0.0259,positive,positive,
+turning,0.0258,negative,,"an everyday word, no tone here"
+create,0.0257,positive,,"an everyday word, no tone here"
+eager,0.0256,positive,,what every side wants
+ability,0.0253,positive,,"an everyday word, no tone here"
+tempted,0.0253,positive,,what every side wants
+clashes,0.0252,negative,,"describes the play, the venue or the fixture"
+created,0.0251,positive,,"an everyday word, no tone here"
+disposal,0.0251,negative,,"an everyday word, no tone here"
+partnership,0.0251,positive,,"an everyday word, no tone here"
+light,0.0249,positive,,"an everyday word, no tone here"
+decent,0.0248,positive,positive,
+contend,0.0245,negative,,"an everyday word, no tone here"
+rewarded,0.0245,positive,positive,
+triumphed,0.0241,positive,positive,
+offensive,0.0239,negative,,"describes the play, the venue or the fixture"
+respectable,0.0239,positive,positive,
+positives,0.0238,positive,positive,
+woes,0.0235,negative,negative,
+revert,0.0234,negative,,"an everyday word, no tone here"
+welcomed,0.0234,positive,,"an everyday word, no tone here"
+orders,0.0233,both,,in both Harvard lists
+consistent,0.0232,positive,positive,
+slump,0.0232,negative,negative,
+contributed,0.0231,positive,positive,
+allow,0.023,positive,,"an everyday word, no tone here"
+grabbed,0.0228,negative,,"an everyday word, no tone here"
+talent,0.0227,positive,positive,
+drought,0.0226,negative,negative,
+needs,0.0223,negative,,what every side wants
+pride,0.0223,positive,positive,
+settled,0.0222,positive,,"an everyday word, no tone here"
+welcoming,0.0222,positive,,"an everyday word, no tone here"
+cancel,0.0221,negative,,"a result, with no direction"
+guarantee,0.0221,positive,,"an everyday word, no tone here"
+hero,0.0221,positive,positive,
+strongest,0.0219,,positive,added: sports tone that Harvard lacks
+successes,0.0219,positive,positive,
+mix,0.0217,negative,,"an everyday word, no tone here"
+odds,0.0217,negative,,"an everyday word, no tone here"
+overcoming,0.0217,positive,positive,
+severe,0.0217,negative,negative,
+hardly,0.0216,negative,,"an everyday word, no tone here"
+eased,0.0215,positive,positive,
+consider,0.0214,positive,,"an everyday word, no tone here"
+ensuring,0.0214,positive,,"an everyday word, no tone here"
+fill,0.0213,positive,,"an everyday word, no tone here"
+supported,0.0213,positive,,"an everyday word, no tone here"
+absences,0.0212,negative,negative,
+passed,0.0212,both,,in both Harvard lists
+resilient,0.0212,,positive,added: sports tone that Harvard lacks
+frustrated,0.0211,negative,negative,
+particular,0.0211,both,,in both Harvard lists
+really,0.0211,positive,,"an everyday word, no tone here"
+needing,0.0209,negative,,what every side wants
+snatch,0.0209,negative,,"an everyday word, no tone here"
+clinical,0.0208,,positive,added: sports tone that Harvard lacks
+shortly,0.0208,negative,,"an everyday word, no tone here"
+suspensions,0.0208,negative,negative,
+condemn,0.0207,negative,negative,
+frustrating,0.0207,negative,negative,
+impress,0.0207,positive,positive,
+safe,0.0207,positive,,what every side wants
+fairly,0.0206,positive,,"an everyday word, no tone here"
+gain,0.0206,positive,positive,
+ease,0.0205,positive,positive,
+forwards,0.0205,positive,,"describes the play, the venue or the fixture"
+importance,0.0205,positive,,"an everyday word, no tone here"
+improving,0.0205,positive,positive,
+languishing,0.0205,negative,negative,
+failure,0.0202,negative,negative,
+trying,0.0202,negative,,what every side wants
+memorable,0.0201,positive,positive,
+rooted,0.0201,negative,negative,
+hitting,0.02,both,,in both Harvard lists
+hot,0.02,negative,,"tone depends on the phrase (hot form, danger man)"
+normal,0.02,positive,,"an everyday word, no tone here"
+bound,0.0199,negative,,"an everyday word, no tone here"
+established,0.0198,positive,,"an everyday word, no tone here"
+guided,0.0198,positive,,"an everyday word, no tone here"
+elimination,0.0197,negative,negative,
+inspiration,0.0197,positive,positive,
+misses,0.0197,negative,negative,
+daunting,0.0196,negative,negative,
+health,0.0196,positive,,"an everyday word, no tone here"
+kind,0.0196,positive,,"an everyday word, no tone here"
+gained,0.0194,positive,positive,
+sense,0.0194,positive,,"an everyday word, no tone here"
+foes,0.0193,negative,,"describes the play, the venue or the fixture"
+healthy,0.0193,positive,positive,
+incredible,0.0192,negative,positive,moved: Harvard has the wrong sign for sport
+outset,0.0191,positive,,"an everyday word, no tone here"
+cost,0.0189,negative,negative,
+fair,0.0189,positive,,"an everyday word, no tone here"
+miserable,0.0189,negative,negative,
+benefit,0.0188,positive,positive,
+enjoy,0.0188,positive,positive,
+sensational,0.0188,positive,positive,
+formidable,0.0187,negative,positive,moved: Harvard has the wrong sign for sport
+limited,0.0186,negative,negative,
+shake,0.0186,negative,,"an everyday word, no tone here"
+waiting,0.0186,negative,,what every side wants
+matter,0.0185,both,,in both Harvard lists
+bit,0.0184,negative,,"an everyday word, no tone here"
+breaking,0.0184,negative,,"describes the play, the venue or the fixture"
+restore,0.0184,positive,positive,
+rock-bottom,0.0184,,negative,added: sports tone that Harvard lacks
+charges,0.0183,negative,,"an everyday word, no tone here"
+poised,0.0182,positive,positive,
+desired,0.0181,negative,,"an everyday word, no tone here"
+advancing,0.018,positive,positive,
+commendable,0.018,positive,positive,
+faith,0.018,positive,,"an everyday word, no tone here"
+runs,0.018,negative,,"a result, with no direction"
+straightforward,0.0179,positive,positive,
+talented,0.0179,positive,positive,
+encouraging,0.0178,positive,positive,
+availability,0.0177,positive,,"an everyday word, no tone here"
+exception,0.0177,negative,,"an everyday word, no tone here"
+exciting,0.0177,positive,,"an everyday word, no tone here"
+highlighting,0.0175,positive,,"an everyday word, no tone here"
+bitter,0.0173,negative,,"describes the play, the venue or the fixture"
+clearly,0.0173,positive,,"an everyday word, no tone here"
+vying,0.0173,negative,,what every side wants
+achieving,0.0172,positive,positive,
+bad,0.0172,negative,negative,
+lowly,0.0172,negative,,"an everyday word, no tone here"
+dying,0.0171,negative,,"an everyday word, no tone here"
+delighted,0.017,positive,positive,
+crisis,0.0169,negative,negative,
+stalemates,0.0169,negative,,"a result, with no direction"
+champion,0.0168,positive,positive,
+save,0.0168,positive,,"describes the play, the venue or the fixture"
+effectively,0.0167,positive,,"an everyday word, no tone here"
+humbling,0.0167,positive,negative,moved: Harvard has the wrong sign for sport
+optimistic,0.0167,positive,positive,
+serves,0.0166,negative,,"describes the play, the venue or the fixture"
+worrying,0.0166,negative,negative,
+favourite,0.0165,positive,positive,
+goods,0.0164,positive,positive,
+regarded,0.0163,positive,,"an everyday word, no tone here"
+bright,0.0162,positive,positive,
+favourable,0.0162,positive,positive,
+fortunate,0.0162,positive,positive,
+gaining,0.0161,positive,positive,
+sore,0.0161,negative,negative,
+comprehensive,0.016,positive,positive,
+content,0.016,positive,,"an everyday word, no tone here"
+succumbed,0.016,negative,negative,
+disastrous,0.0159,negative,negative,
+dangerous,0.0158,negative,,"tone depends on the phrase (hot form, danger man)"
+sacked,0.0158,,negative,added: sports tone that Harvard lacks
+wary,0.0158,negative,,what every side wants
+rival,0.0156,negative,,"a result, with no direction"
+sharing,0.0156,positive,,"a result, with no direction"
+desperately,0.0155,negative,negative,
+prolific,0.0155,positive,positive,
+joins,0.0154,positive,,"an everyday word, no tone here"
+concerning,0.0153,negative,,"an everyday word, no tone here"
+doubled,0.0152,negative,,"an everyday word, no tone here"
+impressively,0.0152,positive,positive,
+pretty,0.0152,positive,,"an everyday word, no tone here"
+supporting,0.0152,positive,,"an everyday word, no tone here"
+assured,0.0151,positive,positive,
+creative,0.0151,positive,,"an everyday word, no tone here"
+regarding,0.0151,positive,,"an everyday word, no tone here"
+famous,0.015,positive,,"an everyday word, no tone here"
+fantastic,0.015,positive,positive,
+worth,0.015,positive,,"an everyday word, no tone here"
+inconsistency,0.0149,negative,negative,
+spectacular,0.0149,positive,positive,
+exploits,0.0148,negative,,"tone depends on the phrase (hot form, danger man)"
+fears,0.0148,negative,negative,
+valuable,0.0148,positive,positive,
+aspirations,0.0146,positive,positive,
+credit,0.0146,positive,positive,
+inspire,0.0146,positive,positive,
+lacking,0.0146,negative,negative,
+saves,0.0146,positive,,"describes the play, the venue or the fixture"
+achievement,0.0143,positive,positive,
+battles,0.0143,negative,,what every side wants
+completely,0.0143,positive,,"an everyday word, no tone here"
+completing,0.0143,positive,,"an everyday word, no tone here"
+happy,0.0143,positive,positive,
+stern,0.0143,negative,negative,
+tasted,0.0143,positive,,"an everyday word, no tone here"
+unfortunate,0.0143,negative,negative,
+regardless,0.0142,negative,,"an everyday word, no tone here"
+creating,0.0141,positive,,"an everyday word, no tone here"
+guide,0.0141,positive,,"an everyday word, no tone here"
+pay,0.0141,positive,,"an everyday word, no tone here"
+scare,0.014,negative,negative,
+settling,0.014,positive,,"an everyday word, no tone here"
+dismissed,0.0139,negative,negative,
+outstanding,0.0139,positive,positive,
+questionable,0.0139,negative,negative,
+realistic,0.0139,positive,,"an everyday word, no tone here"
+competed,0.0138,negative,,"describes the play, the venue or the fixture"
+potent,0.0138,positive,positive,
+eyes,0.0137,positive,,"an everyday word, no tone here"
+saved,0.0137,positive,,"describes the play, the venue or the fixture"
+contributions,0.0136,positive,positive,
+deserved,0.0136,positive,positive,
+knows,0.0136,positive,,"an everyday word, no tone here"
+satisfied,0.0136,positive,positive,
+consistently,0.0135,positive,positive,
+successfully,0.0135,positive,positive,
+woeful,0.0135,negative,negative,
+defend,0.0134,positive,,"describes the play, the venue or the fixture"
+intriguing,0.0134,positive,,"an everyday word, no tone here"
+tear,0.0134,negative,negative,
+overturn,0.0133,negative,,"a result, with no direction"
+split,0.0133,negative,,"a result, with no direction"
+vulnerable,0.0133,,negative,added: sports tone that Harvard lacks
+outsiders,0.0132,negative,negative,
+resounding,0.0132,positive,positive,
+kicking,0.0131,negative,,"describes the play, the venue or the fixture"
+inspired,0.013,positive,positive,
+misery,0.013,negative,negative,
+press,0.0129,negative,,"an everyday word, no tone here"
+kicks,0.0128,negative,,"describes the play, the venue or the fixture"
+box,0.0127,negative,,"describes the play, the venue or the fixture"
+admitted,0.0126,positive,,"an everyday word, no tone here"
+duties,0.0126,negative,,"an everyday word, no tone here"
+rescue,0.0126,positive,positive,
+setbacks,0.0126,,negative,added: sports tone that Harvard lacks
+boasts,0.0125,negative,positive,moved: Harvard has the wrong sign for sport
+qualities,0.0125,positive,positive,
+revival,0.0125,positive,positive,
+spare,0.0125,positive,,"an everyday word, no tone here"
+exact,0.0124,positive,,"an everyday word, no tone here"
+experiencing,0.0124,positive,,"an everyday word, no tone here"
+forcing,0.0124,negative,negative,
+riding,0.0124,negative,,"tone depends on the phrase (hot form, danger man)"
+snatched,0.0124,negative,,"an everyday word, no tone here"
+assistant,0.0123,positive,,"an everyday word, no tone here"
+catch,0.0123,negative,,what every side wants
+displace,0.0123,negative,,"an everyday word, no tone here"
+motivation,0.0123,positive,positive,
+pushed,0.0123,negative,,what every side wants
+golden,0.0122,positive,,"an everyday word, no tone here"
+leaky,0.0122,,negative,added: sports tone that Harvard lacks
+prowess,0.0122,positive,positive,
+hoped,0.0121,positive,,what every side wants
+interesting,0.0121,positive,,"an everyday word, no tone here"
+out-of-form,0.0121,,negative,added: sports tone that Harvard lacks
+crushing,0.012,negative,,"a result, with no direction"
+handing,0.012,both,,in both Harvard lists
+relieved,0.012,positive,positive,
+motivated,0.0119,positive,positive,
+striking,0.0119,negative,,"describes the play, the venue or the fixture"
+succumbing,0.0119,negative,negative,
+costly,0.0118,negative,negative,
+dominating,0.0118,negative,,"a result, with no direction"
+free-scoring,0.0118,,positive,added: sports tone that Harvard lacks
+guiding,0.0118,positive,,"an everyday word, no tone here"
+lie,0.0118,negative,,"a result, with no direction"
+threats,0.0118,negative,,"an everyday word, no tone here"
+depleted,0.0117,negative,negative,
+inability,0.0117,negative,negative,
+pass,0.0117,both,,in both Harvard lists
+precious,0.0117,positive,positive,
+runaway,0.0117,negative,,"a result, with no direction"
+dumped,0.0116,negative,negative,
+improvements,0.0116,positive,positive,
+realistically,0.0116,positive,,"an everyday word, no tone here"
+battled,0.0115,negative,,what every side wants
+error,0.0115,negative,negative,
+rampant,0.0115,negative,positive,moved: Harvard has the wrong sign for sport
+collapse,0.0114,negative,negative,
+entertain,0.0114,positive,,"an everyday word, no tone here"
+establish,0.0114,positive,positive,
+encouragement,0.0113,positive,positive,
+gives,0.0113,positive,,"an everyday word, no tone here"
+damage,0.0112,negative,negative,
+encouraged,0.0112,positive,positive,
+fatigue,0.0112,negative,negative,
+favoured,0.0112,positive,positive,
+hanging,0.0112,negative,,"an everyday word, no tone here"
+ruthless,0.0112,negative,positive,moved: Harvard has the wrong sign for sport
+luck,0.0111,positive,,"an everyday word, no tone here"
+backed,0.0109,positive,,"describes the play, the venue or the fixture"
+belt,0.0109,negative,,"an everyday word, no tone here"
+heroics,0.0109,positive,positive,
+nurse,0.0109,positive,positive,
+odd,0.0109,negative,,"an everyday word, no tone here"
+piece,0.0109,negative,,"an everyday word, no tone here"
+arrest,0.0108,both,,in both Harvard lists
+modest,0.0108,positive,,"an everyday word, no tone here"
+surge,0.0108,positive,positive,
+dead,0.0107,negative,,"an everyday word, no tone here"
+offers,0.0107,positive,,"an everyday word, no tone here"
+confined,0.0106,negative,negative,
+dragged,0.0106,negative,negative,
+sound,0.0106,positive,,"an everyday word, no tone here"
+exits,0.0105,negative,negative,
+rupture,0.0105,negative,negative,
+true,0.0105,positive,,"an everyday word, no tone here"
+credentials,0.0104,positive,positive,
+cross,0.0104,negative,,"describes the play, the venue or the fixture"
+letting,0.0104,negative,,"an everyday word, no tone here"
+remarkably,0.0104,positive,positive,
+throw,0.0104,negative,,"describes the play, the venue or the fixture"
+triumphing,0.0104,positive,positive,
+humiliating,0.0103,negative,negative,
+knocks,0.0103,negative,negative,
+offering,0.0103,positive,,"an everyday word, no tone here"
+triumphant,0.0103,positive,positive,
+resurgent,0.0102,,positive,added: sports tone that Harvard lacks
+dire,0.0101,negative,negative,
+exiting,0.0101,negative,negative,
+festive,0.0101,positive,,"an everyday word, no tone here"

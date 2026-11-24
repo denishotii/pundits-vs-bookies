@@ -5,85 +5,93 @@ football,test,average,left out,"odds model, edge > 0%",6,0.5,2.63,0.438333,-0.21
 football,test,average,left out,"odds model, edge > 5%",1,1.0,0.56,0.56,,
 football,test,average,left out,"odds + pick model, edge > 0%",86,0.488372,0.13,0.001512,-0.238494,0.241518
 football,test,average,left out,"odds + pick model, edge > 5%",1,1.0,0.56,0.56,,
-football,test,average,left out,"odds + pick + text model, edge > 0%",283,0.385159,-1.45,-0.005124,-0.167431,0.157184
-football,test,average,left out,"odds + pick + text model, edge > 5%",11,0.545455,7.08,0.643636,-0.364114,1.651386
+football,test,average,left out,"odds + pick + text model, edge > 0%",276,0.373188,-6.93,-0.025109,-0.192189,0.141972
+football,test,average,left out,"odds + pick + text model, edge > 5%",7,0.428571,2.58,0.368571,-1.039458,1.776601
 football,test,average,included,back every pick,2271,0.43461,-167.74,-0.073862,-0.12253,-0.025194
 football,test,average,included,back every favourite,2271,0.515632,-85.16,-0.037499,-0.077808,0.00281
 football,test,average,included,"odds model, edge > 0%",6,0.5,2.63,0.438333,-0.213553,1.09022
 football,test,average,included,"odds model, edge > 5%",1,1.0,0.56,0.56,,
 football,test,average,included,"odds + pick model, edge > 0%",87,0.482759,-0.87,-0.01,-0.248337,0.228337
 football,test,average,included,"odds + pick model, edge > 5%",1,1.0,0.56,0.56,,
-football,test,average,included,"odds + pick + text model, edge > 0%",284,0.383803,-2.45,-0.008627,-0.170507,0.153254
-football,test,average,included,"odds + pick + text model, edge > 5%",11,0.545455,7.08,0.643636,-0.364114,1.651386
+football,test,average,included,"odds + pick + text model, edge > 0%",277,0.371841,-7.93,-0.028628,-0.195247,0.137991
+football,test,average,included,"odds + pick + text model, edge > 5%",8,0.375,1.58,0.1975,-1.067149,1.462149
 football,test,best,left out,back every pick,2270,0.434802,-94.2,-0.041498,-0.092059,0.009063
 football,test,best,left out,back every favourite,2271,0.515632,-12.18,-0.005363,-0.047189,0.036462
 football,test,best,left out,"odds model, edge > 0%",1043,0.395014,-56.08,-0.053768,-0.130421,0.022885
 football,test,best,left out,"odds model, edge > 5%",53,0.415094,3.29,0.062075,-0.288296,0.412447
 football,test,best,left out,"odds + pick model, edge > 0%",1634,0.389841,33.86,0.020722,-0.04503,0.086474
 football,test,best,left out,"odds + pick model, edge > 5%",105,0.361905,15.1,0.14381,-0.163346,0.450965
-football,test,best,left out,"odds + pick + text model, edge > 0%",1769,0.375353,-2.75,-0.001555,-0.065514,0.062405
-football,test,best,left out,"odds + pick + text model, edge > 5%",224,0.357143,42.65,0.190402,-0.031806,0.412609
+football,test,best,left out,"odds + pick + text model, edge > 0%",1791,0.39196,69.62,0.038872,-0.024003,0.101747
+football,test,best,left out,"odds + pick + text model, edge > 5%",196,0.336735,14.51,0.074031,-0.152049,0.30011
 football,test,best,included,back every pick,2271,0.43461,-95.2,-0.04192,-0.092466,0.008626
 football,test,best,included,back every favourite,2271,0.515632,-12.18,-0.005363,-0.047189,0.036462
 football,test,best,included,"odds model, edge > 0%",1046,0.394837,-46.08,-0.044054,-0.123786,0.035679
 football,test,best,included,"odds model, edge > 5%",55,0.4,1.29,0.023455,-0.318956,0.365865
 football,test,best,included,"odds + pick model, edge > 0%",1642,0.388551,38.86,0.023666,-0.043393,0.090726
 football,test,best,included,"odds + pick model, edge > 5%",110,0.354545,23.1,0.21,-0.153692,0.573692
-football,test,best,included,"odds + pick + text model, edge > 0%",1779,0.374368,21.25,0.011945,-0.056412,0.080302
-football,test,best,included,"odds + pick + text model, edge > 5%",230,0.352174,49.65,0.21587,-0.023866,0.455605
+football,test,best,included,"odds + pick + text model, edge > 0%",1804,0.390244,90.62,0.050233,-0.016878,0.117344
+football,test,best,included,"odds + pick + text model, edge > 5%",201,0.328358,9.51,0.047313,-0.174424,0.269051
 football,check,average,left out,back every pick,676,0.470414,-9.67,-0.014305,-0.105133,0.076524
 football,check,average,left out,back every favourite,676,0.548817,6.66,0.009852,-0.062929,0.082633
 football,check,average,left out,"odds model, edge > 0%",0,,0.0,,,
 football,check,average,left out,"odds model, edge > 5%",0,,0.0,,,
 football,check,average,left out,"odds + pick model, edge > 0%",28,0.464286,0.79,0.028214,-0.450634,0.507063
 football,check,average,left out,"odds + pick model, edge > 5%",0,,0.0,,,
-football,check,average,left out,"odds + pick + text model, edge > 0%",100,0.41,11.67,0.1167,-0.170558,0.403958
-football,check,average,left out,"odds + pick + text model, edge > 5%",3,0.333333,0.35,0.116667,-2.072,2.305333
+football,check,average,left out,"odds + pick + text model, edge > 0%",99,0.313131,-7.44,-0.075152,-0.365716,0.215413
+football,check,average,left out,"odds + pick + text model, edge > 5%",3,0.0,-3.0,-1.0,-1.0,-1.0
 football,check,average,included,back every pick,676,0.470414,-9.67,-0.014305,-0.105133,0.076524
 football,check,average,included,back every favourite,676,0.548817,6.66,0.009852,-0.062929,0.082633
 football,check,average,included,"odds model, edge > 0%",0,,0.0,,,
 football,check,average,included,"odds model, edge > 5%",0,,0.0,,,
 football,check,average,included,"odds + pick model, edge > 0%",28,0.464286,0.79,0.028214,-0.450634,0.507063
 football,check,average,included,"odds + pick model, edge > 5%",0,,0.0,,,
-football,check,average,included,"odds + pick + text model, edge > 0%",100,0.41,11.67,0.1167,-0.170558,0.403958
-football,check,average,included,"odds + pick + text model, edge > 5%",3,0.333333,0.35,0.116667,-2.072,2.305333
+football,check,average,included,"odds + pick + text model, edge > 0%",99,0.313131,-7.44,-0.075152,-0.365716,0.215413
+football,check,average,included,"odds + pick + text model, edge > 5%",3,0.0,-3.0,-1.0,-1.0,-1.0
 football,check,best,left out,back every pick,676,0.470414,12.58,0.018609,-0.075854,0.113073
 football,check,best,left out,back every favourite,676,0.548817,29.14,0.043107,-0.032211,0.118424
 football,check,best,left out,"odds model, edge > 0%",315,0.44127,-3.86,-0.012254,-0.1454,0.120892
 football,check,best,left out,"odds model, edge > 5%",17,0.411765,1.58,0.092941,-0.635831,0.821713
 football,check,best,left out,"odds + pick model, edge > 0%",505,0.368317,-37.22,-0.073703,-0.18289,0.035484
 football,check,best,left out,"odds + pick model, edge > 5%",36,0.444444,3.26,0.090556,-0.379768,0.560879
-football,check,best,left out,"odds + pick + text model, edge > 0%",522,0.381226,-17.17,-0.032893,-0.146272,0.080486
-football,check,best,left out,"odds + pick + text model, edge > 5%",82,0.402439,16.3,0.19878,-0.150357,0.547918
+football,check,best,left out,"odds + pick + text model, edge > 0%",564,0.37234,-18.57,-0.032926,-0.143443,0.077592
+football,check,best,left out,"odds + pick + text model, edge > 5%",72,0.333333,3.01,0.041806,-0.333594,0.417205
 football,check,best,included,back every pick,676,0.470414,12.58,0.018609,-0.075854,0.113073
 football,check,best,included,back every favourite,676,0.548817,29.14,0.043107,-0.032211,0.118424
 football,check,best,included,"odds model, edge > 0%",321,0.433022,-9.86,-0.030717,-0.162301,0.100868
 football,check,best,included,"odds model, edge > 5%",21,0.333333,-2.42,-0.115238,-0.73114,0.500664
 football,check,best,included,"odds + pick model, edge > 0%",509,0.365422,-41.22,-0.080982,-0.189601,0.027636
 football,check,best,included,"odds + pick model, edge > 5%",38,0.421053,1.26,0.033158,-0.418187,0.484503
-football,check,best,included,"odds + pick + text model, edge > 0%",526,0.378327,-21.17,-0.040247,-0.152975,0.072481
-football,check,best,included,"odds + pick + text model, edge > 5%",85,0.388235,13.3,0.156471,-0.183454,0.496395
+football,check,best,included,"odds + pick + text model, edge > 0%",570,0.368421,-24.57,-0.043105,-0.152718,0.066507
+football,check,best,included,"odds + pick + text model, edge > 5%",75,0.32,0.01,0.000133,-0.36281,0.363077
 tennis,test,average,left out,back every pick,228,0.714912,-2.58,-0.011316,-0.111133,0.088501
 tennis,test,average,left out,back every favourite,228,0.732456,-12.16,-0.053333,-0.132042,0.025376
 tennis,test,average,left out,"odds model, edge > 0%",1,0.0,-1.0,-1.0,,
 tennis,test,average,left out,"odds model, edge > 5%",0,,0.0,,,
 tennis,test,average,left out,"odds + pick model, edge > 0%",69,0.681159,9.11,0.132029,-0.106652,0.37071
 tennis,test,average,left out,"odds + pick model, edge > 5%",21,0.619048,4.75,0.22619,-0.360921,0.813302
+tennis,test,average,left out,"odds + pick + text model, edge > 0%",96,0.510417,-9.43,-0.098229,-0.319038,0.12258
+tennis,test,average,left out,"odds + pick + text model, edge > 5%",31,0.387097,-2.87,-0.092581,-0.586223,0.401062
 tennis,test,average,included,back every pick,228,0.714912,-2.58,-0.011316,-0.111133,0.088501
 tennis,test,average,included,back every favourite,228,0.732456,-12.16,-0.053333,-0.132042,0.025376
 tennis,test,average,included,"odds model, edge > 0%",1,0.0,-1.0,-1.0,,
 tennis,test,average,included,"odds model, edge > 5%",0,,0.0,,,
 tennis,test,average,included,"odds + pick model, edge > 0%",69,0.681159,9.11,0.132029,-0.106652,0.37071
 tennis,test,average,included,"odds + pick model, edge > 5%",21,0.619048,4.75,0.22619,-0.360921,0.813302
+tennis,test,average,included,"odds + pick + text model, edge > 0%",96,0.510417,-9.43,-0.098229,-0.319038,0.12258
+tennis,test,average,included,"odds + pick + text model, edge > 5%",31,0.387097,-2.87,-0.092581,-0.586223,0.401062
 tennis,test,best,left out,back every pick,228,0.714912,3.63,0.015921,-0.089409,0.121252
 tennis,test,best,left out,back every favourite,228,0.732456,-7.46,-0.032719,-0.113517,0.048078
 tennis,test,best,left out,"odds model, edge > 0%",114,0.570175,-11.89,-0.104298,-0.25484,0.046244
 tennis,test,best,left out,"odds model, edge > 5%",6,0.333333,-1.47,-0.245,-1.223611,0.733611
 tennis,test,best,left out,"odds + pick model, edge > 0%",153,0.509804,-1.82,-0.011895,-0.227915,0.204124
 tennis,test,best,left out,"odds + pick model, edge > 5%",69,0.492754,0.04,0.00058,-0.307926,0.309085
+tennis,test,best,left out,"odds + pick + text model, edge > 0%",160,0.45625,-13.7,-0.085625,-0.296363,0.125113
+tennis,test,best,left out,"odds + pick + text model, edge > 5%",89,0.359551,-20.05,-0.225281,-0.486166,0.035604
 tennis,test,best,included,back every pick,228,0.714912,3.63,0.015921,-0.089409,0.121252
 tennis,test,best,included,back every favourite,228,0.732456,-7.46,-0.032719,-0.113517,0.048078
 tennis,test,best,included,"odds model, edge > 0%",129,0.511628,24.11,0.186899,-0.588965,0.962763
 tennis,test,best,included,"odds model, edge > 5%",18,0.166667,37.53,2.085,-3.450319,7.620319
 tennis,test,best,included,"odds + pick model, edge > 0%",163,0.484663,39.18,0.240368,-0.395828,0.876564
 tennis,test,best,included,"odds + pick model, edge > 5%",77,0.454545,43.04,0.558961,-0.747278,1.8652
+tennis,test,best,included,"odds + pick + text model, edge > 0%",172,0.430233,25.3,0.147093,-0.457898,0.752084
+tennis,test,best,included,"odds + pick + text model, edge > 5%",99,0.333333,20.95,0.211616,-0.812317,1.235549

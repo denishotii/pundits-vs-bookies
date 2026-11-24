@@ -9,8 +9,9 @@ import pytest
 
 from pvb import config
 from pvb.analysis import (
-    TEXT_FEATURES, backtest, brier, early_odds_time, implied_probabilities, log_loss, mean_with_ci,
-    odds_movement, predictions, prepare_football, prepare_tennis, roi_with_ci, run, text_beyond_odds,
+    TEXT_FEATURES, backtest, brier, correlation_with_ci, early_odds_time, implied_probabilities, log_loss, odds,
+    mean_with_ci, odds_movement, predictions, prepare_football, prepare_tennis, roi_with_ci, run,
+    text_beyond_odds, text_measures,
 )
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -105,10 +106,13 @@ def test_prepare_football_codes_result_and_pick():
     ("a", None, 3, 0),
 ])
 def test_prepare_tennis_codes_straight_sets_picks(pick_side, pick_sets, best_of, expected):
-    games = prepare_tennis(pd.DataFrame({
+    games = pd.DataFrame({
         "date": [pd.Timestamp("2025-07-13")], "a_won": [False],
         "pick_side": [pick_side], "pick_sets": [pick_sets], "best_of": [best_of],
-    }))
+    })
+    for column in TEXT_FEATURES["tennis"]:
+        games[column] = 0.0
+    games = prepare_tennis(games)
     assert games.loc[0, "pick_a_in_straight_sets"] == expected
     assert (games.loc[0, "y"], games.loc[0, "pick_a"]) == (1, int(pick_side == "a"))
     assert (games.loc[0, "season"], games.loc[0, "sample"]) == ("2025", "train")
@@ -141,6 +145,27 @@ def test_models_never_see_the_test_results():
     shuffled.loc[test, "y"] = shuffled.loc[test, "y"].sample(frac=1, random_state=1).to_numpy()
     for name, probabilities in predictions(games, "football").items():
         np.testing.assert_allclose(probabilities, predictions(shuffled, "football")[name], err_msg=name)
+
+
+def test_text_measures_point_towards_side_a():
+    games = simulated_football(pick_knows_more=True)
+    market = implied_probabilities(odds(games, "football"))
+    rng = np.random.default_rng(5)
+    games["tone_diff"] = market[:, 0] - market[:, 2] + rng.normal(0, 0.3, len(games))  # follows the odds
+    games["absence_diff"] = -games["tone_diff"]  # more absences for the home side: worse for it
+    table = text_measures(games, "football").set_index("measure")
+    assert (table["games"] == (games["sample"] == "train").sum()).all()  # training seasons only
+    assert table.loc["pick", "corr_result_low"] > 0.2  # the simulated pick knows a lot
+    assert table.loc["tone_diff", "corr_odds_low"] > 0.3
+    assert table.loc["absence_diff", "corr_odds_high"] < -0.3
+    assert abs(table.loc["naive_bayes", "corr_result"]) < 0.06  # random numbers: about 4 standard errors
+
+
+def test_correlation_interval():
+    r, low, high = correlation_with_ci(np.array([1.0, 2, 3, 4, 5, 6]), np.array([2.0, 1, 4, 3, 6, 5]))
+    assert r == pytest.approx(0.8286, abs=1e-4)
+    # Fisher's z: tanh(atanh(r) -/+ 1.96 / sqrt(6 - 3))
+    assert (low, high) == pytest.approx((0.0519, 0.9807), abs=1e-4)
 
 
 # Test 2: odds movement ------------------------------------------------------------
@@ -256,13 +281,13 @@ def fresh_results(tmp_path_factory):
 
 
 def test_analyse_writes_every_table_and_chart(fresh_results):
-    for name in ["picks_vs_favourite", "text_beyond_odds", "odds_movement", "backtest"]:
+    for name in ["picks_vs_favourite", "text_beyond_odds", "text_measures", "odds_movement", "backtest"]:
         assert not pd.read_csv(fresh_results / f"{name}.csv").empty
     for name in ["picks_vs_favourite", "text_beyond_odds", "odds_movement"]:
         assert (fresh_results / f"{name}.png").stat().st_size > 10_000
 
 
-@pytest.mark.parametrize("name", ["picks_vs_favourite", "text_beyond_odds", "odds_movement", "backtest"])
+@pytest.mark.parametrize("name", ["picks_vs_favourite", "text_beyond_odds", "text_measures", "odds_movement", "backtest"])
 def test_committed_results_are_up_to_date(fresh_results, name):
     """After a new `match` or `features`, run `python -m pvb analyse` again; this catches a forgotten one."""
     committed = ROOT / "results" / f"{name}.csv"

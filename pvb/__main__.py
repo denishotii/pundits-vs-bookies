@@ -4,8 +4,8 @@
     python -m pvb scrape --limit 20           # 2. download raw HTML (resumable)
     python -m pvb parse                       # 3. raw HTML -> data/interim/previews.csv, data/processed/picks.csv
     python -m pvb odds football               # 4. download odds files
-    python -m pvb features                    # 5. text features -> data/processed/features.csv
-    python -m pvb match                       # 6. previews -> games and odds -> data/processed/matched_*.csv
+    python -m pvb match                       # 5. previews -> games and odds -> data/processed/matched_*.csv
+    python -m pvb features                    # 6. text features -> data/processed/features.csv (needs step 5)
     python -m pvb analyse                     # 7. the tests -> tables and charts in results/
 """
 
@@ -95,7 +95,10 @@ def cmd_odds(args) -> None:
 def cmd_features(args) -> None:
     from .features import FEATURES_CSV, build
 
-    df = build()
+    try:
+        df = build()
+    except FileNotFoundError as exc:  # no matched tables or no dictionary yet
+        sys.exit(str(exc))
     print(f"{len(df)} rows -> {FEATURES_CSV}")
 
 
@@ -157,12 +160,12 @@ def main(argv=None) -> None:
     p.add_argument("--refresh", action="store_true", help="download again even if saved")
     p.set_defaults(func=cmd_odds)
 
-    p = sub.add_parser("features", parents=[common], help="previews -> data/processed/features.csv")
-    p.set_defaults(func=cmd_features)
-
     p = sub.add_parser("match", parents=[common], help="match previews to games and odds -> data/processed/")
     p.add_argument("--sport", choices=config.SPORTS, help="only this sport (default: both)")
     p.set_defaults(func=cmd_match)
+
+    p = sub.add_parser("features", parents=[common], help="text features -> data/processed/features.csv (run match first)")
+    p.set_defaults(func=cmd_features)
 
     p = sub.add_parser("analyse", parents=[common], help="run the tests -> tables and charts in results/")
     p.set_defaults(func=cmd_analyse)

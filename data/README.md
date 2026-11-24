@@ -7,9 +7,10 @@ Most of this folder stays on your own computer. Git ignores it, apart from this 
 | `raw/sportsmole/` | One HTML file per preview (`<article_id>.html`) and `manifest.csv`, the download log | `python -m pvb scrape` | No |
 | `raw/odds/football/` | football-data.co.uk CSVs, one per season and league (`2526_E0.csv`) | `python -m pvb odds football` | No |
 | `raw/odds/tennis/` | tennis-data.co.uk files, one per year and tour (`2025_ATP.xlsx`) | `python -m pvb odds tennis` | No |
+| `raw/dictionaries/` | `inqtabs.txt`, the Harvard IV dictionary (General Inquirer) | Download by hand from [inquirer.sites.fas.harvard.edu](https://inquirer.sites.fas.harvard.edu/inqtabs.txt) | No |
 | `raw/polymarket/` | Polymarket tennis prices (part 2) | `pvb/polymarket.py` (to do: it downloads but doesn't save yet) | No |
 | `interim/` | `preview_urls.csv` and `previews.csv` (one row per preview, with the full text) | `urls`, `parse` | No |
-| `processed/` | `picks.csv`, `features.csv`, `matched_football.csv`, `matched_tennis.csv`: the tables used in the analysis, with no article text | `parse`, `features`, `match` | Yes |
+| `processed/` | `picks.csv`, `matched_football.csv`, `matched_tennis.csv`, `features.csv`, `dictionary_review.csv`: the tables used in the analysis, with no article text | `parse`, `match`, `features` | Yes |
 
 Rules:
 
@@ -30,3 +31,15 @@ One row per preview that was matched to a game. They join to `picks.csv` and `fe
 - `closing_odds_*`: the average of the last odds before the start. `best_closing_odds_*`: the highest of them across bookmakers.
 - `status` (tennis): Completed or Retired. Walkovers are left out, because no match was played.
 - The odds files were downloaded on 16 November 2026. The study ends on 14 November 2026 (`STUDY_END` in `pvb/config.py`).
+
+## The text features
+
+`features.csv` has one row per preview and joins on `article_id`. Side a is the home team in football and the first-named player in tennis. Each column is explained in `pvb/features.py`:
+
+- `words_a`, `words_b`: how many lower-case words are about each side. About a quarter of the words are about neither side (see `pvb/features.py`).
+- `tone_a`, `tone_b`, `tone_diff`: (positive − negative) / (positive + negative) words about each side, from −1 to 1. The dictionary is Harvard IV adapted to sport (`pvb/sentiment.py`).
+- `absence_a`, `absence_b`, `absence_diff`: absence words (injured, suspended, without, ...) per 100 words of team news about each side. Football only.
+- `uncertainty_per_1000`: hedging words ("could", "tight") per 1,000 words.
+- `nb_home_vs_draw`, `nb_away_vs_draw` (football), `nb_a_vs_b` (tennis): Naive Bayes log odds, such as log P(home win) − log P(draw), given the words. Empty for previews that weren't matched to a game, because the model learns from results.
+
+`dictionary_review.csv` is the review behind the tone dictionary: every Harvard IV word (and every word we added) found in at least 1% of the previews before the 2025/26 season, with Harvard's sign, ours, and the reason for any change.

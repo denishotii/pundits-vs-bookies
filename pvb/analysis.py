@@ -7,7 +7,8 @@ needed) and writes every table and chart to results/:
 1. text_beyond_odds: does the text say more than the closing odds? A logistic
    regression predicts the result from the odds alone, and from the odds plus
    the pick (plus the text features). Both are fitted on the training seasons,
-   then compared game by game on the test season.
+   then compared game by game on the test season. text_measures checks that the
+   text features line up with the odds and the results at all.
 2. odds_movement (football only): between the early and the closing odds, did
    the picked outcome become more likely than outcomes nobody picked?
 3. backtest: bet whenever a model's probability times the odds promises a profit.
@@ -39,7 +40,7 @@ from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 
 from . import config
-from .features import FEATURES_CSV
+from .features import FEATURES_CSV, seasons, split_of
 from .matching import FOOTBALL_CSV, TENNIS_CSV
 
 RESULTS = config.ROOT / "results"
@@ -48,10 +49,12 @@ PICK_FEATURES = {
     "football": ["pick_home", "pick_draw", "pick_goal_diff"],
     "tennis": ["pick_a", "pick_a_in_straight_sets"],
 }
-# Columns from features.csv. Text analysis role: add tone_diff and the Naive Bayes probabilities.
-# Tennis needs features with a direction (a minus b): a word count for the whole preview
-# can't say which of the two players it favours.
-TEXT_FEATURES = {"football": ["uncertainty_per_1000", "absence_terms"], "tennis": []}
+# Columns from features.csv (see pvb/features.py). Most have a direction (a minus b, or log
+# odds for a result): a count for the whole preview can't say which side it favours.
+TEXT_FEATURES = {
+    "football": ["tone_diff", "absence_diff", "uncertainty_per_1000", "nb_home_vs_draw", "nb_away_vs_draw"],
+    "tennis": ["tone_diff", "nb_a_vs_b"],
+}
 EDGES = (0.0, 0.05)  # bet when the expected profit per unit staked is above this
 MAX_ODDS = 10  # average closing odds above this make a long shot (see `backtest`)
 SETS = {"two": 2, "three": 3, "four": 4, "five": 5}
@@ -84,7 +87,7 @@ def prepare_football(games: pd.DataFrame) -> pd.DataFrame:
 
 def prepare_tennis(games: pd.DataFrame) -> pd.DataFrame:
     games = games.dropna(subset=["pick_side"]).reset_index(drop=True)
-    games["season"] = games["date"].dt.year.astype(str)
+    games["season"] = seasons(games, "tennis")
     games["y"] = np.where(games["a_won"], 0, 1)
     games["pick"] = np.where(games["pick_side"] == "a", 0, 1)
     games["pick_a"] = 1 - games["pick"]
@@ -96,8 +99,7 @@ def prepare_tennis(games: pd.DataFrame) -> pd.DataFrame:
 
 def add_sample(games: pd.DataFrame, sport: str) -> pd.DataFrame:
     """train, test or check, from config.SPLITS."""
-    sample_of = {season: sample for sample, seasons in config.SPLITS[sport].items() for season in seasons}
-    games["sample"] = games["season"].map(sample_of)
+    games["sample"] = split_of(games["season"], sport)
     missing = [c for c in PICK_FEATURES[sport] + TEXT_FEATURES[sport] if games[c].isna().any()]
     if missing:
         raise ValueError(f"{sport}: missing values in {missing}; re-run `python -m pvb features` and `match`")
@@ -206,7 +208,7 @@ def text_beyond_odds(games: pd.DataFrame, sport: str, predicted: dict[str, np.nd
     model on the same games: below 0 means the model knows something the odds don't.
     """
     rows = []
-    for sample, seasons in config.SPLITS[sport].items():
+    for sample, codes in config.SPLITS[sport].items():
         here = (games["sample"] == sample).to_numpy()
         if sample == "train" or not here.any():
             continue
@@ -217,13 +219,56 @@ def text_beyond_odds(games: pd.DataFrame, sport: str, predicted: dict[str, np.nd
             loss = log_loss(p, y)
             change = mean_with_ci(loss - baseline) if name != "odds" else {}
             rows.append({
-                "sport": sport, "sample": sample, "seasons": ", ".join(season_label(s, sport) for s in seasons),
+                "sport": sport, "sample": sample, "seasons": ", ".join(season_label(s, sport) for s in codes),
                 "model": name, "games": here.sum(),
                 "log_loss": loss.mean(), "brier": brier(p, y).mean(), "accuracy": (p.argmax(axis=1) == y).mean(),
                 "change_vs_odds": change.get("mean", np.nan), "ci_low": change.get("ci_low", np.nan),
                 "ci_high": change.get("ci_high", np.nan), "p_value": change.get("p_value", np.nan),
             })
     return pd.DataFrame(rows)
+
+
+def text_measures(games: pd.DataFrame, sport: str) -> pd.DataFrame:
+    """Do the text measures line up with the odds and with the results? Training seasons only.
+
+    Not a test of the text (that is test 1), but a check that the measures pick
+    up something real. A measure that knows nothing lines up with neither. One
+    that lines up with both, yet adds nothing in test 1, knows only what the odds
+    know. Every measure points towards side a (the home team): above 0 favours a,
+    except absence_diff, where more absences for a should mean below 0. Only the
+    training seasons, so that the test seasons are looked at once, in test 1.
+    """
+    games = games[games["sample"] == "train"]
+    market = implied_probabilities(odds(games, sport))
+    y, pick = games["y"].to_numpy(), games["pick"].to_numpy()
+    last_code = len(OUTCOMES[sport]) - 1
+    towards_a = {  # +1 for a, -1 for b, 0 for a draw
+        "odds": market[:, 0] - market[:, -1],
+        "result": (y == 0).astype(float) - (y == last_code),
+    }
+    measures = {
+        "pick": (pick == 0).astype(float) - (pick == last_code),
+        "tone_diff": games["tone_diff"].to_numpy(float),
+        "naive_bayes": (games["nb_home_vs_draw"] - games["nb_away_vs_draw"] if sport == "football"
+                        else games["nb_a_vs_b"]).to_numpy(float),
+    }
+    if sport == "football":
+        measures["absence_diff"] = games["absence_diff"].to_numpy(float)
+    rows = []
+    for name, values in measures.items():
+        row = {"sport": sport, "measure": name, "games": len(games)}
+        for target, truth in towards_a.items():
+            r, low, high = correlation_with_ci(values, truth)
+            row |= {f"corr_{target}": r, f"corr_{target}_low": low, f"corr_{target}_high": high}
+        rows.append(row)
+    return pd.DataFrame(rows)
+
+
+def correlation_with_ci(x: np.ndarray, y: np.ndarray) -> tuple[float, float, float]:
+    """Pearson correlation with a 95% interval (Fisher's z)."""
+    r = np.corrcoef(x, y)[0, 1]
+    half = 1.96 / np.sqrt(len(x) - 3)
+    return r, np.tanh(np.arctanh(r) - half), np.tanh(np.arctanh(r) + half)
 
 
 # 2. Odds movement ---------------------------------------------------------------
@@ -382,6 +427,7 @@ def make_tables(football: pd.DataFrame, tennis: pd.DataFrame) -> dict[str, pd.Da
     return {
         "picks_vs_favourite": pd.concat([picks_vs_favourite(g, s) for s, g in both.items()], ignore_index=True),
         "text_beyond_odds": pd.concat([text_beyond_odds(g, s, predicted[s]) for s, g in both.items()], ignore_index=True),
+        "text_measures": pd.concat([text_measures(g, s) for s, g in both.items()], ignore_index=True),
         "odds_movement": odds_movement(football),
         "backtest": pd.concat([backtest(g, s, predicted[s]) for s, g in both.items()], ignore_index=True),
     }

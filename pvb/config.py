@@ -27,6 +27,7 @@ FOOTBALL_DATA_CSV = "https://www.football-data.co.uk/mmz4281/{season}/{league}.c
 TENNIS_DATA_INDEX = "https://www.tennis-data.co.uk/alldata.php"
 POLYMARKET_GAMMA = "https://gamma-api.polymarket.com"
 POLYMARKET_CLOB = "https://clob.polymarket.com"
+HARVARD_IV = "https://inquirer.sites.fas.harvard.edu/inqtabs.txt"  # the sentiment dictionary (pvb/sentiment.py)
 
 # Scope (see docs/plan.md) ----------------------------------------------------
 
