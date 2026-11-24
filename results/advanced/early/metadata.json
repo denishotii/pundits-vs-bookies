@@ -1,0 +1,64 @@
+{
+  "market": "early",
+  "evaluation": "development_model_selection",
+  "independent_evaluation": false,
+  "selection_rule": "Minimum pooled out-of-fold log loss across candidates converged in every fold; ties favor stronger L2",
+  "aggregation": "Each validation match has equal weight in pooled metrics",
+  "cohort": "Phase 01 eligible rows, including article body and valid pick eligibility checks",
+  "cohort_limitation": "Conditional on estimated pre-snapshot article availability; not representative of all matches with early odds",
+  "timing": "Odds snapshots and training outcome availability use Phase 01 timestamp proxies",
+  "inputs": {
+    "matches": "data/processed/matched_football.csv",
+    "previews": "data/interim/previews.csv"
+  },
+  "effective_development_input_sha256": "df7316ecd4a558f51a706fd788bdcb425cea2540c78c342b225ebd6dd29e7520",
+  "development_rows": 7364,
+  "development_seasons": [
+    "2122",
+    "2223",
+    "2324",
+    "2425"
+  ],
+  "match_id": "article_id from the Phase 01 one-to-one fixture cohort",
+  "odds_columns": [
+    "early_odds_home",
+    "early_odds_draw",
+    "early_odds_away"
+  ],
+  "class_order": [
+    "H",
+    "D",
+    "A"
+  ],
+  "l2_grid": [
+    0.0001,
+    0.001,
+    0.01,
+    0.1
+  ],
+  "selected_l2": {
+    "M1": 0.0001,
+    "M2": 0.1
+  },
+  "objective": "Mean multinomial log loss plus L2 times half the squared norm of the slopes",
+  "preprocessing": "Standardize log market probabilities within each training fold for M1 and M2 correction inputs",
+  "optimizer": {
+    "max_iterations": 1000,
+    "tolerance": 1e-08,
+    "m2_relative_loss_tolerance": 1e-12
+  },
+  "metric_conventions": {
+    "log_loss": "Natural logarithm with a realized probability floor of 1e-15",
+    "brier": "Mean over matches of the sum of squared class errors",
+    "accuracy": "Argmax, with ties resolved by class order",
+    "paired_log_loss": "Model minus M0 by match",
+    "calibration": "One-vs-rest, 10 equal-width bins, occupied bins only"
+  },
+  "versions": {
+    "python": "3.11.9",
+    "numpy": "2.4.6",
+    "pandas": "3.1.1",
+    "scipy": "1.17.1",
+    "scikit_learn": "1.9.1"
+  }
+}
