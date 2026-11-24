@@ -1,0 +1,355 @@
+{
+  "phase": "08",
+  "status": "Frozen before Phase 08 historical scoring. Execution is pending article-integrity approval.",
+  "markets": {
+    "early": {
+      "F0": {
+        "formulation": "raw_market",
+        "correction_blocks": [],
+        "block_penalties": []
+      },
+      "F1": {
+        "formulation": "market_residual",
+        "correction_blocks": [
+          "log_market"
+        ],
+        "block_penalties": [
+          1.0
+        ]
+      },
+      "F2": {
+        "formulation": "market_residual",
+        "correction_blocks": [
+          "log_market_and_picks"
+        ],
+        "block_penalties": [
+          10.0
+        ]
+      },
+      "F3": {
+        "formulation": "market_residual",
+        "correction_blocks": [
+          "log_market_and_picks",
+          "side_tfidf"
+        ],
+        "block_penalties": [
+          10.0,
+          1.0
+        ]
+      }
+    },
+    "closing": {
+      "F0": {
+        "formulation": "raw_market",
+        "correction_blocks": [],
+        "block_penalties": []
+      },
+      "F1": {
+        "formulation": "market_residual",
+        "correction_blocks": [
+          "log_market"
+        ],
+        "block_penalties": [
+          0.1
+        ]
+      },
+      "F2": {
+        "formulation": "market_residual",
+        "correction_blocks": [
+          "log_market_and_picks"
+        ],
+        "block_penalties": [
+          1.0
+        ]
+      },
+      "F3": {
+        "formulation": "market_residual",
+        "correction_blocks": [
+          "log_market_and_picks",
+          "side_tfidf"
+        ],
+        "block_penalties": [
+          1.0,
+          1.0
+        ]
+      }
+    }
+  },
+  "implementation_settings": {
+    "class_codes": {
+      "H": 0,
+      "D": 1,
+      "A": 2
+    },
+    "probability_columns": [
+      "home",
+      "draw",
+      "away"
+    ],
+    "odds_columns": {
+      "early": [
+        "early_odds_home",
+        "early_odds_draw",
+        "early_odds_away"
+      ],
+      "closing": [
+        "closing_odds_home",
+        "closing_odds_draw",
+        "closing_odds_away"
+      ]
+    },
+    "expert_pick_columns": [
+      "pick_home",
+      "pick_draw",
+      "pick_goal_diff"
+    ],
+    "development_seasons": [
+      "2122",
+      "2223",
+      "2324",
+      "2425"
+    ],
+    "historical_seasons": [
+      "2526",
+      "2627"
+    ],
+    "attribution": {
+      "schema": 1,
+      "names": "Fixture names, curated spellings, and verified fixture-oriented article sides",
+      "mask": "TEAM",
+      "policy": "Case-sensitive names, longest span, no standalone shared tokens, no coreference or both-team text",
+      "roles": {
+        "a": [
+          "the hosts",
+          "the home side",
+          "the home team"
+        ],
+        "b": [
+          "the visitors",
+          "the away side",
+          "the away team",
+          "the guests",
+          "the visiting side"
+        ]
+      },
+      "aliases": {
+        "Ath Bilbao": "Athletic Bilbao",
+        "Ath Madrid": "Atletico Madrid",
+        "Ein Frankfurt": "Eintracht Frankfurt",
+        "Espanol": "Espanyol",
+        "Hamburg": "Hamburger SV",
+        "Inter": "Inter Milan",
+        "M'gladbach": "Monchengladbach",
+        "Man City": "Manchester City",
+        "Man United": "Manchester United",
+        "Milan": "AC Milan",
+        "Nott'm Forest": "Nottingham Forest",
+        "Paris SG": "Paris Saint-Germain",
+        "Peterboro": "Peterborough",
+        "QPR": "Queens Park Rangers",
+        "Sheffield Weds": "Sheffield Wednesday",
+        "St Etienne": "Saint-Etienne",
+        "West Brom": "West Bromwich Albion",
+        "Wolves": "Wolverhampton"
+      },
+      "sentence_break": "(?<=[.!?])(?<!\\bNo\\.)(?<!\\bSt\\.)(?<!\\bvs\\.)(?<!\\bMr\\.)(?<!\\bDr\\.)\\s+(?=[\\\"'‘“A-Z0-9])|\\n+",
+      "sections": [
+        "text_preview",
+        "text_team_news",
+        "text_head_to_head"
+      ]
+    },
+    "primary_sections": [
+      "text_preview",
+      "text_team_news",
+      "text_head_to_head"
+    ],
+    "tfidf": {
+      "analyzer": "word",
+      "ngram_range": [
+        1,
+        2
+      ],
+      "token_pattern": "(?u)\\b\\w+(?:['’]\\w+)*\\b",
+      "lowercase": true,
+      "sublinear_tf": true,
+      "norm": "l2",
+      "min_df": 5,
+      "max_df": 0.95,
+      "max_features": 10000,
+      "use_idf": true,
+      "smooth_idf": true
+    },
+    "unicode_normalization": "NFC",
+    "blas_threads": 1,
+    "optimizer_maxiter": 1000,
+    "optimizer_gtol": 1e-08,
+    "outcome_buffer_hours": 3.0,
+    "bootstrap": {
+      "seed": 60108,
+      "replicates": 3000,
+      "block_days": [
+        7,
+        14
+      ]
+    },
+    "calibration_bins": 10,
+    "comparisons": [
+      [
+        "F3",
+        "F2"
+      ],
+      [
+        "F2",
+        "F1"
+      ],
+      [
+        "F1",
+        "F0"
+      ],
+      [
+        "F3",
+        "F0"
+      ]
+    ],
+    "audit_flags": [
+      "timestamp_conflict",
+      "potential_post_prediction_content_modification",
+      "confirmed_outcome_information_contamination"
+    ],
+    "exclusion_rules": [
+      "metadata_missing",
+      "metadata_unverifiable",
+      "timestamp_conflict",
+      "potential_post_prediction_content_modification",
+      "confirmed_outcome_information_contamination"
+    ]
+  },
+  "feature_blocks": {
+    "log_market": {
+      "inputs": [
+        "log_p_home",
+        "log_p_draw",
+        "log_p_away"
+      ],
+      "preprocessing": "Training-only StandardScaler"
+    },
+    "log_market_and_picks": {
+      "inputs": [
+        "log_p_home",
+        "log_p_draw",
+        "log_p_away",
+        "pick_home",
+        "pick_draw",
+        "pick_goal_diff"
+      ],
+      "pick_definition": "Home and draw pick indicators, followed by predicted home goals minus predicted away goals.",
+      "preprocessing": "Training-only StandardScaler"
+    },
+    "side_tfidf": {
+      "implementation": "pvb.advanced.team_text.side_documents and side_tfidf",
+      "attribution_schema": 1,
+      "sections": [
+        "text_preview",
+        "text_team_news",
+        "text_head_to_head"
+      ],
+      "attribution": "Assign fixture-oriented exclusive sentences using fixed fixture names, curated spellings and explicit roles. Mask accepted team mentions to TEAM. Exclude both-team, ambiguous and unattributed sentences.",
+      "document_normalization": "NFC and whitespace collapse via prepare_documents",
+      "vectorizer_fit": "One shared training-only vocabulary and IDF over home and away side documents.",
+      "tfidf": {
+        "analyzer": "word",
+        "ngram_range": [
+          1,
+          2
+        ],
+        "token_pattern": "(?u)\\b\\w+(?:['’]\\w+)*\\b",
+        "lowercase": true,
+        "sublinear_tf": true,
+        "norm": "l2",
+        "min_df": 5,
+        "max_df": 0.95,
+        "max_features": 10000,
+        "use_idf": true,
+        "smooth_idf": true
+      },
+      "output": "Sparse home minus away, mean of home and away, home missing flag and away missing flag. Use zero vectors for empty sides. No further scaling or SVD."
+    }
+  },
+  "market_probabilities": "Normalize reciprocal average decimal odds across H/D/A within one market.",
+  "residual": {
+    "implementation": "pvb.advanced.models.MarketResidual",
+    "constructor": {
+      "l2": 1.0,
+      "standardize": false,
+      "text_l2": null
+    },
+    "fit_arguments": "Pass explicit contiguous (block_width, L2) pairs in correction-block order.",
+    "output": "Softmax of log market probabilities plus sum-to-zero linear correction and unpenalized intercept.",
+    "objective": "Mean multinomial cross-entropy plus half the block L2 times squared slope norm.",
+    "optimizer": {
+      "method": "L-BFGS-B",
+      "initial_parameters": 0,
+      "maxiter": 1000,
+      "ftol": 1e-12,
+      "gtol": 1e-08
+    }
+  },
+  "numerical_preprocessing": {
+    "implementation": "sklearn.preprocessing.StandardScaler",
+    "with_mean": true,
+    "with_std": true,
+    "fit": "Eligible released development rows only."
+  },
+  "training": {
+    "refit": "Fit F1, F2 and F3 once per market after excluding development outcomes at or after the earliest feature-eligible 2526 cutoff. Use the same fit for 2526 and 2627.",
+    "random_seed": null,
+    "randomness": "Deterministic TF-IDF, scaling and zero-initialized optimizer. The date-block bootstrap uses seed 60108.",
+    "hyperparameter_search": false
+  },
+  "prediction_cutoffs": {
+    "early": "15:00 Europe/London Tuesday for Tuesday–Thursday fixtures and Friday for Friday–Monday fixtures. The proxy must precede kickoff.",
+    "closing": "Kickoff proxy for the closing quote.",
+    "publication": "Match and article publication times must agree and precede the prediction cutoff. Midnight UTC is date-only and requires an earlier UTC publication day.",
+    "outcome_availability": "Kickoff plus three hours, or the next UTC day plus three hours for date-only kickoffs. Training release must strictly precede every holdout cutoff."
+  },
+  "software_versions": {
+    "python": "3.11.9",
+    "numpy": "2.4.6",
+    "pandas": "3.1.1",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.9.1",
+    "threadpoolctl": "3.8.0",
+    "tzdata": "2026.6"
+  },
+  "data_fingerprints": {
+    "markets": {
+      "early": {
+        "development_matches": 7364,
+        "development_inputs_sha256": "13465ee4e5f9e644c5541a315c864a1d7e93a9a893259d0bb5ff21b55893a26b",
+        "validation_ids_sha256": "18f37bc50497646e8da6ba340bb91f9c24402888c49f421591a298f15d470210"
+      },
+      "closing": {
+        "development_matches": 9355,
+        "development_inputs_sha256": "25b614ef2aef427d9af9e0e3be5c3b61930317a10785205e10541ccc724868d8",
+        "validation_ids_sha256": "ad07c3e7da2bba1dfe72ee0bb1d5c3f22e6c284d0ae46dcb425b6a1faf2bc7a5"
+      }
+    },
+    "development_attribution_sha256": "59b8b9690b6aa604775d2fd844bae3612dc1599eca8379072bf3fdf9889946d5"
+  },
+  "selection": {
+    "development_folds": [
+      "2223",
+      "2324",
+      "2425"
+    ],
+    "reference": "../team_historical/metadata.json",
+    "rule": "Keep Phase 06B numerical penalties chosen by pooled development log loss from 0.01, 0.1, 1 and 10. Keep the side representation with lowest pooled closing pick-recovery loss and its text L2 selected from 0.001, 0.01, 0.1 and 1 at frozen numerical L2.",
+    "holdout_rule": "After integrity verification, refit once on eligible released 2122–2425 rows, purging releases at or after the first test prediction if necessary. Freeze transforms and model weights for 2526 and 2627. Use identical fixture IDs within each market. Compare multiclass log loss primarily, Brier secondarily, with paired date-block intervals. Do not select or retune on either holdout."
+  },
+  "source_artifacts_canonical_sha256": {
+    "results/advanced/nonlinear/frozen_models.json": "46305e062d81807030de41f7bac3a7f466c96dfed2a1d15aa1e88531ceee5c90",
+    "results/advanced/nonlinear/metadata.json": "32b65557e8d74089753adbb2b1398dea9d8b4bc7678584574a29eb98017d9188",
+    "results/advanced/team_historical/metadata.json": "a08039a3bfa197276241d5034f3d2da43d12d447d517d54e2b0999ee2defb975"
+  }
+}

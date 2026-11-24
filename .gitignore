@@ -92,6 +92,11 @@ data/processed/*
 !/results/advanced/nonlinear/*_paired.csv
 !/results/advanced/nonlinear/*_bootstrap.csv
 !/results/advanced/nonlinear/*_search.csv
+!/results/advanced/final/
+!/results/advanced/final/frozen_models.json
+!/results/advanced/final/evaluation_protocol.md
+!/results/advanced/final/research_summary.md
+!/results/advanced/final/verification.json
 
 # Teammates' working notes (e.g. the Kalshi PDFs), shared outside the repo
 docs/docs_from_team/

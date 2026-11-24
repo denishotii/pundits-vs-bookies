@@ -134,14 +134,15 @@ or substitute `closing`.
   history reproduces 9,356 fixtures, eight short of a double round robin for the observed teams.
 - Author reliability worsened pooled linear loss in both markets. Every CatBoost comparison
   trailed raw odds and selected alpha zero. All 114 candidate fits completed and 251 tests passed.
-- See `results/advanced/nonlinear/report.md` and `frozen_models.json`. Freeze raw odds, market
-  residual, picks residual and side-TF-IDF picks residual. Next verify original HTML, odds/result
-  timing and attribution before evaluating 2526 or 2627. Both remain unevaluated.
+- See `results/advanced/nonlinear/report.md` and `frozen_models.json` for the freeze inputs.
 
-## Market timing limitations
+## Phase 08 complete — final freeze and evaluation preparation
 
-- The approximate early snapshot is 15:00 Europe/London on Tuesday for Tuesday–Thursday
-  fixtures and Friday for Friday–Monday fixtures. Closing uses kickoff. Actual odds capture
-  times are unavailable.
-- UTC midnight denotes date-only. Outcome release is proxied by kickoff plus three hours,
-  or the next UTC day plus three hours for date-only kickoffs.
+- `results/advanced/final/` contains the frozen F0–F3 specifications, protocol, research summary and verification.
+- `pvb.advanced.final_evaluation` plans by default. `--verify-development` matched both Phase 07 data
+  fingerprints and the attribution fingerprint. All 257 tests passed, including six new tests.
+- The future runner refits once per market on released 2122–2425 rows for both 2526 and 2627.
+  Scoring requires `--execute-holdouts` and a frozen, approved article audit policy. Neither holdout was scored.
+- Next obtain original HTML and contemporaneous article versions, verify attribution and odds/result times,
+  and approve screened-cohort rules. Early uses 15:00 Europe/London Tuesday or Friday, closing uses kickoff,
+  and release uses kickoff plus three hours or 03:00 UTC the next day for date-only fixtures.

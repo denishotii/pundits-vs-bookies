@@ -1,0 +1,55 @@
+{
+  "phase": "08",
+  "freeze_sha256": "db9346b6728d14dc33413a080ed9d1d20fd3ea1c96594092866901fa54081705",
+  "software_versions": {
+    "python": "3.11.9",
+    "numpy": "2.4.6",
+    "pandas": "3.1.1",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.9.1",
+    "threadpoolctl": "3.8.0",
+    "tzdata": "2026.6"
+  },
+  "text_artifacts_normalized_sha256": {
+    "pvb/advanced/final_evaluation.py": "719acef66d831391066ada8ae2220edf0fb498940f2a797bcfb1b7908da58724",
+    "tests/test_advanced_final_evaluation.py": "9cfb3bc95749e170389f92245e31cab3821be0243285c36cead130a4f0e13bbf",
+    "results/advanced/final/evaluation_protocol.md": "f4960433a54d6534ad974f60ab1ad02ea7a4599149755081cbfc703805b3e7a7",
+    "results/advanced/final/research_summary.md": "27cb661d8444d65b8581f6bfea2b69db2426eac1ed3e0000a1933189b098b4ee"
+  },
+  "configuration_checks": {
+    "default_plan": "passed",
+    "frozen_parameters_match_phase07_and_phase06b": true,
+    "development_fingerprints_match": {
+      "markets": {
+        "early": {
+          "development_matches": 7364,
+          "development_inputs_sha256": "13465ee4e5f9e644c5541a315c864a1d7e93a9a893259d0bb5ff21b55893a26b",
+          "validation_ids_sha256": "18f37bc50497646e8da6ba340bb91f9c24402888c49f421591a298f15d470210"
+        },
+        "closing": {
+          "development_matches": 9355,
+          "development_inputs_sha256": "25b614ef2aef427d9af9e0e3be5c3b61930317a10785205e10541ccc724868d8",
+          "validation_ids_sha256": "ad07c3e7da2bba1dfe72ee0bb1d5c3f22e6c284d0ae46dcb425b6a1faf2bc7a5"
+        }
+      },
+      "development_attribution_sha256": "59b8b9690b6aa604775d2fd844bae3612dc1599eca8379072bf3fdf9889946d5"
+    },
+    "future_private_results_git_ignored": true
+  },
+  "test_suite": {
+    "pytest_version": "9.2.0",
+    "focused_passed": 6,
+    "full_suite_passed": 257,
+    "full_suite_seconds": 9.99,
+    "new_evaluation_tests_use_synthetic_data": true
+  },
+  "execution": {
+    "real_models_fitted_in_phase08": false,
+    "real_holdout_predictions_generated": false,
+    "real_holdout_outcomes_evaluated": false,
+    "historical_test": "2526",
+    "historical_check": "2627",
+    "original_html_available": false,
+    "integrity_policy_approved": false
+  }
+}
